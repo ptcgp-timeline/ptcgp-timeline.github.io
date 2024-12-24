@@ -1,0 +1,28 @@
+{
+    "background_color": "#202442",
+    "theme_color": "#202442",
+    "name": "TCGP Timeline",
+    "short_name": "TCGP Time",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "/ptcgp-timeline/android-chrome-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/ptcgp-timeline/android-chrome-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/ptcgp-timeline/apple-touch-icon.png",
+        "type": "image/png",
+        "sizes": "180x180",
+        "purpose": "apple-touch-icon"
+      }
+    ],
+    "scope": "/ptcgp-timeline/",
+    "start_url": "/ptcgp-timeline/",
+    "description": "A Pokemon TCG Pocket Timeline for events."
+  }
