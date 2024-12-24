@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "description": "Timeline of events for Pokemon Trading Card Game Pocket",
+  "homepage": "https://as280093.github.io/ptcgp-timeline",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -34,12 +35,16 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.35",
     "postcss-nesting": "^12.0.2",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.4"
   },
-  "homepage": "https://as280093.github.io/ptcgp-timeline",
-  "keywords": ["timeline", "pokemon", "trading card game", "events"]
+  "keywords": [
+    "timeline",
+    "pokemon",
+    "trading card game",
+    "events"
+  ]
 }
