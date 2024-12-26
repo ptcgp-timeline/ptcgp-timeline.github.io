@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import timezone from 'dayjs/plugin/timezone';
 import utc from 'dayjs/plugin/utc';
+import advancedFormat from 'dayjs/plugin/advancedFormat';
 import TimelineEvent from './TimelineEvent';
 import DetailModal from './DetailModal';
 import { saveToLocalStorage, getFromLocalStorage, STORAGE_KEYS } from '../../utils/localStorage';
@@ -12,6 +13,16 @@ import PropTypes from 'prop-types';
 dayjs.extend(duration);
 dayjs.extend(timezone);
 dayjs.extend(utc);
+dayjs.extend(advancedFormat);
+
+
+const getNextReset = () => {
+  const now = dayjs().utc();
+  const today6AM = now.hour(6).minute(0).second(0);
+  return now.isAfter(today6AM) 
+    ? today6AM.add(1, 'day')
+    : today6AM;
+};
 
 
 function Timeline({ events = [] }) {
@@ -36,6 +47,8 @@ function Timeline({ events = [] }) {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [todayOffset, setTodayOffset] = useState(0);
   const [isFirstLoad, setIsFirstLoad] = useState(true);
+  const [nextReset, setNextReset] = useState(getNextReset());
+  const [timeToReset, setTimeToReset] = useState('');
 
 
   const handleTimezoneChange = (value) => {
@@ -227,12 +240,40 @@ function Timeline({ events = [] }) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    const updateCountdown = () => {
+      const now = dayjs().utc();
+      const next = getNextReset();
+      
+      if (next.isBefore(now)) {
+        setNextReset(getNextReset());
+        return;
+      }
+
+      const diff = next.diff(now);
+      const duration = dayjs.duration(diff);
+      const hours = duration.hours().toString().padStart(2, '0');
+      const minutes = duration.minutes().toString().padStart(2, '0');
+      const seconds = duration.seconds().toString().padStart(2, '0');
+      
+      setTimeToReset(`${hours}:${minutes}:${seconds}`);
+    };
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+    return () => clearInterval(interval);
+  }, [nextReset]);
+
   return (
     <div className="flex-1 flex flex-col pt-16">
+      <h1 className="sr-only">
+        Timeline
+      </h1>
 
-      <div className="pt-20 lg:pt-8">
-        <div className="flex">
-          <div className="px-4 md:px-8 text-white select-none">
+      <div className="pt-8 sm:pt-16 lg:pt-8">
+        <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-2 px-4 md:px-8">
+          
+          <div className="text-white select-none">
             <input
               type="checkbox"
               className="mr-2 w-4 h-4"
@@ -240,7 +281,25 @@ function Timeline({ events = [] }) {
               checked={showLocalTime}
               onChange={(e) => handleTimezoneChange(e.target.checked)}
             />
-            <span>Show as local time ({userTimezone})</span>
+            <span className="text-sm sm:text-base">Show as local time ({userTimezone})</span>
+          </div>
+          <div 
+            className="relative group select-none pr-8 sm:pr-12"
+          >
+            <div className="bg-item border border-button rounded-full px-4 py-1 text-white flex items-center gap-2 text-sm sm:text-base">
+              <span className="font-mono">{timeToReset}</span>
+              <span>to Daily Reset</span>
+            </div>
+            <div className="absolute z-50 hidden group-hover:block w-max">
+              <div className="relative bg-background-secondary border border-button rounded-full px-3 py-1 text-white text-sm
+                max-sm:-bottom-11 -bottom-10 left-1/2 -translate-x-1/2">
+                <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-background-secondary border-l border-t border-button rotate-45">
+                </div>
+                <span className="relative z-10">
+                  {nextReset.format('dddd, D MMMM YYYY HH:mm')}
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

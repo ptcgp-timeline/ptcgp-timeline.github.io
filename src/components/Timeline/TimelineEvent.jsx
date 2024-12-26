@@ -2,6 +2,7 @@ import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import PropTypes from 'prop-types';
 import { useLanguage } from '../../context/LanguageContext';
+import { useRef, useEffect, useState } from 'react';
 
 dayjs.extend(duration);
 
@@ -40,6 +41,16 @@ const TimelineEvent = ({
   const shouldShowHourStart = diffStart <= 86400000 || event.duration > 6.5 || !prevNearby;
   const shouldShowHourEnd = diffEnd <= 86400000 || event.duration > 6.5 || !prevNearby;
 
+  const textRef = useRef(null);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+
+  useEffect(() => {
+    const element = textRef.current;
+    if (element) {
+      setIsOverflowing(element.scrollWidth > element.clientWidth);
+    }
+  }, [eventName]);
+
   return (
     <div
       onClick={() => onOpenDetail(event)}
@@ -61,8 +72,24 @@ const TimelineEvent = ({
       }}
     >
       <div className={`event-item ${nextDiff < 1 ? '' : 'rounded-xl'}`} />
-      <span className="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-nowrap overflow-hidden">
-        {eventName}
+      <span 
+        className="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-nowrap overflow-hidden"
+        ref={textRef}
+      >
+        {isOverflowing ? (
+          <span 
+            className="scroll-overflow"
+            style={{
+              '--scroll-duration': `${Math.max(eventName.length * 0.4, 15)}s`,
+            }}
+          >
+            <span className="select-none px-6">{eventName}</span>
+            <span className="select-none px-6">{eventName}</span>
+            <span className="select-none px-6">{eventName}</span>
+          </span>
+        ) : (
+          <span>{eventName}</span>
+        )}
       </span>
 
       {/* Timer displays */}

@@ -60,6 +60,24 @@ export const eventsData = [
   [
     {
       name: {
+        en: "Blastoise Drop Event",
+      },
+      pos: "30% 35%",
+      zoom: "300%",
+      image: "Blastoise-ex-Drop-Event.jpg",
+      start: "2025-01-01 06:00:00",
+      end: "2025-01-15 05:59:00",
+      color: "#4173d5",
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/blastoise-ex-drop-event/",
+          "https://www.pokemon-zone.com/events/blastoise-drop-event/",
+        ],
+      },
+      showOnHome: true,
+    },
+    {
+      name: {
         en: "New Expansion A2",
       },
       pos: "10% 40%",
@@ -92,24 +110,6 @@ export const eventsData = [
         ],
       },
       showOnHome: false,
-    },
-    {
-      name: {
-        en: "Blastoise Drop Event",
-      },
-      pos: "30% 35%",
-      zoom: "300%",
-      image: "Blastoise-ex-Drop-Event.jpg",
-      start: "2025-01-01 06:00:00",
-      end: "2025-01-15 05:59:00",
-      color: "#4173d5",
-      urls: {
-        en: [
-          "https://ptcgpocket.gg/blastoise-ex-drop-event/",
-          "https://www.pokemon-zone.com/events/blastoise-drop-event/",
-        ],
-      },
-      showOnHome: true,
     },
   ],
   [
@@ -307,9 +307,9 @@ export const eventsData = [
       name: {
         en: "Holiday Event",
       },
-      pos: "40% 30%",
-      zoom: "150%",
-      image: "holiday_event_2024.jpg",
+      pos: "90% 10%",
+      zoom: "600%",
+      image: "Holiday-event-log-in-missions.webp",
       start: "2024-12-25 06:00:00",
       end: "2025-01-01 05:59:00",
       color: "#e87d3c",
@@ -318,6 +318,9 @@ export const eventsData = [
           "https://ptcgpocket.gg/holiday-event/",
           "https://www.pokemon-zone.com/events/holiday-2024-event-missions/",
         ],
+      },
+      description: {
+        en: "free Mythical Island booster pack or 12 Pack Hourglasses every day for 7 days",
       },
       showOnHome: true,
     },

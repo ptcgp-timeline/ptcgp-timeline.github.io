@@ -58,3 +58,20 @@ span.event-name {
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+.scroll-overflow {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll-animation var(--scroll-duration) infinite linear;
+  padding-right: var(--gap, 0.5rem);
+  width: max-content;
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
