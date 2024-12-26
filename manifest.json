@@ -1,28 +1,28 @@
 {
-    "background_color": "#202442",
-    "theme_color": "#202442",
-    "name": "TCGP Timeline",
-    "short_name": "TCGP Time",
-    "display": "standalone",
-    "icons": [
-      {
-        "src": "/ptcgp-timeline/android-chrome-192x192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "/ptcgp-timeline/android-chrome-512x512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      },
-      {
-        "src": "/ptcgp-timeline/apple-touch-icon.png",
-        "type": "image/png",
-        "sizes": "180x180",
-        "purpose": "apple-touch-icon"
-      }
-    ],
-    "scope": "/ptcgp-timeline/",
-    "start_url": "/ptcgp-timeline/",
-    "description": "A Pokemon TCG Pocket Timeline for events."
-  }
+  "name": "PTCGP Timeline",
+  "short_name": "PTCGP",
+  "description": "Track Pokémon Trading Card Game Pocket events, card releases, and special campaigns",
+  "start_url": "/ptcgp-timeline/",
+  "scope": "/ptcgp-timeline/",
+  "display": "standalone",
+  "background_color": "#202442",
+  "theme_color": "#202442",
+  "icons": [
+    {
+      "src": "/ptcgp-timeline/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/ptcgp-timeline/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/ptcgp-timeline/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
