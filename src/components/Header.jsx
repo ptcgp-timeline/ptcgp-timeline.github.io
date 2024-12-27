@@ -48,7 +48,7 @@ const Header = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <a 
-              href="https://as280093.github.io/ptcgp-timeline"
+              href="https://ptcgp-timeline.github.io"
               className="hover:opacity-80 transition-opacity"
             >
               <img src={logoLong} alt="Logo" className="h-6" />
@@ -94,7 +94,7 @@ const Header = () => {
               <ul className="flex space-x-6 text-gray-300">
                 <li>
                   <a 
-                    href="https://github.com/as280093/ptcgp-timeline" 
+                    href="https://github.com/as280093/ptcgp-timeline.github.io"
                     className="hover:text-white flex items-center space-x-2"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -105,7 +105,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://github.com/as280093/ptcgp-timeline/issues"
+                    href="https://github.com/as280093/ptcgp-timeline.github.io/issues"
                     className="hover:text-white flex items-center space-x-2"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -134,7 +134,7 @@ const Header = () => {
         <div className="px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <a 
-              href="https://as280093.github.io/ptcgp-timeline"
+              href="https://ptcgp-timeline.github.io"
               className="hover:opacity-80 transition-opacity"
             >
               <img src={logoLong} alt="Logo" className="h-5" />
@@ -204,7 +204,7 @@ const Header = () => {
               <div className="space-y-2">
                 <h2 className="text-gray-400 text-sm">Menu</h2>
                 <a 
-                  href="https://github.com/as280093/ptcgp-timeline"
+                  href="https://github.com/as280093/ptcgp-timeline.github.io"
                   className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -213,7 +213,7 @@ const Header = () => {
                   <span className="text-white text-lg">Contribute</span>
                 </a>
                 <a 
-                  href="https://github.com/as280093/ptcgp-timeline/issues"
+                  href="https://github.com/as280093/ptcgp-timeline.github.io/issues"
                   className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
                   target="_blank"
                   rel="noopener noreferrer"

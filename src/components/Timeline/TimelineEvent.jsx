@@ -65,7 +65,7 @@ const TimelineEvent = ({
         height: `${eventHeight}px`,
         paddingRight: '10px',
         paddingLeft: prevNearby && !started && (attachedPrev || prevEnded) ? '35px' : '10px',
-        '--image': `url('/ptcgp-timeline/images/events/${event.image}')`,
+        '--image': `url('/images/events/${event.image}')`,
         '--pos': event.pos || '50% 50%',
         '--color': event.color,
         '--zoom': event.zoom || '200%'

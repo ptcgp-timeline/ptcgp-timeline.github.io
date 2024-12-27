@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "description": "Timeline of events for Pokemon Trading Card Game Pocket",
-  "homepage": "https://as280093.github.io/ptcgp-timeline",
+  "homepage": "https://ptcgp-timeline.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/as280093/ptcgp-timeline.git"
+    "url": "https://github.com/as280093/ptcgp-timeline.github.io.git"
   },
   "author": "as280093",
   "license": "MIT",

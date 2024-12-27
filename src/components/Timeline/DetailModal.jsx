@@ -36,7 +36,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
       >
         {event.image && (
           <img 
-            src={`/ptcgp-timeline/images/events/${event.image}`} 
+            src={`/images/events/${event.image}`} 
             className="w-full rounded-lg mb-4" 
             alt={eventName} 
           />
