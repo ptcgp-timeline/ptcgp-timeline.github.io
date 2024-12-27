@@ -2,8 +2,8 @@
 
 # [PTCGP Timeline](https://ptcgp-timeline.github.io)
 
-[![GitHub stars](https://img.shields.io/github/stars/as280093/ptcgp-timeline.github.io?style=social)](https://github.com/as280093/ptcgp-timeline.github.io/stargazers)
-[![GitHub license](https://img.shields.io/github/license/as280093/ptcgp-timeline.github.io)](https://github.com/as280093/ptcgp-timeline.github.io/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ptcgp-timeline/ptcgp-timeline.github.io?style=social)](https://github.com/ptcgp-timeline/ptcgp-timeline.github.io/stargazers)
+[![GitHub license](https://img.shields.io/github/license/ptcgp-timeline/ptcgp-timeline.github.io)](https://github.com/ptcgp-timeline/ptcgp-timeline.github.io/blob/main/LICENSE)
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://react.dev/)
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)

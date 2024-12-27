@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://as280093.github.io/ptcgp-timeline/sitemap.xml 
+Sitemap: https://ptcgp-timeline.github.io/sitemap.xml 
