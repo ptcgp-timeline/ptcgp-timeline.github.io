@@ -423,6 +423,14 @@ export const eventsData = [
     {
       name: {
         en: "Holiday Countdown Campaign",
+        ja: "ホリデーカウントダウンキャンペーン",
+        zh: "节日倒计时活动",
+        ko: "홀리데이 카운트다운 캠페인",
+        fr: "Campagne de Compte à Rebours des Fêtes",
+        de: "Ferien-Countdown-Kampagne",
+        es: "Campaña de Cuenta Regresiva Festiva",
+        it: "Campagna Conto alla Rovescia Festivo",
+        pt: "Campanha de Contagem Regressiva de Feriado",
       },
       pos: "0% 30%",
       zoom: "100%",
@@ -513,24 +521,15 @@ export const eventsData = [
   [
     {
       name: {
-        en: "Premium Pass - January 2025",
-      },
-      pos: "0% 70%",
-      zoom: "100%",
-      image: "Premium_Pass_January_2025.png",
-      start: "2025-01-01 06:00:00",
-      end: "2025-02-01 05:59:00",
-      color: "#ff4a02",
-      urls: {
-        //en: ["https://example.com"],
-      },
-      showOnHome: true,
-    },
-  ],
-  [
-    {
-      name: {
         en: "Premium Pass - December 2024",
+        ja: "プレミアムパス - 2024年12月",
+        zh: "尊贵通行证 - 2024年12月",
+        ko: "프리미엄 패스 - 2024년 12월",
+        fr: "Pass Premium - Décembre 2024",
+        de: "Premium Pass - Dezember 2024",
+        es: "Pase Premium - Diciembre 2024",
+        it: "Pass Premium - Dicembre 2024",
+        pt: "Passe Premium - Dezembro 2024",
       },
       pos: "0% 25%",
       zoom: "110%",
@@ -538,6 +537,29 @@ export const eventsData = [
       start: "2024-12-01 06:00:00",
       end: "2025-01-01 05:59:00",
       color: "#b2adbd",
+      urls: {
+        //en: ["https://example.com"],
+      },
+      showOnHome: true,
+    },
+    {
+      name: {
+        en: "Premium Pass - January 2025",
+        ja: "プレミアムパス - 2025年1月",
+        zh: "尊贵通行证 - 2025年1月",
+        ko: "프리미엄 패스 - 2025년 1월",
+        fr: "Pass Premium - Janvier 2025",
+        de: "Premium Pass - Januar 2025",
+        es: "Pase Premium - Enero 2025",
+        it: "Pass Premium - Gennaio 2025",
+        pt: "Passe Premium - Janeiro 2025",
+      },
+      pos: "0% 70%",
+      zoom: "100%",
+      image: "Premium_Pass_January_2025.png",
+      start: "2025-01-01 06:00:00",
+      end: "2025-02-01 05:59:00",
+      color: "#ff4a02",
       urls: {
         //en: ["https://example.com"],
       },
