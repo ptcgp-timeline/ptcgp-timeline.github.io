@@ -73,6 +73,10 @@ export const eventsData = [
     {
       name: {
         en: "Blastoise Drop Event",
+        fr: "Évènement butin Tortank",
+        zh: "水箭龜掉落活動",
+        ja: "カメックスドロップイベント",
+        ko: "거북왕 드롭 이벤트",
       },
       pos: "30% 35%",
       zoom: "300%",
@@ -133,6 +137,10 @@ export const eventsData = [
     {
       name: {
         en: "Wonder Pick Event Part 1 (Bulbasaur + Magnemite)",
+        fr: "Évènement pioche miracle 1 (Bulbizarre + Magnéti)",
+        zh: "得卡挑戰活動 前半 (妙蛙種子 + 小磁怪)",
+        ja: "ゲットチャレンジイベント 前半 (フシギダネ + コイル)",
+        ko: "겟 챌린지 이벤트 전반 (이상해씨 + 코일)",
       },
       pos: "-15% 35%",
       zoom: "200%",
@@ -152,6 +160,10 @@ export const eventsData = [
     {
       name: {
         en: "Wonder Pick Event Part 1 (Charmander + Squirtle)",
+        fr: "Évènement pioche miracle 1 (Salamèche + Carapuce)",
+        zh: "得卡挑戰活動 前半 (小火龍 + 傑尼龜)",
+        ja: "ゲットチャレンジイベント 前半 (ヒトカゲ + ゼニガメ)",
+        ko: "겟 챌린지 이벤트 전반 (파이리 + 꼬부기)",
       },
       pos: "50% 30%",
       zoom: "200%",
@@ -165,6 +177,18 @@ export const eventsData = [
           "https://www.pokemon-zone.com/events/charmander-squirtle-wonder-pick/",
           "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02",
         ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_02",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_02",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_02",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_02",
+        ],
       },
       showOnHome: true,
     },
@@ -173,6 +197,10 @@ export const eventsData = [
     {
       name: {
         en: "Wonder Pick Event Part 2 (Bulbasaur + Magnemite)",
+        fr: "Évènement pioche miracle 2 (Bulbizarre + Magnéti)",
+        zh: "得卡挑戰活動 後半 (妙蛙種子 + 小磁怪)",
+        ja: "ゲットチャレンジイベント 後半 (フシギダネ + コイル)",
+        ko: "겟 챌린지 이벤트 후반 (이상해씨 + 코일)",
       },
       pos: "-45% 50%",
       zoom: "200%",
@@ -231,6 +259,10 @@ export const eventsData = [
     {
       name: {
         en: "Wonder Pick Event Part 2 (Charmander + Squirtle)",
+        fr: "Évènement pioche miracle 2 (Salamèche + Carapuce)",
+        zh: "得卡挑戰活動 後半 (小火龍 + 傑尼龜)",
+        ja: "ゲットチャレンジイベント 後半 (ヒトカゲ + ゼニガメ)",
+        ko: "겟 챌린지 이벤트 후반 (파이리 + 꼬부기)",
       },
       pos: "50% 30%",
       zoom: "200%",
@@ -243,6 +275,18 @@ export const eventsData = [
           "https://ptcgpocket.gg/wonder-pick-event-part-2-charmander-squirtle/",
           "https://www.pokemon-zone.com/events/charmander-squirtle-wonder-pick/",
           "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_03",
         ],
       },
       showOnHome: true,
@@ -475,7 +519,7 @@ export const eventsData = [
       zoom: "100%",
       image: "Premium_Pass_January_2025.png",
       start: "2025-01-01 06:00:00",
-      end: "2025-03-01 05:59:00",
+      end: "2025-02-01 05:59:00",
       color: "#ff4a02",
       urls: {
         //en: ["https://example.com"],
@@ -492,7 +536,7 @@ export const eventsData = [
       zoom: "110%",
       image: "Premium_Pass_December_2024.jpeg",
       start: "2024-12-01 06:00:00",
-      end: "2025-02-01 05:59:00",
+      end: "2025-01-01 05:59:00",
       color: "#b2adbd",
       urls: {
         //en: ["https://example.com"],
