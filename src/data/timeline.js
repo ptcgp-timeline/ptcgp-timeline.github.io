@@ -5,9 +5,9 @@ export const eventsData = [
       name: {
         en: "Genetic Apex (A1)",
         ja: "最強の遺伝子 (A1)",
-        zh: "遗传顶点 (A1)",
-        ko: "유전적 정점 (A1)",
-        fr: "Apogée Génétique (A1)",
+        zh: "最強的基因 (A1)",
+        ko: "최강의 유전자 (A1)",
+        fr: "Puissance Génétique (A1)",
         de: "Genetischer Höhepunkt (A1)",
         es: "Cima Genética (A1)",
         it: "Apice Genetico (A1)",
@@ -15,6 +15,10 @@ export const eventsData = [
       },
       description: {
         en: "Genetic Apex contains [Charlizard] - [Mewtwo] - [Pikachu]",
+        ja: "最強の遺伝子には [リザードン] - [ミュウツー] - [ピカチュウ] が含まれています",
+        zh: "最強的基因包含 [噴火龍] - [超夢] - [皮卡丘]",
+        ko: "최강의 유전자에는 [리자몽] - [뮤츠] - [피카츄] 포함",
+        fr: "Puissance Génétique contient [Dracaufeu] - [Mewtwo] - [Pikachu]",
       },
       urls: {
         en: [
@@ -37,9 +41,17 @@ export const eventsData = [
     {
       name: {
         en: "Mythical Island (A1A)",
+        zh: "幻遊島 (A1A)",
+        ja: "幻のいる島 (A1A)",
+        fr: "L'Île Fabuleuse (A1A)",
+        ko: "환상이 있는 섬 (A1A)",
       },
       description: {
         en: "Pokémon TCG Pocket's first mini set",
+        zh: "寶可夢集換式卡牌遊戲Pocket首個迷你擴充包",
+        ja: "ポケモンカードポケットの最初のミニセット",
+        fr: "Premier mini-set de Pokémon TCG Pocket",
+        ko: "포켓몬 카드 포켓의 첫 번째 미니 세트",
       },
       urls: {
         en: [
@@ -72,7 +84,12 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/blastoise-ex-drop-event/",
           "https://www.pokemon-zone.com/events/blastoise-drop-event/",
+          "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2408010_01",
         ],
+        fr: ["https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2408010_01"],
+        zh: ["https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2408010_01"],
+        ja: ["https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2408010_01"],
+        ko: ["https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_2408010_01"],
       },
       showOnHome: true,
     },
@@ -146,6 +163,7 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/wonder-pick-event-part-1-charmander-squirtle/",
           "https://www.pokemon-zone.com/events/charmander-squirtle-wonder-pick/",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02",
         ],
       },
       showOnHome: true,
@@ -177,6 +195,10 @@ export const eventsData = [
     {
       name: {
         en: "Lightning Pokémon Mass Outbreak Event (Zapdos ex)",
+        fr: "Apparition massive de Pokémon Électrique (Électhor ex)",
+        zh: "雷屬性寶可夢大量出現活動 (的卡牌ex)",
+        ja: "雷ポケモン大量発生イベント (サンダーex)",
+        ko: "번개포켓몬 대량발생 이벤트 (썬더ex)",
       },
       pos: "85% 25%",
       zoom: "400%",
@@ -188,6 +210,20 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/lightning-pokemon-mass-outbreak-event-zapdos-ex/",
           "https://www.pokemon-zone.com/events/lightning-type-pokemon-mass-outbreak/",
+          "https://www.serebii.net/tcgpocket/events/lightning-typemassoutbreakevent.shtml",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_01",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_01",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_01",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_01",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_01",
         ],
       },
       showOnHome: true,
@@ -206,6 +242,7 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/wonder-pick-event-part-2-charmander-squirtle/",
           "https://www.pokemon-zone.com/events/charmander-squirtle-wonder-pick/",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_03",
         ],
       },
       showOnHome: true,
@@ -214,6 +251,10 @@ export const eventsData = [
     {
       name: {
         en: "Psychic Pokémon Mass Outbreak Event (Mew ex)",
+        fr: "Apparition massive de Pokémon Psy (Mew ex)",
+        zh: "超屬性寶可夢大量出現活動 (夢幻ex)",
+        ja: "超ポケモン大量発生イベント (ミューex)",
+        ko: "초포켓몬 대량발생 이벤트 (뮤ex)",
       },
       pos: "20% 30%",
       zoom: "100%",
@@ -225,6 +266,18 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/psychic-pokemon-mass-outbreak-event-mew-ex/",
           "https://www.pokemon-zone.com/events/psychic-type-pokemon-mass-outbreak/",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_04",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_04",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_04",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_04",
         ],
       },
       showOnHome: true,
@@ -245,6 +298,7 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/genetic-apex-sp-emblem-event-1/",
           "https://www.pokemon-zone.com/events/genetic-apex-sp-emblem-event-1/",
+          "https://www.serebii.net/tcgpocket/events/geneticapexspemblemevent1.shtml",
         ],
         pt: ["https://ptcgphub.com/pt/evento-emblema-da-ilha-mitica/"],
       },
@@ -253,6 +307,10 @@ export const eventsData = [
     {
       name: {
         en: "Mythical Island Emblem Event",
+        fr: "Évènement insigne L'Île Fabuleuse",
+        zh: "幻遊島 勳章活動",
+        ja: "幻のいる島 エンブレムイベント",
+        ko: "환상이 있는 섬 엠블럼 이벤트",
       },
       pos: "50% 30%",
       zoom: "100%",
@@ -264,6 +322,19 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/mythical-island-emblem-event/",
           "https://www.pokemon-zone.com/events/mythical-island-emblem-event/",
+          "https://www.serebii.net/tcgpocket/events/mythicalislandemblemevent.shtml",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EMBLEM_01",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EMBLEM_01",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EMBLEM_01",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EMBLEM_01",
         ],
       },
       showOnHome: true,
@@ -271,6 +342,10 @@ export const eventsData = [
     {
       name: {
         en: "Mythical Island SP Emblem Event",
+        fr: "Évènement insigne L'Île Fabuleuse SP",
+        zh: "幻遊島 勳章活動SP",
+        ja: "幻のいる島 エンブレムイベントSP",
+        ko: "환상이 있는 섬 엠블럼 이벤트 SP",
       },
       pos: "50% 30%",
       zoom: "100%",
@@ -282,6 +357,19 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/mythical-island-sp-emblem-event/",
           "https://www.pokemon-zone.com/events/mythical-island-sp-emblem-event/",
+          "https://ptcgp.raenonx.cc/en/battle/pvp-emblem/4",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EMBLEM_02",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EMBLEM_02",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EMBLEM_02",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EMBLEM_02",
         ],
       },
       showOnHome: true,
@@ -306,6 +394,10 @@ export const eventsData = [
     {
       name: {
         en: "Holiday Event",
+        fr: "Évènement des fêtes",
+        zh: "佳節活動",
+        ja: "ホリデーイベント",
+        ko: "홀리데이 이벤트",
       },
       pos: "90% 10%",
       zoom: "600%",
@@ -317,6 +409,20 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/holiday-event/",
           "https://www.pokemon-zone.com/events/holiday-2024-event-missions/",
+          "https://www.serebii.net/tcgpocket/events/holidayeventmissions.shtml",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_HOLIDAY_01",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_HOLIDAY_01",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_HOLIDAY_01",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_HOLIDAY_01",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_HOLIDAY_01",
         ],
       },
       description: {
@@ -327,6 +433,10 @@ export const eventsData = [
     {
       name: {
         en: "New Year Event",
+        fr: "Évènement du Nouvel An",
+        zh: "新年活動",
+        ja: "ニューイヤーイベント",
+        ko: "뉴 이어 이벤트",
       },
       pos: "20% 30%",
       zoom: "150%",
@@ -338,6 +448,19 @@ export const eventsData = [
         en: [
           "https://ptcgpocket.gg/new-year-event/",
           "https://www.pokemon-zone.com/events/new-year-2025-event-missions/",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_NEWYEAR_01",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_NEWYEAR_01",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_NEWYEAR_01",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_NEWYEAR_01",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_NEWYEAR_01",
         ],
       },
       showOnHome: true,
@@ -406,7 +529,7 @@ export const eventsData = [
       end: "2025-01-30 05:59:00",
       color: "#f6ee5a",
       urls: {
-        //en: ["https://example.com"],
+        en: ["https://ptcgp.raenonx.cc/en/shop/poke-gold/SH_CG_PG_002"],
       },
       showOnHome: true,
     },
