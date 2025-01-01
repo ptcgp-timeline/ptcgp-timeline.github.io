@@ -3,19 +3,22 @@ import { FaTimes, FaGithub } from 'react-icons/fa';
 
 const AboutPopup = ({ onClose }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={onClose}>
+    <div 
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 backdrop-blur-sm" 
+      onClick={onClose}
+    >
       <div 
-        className="bg-background-secondary p-6 rounded-xl max-w-lg w-full mx-4" 
+        className="bg-background-secondary p-6 rounded-xl max-w-lg w-full mx-4 shadow-lg" 
         onClick={(e) => e.stopPropagation()} 
       >
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-white font-bold text-xl">About</h2>
+          <h2 className="text-white font-bold text-xl font-display">About</h2>
           <button 
             onClick={onClose} 
             className="text-gray-400 hover:text-white transition-colors"
             aria-label="Close"
           >
-            <FaTimes />
+            <FaTimes className="w-6 h-6" />
           </button>
         </div>
 

@@ -13,6 +13,8 @@ import deIcon from '@/assets/images/locals/de.svg';
 import esIcon from '@/assets/images/locals/es.svg';
 import itIcon from '@/assets/images/locals/it.svg';
 import ptIcon from '@/assets/images/locals/pt.svg';
+import { MdShare } from 'react-icons/md';
+import SharePopup from './SharePopup';
 
 const LANGUAGES = [
   { code: 'en', name: 'English', icon: enIcon },
@@ -32,6 +34,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileLanguageOpen, setIsMobileLanguageOpen] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [isShareOpen, setIsShareOpen] = useState(false);
 
   const selectedLang = LANGUAGES.find(lang => lang.code === language);
 
@@ -55,7 +58,6 @@ const Header = () => {
             </a>
           </div>
           <div className="flex items-center space-x-6">
-            {/* Custom Language Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -113,6 +115,15 @@ const Header = () => {
                     <FaExclamationCircle className="text-xl" />
                     <span>Issues</span>
                   </a>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => setIsShareOpen(true)}
+                    className="hover:text-white flex items-center space-x-2"
+                  >
+                    <MdShare className="text-xl" />
+                    <span>Share</span>
+                  </button>
                 </li>
                 <li>
                   <button 
@@ -223,6 +234,16 @@ const Header = () => {
                 </a>
                 <button 
                   onClick={() => {
+                    setIsShareOpen(true);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
+                >
+                  <MdShare className="text-white text-2xl" />
+                  <span className="text-white text-lg">Share</span>
+                </button>
+                <button 
+                  onClick={() => {
                     setShowAbout(true);
                     setIsMobileMenuOpen(false);
                   }}
@@ -239,6 +260,12 @@ const Header = () => {
 
       {/* About Popup */}
       {showAbout && <AboutPopup onClose={() => setShowAbout(false)} />}
+
+      <SharePopup
+        isOpen={isShareOpen}
+        onClose={() => setIsShareOpen(false)}
+        url={window.location.href}
+      />
     </>
   );
 };

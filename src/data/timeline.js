@@ -89,6 +89,7 @@ export const eventsData = [
           "https://ptcgpocket.gg/blastoise-ex-drop-event/",
           "https://www.pokemon-zone.com/events/blastoise-drop-event/",
           "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2408010_01",
+          "https://www.serebii.net/tcgpocket/events/blastoisedropevent.shtml",
         ],
         fr: ["https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2408010_01"],
         zh: ["https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2408010_01"],
@@ -501,6 +502,7 @@ export const eventsData = [
           "https://ptcgpocket.gg/new-year-event/",
           "https://www.pokemon-zone.com/events/new-year-2025-event-missions/",
           "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_NEWYEAR_01",
+          "https://www.serebii.net/tcgpocket/events/newyeareventmissions.shtml",
         ],
         fr: [
           "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_NEWYEAR_01",
