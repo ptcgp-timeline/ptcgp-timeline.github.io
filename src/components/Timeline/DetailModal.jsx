@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useLanguage } from '../../context/LanguageContext';
 import { getDomainAndFavicon } from '../../utils/urlUtils';
 import { useState, useEffect } from 'react';
+import Watermark from '../Watermark';
 
 dayjs.extend(duration);
 
@@ -31,7 +32,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
       <div 
-        className="bg-background-secondary p-6 rounded-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto"
+        className="relative bg-background-secondary p-6 rounded-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto"
         onClick={e => e.stopPropagation()}
       >
         {event.image && (
@@ -60,30 +61,32 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
 
         <div className="mb-4">
           {urls.length > 0 ? (
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap items-start gap-2">
               {urls.map((url, index) => {
                 const { domain, favicon } = getDomainAndFavicon(url);
                 const urlWithUTM = `${url}${url.includes('?') ? '&' : '?'}utm_source=ptcgp-timeline`;
                 return (
                   <a 
                     key={index}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-item hover:bg-button transition-colors group"
+                    className="inline-flex items-center shrink-0 gap-2 px-3 py-2 rounded-xl bg-button hover:bg-button/80 transition-all duration-200 group shadow-sm hover:shadow-md active:scale-95"
                     target="_blank" 
                     href={urlWithUTM}
                     rel="noopener noreferrer"
                     aria-label={`Visit ${domain} for more information about ${eventName}`}
                   >
-                    <img 
-                      src={favicon} 
-                      alt=""
-                      className="w-4 h-4 rounded-sm"
-                      aria-hidden="true"
-                    />
-                    <span className="text-gray-400 group-hover:text-white text-sm">
-                      {domain}
+                    <div className="w-5 h-5 rounded-md bg-background/50 p-0.5 flex items-center justify-center">
+                      <img 
+                        src={favicon} 
+                        alt=""
+                        className="w-full h-full object-contain rounded"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <span className="text-gray-300 group-hover:text-white transition-colors text-sm font-medium">
+                      {domain.split('.')[0]}
                     </span>
                     <svg 
-                      className="w-4 h-4 text-gray-400 group-hover:text-white" 
+                      className="w-3.5 h-3.5 text-gray-400 group-hover:text-white transition-colors" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
@@ -134,6 +137,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
             'Finished'
           )}
         </p>
+        <Watermark />
       </div>
     </div>
   );

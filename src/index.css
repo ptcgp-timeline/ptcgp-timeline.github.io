@@ -75,3 +75,8 @@ span.event-name {
     transform: translateX(-33.333%);
   }
 }
+
+.modal-watermark {
+  background: linear-gradient(to top, rgba(37, 41, 74, 0.95), rgba(37, 41, 74, 0) 100%);
+  backdrop-filter: blur(6px);
+}
