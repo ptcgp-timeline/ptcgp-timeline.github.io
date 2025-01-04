@@ -20,6 +20,7 @@
   "author": "as280093",
   "license": "MIT",
   "dependencies": {
+    "@giscus/react": "^3.1.0",
     "@tailwindcss/forms": "^0.5.9",
     "dayjs": "^1.11.13",
     "jsonp": "^0.2.1",

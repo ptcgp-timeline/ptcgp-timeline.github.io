@@ -5,6 +5,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { getDomainAndFavicon } from '../../utils/urlUtils';
 import { useState, useEffect } from 'react';
 import Watermark from '../Watermark';
+import Comments from '../Comments';
 
 dayjs.extend(duration);
 
@@ -12,6 +13,19 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
   const { language } = useLanguage();
   const [eventStart, setEventStart] = useState(convertTime(event.start));
   const [eventEnd, setEventEnd] = useState(convertTime(event.end));
+  const [showComments, setShowComments] = useState(false);
+
+  const uncertaintyMessage = {
+    en: "Date and time subject to change",
+    zh: "日期和時間可能會更改",
+    ja: "日時は変更される可能性があります",
+    ko: "날짜와 시간은 변경될 수 있습니다",
+    fr: "Date et heure sujettes à modification",
+    de: "Datum und Uhrzeit können sich ändern",
+    es: "Fecha y hora sujetas a cambios",
+    it: "Data e ora soggette a modifiche",
+    pt: "Data e hora sujeitas a alterações"
+  };
 
   useEffect(() => {
     setEventStart(convertTime(event.start));
@@ -29,6 +43,8 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
   const diffStart = eventStart.diff(now);
   const diffEnd = eventEnd.diff(now);
 
+  const showUncertainty = event.uncertain || event.description?.[language]?.includes('subject to change');
+
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
       <div 
@@ -36,28 +52,60 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
         onClick={e => e.stopPropagation()}
       >
         {event.image && (
-          <img 
-            src={`/images/events/${event.image}`} 
-            className="w-full rounded-lg mb-4" 
-            alt={eventName} 
-          />
+          <div className="relative mb-4">
+            <img 
+              src={`/images/events/${event.image}`} 
+              className="w-full rounded-lg" 
+              alt={eventName} 
+            />
+            <div className="bottom-0 right-0 p-0">
+              <Watermark />
+            </div>
+          </div>
         )}
         
         <h1 className="text-white font-display font-semibold text-xl">
           {eventName}
         </h1>
         
-        <p className="text-gray-400 font-body flex flex-col md:flex-row">
-          <span className="flex">
-            <span>{eventStart.format('ddd, D MMM YYYY HH:mm')}</span>
-            <span className="mx-2">-</span>
-          </span>
-          {!event.noEnd ? (
-            <span>{eventEnd.format('ddd, D MMM YYYY HH:mm')}</span>
-          ) : (
-            <span>No End Date*</span>
-          )}
-        </p>
+        <div className="space-y-2">
+          <p className="text-gray-400 font-body flex flex-col md:flex-row">
+            <span className="flex group relative">
+              <span>
+                {eventStart.format('ddd, D MMM YYYY HH:mm')}
+                {showUncertainty && (
+                  <sup className="text-primary text-base ml-0.5 font-bold">*</sup>
+                )}
+              </span>
+              {showUncertainty && (
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-3 py-1.5 text-sm bg-item border border-button text-gray-300 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
+                  {uncertaintyMessage[language] || uncertaintyMessage.en}
+                </span>
+              )}
+              <span className="mx-2">-</span>
+            </span>
+            <span className="group relative">
+              {!event.noEnd ? (
+                <span>
+                  {eventEnd.format('ddd, D MMM YYYY HH:mm')}
+                  {(showUncertainty || event.noEnd) && (
+                    <sup className="text-primary text-base ml-0.5 font-bold">*</sup>
+                  )}
+                </span>
+              ) : (
+                <span className="text-gray-400">
+                  No End Date
+                  <sup className="text-primary text-base ml-0.5 font-bold">*</sup>
+                </span>
+              )}
+              {(showUncertainty || event.noEnd) && (
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-3 py-1.5 text-sm bg-item border border-button text-gray-300 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
+                  {uncertaintyMessage[language] || uncertaintyMessage.en}
+                </span>
+              )}
+            </span>
+          </p>
+        </div>
 
         <div className="mb-4">
           {urls.length > 0 ? (
@@ -137,7 +185,33 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
             'Finished'
           )}
         </p>
-        <Watermark />
+
+        <div className="mt-4">
+          <button
+            onClick={() => setShowComments(!showComments)}
+            className="w-full flex items-center justify-between px-4 py-2 bg-button hover:bg-button/80 rounded-xl transition-colors"
+          >
+            <span className="text-gray-300 font-medium">Comments</span>
+            <svg 
+              className={`w-5 h-5 text-gray-400 transition-transform ${showComments ? 'rotate-180' : ''}`}
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          {showComments && (
+            <div className="mt-4">
+              <Comments 
+                identifier={`event-${event.start}-${event.end}`}
+                title={eventName}
+                url={window.location.href}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -160,6 +234,7 @@ DetailModal.propTypes = {
     ]).isRequired,
     startOnly: PropTypes.bool,
     noEnd: PropTypes.bool,
+    uncertain: PropTypes.bool,
   }).isRequired,
   onClose: PropTypes.func.isRequired,
   showLocalTime: PropTypes.bool.isRequired,

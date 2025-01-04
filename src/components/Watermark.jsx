@@ -1,7 +1,8 @@
 import logoSmall from '@/assets/images/logo-small.svg';
+import PropTypes from 'prop-types';
 
 const Watermark = () => (
-  <div className="absolute bottom-0 right-0 p-4 flex items-center gap-2">
+  <div className="absolute bottom-0 right-0 flex items-center">
     <a 
       href="https://ptcgp-timeline.github.io"
       target="_blank"
@@ -16,5 +17,9 @@ const Watermark = () => (
     </a>
   </div>
 );
+
+Watermark.propTypes = {
+  identifier: PropTypes.string.isRequired,
+};
 
 export default Watermark; 

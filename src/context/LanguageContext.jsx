@@ -1,13 +1,16 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
+import { STORAGE_KEYS, getFromLocalStorage } from '../utils/localStorage';
+import { getBrowserLanguage } from '../utils/browserUtils';
 import PropTypes from 'prop-types';
-import { getFromLocalStorage, STORAGE_KEYS } from '../utils/localStorage';
 
+// Export the context itself
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(
-    getFromLocalStorage(STORAGE_KEYS.LANGUAGE_PREFERENCE, 'en')
-  );
+  const [language, setLanguage] = useState(() => {
+    const savedLang = getFromLocalStorage(STORAGE_KEYS.LANGUAGE_PREFERENCE);
+    return savedLang || getBrowserLanguage();
+  });
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
@@ -19,5 +22,10 @@ export const LanguageProvider = ({ children }) => {
 LanguageProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export { useLanguage } from './useLanguage'; 
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (!context) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
+}; 

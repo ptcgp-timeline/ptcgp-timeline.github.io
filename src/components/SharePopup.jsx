@@ -5,7 +5,7 @@ import {
   FaLinkedin, FaPinterest, FaReddit, 
   FaTumblr, FaViber, FaLine, FaEnvelope 
 } from 'react-icons/fa6';
-import { MdContentCopy, MdCheck, MdClose, MdFacebook } from 'react-icons/md';
+import { MdContentCopy, MdCheck, MdClose} from 'react-icons/md';
 
 const SharePopup = ({ isOpen, onClose, url }) => {
   const [copied, setCopied] = useState(false);
@@ -28,12 +28,6 @@ const SharePopup = ({ isOpen, onClose, url }) => {
       label: 'Facebook',
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
       color: '#1877F2'
-    },
-    {
-      icon: <MdFacebook className="w-5 h-5" />,
-      label: 'Messenger',
-      href: `https://www.facebook.com/dialog/send?link=${encodeURIComponent(url)}&app_id=291494419107518&redirect_uri=${encodeURIComponent(url)}`,
-      color: '#0099FF'
     },
     {
       icon: <FaXTwitter className="w-5 h-5" />,
