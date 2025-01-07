@@ -10,7 +10,7 @@ env:
   VITE_PUBLIC_POSTHOG_HOST: ${{ secrets.VITE_PUBLIC_POSTHOG_HOST }} 
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 

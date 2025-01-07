@@ -24,10 +24,7 @@ export function PHProvider({ children }) {
         }
       )
 
-      // Manually capture initial pageview
       posthog.capture('$pageview')
-
-      // Add page leave listener
       const handlePageLeave = () => {
         posthog.capture('$pageleave')
       }
