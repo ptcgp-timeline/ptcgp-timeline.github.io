@@ -38,6 +38,4 @@ jobs:
         uses: bitovi/github-actions-react-to-github-pages@v1.2.4
         with:
           path: dist
-          build_command: npm run build
-          branch: gh-pages
-          repo_token: ${{ secrets.GITHUB_TOKEN }} 
+          build_command: npm run build 
