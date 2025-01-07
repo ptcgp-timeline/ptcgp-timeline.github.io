@@ -1,30 +1,43 @@
-name: Deploy to GitHub Pages
+name: Deploy React to GitHub Pages
 
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 env:
   VITE_PUBLIC_POSTHOG_KEY: ${{ secrets.VITE_PUBLIC_POSTHOG_KEY }}
   VITE_PUBLIC_POSTHOG_HOST: ${{ secrets.VITE_PUBLIC_POSTHOG_HOST }} 
 
+permissions:
+  contents: write
+
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
-      
+          node-version: 20
+          cache: 'npm'
+
       - name: Install Dependencies
-        run: npm install
-        
-      - name: Build
+        run: npm ci
+
+      - name: Run Linters
+        run: npm run lint
+
+      - name: Build Project
         run: npm run build
-        
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+
+      - name: Deploy React to GitHub Pages
+        uses: bitovi/github-actions-react-to-github-pages@v1.2.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist 
+          path: dist
+          build_command: npm run build
+          branch: gh-pages
+          repo_token: ${{ secrets.GITHUB_TOKEN }} 
