@@ -10,11 +10,16 @@ env:
   VITE_PUBLIC_POSTHOG_HOST: ${{ secrets.VITE_PUBLIC_POSTHOG_HOST }} 
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,4 +43,6 @@ jobs:
         uses: bitovi/github-actions-react-to-github-pages@v1.2.4
         with:
           path: dist
-          build_command: npm run build 
+          build_command: npm run build
+          branch: gh-pages
+          repo_token: ${{ secrets.GITHUB_TOKEN }} 
