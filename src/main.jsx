@@ -6,6 +6,7 @@ import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import timezone from 'dayjs/plugin/timezone';
 import utc from 'dayjs/plugin/utc';
+import { PHProvider } from './providers/PostHogProvider'
 
 dayjs.extend(duration);
 dayjs.extend(timezone);
@@ -19,6 +20,8 @@ if (!rootElement) {
 const root = createRoot(rootElement);
 root.render(
   <StrictMode>
-    <App />
+    <PHProvider>
+      <App />
+    </PHProvider>
   </StrictMode>
 );

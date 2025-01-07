@@ -170,8 +170,8 @@ export const eventsData = [
       pos: "50% 30%",
       zoom: "200%",
       image: "wonder_pick_event_part_1_2_charmander_squirtle .webp",
-      start: "2025-01-08 06:00:00",
-      end: "2025-01-22 05:59:00",
+      start: "2025-01-07 06:00:00",
+      end: "2025-01-21 05:59:00",
       color: "#61c3df",
       urls: {
         en: [
@@ -230,8 +230,8 @@ export const eventsData = [
         ja: "雷ポケモン大量発生イベント (サンダーex)",
         ko: "번개포켓몬 대량발생 이벤트 (썬더ex)",
       },
-      pos: "85% 25%",
-      zoom: "400%",
+      pos: "85% 17%",
+      zoom: "300%",
       image: "lightning_pokemon_mass_outbreak_event_zapdos_ex.jpg",
       start: "2024-12-26 06:00:00",
       end: "2025-01-01 05:59:00",
