@@ -100,6 +100,18 @@
         background: #25294a;
       }
     </style>
+
+    <script>
+      // Check for redirect parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const redirect = urlParams.get('redirect');
+      
+      if (redirect) {
+        // Remove the redirect parameter and replace with the path
+        const newUrl = window.location.origin + '/' + redirect;
+        window.history.replaceState({}, '', newUrl);
+      }
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
