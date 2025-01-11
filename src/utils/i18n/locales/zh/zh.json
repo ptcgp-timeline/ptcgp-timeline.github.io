@@ -1,52 +1,95 @@
 {
-    "common": {
-      "contribute": "貢獻",
-      "issues": "問題回報",
-      "share": "分享",
-      "about": "關於",
-      "menu": "選單",
-      "language": "語言",
-      "close": "關閉"
+  "common": {
+    "contribute": "貢獻",
+    "issues": "問題回報",
+    "share": "分享",
+    "about": "關於",
+    "discord": "Discord",
+    "menu": "選單",
+    "language": "語言",
+    "close": "關閉",
+    "footer": {
+      "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
+      "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
     },
-    "timeline": {
-      "title": "時間表",
-      "loading": "載入中...",
-      "timezone": {
-        "showLocal": "顯示本地時間 ({{timezone}})"
-      },
-      "reset": {
-        "toDaily": "距離每日重置",
-        "nextReset": "{{date}}",
-        "nextResetDay": "{{date}}"
-      },
-      "dateTime": {
-        "months": {
-          "1": "1月",
-          "2": "2月",
-          "3": "3月",
-          "4": "4月",
-          "5": "5月",
-          "6": "6月",
-          "7": "7月",
-          "8": "8月",
-          "9": "9月",
-          "10": "10月",
-          "11": "11月",
-          "12": "12月"
-        },
-        "weekdays": {
-          "0": "星期日",
-          "1": "星期一",
-          "2": "星期二",
-          "3": "星期三",
-          "4": "星期四",
-          "5": "星期五",
-          "6": "星期六"
-        },
-        "format": {
-          "dateTime": "YYYY年M月D日 HH:mm",
-          "weekday": "dddd"
-        }
-      }
+    "externalLinks": {
+      "title": "External Links",
+      "none": "No external links available"
     }
-  } 
+  },
+  "share": {
+    "title": "Share",
+    "viaLink": "Share via link",
+    "viaSocial": "Share via social media",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "socialPlatforms": {
+      "facebook": "Facebook",
+      "twitter": "X",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "reddit": "Reddit",
+      "pinterest": "Pinterest",
+      "tumblr": "Tumblr",
+      "viber": "Viber",
+      "line": "Line",
+      "email": "Email"
+    },
+    "footer": "Share this timeline with your friends!"
+  },
+  "about": {
+    "title": "About",
+    "sections": {
+      "what": {
+        "title": "What's this?",
+        "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
+      },
+      "features": {
+        "title": "Cool Features",
+        "list": [
+          "See events in your local time",
+          "Switch between different languages",
+          "Track ongoing and upcoming events"
+        ]
+      },
+      "contribute": {
+        "title": "Want to Help?",
+        "github": "Check us out on GitHub"
+      }
+    },
+    "footer": "Found a bug or have a suggestion? Feel free to open an issue on GitHub!"
+  },
+  "header": {
+    "nav": {
+      "contribute": "Contribute",
+      "issues": "Issues",
+      "share": "Share",
+      "about": "About"
+    }
+  },
+  "timeline": {
+    "title": "時間表",
+    "loading": "載入中...",
+    "timezone": {
+      "showLocal": "顯示本地時間 ({{timezone}})"
+    },
+    "reset": {
+      "toDaily": "距離每日重置"
+    }
+  },
+  "status": {
+    "live": "Live",
+    "finished": "Finished",
+    "startingIn": "Starting in",
+    "endingIn": "Ending in",
+    "noEndDate": "No End Date"
+  },
+  "dateTime": {
+    "uncertaintyMessage": "Date and time subject to change",
+    "formats": {
+      "monthDay": "ddd, D MMMM YYYY HH:mm",
+      "nextReset": "dddd, D MMMM YYYY HH:mm"
+    }
+  }
+}
