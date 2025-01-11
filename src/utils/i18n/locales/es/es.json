@@ -1,22 +1,95 @@
 {
-    "common": {
+  "common": {
+    "contribute": "Contribute",
+    "issues": "Issues",
+    "share": "Share",
+    "about": "About",
+    "discord": "Discord",
+    "menu": "Menu",
+    "language": "Language",
+    "close": "Close",
+    "footer": {
+      "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
+      "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
+    },
+    "externalLinks": {
+      "title": "External Links",
+      "none": "No external links available"
+    }
+  },
+  "share": {
+    "title": "Share",
+    "viaLink": "Share via link",
+    "viaSocial": "Share via social media",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "socialPlatforms": {
+      "facebook": "Facebook",
+      "twitter": "X",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "reddit": "Reddit",
+      "pinterest": "Pinterest",
+      "tumblr": "Tumblr",
+      "viber": "Viber",
+      "line": "Line",
+      "email": "Email"
+    },
+    "footer": "Share this timeline with your friends!"
+  },
+  "about": {
+    "title": "About",
+    "sections": {
+      "what": {
+        "title": "What's this?",
+        "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
+      },
+      "features": {
+        "title": "Cool Features",
+        "list": [
+          "See events in your local time",
+          "Switch between different languages",
+          "Track ongoing and upcoming events"
+        ]
+      },
+      "contribute": {
+        "title": "Want to Help?",
+        "github": "Check us out on GitHub"
+      }
+    },
+    "footer": "Found a bug or have a suggestion? Feel free to open an issue on GitHub!"
+  },
+  "header": {
+    "nav": {
       "contribute": "Contribute",
       "issues": "Issues",
       "share": "Share",
-      "about": "About",
-      "footer": {
-        "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
-        "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
-      }
-    },
-    "status": {
-      "live": "Live",
-      "finished": "Finished",
-      "startingIn": "Starting in",
-      "endingIn": "Ending in",
-      "noEndDate": "No End Date"
-    },
-    "dateTime": {
-      "uncertaintyMessage": "Date and time subject to change"
+      "about": "About"
     }
-  } 
+  },
+  "timeline": {
+    "title": "Timeline",
+    "loading": "Loading...",
+    "timezone": {
+      "showLocal": "Show as local time ({{timezone}})"
+    },
+    "reset": {
+      "toDaily": "to Daily Reset"
+    }
+  },
+  "status": {
+    "live": "Live",
+    "finished": "Finished",
+    "startingIn": "Starting in",
+    "endingIn": "Ending in",
+    "noEndDate": "No End Date"
+  },
+  "dateTime": {
+    "uncertaintyMessage": "Date and time subject to change",
+    "formats": {
+      "monthDay": "ddd, D MMMM YYYY HH:mm",
+      "nextReset": "dddd, D MMMM YYYY HH:mm"
+    }
+  }
+}
