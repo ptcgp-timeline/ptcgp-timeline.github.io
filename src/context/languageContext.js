@@ -1,3 +1,6 @@
 import { createContext } from "react";
+import LanguageProvider from "./LanguageProvider";
 
-export const LanguageContext = createContext();
+const LanguageContext = createContext();
+
+export { LanguageContext, LanguageProvider };
