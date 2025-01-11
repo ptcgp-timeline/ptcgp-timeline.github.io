@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import PropTypes from 'prop-types';
-import { useLanguage } from '../../context/LanguageContext';
+import { useLanguage } from '../../context/useLanguage';
 import { getDomainAndFavicon } from '../../utils/urlUtils';
 import { useState, useEffect } from 'react';
 import Watermark from '../Watermark';

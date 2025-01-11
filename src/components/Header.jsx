@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { FaChevronDown, FaChevronUp, FaInfoCircle, FaGithub, FaTimes, FaExclamationCircle, FaDiscord } from 'react-icons/fa';
 import AboutPopup from './AboutPopup';
 import { saveToLocalStorage, STORAGE_KEYS } from '../utils/localStorage';

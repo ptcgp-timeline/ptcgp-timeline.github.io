@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { gameConfig } from '../data/timeline';
 import { FaDiscord, FaGithub } from 'react-icons/fa';
 

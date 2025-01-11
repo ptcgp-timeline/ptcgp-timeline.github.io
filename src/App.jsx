@@ -2,7 +2,7 @@ import Timeline from './components/Timeline';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { eventsData } from './data/timeline';
-import { LanguageProvider } from './context/LanguageContext';
+import { LanguageProvider } from './context';
 import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
