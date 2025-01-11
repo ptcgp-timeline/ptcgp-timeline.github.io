@@ -15,11 +15,8 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,10 +36,18 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Deploy React to GitHub Pages
-        uses: bitovi/github-actions-react-to-github-pages@v1.2.4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-          build_command: npm run build
-          branch: gh-pages
-          repo_token: ${{ secrets.GITHUB_TOKEN }} 
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 
