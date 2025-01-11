@@ -1,0 +1,52 @@
+{
+    "common": {
+      "contribute": "기여하기",
+      "issues": "이슈",
+      "share": "공유",
+      "about": "소개",
+      "menu": "메뉴",
+      "language": "언어",
+      "close": "닫기"
+    },
+    "timeline": {
+      "title": "타임라인",
+      "loading": "로딩 중...",
+      "timezone": {
+        "showLocal": "현지 시간으로 표시 ({{timezone}})"
+      },
+      "reset": {
+        "toDaily": "일일 리셋까지",
+        "nextReset": "{{date}}",
+        "nextResetDay": "{{date}}"
+      },
+      "dateTime": {
+        "months": {
+          "1": "1월",
+          "2": "2월",
+          "3": "3월",
+          "4": "4월",
+          "5": "5월",
+          "6": "6월",
+          "7": "7월",
+          "8": "8월",
+          "9": "9월",
+          "10": "10월",
+          "11": "11월",
+          "12": "12월"
+        },
+        "weekdays": {
+          "0": "일요일",
+          "1": "월요일",
+          "2": "화요일",
+          "3": "수요일",
+          "4": "목요일",
+          "5": "금요일",
+          "6": "토요일"
+        },
+        "format": {
+          "dateTime": "YYYY년 M월 D일 HH:mm",
+          "weekday": "dddd"
+        }
+      }
+    }
+  } 

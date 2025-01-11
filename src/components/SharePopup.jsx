@@ -6,8 +6,10 @@ import {
   FaTumblr, FaViber, FaLine, FaEnvelope 
 } from 'react-icons/fa6';
 import { MdContentCopy, MdCheck, MdClose} from 'react-icons/md';
+import { useTranslation } from 'react-i18next';
 
 const SharePopup = ({ isOpen, onClose, url }) => {
+  const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
 
   if (!isOpen) return null;
@@ -25,7 +27,7 @@ const SharePopup = ({ isOpen, onClose, url }) => {
   const shareButtons = [
     {
       icon: <FaFacebook className="w-5 h-5" />,
-      label: 'Facebook',
+      label: t('share.socialPlatforms.facebook'),
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
       color: '#1877F2'
     },
@@ -101,11 +103,11 @@ const SharePopup = ({ isOpen, onClose, url }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-white font-bold text-xl font-display">Share</h2>
+          <h2 className="text-white font-bold text-xl font-display">{t('share.title')}</h2>
           <button 
             onClick={onClose} 
             className="text-gray-400 hover:text-white transition-colors"
-            aria-label="Close"
+            aria-label={t('common.close')}
           >
             <MdClose className="w-6 h-6" />
           </button>
@@ -113,7 +115,7 @@ const SharePopup = ({ isOpen, onClose, url }) => {
 
         <div className="space-y-4">
           <section>
-            <h3 className="text-primary font-semibold mb-2">Share via link</h3>
+            <h3 className="text-primary font-semibold mb-2">{t('share.viaLink')}</h3>
             <div className="flex items-center gap-2 p-3 bg-item rounded-xl border border-gray-700">
               <input
                 type="text"
@@ -139,7 +141,7 @@ const SharePopup = ({ isOpen, onClose, url }) => {
           </section>
 
           <section>
-            <h3 className="text-primary font-semibold mb-3">Share via social media</h3>
+            <h3 className="text-primary font-semibold mb-3">{t('share.viaSocial')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {shareButtons.map((button) => (
                 <a
@@ -164,9 +166,7 @@ const SharePopup = ({ isOpen, onClose, url }) => {
           </section>
 
           <div className="text-gray-400 text-sm mt-6 pt-4 border-t border-gray-700">
-            <p>
-              Share this timeline with your friends!
-            </p>
+            <p>{t('share.footer')}</p>
           </div>
         </div>
       </div>

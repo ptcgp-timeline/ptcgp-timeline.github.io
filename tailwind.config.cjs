@@ -66,6 +66,15 @@ module.exports = {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
+      backgroundImage: {
+        "month-gradient":
+          "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(37, 41, 74, 100) 10%, rgb(37, 41, 74, 100) 90%, rgba(0, 0, 0, 0) 100%)",
+        "modal-watermark":
+          "linear-gradient(to top, rgba(37, 41, 74, 0.95), rgba(37, 41, 74, 0) 100%)",
+      },
+      backdropBlur: {
+        modal: "6px",
+      },
     },
   },
   plugins: [],

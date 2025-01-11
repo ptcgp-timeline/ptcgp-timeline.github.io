@@ -1,0 +1,49 @@
+{
+    "common": {
+      "language": "言語",
+      "contribute": "貢献",
+      "issues": "問題を報告",
+      "share": "共有",
+      "about": "概要",
+      "menu": "メニュー",
+      "close": "閉じる"
+    },
+    "status": {
+      "live": "Live",
+      "finished": "Finished",
+      "startingIn": "Starting in",
+      "endingIn": "Ending in",
+      "noEndDate": "No End Date"
+    },
+    "dateTime": {
+      "uncertaintyMessage": "Date and time subject to change"
+    },
+    "share": {
+      "title": "共有",
+      "viaLink": "リンクで共有",
+      "viaSocial": "SNSで共有",
+      "footer": "共有ありがとうございます！"
+    },
+    "about": {
+      "title": "概要",
+      "sections": {
+        "what": {
+          "title": "このサイトについて",
+          "content": "ポケモンTCGポケットのイベントタイムラインビューアーです。"
+        },
+        "features": {
+          "title": "機能",
+          "list": [
+            "現地時間での表示",
+            "多言語対応",
+            "進行中・今後のイベントの追跡"
+          ]
+        },
+        "contribute": {
+          "title": "貢献したい方へ",
+          "github": "GitHubをチェック"
+        }
+      },
+      "footer": "バグや提案がありましたら、GitHubでissueを作成してください！"
+    }
+  } 

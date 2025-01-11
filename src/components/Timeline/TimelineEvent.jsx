@@ -3,6 +3,7 @@ import duration from 'dayjs/plugin/duration';
 import PropTypes from 'prop-types';
 import { useLanguage } from '../../context/LanguageContext';
 import { useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 dayjs.extend(duration);
 
@@ -20,6 +21,7 @@ const TimelineEvent = ({
   convertTime
 }) => {
   const { language } = useLanguage();
+  const { i18n } = useTranslation();
   const eventName = event.name[language] || event.name['en'];
 
   const eventStart = convertTime(event.start);
@@ -49,7 +51,7 @@ const TimelineEvent = ({
     if (element) {
       setIsOverflowing(element.scrollWidth > element.clientWidth);
     }
-  }, [eventName]);
+  }, [eventName, i18n.language]);
 
   return (
     <div

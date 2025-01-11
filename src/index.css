@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Timeline/TimelineEvent.jsx */
 div.event-item {
   @apply absolute right-0 top-0;
@@ -27,44 +26,25 @@ span.event-name {
 }
 
 /* Timeline/index.jsx */
-
 ::-webkit-scrollbar {
-  height: 8px;
+  @apply h-2;
 }
+
 ::-webkit-scrollbar-track {
-  @apply bg-transparent;
-  margin: 0 20px;
+  @apply bg-transparent mx-5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.35);
-  @apply rounded-xl;
+  @apply bg-black/35 rounded-xl;
 }
 
 .month::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  display: inline-block;
-  padding: 0 50px;
-  position: absolute;
-  left: calc(50% - 50px);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgb(37, 41, 74, 100) 10%,
-    rgb(37, 41, 74, 100) 90%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  @apply content-[''] w-full h-full -z-10 inline-block absolute left-[calc(50%-50px)] px-[50px] bg-month-gradient;
 }
 
 .scroll-overflow {
-  display: inline-flex;
-  white-space: nowrap;
+  @apply inline-flex whitespace-nowrap w-max pr-[var(--gap,0.5rem)];
   animation: scroll-animation var(--scroll-duration) infinite linear;
-  padding-right: var(--gap, 0.5rem);
-  width: max-content;
 }
 
 @keyframes scroll-animation {
@@ -77,6 +57,5 @@ span.event-name {
 }
 
 .modal-watermark {
-  background: linear-gradient(to top, rgba(37, 41, 74, 0.95), rgba(37, 41, 74, 0) 100%);
-  backdrop-filter: blur(6px);
+  @apply bg-modal-watermark backdrop-blur-modal;
 }

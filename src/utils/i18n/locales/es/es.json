@@ -1,0 +1,22 @@
+{
+    "common": {
+      "contribute": "Contribute",
+      "issues": "Issues",
+      "share": "Share",
+      "about": "About",
+      "footer": {
+        "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
+        "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
+      }
+    },
+    "status": {
+      "live": "Live",
+      "finished": "Finished",
+      "startingIn": "Starting in",
+      "endingIn": "Ending in",
+      "noEndDate": "No End Date"
+    },
+    "dateTime": {
+      "uncertaintyMessage": "Date and time subject to change"
+    }
+  } 

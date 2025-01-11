@@ -8,6 +8,7 @@ import TimelineEvent from './TimelineEvent';
 import DetailModal from './DetailModal';
 import { saveToLocalStorage, getFromLocalStorage, STORAGE_KEYS } from '../../utils/localStorage';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 
 dayjs.extend(duration);
@@ -26,6 +27,7 @@ const getNextReset = () => {
 
 
 function Timeline({ events = [] }) {
+  const { t, i18n } = useTranslation();
   const timelineRef = useRef(null);
   const [dayWidth, setDayWidth] = useState(40);
   const [loading, setLoading] = useState(true);
@@ -264,6 +266,18 @@ function Timeline({ events = [] }) {
     return () => clearInterval(interval);
   }, [nextReset]);
 
+  useEffect(() => {
+    processEvents();
+  }, [processEvents, i18n.language]);
+
+  useEffect(() => {
+    setNextReset(getNextReset());
+  }, [i18n.language]);
+
+  useEffect(() => {
+    dayjs.locale(i18n.language);
+  }, [i18n.language]);
+
   return (
     <div className="flex-1 flex flex-col pt-16">
       <h1 className="sr-only">
@@ -272,7 +286,6 @@ function Timeline({ events = [] }) {
 
       <div className="pt-8 sm:pt-16 lg:pt-8">
         <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-2 px-4 md:px-8">
-          
           <div className="text-white select-none">
             <input
               type="checkbox"
@@ -281,14 +294,14 @@ function Timeline({ events = [] }) {
               checked={showLocalTime}
               onChange={(e) => handleTimezoneChange(e.target.checked)}
             />
-            <span className="text-sm sm:text-base">Show as local time ({userTimezone})</span>
+            <span className="text-sm sm:text-base">
+              {t('timeline.timezone.showLocal', { timezone: userTimezone })}
+            </span>
           </div>
-          <div 
-            className="relative group select-none pr-8 sm:pr-12"
-          >
+          <div className="relative group select-none pr-8 sm:pr-12">
             <div className="bg-item border border-button rounded-full px-4 py-1 text-white flex items-center gap-2 text-sm sm:text-base">
               <span className="font-mono">{timeToReset}</span>
-              <span>to Daily Reset</span>
+              <span>{t('timeline.reset.toDaily')}</span>
             </div>
             <div className="absolute z-50 hidden group-hover:block w-max">
               <div className="relative bg-background-secondary border border-button rounded-full px-3 py-1 text-white text-sm
@@ -296,7 +309,7 @@ function Timeline({ events = [] }) {
                 <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-background-secondary border-l border-t border-button rotate-45">
                 </div>
                 <span className="relative z-10">
-                  {nextReset.format('dddd, D MMMM YYYY HH:mm')}
+                  {nextReset.format(t('dateTime.formats.nextReset'))}
                 </span>
               </div>
             </div>
@@ -305,7 +318,7 @@ function Timeline({ events = [] }) {
       </div>
 
       {loading ? (
-        <div className="text-white px-4 md:px-8">Loading...</div>
+        <div className="text-white px-4 md:px-8">{t('timeline.loading')}</div>
       ) : (
         <div 
           ref={timelineRef}

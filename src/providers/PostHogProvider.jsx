@@ -12,8 +12,9 @@ export function PHProvider({ children }) {
           api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
           loaded: (posthog) => {
             if (import.meta.env.DEV) posthog.debug()
+            posthog.capture('$pageview')
           },
-          capture_pageview: true,
+          capture_pageview: false,
           capture_pageleave: true,
           autocapture: true,
           persistence: 'localStorage',
@@ -24,14 +25,21 @@ export function PHProvider({ children }) {
         }
       )
 
-      posthog.capture('$pageview')
       const handlePageLeave = () => {
         posthog.capture('$pageleave')
       }
+
       window.addEventListener('beforeunload', handlePageLeave)
+
+      const handleRouteChange = () => {
+        posthog.capture('$pageview')
+      }
+
+      window.addEventListener('popstate', handleRouteChange)
 
       return () => {
         window.removeEventListener('beforeunload', handlePageLeave)
+        window.removeEventListener('popstate', handleRouteChange)
       }
     }
   }, [])

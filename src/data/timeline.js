@@ -1,3 +1,35 @@
+// Game Configuration
+export const gameConfig = {
+  name: {
+    en: "Pokemon TCG Pocket",
+    zh: "寶可夢集換式卡牌遊戲Pocket",
+    ja: "ポケモンカードポケット",
+    fr: "Pokémon TCG Pocket",
+    ko: "포켓몬 카드 포켓",
+    de: "Pokémon Sammelkartenspiel Pocket",
+    it: "Pokémon TCG Pocket",
+    es: "Pokémon TCG Pocket",
+    pt: "Pokémon TCG Pocket",
+  },
+  company: "Pokémon",
+  copyrightHolders:
+    "The Pokémon Company, Nintendo, Game Freak, or Creatures Inc.",
+  officialWebsiteText: {
+    en: "Official Pokemon TCG Pocket Website",
+    zh: "官方寶可夢集換式卡牌遊戲Pocket網站",
+    ja: "公式ポケモンカードポケットウェブサイト",
+    fr: "Site Officiel Pokémon TCG Pocket",
+    ko: "공식 포켓몬 카드 포켓 웹사이트",
+    de: "Offizielle Pokémon Sammelkartenspiel Pocket Webseite",
+    es: "Sitio Web Oficial de Pokémon TCG Pocket",
+    it: "Sito Ufficiale Pokémon TCG Pocket",
+    pt: "Site Oficial Pokémon TCG Pocket",
+  },
+  officialDomains: ["pokemon.com", "pokemonkorea.co.kr"],
+  serverReset: "6AMUTC",
+};
+
+// Events Data
 export const eventsData = [
   [
     {
@@ -26,6 +58,9 @@ export const eventsData = [
           "https://www.serebii.net/tcgpocket/geneticapex/",
           "https://www.pokemon-zone.com/sets/a1/",
         ],
+        de: [
+          "https://www.pokemon.com/de/pokemon-news/kaempfe-sammle-und-tausche-in-pokemon-sammelkartenspiel-pocket",
+        ],
       },
       pos: "0% 35%",
       zoom: "110%",
@@ -47,7 +82,7 @@ export const eventsData = [
         ko: "환상이 있는 섬 (A1A)",
       },
       description: {
-        en: "Pokémon TCG Pocket's first mini set",
+        en: "5 ◊ cards (normal cards). 3 ◊ ◊ cards (normal cards). 7 ◊ ◊ ◊ cards (normal cards). 2 ◊ ◊ ◊ ◊ cards (normal cards). 4 ☆ cards (secret cards). 1 ☆☆ card (secret cards). 6 ☆☆☆ cards (secret cards). 8 ♕ cards (secret cards). Total Cards: 36. 17 normal cards and 19 secret cards in total.",
         zh: "寶可夢集換式卡牌遊戲Pocket首個迷你擴充包",
         ja: "ポケモンカードポケットの最初のミニセット",
         fr: "Premier mini-set de Pokémon TCG Pocket",
@@ -55,9 +90,22 @@ export const eventsData = [
       },
       urls: {
         en: [
+          "https://www.pokemon.com/us/pokemon-news/pokemon-tcg-pocket-mythical-island",
           "https://ptcgpocket.gg/mythical-island-release/",
           "https://www.pokemon-zone.com/events/mythical-island-release/",
           "https://www.serebii.net/tcgpocket/mythicalisland/",
+        ],
+        de: [
+          "https://www.pokemon.com/de/pokemon-news/pokemon-sammelkartenspiel-pocket-mysterioese-insel",
+        ],
+        fr: [
+          "https://www.pokemon.com/fr/actus-pokemon/jcc-pokemon-pocket-lile-fabuleuse",
+        ],
+        it: [
+          "https://www.pokemon.com/it/novita-pokemon/gcc-pokemon-pocket-lisola-misteriosa",
+        ],
+        es: [
+          "https://www.pokemon.com/es/noticias-pokemon/jcc-pokemon-pocket-la-isla-singular",
         ],
       },
       pos: "-15% 30%",
@@ -67,6 +115,7 @@ export const eventsData = [
       end: "2025-04-30 05:59:00",
       color: "#8ecb56",
       showOnHome: true,
+      noEnd: true,
     },
   ],
   [
@@ -86,12 +135,25 @@ export const eventsData = [
       color: "#4173d5",
       urls: {
         en: [
+          "https://www.pokemon.com/us/pokemon-news/pokemon-trading-card-game-pocket-blastoise-drop-event",
           "https://ptcgpocket.gg/blastoise-ex-drop-event/",
           "https://www.pokemon-zone.com/events/blastoise-drop-event/",
           "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2408010_01",
           "https://www.serebii.net/tcgpocket/events/blastoisedropevent.shtml",
         ],
-        fr: ["https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2408010_01"],
+        de: [
+          "https://www.pokemon.com/de/pokemon-news/drop-event-mit-turtok-in-pokemon-sammelkartenspiel-pocket",
+        ],
+        fr: [
+          "https://www.pokemon.com/fr/actus-pokemon/evenement-butin-tortank-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
+          "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2408010_01",
+        ],
+        es: [
+          "https://www.pokemon.com/es/noticias-pokemon/evento-botin-blastoise-del-juego-de-cartas-coleccionables-pokemon-pocket",
+        ],
+        it: [
+          "https://www.pokemon.com/it/novita-pokemon/gioco-di-carte-collezionabili-pokemon-pocket-evento-bonus-blastoise",
+        ],
         zh: ["https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2408010_01"],
         ja: ["https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2408010_01"],
         ko: ["https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_2408010_01"],
@@ -175,12 +237,17 @@ export const eventsData = [
       color: "#61c3df",
       urls: {
         en: [
+          "https://www.pokemon.com/us/pokemon-news/charmander-and-squirtle-star-in-this-pokemon-tcg-pocket-wonder-pick-event",
           "https://ptcgpocket.gg/wonder-pick-event-part-1-charmander-squirtle/",
           "https://www.pokemon-zone.com/events/charmander-squirtle-wonder-pick/",
           "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02",
         ],
         fr: [
+          "https://www.pokemon.com/fr/actus-pokemon/salameche-et-carapuce-sont-a-laffiche-dun-evenement-pioche-miracle-dans-le-jcc-pokemon-pocket",
           "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_02",
+        ],
+        de: [
+          "https://www.pokemon.com/de/pokemon-news/glumanda-und-schiggy-erscheinen-in-diesem-wunderwahl-event-in-pokemon-sammelkartenspiel-pocket",
         ],
         zh: [
           "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_02",
@@ -190,6 +257,12 @@ export const eventsData = [
         ],
         ko: [
           "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_02",
+        ],
+        es: [
+          "https://www.pokemon.com/es/noticias-pokemon/charmander-y-squirtle-protagonizan-un-evento-eleccion-magica-en-jcc-pokemon-pocket",
+        ],
+        it: [
+          "https://www.pokemon.com/it/novita-pokemon/charmander-e-squirtle-sono-i-protagonisti-di-un-nuovo-evento-pesca-misteriosa-nel-gcc-pokemon-pocket",
         ],
       },
       showOnHome: true,
@@ -534,8 +607,8 @@ export const eventsData = [
         it: "Pass Premium - Dicembre 2024",
         pt: "Passe Premium - Dezembro 2024",
       },
-      pos: "0% 25%",
-      zoom: "110%",
+      pos: "0% 40%",
+      zoom: "100%",
       image: "Premium_Pass_December_2024.jpeg",
       start: "2024-12-01 06:00:00",
       end: "2025-01-01 05:59:00",

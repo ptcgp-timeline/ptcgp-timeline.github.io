@@ -1,0 +1,13 @@
+# Language-specific routes
+/zh/*  /index.html  200
+/ja/*  /index.html  200
+/ko/*  /index.html  200
+/fr/*  /index.html  200
+/de/*  /index.html  200
+/es/*  /index.html  200
+/it/*  /index.html  200
+/pt/*  /index.html  200
+/en/*  /index.html  200
+
+# Fallback for all other routes
+/*     /index.html  200 

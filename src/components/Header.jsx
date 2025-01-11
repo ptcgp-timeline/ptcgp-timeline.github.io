@@ -1,47 +1,82 @@
-import { useState } from 'react';
-import { useLanguage } from '../context/useLanguage';
-import { FaChevronDown, FaChevronUp, FaInfoCircle, FaGithub, FaTimes, FaExclamationCircle } from 'react-icons/fa';
+import { useState, useRef, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { FaChevronDown, FaChevronUp, FaInfoCircle, FaGithub, FaTimes, FaExclamationCircle, FaDiscord } from 'react-icons/fa';
 import AboutPopup from './AboutPopup';
 import { saveToLocalStorage, STORAGE_KEYS } from '../utils/localStorage';
+import { gameConfig } from '../data/timeline';
 import logoLong from '@/assets/images/logo-long.svg'
-import enIcon from '@/assets/images/locals/en.svg';
-import zhIcon from '@/assets/images/locals/zh.svg';
-import jaIcon from '@/assets/images/locals/ja.svg';
-import koIcon from '@/assets/images/locals/ko.svg';
-import frIcon from '@/assets/images/locals/fr.svg';
-import deIcon from '@/assets/images/locals/de.svg';
-import esIcon from '@/assets/images/locals/es.svg';
-import itIcon from '@/assets/images/locals/it.svg';
-import ptIcon from '@/assets/images/locals/pt.svg';
 import { MdShare } from 'react-icons/md';
 import SharePopup from './SharePopup';
+import { useTranslation } from 'react-i18next';
+import dayjs from 'dayjs';
+import { redirectToLanguage } from '../utils/browserUtils';
+import { SUPPORTED_LANGUAGES } from '../utils/constants';
+import { getLanguageFromUrl } from '../utils/urlUtils';
 
-const LANGUAGES = [
-  { code: 'en', name: 'English', icon: enIcon },
-  { code: 'zh', name: '中文', icon: zhIcon },
-  { code: 'ja', name: '日本語', icon: jaIcon },
-  { code: 'ko', name: '한국어', icon: koIcon },
-  { code: 'fr', name: 'Français', icon: frIcon },
-  { code: 'de', name: 'Deutsch', icon: deIcon },
-  { code: 'es', name: 'Español', icon: esIcon },
-  { code: 'it', name: 'Italiano', icon: itIcon },
-  { code: 'pt', name: 'Português', icon: ptIcon }
-];
-
+  
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const { language, setLanguage } = useLanguage();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileLanguageOpen, setIsMobileLanguageOpen] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [isShareOpen, setIsShareOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const mobileMenuRef = useRef(null);
 
-  const selectedLang = LANGUAGES.find(lang => lang.code === language);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Listen for URL changes and update language
+  useEffect(() => {
+    const handleUrlChange = () => {
+      const urlLang = getLanguageFromUrl();
+      if (urlLang && urlLang !== i18n.language) {
+        setLanguage(urlLang);
+        i18n.changeLanguage(urlLang);
+        dayjs.locale(urlLang);
+        saveToLocalStorage(STORAGE_KEYS.LANGUAGE_PREFERENCE, urlLang);
+      }
+    };
+
+    handleUrlChange();
+
+    window.addEventListener('popstate', handleUrlChange);
+    
+    return () => window.removeEventListener('popstate', handleUrlChange);
+  }, [i18n, setLanguage]);
+
+  useEffect(() => {
+    if (language !== i18n.language) {
+      i18n.changeLanguage(language);
+      dayjs.locale(language);
+    }
+  }, [language, i18n]);
+
+  const supportedLanguages = SUPPORTED_LANGUAGES.filter(lang => 
+    gameConfig.name[lang.code]
+  );
+
+  const selectedLang = supportedLanguages.find(lang => lang.code === language);
 
   const handleLanguageChange = (langCode) => {
     setLanguage(langCode);
-    saveToLocalStorage(STORAGE_KEYS.LANGUAGE_PREFERENCE, langCode);
+    i18n.changeLanguage(langCode);
+    redirectToLanguage(langCode);
     setIsDropdownOpen(false);
+    setIsMobileLanguageOpen(false);
   };
 
   return (
@@ -58,16 +93,12 @@ const Header = () => {
             </a>
           </div>
           <div className="flex items-center space-x-6">
-            <div className="relative">
+            <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="bg-background text-white pl-8 pr-12 py-2 rounded-lg border border-gray-700 focus:outline-none focus:border-primary flex items-center space-x-2 min-w-[160px]"
               >
-                <img 
-                  src={selectedLang.icon}
-                  alt={selectedLang.code}
-                  className="w-4 h-4 absolute left-2"
-                />
+                <img src={selectedLang.icon} alt={selectedLang.code} className="w-4 h-4 absolute left-2"/>
                 <span>{selectedLang.name}</span>
                 <span className="absolute right-2">
                   {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
@@ -76,7 +107,7 @@ const Header = () => {
 
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-1 w-full bg-background rounded-lg border border-gray-700 overflow-hidden">
-                  {LANGUAGES.map(lang => (
+                  {supportedLanguages.map(lang => (
                     <button
                       key={lang.code}
                       className={`w-full px-2 py-2 flex items-center space-x-2 hover:bg-gray-700 ${
@@ -102,7 +133,7 @@ const Header = () => {
                     rel="noopener noreferrer"
                   >
                     <FaGithub className="text-xl" />
-                    <span>Contribute</span>
+                    <span>{t('common.contribute')}</span>
                   </a>
                 </li>
                 <li>
@@ -113,7 +144,18 @@ const Header = () => {
                     rel="noopener noreferrer"
                   >
                     <FaExclamationCircle className="text-xl" />
-                    <span>Issues</span>
+                    <span>{t('common.issues')}</span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://discord.gg/sQ397Q6xb3"
+                    className="hover:text-white flex items-center space-x-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaDiscord className="text-xl" />
+                    <span>{t('common.discord')}</span>
                   </a>
                 </li>
                 <li>
@@ -122,7 +164,7 @@ const Header = () => {
                     className="hover:text-white flex items-center space-x-2"
                   >
                     <MdShare className="text-xl" />
-                    <span>Share</span>
+                    <span>{t('common.share')}</span>
                   </button>
                 </li>
                 <li>
@@ -131,7 +173,7 @@ const Header = () => {
                     className="hover:text-white flex items-center space-x-2"
                   >
                     <FaInfoCircle className="text-xl" />
-                    <span>About</span>
+                    <span>{t('common.about')}</span>
                   </button>
                 </li>
               </ul>
@@ -165,7 +207,7 @@ const Header = () => {
       {/* Mobile Side Panel */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 md:hidden">
-          <div className="absolute right-0 top-0 h-full w-64 bg-background-secondary p-4">
+          <div className="absolute right-0 top-0 h-full w-64 bg-background-secondary p-4" ref={mobileMenuRef}>
             <div className="flex justify-end">
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -177,7 +219,7 @@ const Header = () => {
             <div className="space-y-6">
               {/* Mobile Language Dropdown */}
               <div className="space-y-2">
-                <h2 className="text-gray-400 text-sm">Language</h2>
+                <h2 className="text-gray-400 text-sm">{t('common.language')}</h2>
                 <div className="relative">
                   <button
                     onClick={() => setIsMobileLanguageOpen(!isMobileLanguageOpen)}
@@ -194,7 +236,7 @@ const Header = () => {
 
                   {isMobileLanguageOpen && (
                     <div className="absolute top-full left-0 right-0 mt-1 bg-background border border-gray-700 rounded-lg overflow-hidden">
-                      {LANGUAGES.map(lang => (
+                      {supportedLanguages.map(lang => (
                         <button
                           key={lang.code}
                           className={`w-full px-4 py-3 flex items-center space-x-3 ${
@@ -213,7 +255,7 @@ const Header = () => {
 
               {/* Mobile Navigation */}
               <div className="space-y-2">
-                <h2 className="text-gray-400 text-sm">Menu</h2>
+                <h2 className="text-gray-400 text-sm">{t('common.menu')}</h2>
                 <a 
                   href="https://github.com/ptcgp-timeline/ptcgp-timeline.github.io"
                   className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
@@ -221,7 +263,7 @@ const Header = () => {
                   rel="noopener noreferrer"
                 >
                   <FaGithub className="text-white text-2xl" />
-                  <span className="text-white text-lg">Contribute</span>
+                  <span className="text-white text-lg">{t('common.contribute')}</span>
                 </a>
                 <a 
                   href="https://github.com/ptcgp-timeline/ptcgp-timeline.github.io/issues"
@@ -230,7 +272,7 @@ const Header = () => {
                   rel="noopener noreferrer"
                 >
                   <FaExclamationCircle className="text-white text-2xl" />
-                  <span className="text-white text-lg">Issues</span>
+                  <span className="text-white text-lg">{t('common.issues')}</span>
                 </a>
                 <button 
                   onClick={() => {
@@ -240,7 +282,7 @@ const Header = () => {
                   className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
                 >
                   <MdShare className="text-white text-2xl" />
-                  <span className="text-white text-lg">Share</span>
+                  <span className="text-white text-lg">{t('common.share')}</span>
                 </button>
                 <button 
                   onClick={() => {
@@ -250,8 +292,16 @@ const Header = () => {
                   className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
                 >
                   <FaInfoCircle className="text-white text-2xl" />
-                  <span className="text-white text-lg">About</span>
+                  <span className="text-white text-lg">{t('common.about')}</span>
                 </button>
+                <a 
+                  href="https://discord.gg/sQ397Q6xb3"
+                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaDiscord className="text-white text-2xl" />
+                </a>
               </div>
             </div>
           </div>
