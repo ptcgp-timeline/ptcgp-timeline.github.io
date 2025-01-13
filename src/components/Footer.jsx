@@ -15,7 +15,7 @@ const Footer = () => {
     },
     {
       icon: <FaDiscord className="w-5 h-5" />,
-      href: "https://discord.gg/sQ397Q6xb3",
+      href: "https://discord.gg/K2vK9Hxwq7",
       label: "Discord"
     }
   ];

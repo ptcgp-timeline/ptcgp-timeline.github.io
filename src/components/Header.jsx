@@ -149,7 +149,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://discord.gg/sQ397Q6xb3"
+                    href="https://discord.gg/K2vK9Hxwq7"
                     className="hover:text-white flex items-center space-x-2"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -295,7 +295,7 @@ const Header = () => {
                   <span className="text-white text-lg">{t('common.about')}</span>
                 </button>
                 <a 
-                  href="https://discord.gg/sQ397Q6xb3"
+                  href="https://discord.gg/K2vK9Hxwq7"
                   className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
                   target="_blank"
                   rel="noopener noreferrer"
