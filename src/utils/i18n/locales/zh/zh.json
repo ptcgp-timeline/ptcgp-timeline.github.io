@@ -54,11 +54,11 @@
         ]
       },
       "contribute": {
-        "title": "Want to Help?",
-        "github": "Check us out on GitHub"
+        "title": "想要帮助吗？",
+        "github": "在 GitHub 上查看我们"
       }
     },
-    "footer": "Found a bug or have a suggestion? Feel free to open an issue on GitHub!"
+    "footer": "发现错误或有建议？请随时在 GitHub上打开问题！"
   },
   "header": {
     "nav": {
@@ -89,7 +89,7 @@
     "uncertaintyMessage": "日期和时间可能会更改",
     "formats": {
       "monthDay": "ddd, D MMMM YYYY HH:mm",
-      "nextReset": "dddd, D MMMM YYYY HH:mm"
+      "nextReset": "dddd, D MMMMM YYYY HH:mm"
     }
   }
 }
