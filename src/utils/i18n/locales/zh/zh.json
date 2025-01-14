@@ -9,20 +9,20 @@
     "language": "語言",
     "close": "關閉",
     "footer": {
-      "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
-      "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
+      "disclaimer": "{{siteName}} 是一个非官方的粉丝网站，与 {{company}} 权利持有者无关，也未获得其支持。",
+      "copyright": "所有 {{company}} 的图片、名称、角色及相关标志均为 {{copyrightHolders}} 的商标和版权。"
     },
     "externalLinks": {
-      "title": "External Links",
-      "none": "No external links available"
+      "title": "外部链接",
+      "none": "没有可用的外部链接"
     }
   },
   "share": {
-    "title": "Share",
-    "viaLink": "Share via link",
-    "viaSocial": "Share via social media",
-    "copy": "Copy",
-    "copied": "Copied!",
+    "title": "分享",
+    "viaLink": "通过链接分享",
+    "viaSocial": "通过社交媒体分享",
+    "copy": "复制",
+    "copied": "已复制！",
     "socialPlatforms": {
       "facebook": "Facebook",
       "twitter": "X",
@@ -34,15 +34,15 @@
       "tumblr": "Tumblr",
       "viber": "Viber",
       "line": "Line",
-      "email": "Email"
+      "email": "电子邮件"
     },
-    "footer": "Share this timeline with your friends!"
+    "footer": "将此时间轴分享给你的朋友！"
   },
   "about": {
-    "title": "About",
+    "title": "关于",
     "sections": {
       "what": {
-        "title": "What's this?",
+        "title": "这是什么？",
         "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
       },
       "features": {
@@ -62,10 +62,10 @@
   },
   "header": {
     "nav": {
-      "contribute": "Contribute",
-      "issues": "Issues",
-      "share": "Share",
-      "about": "About"
+      "contribute": "贡献",
+      "issues": "问题",
+      "share": "分享",
+      "about": "关于"
     }
   },
   "timeline": {
@@ -79,14 +79,14 @@
     }
   },
   "status": {
-    "live": "Live",
-    "finished": "Finished",
-    "startingIn": "Starting in",
-    "endingIn": "Ending in",
-    "noEndDate": "No End Date"
+    "live": "直播",
+    "finished": "已结束",
+    "startingIn": "开始于",
+    "endingIn": "结束于",
+    "noEndDate": "无结束日期"
   },
   "dateTime": {
-    "uncertaintyMessage": "Date and time subject to change",
+    "uncertaintyMessage": "日期和时间可能会更改",
     "formats": {
       "monthDay": "ddd, D MMMM YYYY HH:mm",
       "nextReset": "dddd, D MMMM YYYY HH:mm"
