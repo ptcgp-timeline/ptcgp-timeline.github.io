@@ -1,52 +1,95 @@
 {
-    "common": {
-      "contribute": "기여하기",
-      "issues": "이슈",
-      "share": "공유",
-      "about": "소개",
-      "menu": "메뉴",
-      "language": "언어",
-      "close": "닫기"
+  "common": {
+    "contribute": "기여하기",
+    "issues": "이슈",
+    "share": "공유",
+    "about": "소개",
+    "discord": "Discord",
+    "menu": "메뉴",
+    "language": "언어",
+    "close": "닫기",
+    "footer": {
+      "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
+      "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
     },
-    "timeline": {
-      "title": "타임라인",
-      "loading": "로딩 중...",
-      "timezone": {
-        "showLocal": "현지 시간으로 표시 ({{timezone}})"
-      },
-      "reset": {
-        "toDaily": "일일 리셋까지",
-        "nextReset": "{{date}}",
-        "nextResetDay": "{{date}}"
-      },
-      "dateTime": {
-        "months": {
-          "1": "1월",
-          "2": "2월",
-          "3": "3월",
-          "4": "4월",
-          "5": "5월",
-          "6": "6월",
-          "7": "7월",
-          "8": "8월",
-          "9": "9월",
-          "10": "10월",
-          "11": "11월",
-          "12": "12월"
-        },
-        "weekdays": {
-          "0": "일요일",
-          "1": "월요일",
-          "2": "화요일",
-          "3": "수요일",
-          "4": "목요일",
-          "5": "금요일",
-          "6": "토요일"
-        },
-        "format": {
-          "dateTime": "YYYY년 M월 D일 HH:mm",
-          "weekday": "dddd"
-        }
-      }
+    "externalLinks": {
+      "title": "External Links",
+      "none": "No external links available"
     }
-  } 
+  },
+  "share": {
+    "title": "Share",
+    "viaLink": "Share via link",
+    "viaSocial": "Share via social media",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "socialPlatforms": {
+      "facebook": "Facebook",
+      "twitter": "X",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "reddit": "Reddit",
+      "pinterest": "Pinterest",
+      "tumblr": "Tumblr",
+      "viber": "Viber",
+      "line": "Line",
+      "email": "Email"
+    },
+    "footer": "Share this timeline with your friends!"
+  },
+  "about": {
+    "title": "About",
+    "sections": {
+      "what": {
+        "title": "What's this?",
+        "content": "This is a simple timeline viewer for Pokémon TCG Pocket events and updates. It helps you stay informed about ongoing and upcoming events in the game, such as special events, new pack releases, and more."
+      },
+      "features": {
+        "title": "Cool Features",
+        "list": [
+          "See events in your local time",
+          "Switch between different languages",
+          "Track ongoing and upcoming events"
+        ]
+      },
+      "contribute": {
+        "title": "Want to Help?",
+        "github": "Check us out on GitHub"
+      }
+    },
+    "footer": "Found a bug or have a suggestion? Feel free to open an issue on GitHub!"
+  },
+  "header": {
+    "nav": {
+      "contribute": "Contribute",
+      "issues": "Issues",
+      "share": "Share",
+      "about": "About"
+    }
+  },
+  "timeline": {
+    "title": "타임라인",
+    "loading": "로딩 중...",
+    "timezone": {
+      "showLocal": "현지 시간으로 표시 ({{timezone}})"
+    },
+    "reset": {
+      "toDaily": "일일 리셋까지"
+    }
+  },
+  "status": {
+    "live": "Live",
+    "finished": "Finished",
+    "startingIn": "Starting in",
+    "endingIn": "Ending in",
+    "noEndDate": "No End Date"
+  },
+  "dateTime": {
+    "uncertaintyMessage": "Date and time subject to change",
+    "formats": {
+      "monthDay": "ddd, D MMMM YYYY HH:mm",
+      "nextReset": "dddd, D MMMM YYYY HH:mm"
+    }
+  }
+}

@@ -1,52 +1,95 @@
 {
-    "common": {
-      "contribute": "貢獻",
-      "issues": "問題回報",
-      "share": "分享",
-      "about": "關於",
-      "menu": "選單",
-      "language": "語言",
-      "close": "關閉"
+  "common": {
+    "contribute": "貢獻",
+    "issues": "問題回報",
+    "share": "分享",
+    "about": "關於",
+    "discord": "Discord",
+    "menu": "選單",
+    "language": "語言",
+    "close": "關閉",
+    "footer": {
+      "disclaimer": "{{siteName}} 是一个非官方的粉丝网站，与 {{company}} 权利持有者无关，也未获得其支持。",
+      "copyright": "所有 {{company}} 的图片、名称、角色及相关标志均为 {{copyrightHolders}} 的商标和版权。"
     },
-    "timeline": {
-      "title": "時間表",
-      "loading": "載入中...",
-      "timezone": {
-        "showLocal": "顯示本地時間 ({{timezone}})"
-      },
-      "reset": {
-        "toDaily": "距離每日重置",
-        "nextReset": "{{date}}",
-        "nextResetDay": "{{date}}"
-      },
-      "dateTime": {
-        "months": {
-          "1": "1月",
-          "2": "2月",
-          "3": "3月",
-          "4": "4月",
-          "5": "5月",
-          "6": "6月",
-          "7": "7月",
-          "8": "8月",
-          "9": "9月",
-          "10": "10月",
-          "11": "11月",
-          "12": "12月"
-        },
-        "weekdays": {
-          "0": "星期日",
-          "1": "星期一",
-          "2": "星期二",
-          "3": "星期三",
-          "4": "星期四",
-          "5": "星期五",
-          "6": "星期六"
-        },
-        "format": {
-          "dateTime": "YYYY年M月D日 HH:mm",
-          "weekday": "dddd"
-        }
-      }
+    "externalLinks": {
+      "title": "外部链接",
+      "none": "没有可用的外部链接"
     }
-  } 
+  },
+  "share": {
+    "title": "分享",
+    "viaLink": "通过链接分享",
+    "viaSocial": "通过社交媒体分享",
+    "copy": "复制",
+    "copied": "已复制！",
+    "socialPlatforms": {
+      "facebook": "Facebook",
+      "twitter": "X",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "reddit": "Reddit",
+      "pinterest": "Pinterest",
+      "tumblr": "Tumblr",
+      "viber": "Viber",
+      "line": "Line",
+      "email": "电子邮件"
+    },
+    "footer": "将此时间轴分享给你的朋友！"
+  },
+  "about": {
+    "title": "关于",
+    "sections": {
+      "what": {
+        "title": "这是什么？",
+        "content": "这是一个简单的时间轴查看器，用于查看《宝可梦TCG Pocket》的活动和更新。它可以帮助您随时了解游戏中正在进行和即将到来的活动，例如特别活动、新卡包发布等内容。"
+      },
+      "features": {
+        "title": "酷炫功能",
+        "list": [
+          "查看您当地时间的活动",
+          "切换不同语言",
+          "跟踪正在进行和即将到来的活动"
+        ]
+      },
+      "contribute": {
+        "title": "想要帮助吗？",
+        "github": "在 GitHub 上查看我们"
+      }
+    },
+    "footer": "发现错误或有建议？请随时在 GitHub上打开问题！"
+  },
+  "header": {
+    "nav": {
+      "contribute": "贡献",
+      "issues": "问题",
+      "share": "分享",
+      "about": "关于"
+    }
+  },
+  "timeline": {
+    "title": "時間表",
+    "loading": "載入中...",
+    "timezone": {
+      "showLocal": "顯示本地時間 ({{timezone}})"
+    },
+    "reset": {
+      "toDaily": "距離每日重置"
+    }
+  },
+  "status": {
+    "live": "直播",
+    "finished": "已结束",
+    "startingIn": "开始于",
+    "endingIn": "结束于",
+    "noEndDate": "无结束日期"
+  },
+  "dateTime": {
+    "uncertaintyMessage": "日期和时间可能会更改",
+    "formats": {
+      "monthDay": "ddd, D MMMM YYYY HH:mm",
+      "nextReset": "dddd, D MMMMM YYYY HH:mm"
+    }
+  }
+}

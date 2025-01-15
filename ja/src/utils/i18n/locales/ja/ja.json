@@ -1,26 +1,26 @@
 {
   "common": {
-    "contribute": "貢献",
-    "issues": "問題を報告",
-    "share": "共有",
-    "about": "概要",
+    "contribute": "Contribute",
+    "issues": "Issues",
+    "share": "Share",
+    "about": "About",
     "discord": "Discord",
-    "menu": "メニュー",
-    "language": "言語",
-    "close": "閉じる",
+    "menu": "Menu",
+    "language": "Language",
+    "close": "Close",
     "footer": {
       "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
       "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
     },
     "externalLinks": {
-      "title": "外部リンク",
+      "title": "External Links",
       "none": "No external links available"
     }
   },
   "share": {
-    "title": "共有",
-    "viaLink": "リンクで共有",
-    "viaSocial": "SNSで共有",
+    "title": "Share",
+    "viaLink": "Share via link",
+    "viaSocial": "Share via social media",
     "copy": "Copy",
     "copied": "Copied!",
     "socialPlatforms": {
@@ -36,29 +36,29 @@
       "line": "Line",
       "email": "Email"
     },
-    "footer": "共有ありがとうございます！"
+    "footer": "Share this timeline with your friends!"
   },
   "about": {
-    "title": "概要",
+    "title": "About",
     "sections": {
       "what": {
-        "title": "このサイトについて",
-        "content": "ポケモンTCGポケットのイベントタイムラインビューアーです。"
+        "title": "What's this?",
+        "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
       },
       "features": {
-        "title": "機能",
+        "title": "Cool Features",
         "list": [
-          "現地時間での表示",
-          "多言語対応",
-          "進行中・今後のイベントの追跡"
+          "See events in your local time",
+          "Switch between different languages",
+          "Track ongoing and upcoming events"
         ]
       },
       "contribute": {
-        "title": "貢献したい方へ",
-        "github": "GitHubをチェック"
+        "title": "Want to Help?",
+        "github": "Check us out on GitHub"
       }
     },
-    "footer": "バグや提案がありましたら、GitHubでissueを作成してください！"
+    "footer": "Found a bug or have a suggestion? Feel free to open an issue on GitHub!"
   },
   "header": {
     "nav": {
