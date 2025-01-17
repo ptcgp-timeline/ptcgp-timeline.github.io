@@ -9,20 +9,20 @@
     "language": "언어",
     "close": "닫기",
     "footer": {
-      "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
-      "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
+      "disclaimer": "{{siteName}}은(는) 비공식 팬 사이트이며 {{company}} 권리 소유자의 승인이나 제휴가 없습니다.",
+      "copyright": "모든 {{company}} 이미지, 이름, 캐릭터 및 관련 마크는 {{copyrightHolders}}의 상표 및 저작권입니다."
     },
     "externalLinks": {
-      "title": "External Links",
-      "none": "No external links available"
+      "title": "외부 링크",
+      "none": "사용 가능한 외부 링크가 없습니다"
     }
   },
   "share": {
-    "title": "Share",
-    "viaLink": "Share via link",
-    "viaSocial": "Share via social media",
-    "copy": "Copy",
-    "copied": "Copied!",
+    "title": "공유",
+    "viaLink": "링크로 공유",
+    "viaSocial": "소셜 미디어로 공유",
+    "copy": "복사",
+    "copied": "복사됨!",
     "socialPlatforms": {
       "facebook": "Facebook",
       "twitter": "X",
@@ -34,38 +34,38 @@
       "tumblr": "Tumblr",
       "viber": "Viber",
       "line": "Line",
-      "email": "Email"
+      "email": "이메일"
     },
-    "footer": "Share this timeline with your friends!"
+    "footer": "이 타임라인을 친구들과 공유하세요!"
   },
   "about": {
-    "title": "About",
+    "title": "소개",
     "sections": {
       "what": {
-        "title": "What's this?",
-        "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
+        "title": "이것은 무엇인가요?",
+        "content": "포켓몬 TCG 포켓의 이벤트와 업데이트를 위한 타임라인 뷰어입니다. 특별 이벤트, 새로운 팩 출시 등 게임의 진행 중인 이벤트와 예정된 이벤트를 확인할 수 있습니다."
       },
       "features": {
-        "title": "Cool Features",
+        "title": "주요 기능",
         "list": [
-          "See events in your local time",
-          "Switch between different languages",
-          "Track ongoing and upcoming events"
+          "현지 시간으로 이벤트 확인",
+          "다양한 언어 지원",
+          "진행 중인 이벤트와 예정된 이벤트 추적"
         ]
       },
       "contribute": {
-        "title": "Want to Help?",
-        "github": "Check us out on GitHub"
+        "title": "도움을 주고 싶으신가요?",
+        "github": "GitHub에서 확인하기"
       }
     },
-    "footer": "Found a bug or have a suggestion? Feel free to open an issue on GitHub!"
+    "footer": "버그를 발견하셨거나 제안사항이 있으신가요? GitHub에서 이슈를 생성해주세요!"
   },
   "header": {
     "nav": {
-      "contribute": "Contribute",
-      "issues": "Issues",
-      "share": "Share",
-      "about": "About"
+      "contribute": "기여하기",
+      "issues": "이슈",
+      "share": "공유",
+      "about": "소개"
     }
   },
   "timeline": {
@@ -79,17 +79,17 @@
     }
   },
   "status": {
-    "live": "Live",
-    "finished": "Finished",
-    "startingIn": "Starting in",
-    "endingIn": "Ending in",
-    "noEndDate": "No End Date"
+    "live": "진행 중",
+    "finished": "종료됨",
+    "startingIn": "시작까지",
+    "endingIn": "종료까지",
+    "noEndDate": "종료일 미정"
   },
   "dateTime": {
-    "uncertaintyMessage": "Date and time subject to change",
+    "uncertaintyMessage": "날짜와 시간은 변경될 수 있습니다",
     "formats": {
-      "monthDay": "ddd, D MMMM YYYY HH:mm",
-      "nextReset": "dddd, D MMMM YYYY HH:mm"
+      "monthDay": "YYYY년 M월 D일(ddd) HH:mm",
+      "nextReset": "YYYY년 M월 D일(dddd) HH:mm"
     }
   }
 }
