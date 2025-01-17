@@ -36,7 +36,7 @@ function Timeline({ events = [] }) {
   );
   const [userTimezone] = useState(dayjs.tz.guess());
   
-  const eventHeight = 36;
+  const eventHeight = 38;
   const eventMargin = 20;
   const padding = 10;
   const marginTop = 80;
@@ -137,10 +137,11 @@ function Timeline({ events = [] }) {
       }
     });
 
-    newFirstDay = newFirstDay.startOf('month').subtract(padding, 'day');
+    newFirstDay = newFirstDay.startOf('day').subtract(padding, 'day');
+    lastEventTime = lastEventTime.endOf('day').add(padding, 'day');
     setFirstDay(newFirstDay);
 
-    const dayTotal = Math.ceil(lastEventTime.diff(newFirstDay, 'day')) + (2 * padding);
+    const dayTotal = Math.ceil(lastEventTime.diff(newFirstDay, 'day'));
 
     const newDates = Array.from({ length: dayTotal }, (_, i) => {
       const date = newFirstDay.add(i, 'day');
@@ -181,7 +182,7 @@ function Timeline({ events = [] }) {
 
     setProcessedEvents(processed);
     setLoading(false);
-  }, [convertTime, events]);
+  }, [convertTime, events, padding]);
 
   // Initial load
   useEffect(() => {
@@ -322,14 +323,18 @@ function Timeline({ events = [] }) {
       ) : (
         <div 
           ref={timelineRef}
-          className="timelineContainer w-full overflow-x-auto px-4 md:px-8"
+          className="timelineContainer w-full overflow-x-auto px-4 md:px-8 relative"
+          style={{
+            overflowY: 'hidden'
+          }}
         >
           <div
             className="timeline relative"
             style={{
               paddingTop: '50px',
               width: `${dates.length * dayWidth}px`,
-              height: `${marginTop + (processedEvents.length * (eventHeight + eventMargin))}px`
+              height: `${marginTop + (processedEvents.length * (eventHeight + eventMargin))}px`,
+              paddingRight: '0'
             }}
           >
             {/* Month titles */}

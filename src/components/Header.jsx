@@ -82,12 +82,12 @@ const Header = () => {
   return (
     <>
       {/* Desktop Header */}
-      <header className="bg-background-secondary w-full fixed top-0 z-50 hidden md:block">
+      <header className="bg-background-secondary w-full fixed top-0 z-50 hidden md:block border-b border-gray-700">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <a 
               href="https://ptcgp-timeline.github.io"
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-90 transition-opacity"
             >
               <img src={logoLong} alt="Logo" className="h-6" />
             </a>
@@ -96,27 +96,27 @@ const Header = () => {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="bg-background text-white pl-8 pr-12 py-2 rounded-lg border border-gray-700 focus:outline-none focus:border-primary flex items-center space-x-2 min-w-[160px]"
+                className="bg-item text-gray-100 pl-8 pr-12 py-2 rounded-lg border border-gray-600 hover:border-gray-500 focus:outline-none focus:border-primary flex items-center space-x-2 min-w-[160px] transition-colors"
               >
                 <img src={selectedLang.icon} alt={selectedLang.code} className="w-4 h-4 absolute left-2"/>
                 <span>{selectedLang.name}</span>
-                <span className="absolute right-2">
+                <span className="absolute right-2 text-gray-300">
                   {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                 </span>
               </button>
 
               {isDropdownOpen && (
-                <div className="absolute top-full left-0 mt-1 w-full bg-background rounded-lg border border-gray-700 overflow-hidden">
+                <div className="absolute top-full left-0 mt-1 w-full bg-item rounded-lg border border-gray-600 overflow-hidden shadow-lg">
                   {supportedLanguages.map(lang => (
                     <button
                       key={lang.code}
-                      className={`w-full px-2 py-2 flex items-center space-x-2 hover:bg-gray-700 ${
-                        lang.code === language ? 'bg-gray-800' : ''
+                      className={`w-full px-2 py-2 flex items-center space-x-2 hover:bg-gray-700 transition-colors ${
+                        lang.code === language ? 'bg-gray-700 text-white' : 'text-gray-200'
                       }`}
                       onClick={() => handleLanguageChange(lang.code)}
                     >
                       <img src={lang.icon} alt={lang.code} className="w-4 h-4" />
-                      <span className="text-white">{lang.name}</span>
+                      <span>{lang.name}</span>
                     </button>
                   ))}
                 </div>
@@ -124,11 +124,11 @@ const Header = () => {
             </div>
 
             <nav>
-              <ul className="flex space-x-6 text-gray-300">
+              <ul className="flex space-x-6 text-gray-200">
                 <li>
                   <a 
                     href="https://github.com/ptcgp-timeline/ptcgp-timeline.github.io"
-                    className="hover:text-white flex items-center space-x-2"
+                    className="hover:text-white flex items-center space-x-2 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -139,7 +139,7 @@ const Header = () => {
                 <li>
                   <a 
                     href="https://github.com/ptcgp-timeline/ptcgp-timeline.github.io/issues"
-                    className="hover:text-white flex items-center space-x-2"
+                    className="hover:text-white flex items-center space-x-2 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -150,7 +150,7 @@ const Header = () => {
                 <li>
                   <a 
                     href="https://discord.gg/K2vK9Hxwq7"
-                    className="hover:text-white flex items-center space-x-2"
+                    className="hover:text-white flex items-center space-x-2 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -161,7 +161,7 @@ const Header = () => {
                 <li>
                   <button 
                     onClick={() => setIsShareOpen(true)}
-                    className="hover:text-white flex items-center space-x-2"
+                    className="hover:text-white flex items-center space-x-2 transition-colors"
                   >
                     <MdShare className="text-xl" />
                     <span>{t('common.share')}</span>
@@ -170,7 +170,7 @@ const Header = () => {
                 <li>
                   <button 
                     onClick={() => setShowAbout(true)}
-                    className="hover:text-white flex items-center space-x-2"
+                    className="hover:text-white flex items-center space-x-2 transition-colors"
                   >
                     <FaInfoCircle className="text-xl" />
                     <span>{t('common.about')}</span>
@@ -183,19 +183,19 @@ const Header = () => {
       </header>
 
       {/* Mobile Header */}
-      <header className="bg-background-secondary w-full fixed top-0 z-50 md:hidden">
+      <header className="bg-background-secondary w-full fixed top-0 z-50 md:hidden border-b border-gray-700">
         <div className="px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <a 
               href="https://ptcgp-timeline.github.io"
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-90 transition-opacity"
             >
               <img src={logoLong} alt="Logo" className="h-5" />
             </a>
           </div>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-white p-2"
+            className="text-gray-200 hover:text-white p-2 transition-colors"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -206,12 +206,12 @@ const Header = () => {
 
       {/* Mobile Side Panel */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 md:hidden">
-          <div className="absolute right-0 top-0 h-full w-64 bg-background-secondary p-4" ref={mobileMenuRef}>
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 md:hidden">
+          <div className="absolute right-0 top-0 h-full w-64 bg-background-secondary p-4 border-l border-gray-700" ref={mobileMenuRef}>
             <div className="flex justify-end">
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-white p-2"
+                className="text-gray-300 hover:text-white p-2 transition-colors"
               >
                 <FaTimes />
               </button>
@@ -219,33 +219,33 @@ const Header = () => {
             <div className="space-y-6">
               {/* Mobile Language Dropdown */}
               <div className="space-y-2">
-                <h2 className="text-gray-400 text-sm">{t('common.language')}</h2>
+                <h2 className="text-gray-300 text-sm font-medium">{t('common.language')}</h2>
                 <div className="relative">
                   <button
                     onClick={() => setIsMobileLanguageOpen(!isMobileLanguageOpen)}
-                    className="w-full px-4 py-3 flex items-center justify-between rounded-lg bg-background border border-gray-700"
+                    className="w-full px-4 py-3 flex items-center justify-between rounded-lg bg-item border border-gray-600 hover:border-gray-500 transition-colors"
                   >
                     <div className="flex items-center space-x-3">
                       <img src={selectedLang.icon} alt={selectedLang.code} className="w-6 h-6" />
-                      <span className="text-white text-lg">{selectedLang.name}</span>
+                      <span className="text-gray-100 text-lg">{selectedLang.name}</span>
                     </div>
-                    <span className="text-white">
+                    <span className="text-gray-300">
                       {isMobileLanguageOpen ? <FaChevronUp /> : <FaChevronDown />}
                     </span>
                   </button>
 
                   {isMobileLanguageOpen && (
-                    <div className="absolute top-full left-0 right-0 mt-1 bg-background border border-gray-700 rounded-lg overflow-hidden">
+                    <div className="absolute top-full left-0 right-0 mt-1 bg-item border border-gray-600 rounded-lg overflow-hidden shadow-lg">
                       {supportedLanguages.map(lang => (
                         <button
                           key={lang.code}
-                          className={`w-full px-4 py-3 flex items-center space-x-3 ${
-                            lang.code === language ? 'bg-gray-700' : 'hover:bg-gray-800'
+                          className={`w-full px-4 py-3 flex items-center space-x-3 transition-colors ${
+                            lang.code === language ? 'bg-gray-700 text-white' : 'text-gray-200 hover:bg-gray-700'
                           }`}
                           onClick={() => handleLanguageChange(lang.code)}
                         >
                           <img src={lang.icon} alt={lang.code} className="w-6 h-6" />
-                          <span className="text-white text-lg">{lang.name}</span>
+                          <span className="text-lg">{lang.name}</span>
                         </button>
                       ))}
                     </div>
@@ -255,52 +255,53 @@ const Header = () => {
 
               {/* Mobile Navigation */}
               <div className="space-y-2">
-                <h2 className="text-gray-400 text-sm">{t('common.menu')}</h2>
+                <h2 className="text-gray-300 text-sm font-medium">{t('common.menu')}</h2>
                 <a 
                   href="https://github.com/ptcgp-timeline/ptcgp-timeline.github.io"
-                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
+                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-700 transition-colors text-gray-200 hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="text-white text-2xl" />
-                  <span className="text-white text-lg">{t('common.contribute')}</span>
+                  <FaGithub className="text-2xl" />
+                  <span className="text-lg">{t('common.contribute')}</span>
                 </a>
                 <a 
                   href="https://github.com/ptcgp-timeline/ptcgp-timeline.github.io/issues"
-                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
+                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-700 transition-colors text-gray-200 hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaExclamationCircle className="text-white text-2xl" />
-                  <span className="text-white text-lg">{t('common.issues')}</span>
+                  <FaExclamationCircle className="text-2xl" />
+                  <span className="text-lg">{t('common.issues')}</span>
                 </a>
                 <button 
                   onClick={() => {
                     setIsShareOpen(true);
                     setIsMobileMenuOpen(false);
                   }}
-                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
+                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-700 transition-colors text-gray-200 hover:text-white"
                 >
-                  <MdShare className="text-white text-2xl" />
-                  <span className="text-white text-lg">{t('common.share')}</span>
+                  <MdShare className="text-2xl" />
+                  <span className="text-lg">{t('common.share')}</span>
                 </button>
                 <button 
                   onClick={() => {
                     setShowAbout(true);
                     setIsMobileMenuOpen(false);
                   }}
-                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
+                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-700 transition-colors text-gray-200 hover:text-white"
                 >
-                  <FaInfoCircle className="text-white text-2xl" />
-                  <span className="text-white text-lg">{t('common.about')}</span>
+                  <FaInfoCircle className="text-2xl" />
+                  <span className="text-lg">{t('common.about')}</span>
                 </button>
                 <a 
                   href="https://discord.gg/K2vK9Hxwq7"
-                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-800"
+                  className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg hover:bg-gray-700 transition-colors text-gray-200 hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaDiscord className="text-white text-2xl" />
+                  <FaDiscord className="text-2xl" />
+                  <span className="text-lg">{t('common.discord')}</span>
                 </a>
               </div>
             </div>

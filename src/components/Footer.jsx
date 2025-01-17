@@ -21,17 +21,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="mt-auto py-4 border-t border-gray-800">
+    <footer className="mt-auto py-4 border-t border-gray-700">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
-            <p className="text-gray-500 text-xs leading-relaxed">
+            <p className="text-gray-300 text-xs leading-relaxed">
               {t('common.footer.disclaimer', {
                 siteName: gameConfig.name[language] || gameConfig.name['en'],
                 company: gameConfig.company
               })}
             </p>
-            <p className="text-gray-500 text-xs leading-relaxed mt-1">
+            <p className="text-gray-300 text-xs leading-relaxed mt-1">
               {t('common.footer.copyright', {
                 company: gameConfig.company,
                 copyrightHolders: gameConfig.copyrightHolders
@@ -46,7 +46,7 @@ const Footer = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors"
                 aria-label={link.label}
               >
                 {link.icon}

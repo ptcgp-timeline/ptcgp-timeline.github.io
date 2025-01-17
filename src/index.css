@@ -26,16 +26,18 @@ span.event-name {
 }
 
 /* Timeline/index.jsx */
-::-webkit-scrollbar {
-  @apply h-2;
+.timelineContainer::-webkit-scrollbar {
+  height: 8px;
 }
 
-::-webkit-scrollbar-track {
-  @apply bg-transparent mx-5;
+.timelineContainer::-webkit-scrollbar-track {
+  @apply bg-transparent;
+  margin: 0 20px;
 }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-black/35 rounded-xl;
+.timelineContainer::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.35);
+  @apply rounded-xl;
 }
 
 .month::before {

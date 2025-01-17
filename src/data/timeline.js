@@ -121,6 +121,63 @@ export const eventsData = [
   [
     {
       name: {
+        en: "Lapras ex Drop Event",
+        fr: "Évènement butin Lokhlass-ex",
+        zh: "拉普拉斯ex掉落活動",
+        ja: "ラプラスexドロップイベント",
+        ko: "라프라스 ex 드롭 이벤트",
+      },
+      pos: "30% 33%",
+      zoom: "340%",
+      image: "Lapras-ex-Drop-Event.webp",
+      start: "2024-11-05 06:00:00",
+      end: "2024-11-18 05:59:00",
+      color: "#56DFFC",
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/lapras-ex-drop-event/",
+          "https://www.pokemon-zone.com/events/lapras-ex-drop-event/",
+          "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_0002010_01",
+          "https://www.serebii.net/tcgpocket/events/laprasexdropevent.shtml",
+        ],
+        fr: ["https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_0002010_01"],
+        zh: ["https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_0002010_01"],
+        ja: ["https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_0002010_01"],
+        ko: ["https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_0002010_01"],
+      },
+      showOnHome: true,
+    },
+
+    {
+      name: {
+        en: "Venusaur Drop Event",
+        fr: "Évènement butin Florizarre",
+        zh: "妙蛙花掉落活動",
+        ja: "フシギバナドロップイベント",
+        ko: "이상해꽃 드롭 이벤트",
+      },
+      pos: "40% 57%",
+      zoom: "360%",
+      image: "Venusaur-Drop-Event.webp",
+      start: "2024-11-29 06:00:00",
+      end: "2024-12-13 05:59:00",
+      color: "#E69285",
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/venusaur-drop-event/",
+          "https://www.pokemon-zone.com/events/venusaur-drop-event/",
+          "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_0002010_02",
+          "https://www.serebii.net/tcgpocket/events/venusaurdropevent.shtml",
+        ],
+        fr: ["https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_0002010_02"],
+        zh: ["https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_0002010_02"],
+        ja: ["https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_0002010_02"],
+        ko: ["https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_0002010_02"],
+      },
+      showOnHome: true,
+    },
+    {
+      name: {
         en: "Blastoise Drop Event",
         fr: "Évènement butin Tortank",
         zh: "水箭龜掉落活動",
@@ -177,27 +234,34 @@ export const eventsData = [
       uncertain: true,
     },
   ],
-  [
-    {
-      name: {
-        en: "Venusaur Drop Event",
-      },
-      pos: "10% 55%",
-      zoom: "200%",
-      image: "Venusaur_Drop_Event.webp",
-      start: "2024-11-29 06:00:00",
-      end: "2024-12-13 05:59:00",
-      color: "#7be2d1",
-      urls: {
-        en: [
-          "https://ptcgpocket.gg/venusaur-drop-event/",
-          "https://www.pokemon-zone.com/events/venusaur-drop-event/",
-        ],
-      },
-      showOnHome: false,
+  [{
+    name: {
+      en: "Wonder Pick Event Part 1 (Chansey  + Meowth)",
+      fr: "Évènement pioche miracle 1 (Leveinard + Miaouss)",
+      zh: "得卡挑戰活動 前半 (吉利蛋 + 	喵喵)",
+      ja: "ゲットチャレンジイベント 前半 (ラッキー + ニャース)",
+      ko: "겟 챌린지 이벤트 전반 (럭키 + 나옹)",
     },
-  ],
-  [
+    pos: "58% 45%",
+    zoom: "600%",
+    image: "Meowth-event-banner.webp",
+    start: "2024-11-01 06:00:00",
+    end: "2024-11-15 05:59:59",
+    color: "#FCF7BC",
+    urls: {
+      en: [
+        "https://ptcgpocket.gg/wonder-pick-event-part-1/",
+        "https://www.serebii.net/tcgpocket/events/wonderpickeventpart1.shtml",
+        "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
+        "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_01",
+      ],
+      fr:["https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_01"],
+      zh:["https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_01"],
+      ja:["https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_01"],
+      ko:["https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_01"],
+    },
+    showOnHome: true,
+  },
     {
       name: {
         en: "Wonder Pick Event Part 1 (Bulbasaur + Magnemite)",
@@ -268,7 +332,78 @@ export const eventsData = [
       showOnHome: true,
     },
   ],
-  [
+  [{
+    name: {
+      en: "Wonder Pick Event Part 2 (Chansey  + Meowth)",
+      fr: "Évènement pioche miracle 2 (Leveinard + Miaouss)",
+      zh: "得卡挑戰活動 後半 (吉利蛋 + 	喵喵)",
+      ja: "ゲットチャレンジイベント 後半 (ラッキー + ニャース)",
+      ko: "겟 챌린지 이벤트 후반 (럭키 + 나옹)",
+    },
+    pos: "15% 55%",
+    zoom: "600%",
+    image: "Meowth-event-2.webp",
+    start: "2024-11-08 06:00:00",
+    end: "2024-11-15 05:59:59",
+    color: "#FCF7BC",
+    urls: {
+      en: [
+        "https://ptcgpocket.gg/wonder-pick-event-part-2/",
+        "https://www.serebii.net/tcgpocket/events/wonderpickeventpart2.shtml",
+        "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
+        "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_02",
+      ],
+      zh:["https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_02"],
+      ja:["https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_02"],
+      fr:["https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_02"],
+      ko:["https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_02"],
+    },
+    showOnHome: true,
+  },
+  {
+    name: {
+      en: "Fire Pokémon Mass Outbreak Event (Arcanine ex)",
+      fr: "Apparition massive de Pokémon Feu (Arcanin-ex)",
+      zh: "火屬性寶可夢大量出現活動 (風速狗ex)",
+      ja: "炎ポケモン大量発生イベント (ウインディex)",
+      ko: "불꽃 포켓몬 대량발생 이벤트 (윈디 ex)",
+    },
+    pos: "52% 30%",
+    zoom: "300%",
+    image: "Fire-event.webp",
+    start: "2024-11-22 06:00:00",
+    end: "2024-11-28 05:59:00",
+    color: "#F8982B",
+    urls: {
+      en: [
+        "https://www.pokemon.com/us/pokemon-news/a-fire-type-pokemon-mass-outbreak-blazes-into-pokemon-trading-card-game-pocket",
+        "https://ptcgpocket.gg/fire-pokemon-mass-outbreak-event/",
+        "https://www.pokemon-zone.com/events/fire-type-pokemon-mass-outbreak/",
+        "https://www.serebii.net/tcgpocket/events/fire-typemassoutbreakevent.shtml",
+        "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_03",
+      ],
+      fr: [
+        "https://www.pokemon.com/fr/actus-pokemon/une-apparition-massive-de-pokemon-de-type-feu-embrase-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
+        "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_03",
+      ],
+      zh: [
+        "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_03",
+      ],
+      ja: [
+        "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_03",
+      ],
+      ko: [
+        "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_03",
+      ],
+      it:[
+        "https://www.pokemon.com/it/novita-pokemon/comparse-massicce-di-pokemon-fuoco-rendono-latmosfera-del-gioco-di-carte-collezionabili-pokemon-pocket-ancor-piu-rovente",
+      ],
+      es:[
+        "https://www.pokemon.com/es/noticias-pokemon/apariciones-masivas-de-pokemon-de-tipo-fuego-en-el-juego-de-cartas-coleccionables-pokemon-pocket",
+      ]
+    },
+    showOnHome: true,
+  },
     {
       name: {
         en: "Wonder Pick Event Part 2 (Bulbasaur + Magnemite)",
@@ -405,23 +540,75 @@ export const eventsData = [
   [
     {
       name: {
-        en: "Genetic Apex SP Emblem Event",
+        en: "Genetic Apex Emblem Event 1",
+        fr: "Évènement insigne Puissance Génétique 1",
+        zh: "最強的基因 勳章活動1",
+        ja: "最強の遺伝子 エンブレムイベント1",
+        ko: "최강의 유전자 엠블럼 이벤트1",
       },
-      pos: "0% 30%",
+      pos: "50% 15%",
       zoom: "100%",
-      image: "wonder_pick_bulbasaur_1.jpg",
+      image: "genetic_apex_emblem_event.png",
+      start: "2024-11-07 06:00:00",
+      end: "2024-11-28 05:59:00",
+      color: "#6d21ed",
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/genetic-apex-emblem-event-1",
+          "https://www.pokemon-zone.com/events/pvp-emblem-event-1/",
+          "https://www.serebii.net/tcgpocket/events/geneticapexemblemevent1.shtml",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EMBLEM_01",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EMBLEM_01",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EMBLEM_01",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EMBLEM_01",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EMBLEM_01",
+        ],
+      },
+      showOnHome: true,
+    },
+    {
+      name: {
+        en: "Genetic Apex SP Emblem Event 1",
+        fr: "Évènement insigne Puissance Génétique SP 1",
+        zh: "最強的基因 勳章活動1 SP",
+        ja: "最強の遺伝子 エンブレムイベント1 SP",
+        ko: "최강의 유전자 엠블럼 이벤트1 SP",
+      },
+      pos: "0% 20%",
+      zoom: "100%",
+      image: "genetic_apex_sp_emblem_event.jpg",
       start: "2024-12-09 06:00:00",
       end: "2024-12-16 06:00:00",
-      color: "#FFFFFF",
+      color: "#6d21ed",
       urls: {
         en: [
           "https://ptcgpocket.gg/genetic-apex-sp-emblem-event-1/",
           "https://www.pokemon-zone.com/events/genetic-apex-sp-emblem-event-1/",
           "https://www.serebii.net/tcgpocket/events/geneticapexspemblemevent1.shtml",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EMBLEM_02",
         ],
-        pt: ["https://ptcgphub.com/pt/evento-emblema-da-ilha-mitica/"],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EMBLEM_02",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EMBLEM_02",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EMBLEM_02",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EMBLEM_02",
+        ],
       },
-      showOnHome: false,
+      showOnHome: true,
     },
     {
       name: {
@@ -595,6 +782,29 @@ export const eventsData = [
     },
   ],
   [
+    {
+      name: {
+        en: "Premium Pass – October 2024",
+        ja: "プレミアムパス – 2024年10月",
+        zh: "尊贵通行证 – 2024年10月",
+        ko: "프리미엄 패스 – 2024년 10월",
+        fr: "Pass Premium - Octobre 2024",
+        de: "Premium Pass - Oktober 2024",
+        es: "Pase Premium - Octubre 2024",
+        it: "Pass Premium - Ottobre 2024",
+        pt: "Passe Premium - Outubro 2024",
+      },
+      pos: "10% 45%",
+      zoom: "500%",
+      image: "premium-pass-oct-2024.webp",
+      start: "2024-10-30 19:00:00",
+      end: "2024-12-01 05:59:00",
+      color: "#7C8FBA",
+      urls: {
+        en: ["https://ptcgpocket.gg/premium-pass-october-2024/"],
+      },
+      showOnHome: true,
+    },
     {
       name: {
         en: "Premium Pass - December 2024",

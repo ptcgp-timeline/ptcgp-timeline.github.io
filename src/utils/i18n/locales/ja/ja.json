@@ -9,20 +9,20 @@
     "language": "言語",
     "close": "閉じる",
     "footer": {
-      "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
-      "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
+      "disclaimer": "{{siteName}}は非公式のファンサイトであり、{{company}}の権利所有者による承認や提携はありません。",
+      "copyright": "すべての{{company}}の画像、名前、キャラクター、および関連マークは{{copyrightHolders}}の商標および著作権です。"
     },
     "externalLinks": {
       "title": "外部リンク",
-      "none": "No external links available"
+      "none": "利用可能な外部リンクはありません"
     }
   },
   "share": {
     "title": "共有",
     "viaLink": "リンクで共有",
     "viaSocial": "SNSで共有",
-    "copy": "Copy",
-    "copied": "Copied!",
+    "copy": "コピー",
+    "copied": "コピーしました！",
     "socialPlatforms": {
       "facebook": "Facebook",
       "twitter": "X",
@@ -34,19 +34,19 @@
       "tumblr": "Tumblr",
       "viber": "Viber",
       "line": "Line",
-      "email": "Email"
+      "email": "メール"
     },
-    "footer": "共有ありがとうございます！"
+    "footer": "このタイムラインを友達と共有しましょう！"
   },
   "about": {
     "title": "概要",
     "sections": {
       "what": {
         "title": "このサイトについて",
-        "content": "ポケモンTCGポケットのイベントタイムラインビューアーです。"
+        "content": "ポケモンTCGポケットのイベントやアップデートのタイムラインビューアーです。イベント、新パックのリリース、その他のゲーム内アクティビティを追跡するのに役立ちます。"
       },
       "features": {
-        "title": "機能",
+        "title": "主な機能",
         "list": [
           "現地時間での表示",
           "多言語対応",
@@ -62,34 +62,34 @@
   },
   "header": {
     "nav": {
-      "contribute": "Contribute",
-      "issues": "Issues",
-      "share": "Share",
-      "about": "About"
+      "contribute": "貢献",
+      "issues": "問題を報告",
+      "share": "共有",
+      "about": "概要"
     }
   },
   "timeline": {
-    "title": "Timeline",
-    "loading": "Loading...",
+    "title": "タイムライン",
+    "loading": "読み込み中...",
     "timezone": {
-      "showLocal": "Show as local time ({{timezone}})"
+      "showLocal": "現地時間で表示 ({{timezone}})"
     },
     "reset": {
-      "toDaily": "to Daily Reset"
+      "toDaily": "デイリーリセットまで"
     }
   },
   "status": {
-    "live": "Live",
-    "finished": "Finished",
-    "startingIn": "Starting in",
-    "endingIn": "Ending in",
-    "noEndDate": "No End Date"
+    "live": "ライブ",
+    "finished": "終了",
+    "startingIn": "開始まで",
+    "endingIn": "終了まで",
+    "noEndDate": "終了日未定"
   },
   "dateTime": {
-    "uncertaintyMessage": "Date and time subject to change",
+    "uncertaintyMessage": "日時は変更される可能性があります",
     "formats": {
-      "monthDay": "ddd, D MMMM YYYY HH:mm",
-      "nextReset": "dddd, D MMMM YYYY HH:mm"
+      "monthDay": "YYYY年M月D日(ddd) HH:mm",
+      "nextReset": "YYYY年M月D日(dddd) HH:mm"
     }
   }
 }

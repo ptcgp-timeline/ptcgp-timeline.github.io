@@ -52,12 +52,11 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
   const showUncertainty = event.uncertain || event.description?.[language]?.includes('subject to change');
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
-      <div className="relative bg-background-secondary p-6 rounded-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto space-y-4"
-        onClick={e => e.stopPropagation()}>
-        
-
-
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50" onClick={onClose}>
+      <div 
+        className="bg-background-secondary p-6 rounded-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto scrollbar-custom shadow-lg border border-gray-700"
+        onClick={e => e.stopPropagation()}
+      >
         {event.image && (
           <div className="relative mb-4">
             <img 
@@ -71,12 +70,12 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
           </div>
         )}
         
-        <h1 className="text-white font-display font-semibold text-xl">
+        <h1 className="text-white font-display font-semibold text-xl mb-2">
           {eventName}
         </h1>
         
         <div className="space-y-2">
-          <p className="text-gray-400 font-body flex flex-col md:flex-row">
+          <p className="text-gray-200 font-body flex flex-col md:flex-row">
             <span className="flex group relative">
               <span>
                 {eventStart.format('ddd, D MMM YYYY HH:mm')}
@@ -85,7 +84,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                 )}
               </span>
               {showUncertainty && (
-                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-3 py-1.5 text-sm bg-item border border-button text-gray-300 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-3 py-1.5 text-sm bg-item border border-gray-600 text-gray-200 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
                   {t('dateTime.uncertaintyMessage')}
                 </span>
               )}
@@ -100,13 +99,13 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                   )}
                 </span>
               ) : (
-                <span className="text-gray-400">
+                <span className="text-gray-300">
                   {t('status.noEndDate')}
                   <sup className="text-primary text-base ml-0.5 font-bold">*</sup>
                 </span>
               )}
               {(showUncertainty || event.noEnd) && (
-                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-3 py-1.5 text-sm bg-item border border-button text-gray-300 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-3 py-1.5 text-sm bg-item border border-gray-600 text-gray-200 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
                   {t('dateTime.uncertaintyMessage')}
                 </span>
               )}
@@ -116,52 +115,64 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
 
         {/* Description Section */}
         {eventDescription && (
-          <p className="text-gray-200">
+          <p className="text-gray-200 mt-4">
             {eventDescription}
           </p>
         )}
 
         {/* Timer Section */}
-        <p className="text-gray-400 px-4 py-1 bg-black bg-opacity-50 rounded-xl inline-block">
+        <p className="text-sm font-medium px-3 py-1.5 bg-background rounded-lg mt-4 inline-flex items-center gap-2 shadow-lg border border-gray-700">
           {!started ? (
             <>
-              {t('status.startingIn')}{' '}
-              {`${diffStart > 86400000 ? `${Math.trunc(dayjs.duration(diffStart).asDays())}d` : ''} ${
-                dayjs.duration(diffStart).format('HH:mm:ss')
-              }`}
+              <span className="w-1.5 h-1.5 rounded-full bg-status-starting-dot animate-pulse"></span>
+              <span className="text-status-starting-text">{t('status.startingIn')}</span>{' '}
+              <span className="font-mono text-gray-200 text-xs">
+                {`${diffStart > 86400000 ? `${Math.trunc(dayjs.duration(diffStart).asDays())}d` : ''} ${
+                  dayjs.duration(diffStart).format('HH:mm:ss')
+                }`}
+              </span>
             </>
           ) : started && !ended && !event.startOnly && !event.noEnd ? (
             <>
-              {t('status.endingIn')}{' '}
-              {`${diffEnd > 86400000 ? `${Math.trunc(dayjs.duration(diffEnd).asDays())}d` : ''} ${
-                dayjs.duration(diffEnd).format('HH:mm:ss')
-              }`}
+              <span className="w-1.5 h-1.5 rounded-full bg-status-ending-dot animate-pulse"></span>
+              <span className="text-status-ending-text">{t('status.endingIn')}</span>{' '}
+              <span className="font-mono text-gray-200 text-xs">
+                {`${diffEnd > 86400000 ? `${Math.trunc(dayjs.duration(diffEnd).asDays())}d` : ''} ${
+                  dayjs.duration(diffEnd).format('HH:mm:ss')
+                }`}
+              </span>
             </>
           ) : event.startOnly || event.noEnd ? (
-            t('status.live')
+            <>
+              <span className="w-1.5 h-1.5 rounded-full bg-status-live-dot animate-pulse"></span>
+              <span className="text-status-live-text font-medium">{t('status.live')}</span>
+            </>
           ) : (
-            t('status.finished')
+            <>
+              <span className="w-1.5 h-1.5 rounded-full bg-status-ended-dot"></span>
+              <span className="text-status-ended-text">{t('status.finished')}</span>
+            </>
           )}
         </p>
 
         {/* Show uncertainty message only if language is supported */}
         {showUncertainty && event.name[language] && (
-          <p className="text-gray-400">
+          <p className="text-gray-300 mt-2">
             {t('dateTime.uncertaintyMessage')}
           </p>
         )}
 
         {/* External Links Section */}
-        <div>
+        <div className="mt-6">
           <button
             onClick={() => setShowUrls(!showUrls)}
             className="w-full flex items-center justify-between px-3.5 py-2.5 bg-button hover:bg-button/80 rounded-xl transition-colors"
           >
-            <span className="text-gray-300 font-medium">
+            <span className="text-gray-200 font-medium">
               {t('common.externalLinks.title')}
             </span>
             <svg 
-              className={`w-4 h-4 text-gray-400 transition-transform ${showUrls ? 'rotate-180' : ''}`}
+              className={`w-4 h-4 text-gray-300 transition-transform ${showUrls ? 'rotate-180' : ''}`}
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24"
@@ -171,9 +182,9 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
           </button>
 
           {showUrls && (
-            <div className="mt-2 space-y-2 px-2 max-h-[200px] overflow-y-auto scrollbar-thin scrollbar-thumb-button scrollbar-track-transparent">
+            <div className="mt-2 space-y-2 px-2 max-h-[200px] overflow-y-auto scrollbar-custom">
               {officialUrls.length === 0 && communityUrls.length === 0 ? (
-                <p className="text-gray-400 text-sm italic bg-item px-3.5 py-2.5 rounded-xl">
+                <p className="text-gray-300 text-sm italic bg-item px-3.5 py-2.5 rounded-xl">
                   {t('common.externalLinks.none')}
                 </p>
               ) : (
@@ -184,7 +195,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                     return (
                       <a 
                         key={index}
-                        className="w-full flex items-center justify-between px-3 py-2 rounded-xl bg-button hover:bg-button/80 transition-all duration-200 group border border-button/20"
+                        className="w-full flex items-center justify-between px-3 py-2 rounded-xl bg-button hover:bg-button/80 transition-all duration-200 group border border-gray-600"
                         target="_blank" 
                         href={`${url}${url.includes('?') ? '&' : '?'}utm_source=ptcgp-timeline`}
                         rel="noopener noreferrer"
@@ -203,7 +214,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                           </span>
                         </div>
                         <svg 
-                          className="w-4 h-4 text-gray-400 group-hover:text-white transition-colors" 
+                          className="w-4 h-4 text-gray-300 group-hover:text-white transition-colors" 
                           fill="none" 
                           stroke="currentColor" 
                           viewBox="0 0 24 24"
@@ -242,7 +253,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                                 aria-hidden="true"
                               />
                             </div>
-                            <span className="text-gray-300 group-hover:text-white transition-colors text-sm font-medium truncate">
+                            <span className="text-gray-200 group-hover:text-white transition-colors text-sm font-medium truncate">
                               {domain}
                             </span>
                             <svg 
@@ -269,34 +280,6 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
             </div>
           )}
         </div>
-
-        {/* Comments Section */}
-        {/* <div className="mt-4">
-          <button
-            onClick={() => setShowComments(!showComments)}
-            className="w-full flex items-center justify-between px-4 py-2 bg-button hover:bg-button/80 rounded-xl transition-colors"
-          >
-            <span className="text-gray-300 font-medium">Comments</span>
-            <svg 
-              className={`w-5 h-5 text-gray-400 transition-transform ${showComments ? 'rotate-180' : ''}`}
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          
-          {showComments && (
-            <div className="mt-4">
-              <Comments 
-                identifier={`event-${event.start}-${event.end}`}
-                title={eventName}
-                url={window.location.href}
-              />
-            </div>
-          )}
-        </div> */}
       </div>
     </div>
   );
