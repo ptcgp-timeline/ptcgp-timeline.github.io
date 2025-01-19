@@ -43,7 +43,7 @@
     "sections": {
       "what": {
         "title": "这是什么？",
-        "content": "这是一个简单的时间轴查看器，用于查看《宝可梦TCG Pocket》的活动和更新。它可以帮助您随时了解游戏中正在进行和即将到来的活动，例如特别活动、新卡包发布等内容。"
+        "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
       },
       "features": {
         "title": "酷炫功能",
