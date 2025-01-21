@@ -1,3 +1,14 @@
 User-agent: *
 Allow: /
+Allow: /en/
+Allow: /ja/
+Allow: /ko/
+Allow: /zh/
+Allow: /de/
+Allow: /es/
+Allow: /fr/
+Allow: /it/
+Allow: /pt/
+
+# Sitemap
 Sitemap: https://ptcgp-timeline.github.io/sitemap.xml 

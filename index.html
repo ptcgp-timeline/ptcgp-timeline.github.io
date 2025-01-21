@@ -30,7 +30,6 @@
     <link rel="alternate" hreflang="es" href="https://ptcgp-timeline.github.io/es" />
     <link rel="alternate" hreflang="fr" href="https://ptcgp-timeline.github.io/fr" />
     <link rel="alternate" hreflang="it" href="https://ptcgp-timeline.github.io/it" />
-    <link rel="alternate" hreflang="nl" href="https://ptcgp-timeline.github.io/nl" />
     <link rel="alternate" hreflang="pt" href="https://ptcgp-timeline.github.io/pt" />
     <link rel="alternate" hreflang="x-default" href="https://ptcgp-timeline.github.io" />
     
@@ -43,7 +42,6 @@
     <meta property="og:locale:alternate" content="es" />
     <meta property="og:locale:alternate" content="fr" />
     <meta property="og:locale:alternate" content="it" />
-    <meta property="og:locale:alternate" content="nl" />
     <meta property="og:locale:alternate" content="pt" />
 
     <!-- Enhanced Schema.org Language Support -->
@@ -62,7 +60,7 @@
       },
       "applicationCategory": "Game Timeline",
       "operatingSystem": "Any",
-      "inLanguage": ["en", "ja", "ko", "zh", "de", "es", "fr", "it", "nl", "pt"]
+      "inLanguage": ["en", "ja", "ko", "zh", "de", "es", "fr", "it", "pt"]
     }
     </script>
 
@@ -128,93 +126,114 @@
       })(window,document,'script','dataLayer','GTM-MNPBXW53');</script>
       <!-- End Google Tag Manager -->
        
-    <style>
-      html {
-        height: 100%;
-        background: #1a1d2d;
-      }
-
-      /* Loading Spinner */
-      .initial-loader {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #1a1d2d;
-        font-family: 'Catamaran', sans-serif;
-      }
-
-      .loader-text {
-        color: #5c8aff;
-        font-weight: 600;
-        margin-top: 1rem;
-        font-size: 1rem;
-        opacity: 0;
-        animation: fadeInOut 2s ease-in-out infinite;
-      }
-
-      .spinner {
-        position: relative;
-        width: 60px;
-        height: 60px;
-      }
-
-      .spinner::before,
-      .spinner::after {
-        content: '';
-        position: absolute;
-        border-radius: 50%;
-        animation: pulse 1.8s ease-in-out infinite;
-        filter: drop-shadow(0 0 8px #5c8aff40);
-      }
-
-      .spinner::before {
-        width: 100%;
-        height: 100%;
-        background: #2b2f43;
-        border: 3px solid #5c8aff;
-        animation-delay: 0.2s;
-      }
-
-      .spinner::after {
-        width: 80%;
-        height: 80%;
-        background: #1a1d2d;
-        border: 3px solid #ffb952;
-        top: 10%;
-        left: 10%;
-        animation-delay: 0.6s;
-      }
-
-      @keyframes pulse {
-        0% {
-          transform: scale(0.85);
-          opacity: 0.8;
+      <style>
+        :root {
+          --bg-color: #1a1d2d;
+          --box-color: #151824;
+          --primary-blue: #5c8aff;
+          
+          --box-size: 70px;
+          --circle-size: calc(var(--box-size) * 0.55); 
+          --dot-size: calc(var(--box-size) * 0.071);    
+          --circle-radius: calc(var(--circle-size) / 2);
         }
-        50% {
-          transform: scale(1);
-          opacity: 1;
+  
+        html {
+          height: 100%;
+          background: var(--bg-color);
         }
-        100% {
-          transform: scale(0.85);
-          opacity: 0.8;
+  
+        .initial-loader {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          width: 100vw;
+          position: fixed;
+          inset: 0;
+          background: var(--bg-color);
+          font-family: 'Catamaran', sans-serif;
         }
-      }
-
-      @keyframes fadeInOut {
-        0%, 100% {
-          opacity: 0.3;
+  
+        .loader-text {
+          color: var(--primary-blue);
+          font-weight: 600;
+          margin-top: 1rem;
+          font-size: clamp(0.875rem, 1vw, 1rem);
+          opacity: 0;
+          animation: fadeInOut 2s ease-in-out infinite;
         }
-        50% {
-          opacity: 1;
+  
+        .dots-loader {
+          width: var(--box-size);
+          height: var(--box-size);
+          position: relative;
         }
-      }
-    </style>
+  
+        .square-box {
+          position: absolute;
+          width: var(--box-size);
+          height: var(--box-size);
+          background: var(--box-color);
+          inset: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: calc(var(--box-size) * 0.2);
+          box-shadow: 5px 5px 10px 0px rgba(21, 24, 36, 0.6);
+          overflow: hidden;
+          display: grid;
+          place-items: center;
+        }
+  
+        .dots-container {
+          width: var(--circle-size);
+          height: var(--circle-size);
+          position: relative;
+          animation: rotateDots 3s steps(30) infinite;
+          display: grid;
+          place-items: center;
+        }
+  
+        .dot {
+          position: absolute;
+          width: var(--dot-size);
+          height: var(--dot-size);
+          border-radius: 50%;
+          background: var(--primary-blue);
+          transform-origin: 50% 50%;
+          animation: colorChange 10s steps(5) infinite;
+        }
+  
+        .dot:nth-child(1) { transform: rotate(0deg) translate(var(--circle-radius)); }
+        .dot:nth-child(2) { transform: rotate(36deg) translate(var(--circle-radius)); }
+        .dot:nth-child(3) { transform: rotate(72deg) translate(var(--circle-radius)); }
+        .dot:nth-child(4) { transform: rotate(108deg) translate(var(--circle-radius)); }
+        .dot:nth-child(5) { transform: rotate(144deg) translate(var(--circle-radius)); }
+        .dot:nth-child(6) { transform: rotate(180deg) translate(var(--circle-radius)); }
+        .dot:nth-child(7) { transform: rotate(216deg) translate(var(--circle-radius)); }
+        .dot:nth-child(8) { transform: rotate(252deg) translate(var(--circle-radius)); }
+        .dot:nth-child(9) { transform: rotate(288deg) translate(var(--circle-radius)); }
+        .dot:nth-child(10) { transform: rotate(324deg) translate(var(--circle-radius)); }
+  
+        @keyframes colorChange {
+          0%, 100% { background: #5c8aff; }
+          20% { background: #ff7eb3; }
+          40% { background: #7c4dff; }
+          60% { background: #64ffda; }
+          80% { background: #ffb952; }
+        }
+  
+        @keyframes rotateDots {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+  
+        @keyframes fadeInOut {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 1; }
+        }
+      </style>
 
     <script>
       // Check for redirect parameter
@@ -236,10 +255,25 @@
     
     <div id="root">
       <div class="initial-loader">
-        <div class="spinner"></div>
-        <div class="loader-text">Loading...</div>
+          <div class="dots-loader">
+            <div class="square-box">
+              <div class="dots-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="loader-text">Loading...</div>
+        </div>
       </div>
-    </div>
     <script type="module" src="/src/main.jsx"></script>
 
     <div itemscope itemtype="https://schema.org/WebApplication">

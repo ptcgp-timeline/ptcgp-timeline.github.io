@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting... | PTCGP Timeline</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Page Not Found | PTCGP Timeline</title>
     <style>
       html {
         height: 100%;
@@ -23,17 +24,20 @@
       }
     </style>
     <script>
-        // Get the current path
+        // Language detection and redirect
         const path = window.location.pathname;
-        // Get the supported languages from the path
-        const langMatch = path.match(/^\/(zh|ja|ko|fr|de|es|it|pt|en)/);
+        const supportedLangs = ['zh', 'ja', 'ko', 'fr', 'de', 'es', 'it', 'pt', 'en'];
+        const userLang = navigator.language.split('-')[0];
+        const langMatch = path.match(new RegExp(`^\\/(${supportedLangs.join('|')})`));
         
         if (langMatch) {
-            // If it's a language path, redirect to the root and let the app handle routing
-            window.location.replace('/?redirect=' + path.slice(1));
+            // If it's a language path, redirect to the specific language page
+            const lang = langMatch[1];
+            window.location.replace(`/${lang}/?redirect=${path.slice(langMatch[0].length + 1)}`);
         } else {
-            // For all other paths, redirect to root
-            window.location.replace('/');
+            // For other paths, redirect to user's language or default to English
+            const defaultLang = supportedLangs.includes(userLang) ? userLang : 'en';
+            window.location.replace(`/${defaultLang}`);
         }
     </script>
     <!-- Google Tag Manager -->
@@ -51,7 +55,7 @@
     <!-- End Google Tag Manager (noscript) -->
     
     <div class="loading">
-        <p>Redirecting...</p>
+        <p>Redirecting to the correct page...</p>
     </div>
 </body>
 </html> 

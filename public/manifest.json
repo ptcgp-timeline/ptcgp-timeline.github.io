@@ -5,8 +5,8 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#202442",
-  "theme_color": "#202442",
+  "background_color": "#1a1d2d",
+  "theme_color": "#1a1d2d",
   "serviceworker": {
     "src": "service-worker.js",
     "scope": "/"

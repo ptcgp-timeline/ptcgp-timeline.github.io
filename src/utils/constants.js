@@ -10,12 +10,12 @@ import ptIcon from "@/assets/images/locals/pt.svg";
 
 export const SUPPORTED_LANGUAGES = [
   { code: "en", name: "English", icon: enIcon },
-  { code: "zh", name: "中文", icon: zhIcon },
-  { code: "ja", name: "日本語", icon: jaIcon },
-  { code: "ko", name: "한국어", icon: koIcon },
+  { code: "es", name: "Español", icon: esIcon },
   { code: "fr", name: "Français", icon: frIcon },
   { code: "de", name: "Deutsch", icon: deIcon },
-  { code: "es", name: "Español", icon: esIcon },
   { code: "it", name: "Italiano", icon: itIcon },
-  { code: "pt", name: "Português", icon: ptIcon },
+  { code: "pt", name: "Português (BR)", icon: ptIcon },
+  { code: "ja", name: "日本語", icon: jaIcon },
+  { code: "ko", name: "한국어", icon: koIcon },
+  { code: "zh", name: "繁體中文", icon: zhIcon },
 ];

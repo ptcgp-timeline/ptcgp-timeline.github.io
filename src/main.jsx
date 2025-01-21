@@ -13,6 +13,11 @@ dayjs.extend(duration);
 dayjs.extend(timezone);
 dayjs.extend(utc);
 
+// Get language from URL
+const path = window.location.pathname;
+const langMatch = path.match(/^\/(zh|ja|ko|fr|de|es|it|pt|en)/);
+const currentLang = langMatch ? langMatch[1] : 'en';
+
 const rootElement = document.getElementById('root');
 if (!rootElement) {
   throw new Error('Failed to find the root element');
@@ -22,7 +27,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <PHProvider>
-      <App />
+      <App initialLang={currentLang} />
     </PHProvider>
   </StrictMode>
 );

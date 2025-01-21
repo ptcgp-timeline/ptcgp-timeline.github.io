@@ -221,8 +221,8 @@ export const eventsData = [
       name: {
         en: "New Expansion A2",
       },
-      pos: "10% 40%",
-      zoom: "180%",
+      pos: "0% 40%",
+      zoom: "140%",
       image: "not_sure_element.webp",
       start: "2025-01-30 06:00:00",
       end: "2025-07-30 05:59:00",
@@ -234,34 +234,43 @@ export const eventsData = [
       uncertain: true,
     },
   ],
-  [{
-    name: {
-      en: "Wonder Pick Event Part 1 (Chansey  + Meowth)",
-      fr: "Évènement pioche miracle 1 (Leveinard + Miaouss)",
-      zh: "得卡挑戰活動 前半 (吉利蛋 + 	喵喵)",
-      ja: "ゲットチャレンジイベント 前半 (ラッキー + ニャース)",
-      ko: "겟 챌린지 이벤트 전반 (럭키 + 나옹)",
+  [
+    {
+      name: {
+        en: "Wonder Pick Event Part 1 (Chansey  + Meowth)",
+        fr: "Évènement pioche miracle 1 (Leveinard + Miaouss)",
+        zh: "得卡挑戰活動 前半 (吉利蛋 + 	喵喵)",
+        ja: "ゲットチャレンジイベント 前半 (ラッキー + ニャース)",
+        ko: "겟 챌린지 이벤트 전반 (럭키 + 나옹)",
+      },
+      pos: "58% 45%",
+      zoom: "600%",
+      image: "Meowth-event-banner.webp",
+      start: "2024-11-01 06:00:00",
+      end: "2024-11-15 05:59:59",
+      color: "#FCF7BC",
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/wonder-pick-event-part-1/",
+          "https://www.serebii.net/tcgpocket/events/wonderpickeventpart1.shtml",
+          "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_01",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_01",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_01",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_01",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_01",
+        ],
+      },
+      showOnHome: true,
     },
-    pos: "58% 45%",
-    zoom: "600%",
-    image: "Meowth-event-banner.webp",
-    start: "2024-11-01 06:00:00",
-    end: "2024-11-15 05:59:59",
-    color: "#FCF7BC",
-    urls: {
-      en: [
-        "https://ptcgpocket.gg/wonder-pick-event-part-1/",
-        "https://www.serebii.net/tcgpocket/events/wonderpickeventpart1.shtml",
-        "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
-        "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_01",
-      ],
-      fr:["https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_01"],
-      zh:["https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_01"],
-      ja:["https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_01"],
-      ko:["https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_01"],
-    },
-    showOnHome: true,
-  },
     {
       name: {
         en: "Wonder Pick Event Part 1 (Bulbasaur + Magnemite)",
@@ -332,78 +341,87 @@ export const eventsData = [
       showOnHome: true,
     },
   ],
-  [{
-    name: {
-      en: "Wonder Pick Event Part 2 (Chansey  + Meowth)",
-      fr: "Évènement pioche miracle 2 (Leveinard + Miaouss)",
-      zh: "得卡挑戰活動 後半 (吉利蛋 + 	喵喵)",
-      ja: "ゲットチャレンジイベント 後半 (ラッキー + ニャース)",
-      ko: "겟 챌린지 이벤트 후반 (럭키 + 나옹)",
+  [
+    {
+      name: {
+        en: "Wonder Pick Event Part 2 (Chansey  + Meowth)",
+        fr: "Évènement pioche miracle 2 (Leveinard + Miaouss)",
+        zh: "得卡挑戰活動 後半 (吉利蛋 + 	喵喵)",
+        ja: "ゲットチャレンジイベント 後半 (ラッキー + ニャース)",
+        ko: "겟 챌린지 이벤트 후반 (럭키 + 나옹)",
+      },
+      pos: "15% 55%",
+      zoom: "600%",
+      image: "Meowth-event-2.webp",
+      start: "2024-11-08 06:00:00",
+      end: "2024-11-15 05:59:59",
+      color: "#FCF7BC",
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/wonder-pick-event-part-2/",
+          "https://www.serebii.net/tcgpocket/events/wonderpickeventpart2.shtml",
+          "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_02",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_02",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_02",
+        ],
+        fr: [
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_02",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_02",
+        ],
+      },
+      showOnHome: true,
     },
-    pos: "15% 55%",
-    zoom: "600%",
-    image: "Meowth-event-2.webp",
-    start: "2024-11-08 06:00:00",
-    end: "2024-11-15 05:59:59",
-    color: "#FCF7BC",
-    urls: {
-      en: [
-        "https://ptcgpocket.gg/wonder-pick-event-part-2/",
-        "https://www.serebii.net/tcgpocket/events/wonderpickeventpart2.shtml",
-        "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
-        "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_02",
-      ],
-      zh:["https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_02"],
-      ja:["https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_02"],
-      fr:["https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_02"],
-      ko:["https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_02"],
+    {
+      name: {
+        en: "Fire Pokémon Mass Outbreak Event (Arcanine ex)",
+        fr: "Apparition massive de Pokémon Feu (Arcanin-ex)",
+        zh: "火屬性寶可夢大量出現活動 (風速狗ex)",
+        ja: "炎ポケモン大量発生イベント (ウインディex)",
+        ko: "불꽃 포켓몬 대량발생 이벤트 (윈디 ex)",
+      },
+      pos: "52% 30%",
+      zoom: "300%",
+      image: "Fire-event.webp",
+      start: "2024-11-22 06:00:00",
+      end: "2024-11-28 05:59:00",
+      color: "#F8982B",
+      urls: {
+        en: [
+          "https://www.pokemon.com/us/pokemon-news/a-fire-type-pokemon-mass-outbreak-blazes-into-pokemon-trading-card-game-pocket",
+          "https://ptcgpocket.gg/fire-pokemon-mass-outbreak-event/",
+          "https://www.pokemon-zone.com/events/fire-type-pokemon-mass-outbreak/",
+          "https://www.serebii.net/tcgpocket/events/fire-typemassoutbreakevent.shtml",
+          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_03",
+        ],
+        fr: [
+          "https://www.pokemon.com/fr/actus-pokemon/une-apparition-massive-de-pokemon-de-type-feu-embrase-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
+          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        zh: [
+          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        ja: [
+          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        ko: [
+          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_03",
+        ],
+        it: [
+          "https://www.pokemon.com/it/novita-pokemon/comparse-massicce-di-pokemon-fuoco-rendono-latmosfera-del-gioco-di-carte-collezionabili-pokemon-pocket-ancor-piu-rovente",
+        ],
+        es: [
+          "https://www.pokemon.com/es/noticias-pokemon/apariciones-masivas-de-pokemon-de-tipo-fuego-en-el-juego-de-cartas-coleccionables-pokemon-pocket",
+        ],
+      },
+      showOnHome: true,
     },
-    showOnHome: true,
-  },
-  {
-    name: {
-      en: "Fire Pokémon Mass Outbreak Event (Arcanine ex)",
-      fr: "Apparition massive de Pokémon Feu (Arcanin-ex)",
-      zh: "火屬性寶可夢大量出現活動 (風速狗ex)",
-      ja: "炎ポケモン大量発生イベント (ウインディex)",
-      ko: "불꽃 포켓몬 대량발생 이벤트 (윈디 ex)",
-    },
-    pos: "52% 30%",
-    zoom: "300%",
-    image: "Fire-event.webp",
-    start: "2024-11-22 06:00:00",
-    end: "2024-11-28 05:59:00",
-    color: "#F8982B",
-    urls: {
-      en: [
-        "https://www.pokemon.com/us/pokemon-news/a-fire-type-pokemon-mass-outbreak-blazes-into-pokemon-trading-card-game-pocket",
-        "https://ptcgpocket.gg/fire-pokemon-mass-outbreak-event/",
-        "https://www.pokemon-zone.com/events/fire-type-pokemon-mass-outbreak/",
-        "https://www.serebii.net/tcgpocket/events/fire-typemassoutbreakevent.shtml",
-        "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_03",
-      ],
-      fr: [
-        "https://www.pokemon.com/fr/actus-pokemon/une-apparition-massive-de-pokemon-de-type-feu-embrase-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
-        "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_03",
-      ],
-      zh: [
-        "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_03",
-      ],
-      ja: [
-        "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_03",
-      ],
-      ko: [
-        "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_03",
-      ],
-      it:[
-        "https://www.pokemon.com/it/novita-pokemon/comparse-massicce-di-pokemon-fuoco-rendono-latmosfera-del-gioco-di-carte-collezionabili-pokemon-pocket-ancor-piu-rovente",
-      ],
-      es:[
-        "https://www.pokemon.com/es/noticias-pokemon/apariciones-masivas-de-pokemon-de-tipo-fuego-en-el-juego-de-cartas-coleccionables-pokemon-pocket",
-      ]
-    },
-    showOnHome: true,
-  },
     {
       name: {
         en: "Wonder Pick Event Part 2 (Bulbasaur + Magnemite)",
@@ -776,6 +794,36 @@ export const eventsData = [
         ],
         ko: [
           "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_NEWYEAR_01",
+        ],
+      },
+      showOnHome: true,
+    },
+
+    {
+      name: {
+        en: "A Gift from the developer team, Pokédex - Promo-A-08",
+        fr: "Un cadeau de l'équipe développeur, Pokédex - Promo-A-08",
+        zh: "開發者團隊的禮物, 寶可夢圖鑑 - Promo-A-08",
+        ja: "開発者チームからのプレゼント, ポケモン図鑑 - Promo-A-08",
+        ko: "개발자 팀의 선물, 포켓몬 도감 - Promo-A-08",
+      },
+      pos: "15% 30%",
+      zoom: "120%",
+      image: "dev_gift.webp",
+      start: "2025-01-20 06:00:00",
+      end: "2025-04-30 05:59:00",
+      color: "#E35A34",
+      description: {
+        en: "To celebrate achieving 40 billion cards acquired by Pokémon Trading Card Game Pocket players worldwide, players have been gifted the Pokédex - Promo-A-08 card!",
+        fr: "Pour célébrer l'acquisition de 40 milliards de cartes par les joueurs de Pokémon Trading Card Game Pocket dans le monde entier, les joueurs ont reçu la carte Pokédex - Promo-A-08 !",
+        zh: "為慶祝全球寶可夢集換式卡牌遊戲Pocket玩家共獲得40億張卡牌，玩家們獲得了寶可夢圖鑑 - Promo-A-08卡片！",
+        ja: "ポケモンカードゲームポケットのプレイヤーが全世界で40億枚のカードを獲得したことを祝うために、プレイヤーにはポケモン図鑑 - Promo-A-08カードが贈られました！",
+        ko: "전 세계 포켓몬 카드 게임 포켓 플레이어들이 400억 장의 카드를 획득한 것을 기념하기 위해, 플레이어들에게 포켓몬 도감 - Promo-A-08 카드가 선물되었습니다！",
+      },
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/promo-pokedex/",
+          "https://www.pokemon-zone.com/events/pokedex-present/",
         ],
       },
       showOnHome: true,

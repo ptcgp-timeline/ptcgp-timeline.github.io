@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Default/Root URL -->
   <url>
     <loc>https://ptcgp-timeline.github.io/</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ptcgp-timeline.github.io/en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ptcgp-timeline.github.io/ja"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ptcgp-timeline.github.io/ko"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ptcgp-timeline.github.io/zh"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ptcgp-timeline.github.io/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ptcgp-timeline.github.io/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ptcgp-timeline.github.io/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://ptcgp-timeline.github.io/it"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ptcgp-timeline.github.io/pt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ptcgp-timeline.github.io/"/>
+  </url>
+
+  <!-- Language-specific URLs -->
+  <url>
+    <loc>https://ptcgp-timeline.github.io/en</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/ja</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/ko</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/zh</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/de</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/es</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/fr</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/it</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ptcgp-timeline.github.io/pt</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset> 
