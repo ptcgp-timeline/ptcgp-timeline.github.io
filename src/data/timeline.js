@@ -219,19 +219,38 @@ export const eventsData = [
     },
     {
       name: {
-        en: "New Expansion A2",
+        en: "Space-Time Smackdown A2",
+        fr: "Choc Spatio-Temporel A2",
+        es: "Pugna Espaciotemporal A2",
+        it: "Scontro Spaziotemporale A2",
+        de: "Kollision von Raum und Zeit A2",
+        pt: "Embate do Tempo e Espaço A2",
       },
-      pos: "0% 40%",
-      zoom: "140%",
-      image: "not_sure_element.webp",
+      pos: "0% 15%",
+      zoom: "250%",
+      image: "space-time-smackdown-a2.webp",
       start: "2025-01-30 06:00:00",
       end: "2025-07-30 05:59:00",
-      color: "#4ed4e4",
+      color: "#949DAE",
       urls: {
-        ////en: ["https://example.com"],
+        en: [
+          "https://www.pokemon.com/us/pokemon-news/explore-pokemon-tcg-pockets-newest-expansion-space-time-smackdown",
+        ],
+        fr: [
+          "https://www.pokemon.com/fr/actus-pokemon/explorez-choc-spatio-temporel-la-toute-nouvelle-extension-du-jcc-pokemon-pocket",
+        ],
+        it: [
+          "https://www.pokemon.com/it/novita-pokemon/esplora-scontro-spaziotemporale-la-nuova-espansione-del-gcc-pokemon-pocket",
+        ],
+        es: [
+          "https://www.pokemon.com/es/noticias-pokemon/explora-la-nueva-expansion-de-jcc-pokemon-pocket-pugna-espaciotemporal",
+        ],
+        de: [
+          "https://www.pokemon.com/de/pokemon-news/entdecke-kollision-von-raum-und-zeit-die-neueste-erweiterung-fuer-pokemon-sammelkartenspiel-pocket",
+        ],
       },
       showOnHome: true,
-      uncertain: true,
+      noEnd: true,
     },
   ],
   [
@@ -527,6 +546,10 @@ export const eventsData = [
         zh: "超屬性寶可夢大量出現活動 (夢幻ex)",
         ja: "超ポケモン大量発生イベント (ミューex)",
         ko: "초포켓몬 대량발생 이벤트 (뮤ex)",
+        de: "Psycho-Pokémon-Massenausbruch-Event (Mew ex)",
+        es: "Aparición masiva de Pokémon Psíquico (Mew ex)",
+        it: "Apparizione massiva di Pokémon Psichico (Mew ex)",
+        pt: "Aparência massiva de Pokémon Psíquico (Mew ex)",
       },
       pos: "20% 30%",
       zoom: "100%",
@@ -535,11 +558,22 @@ export const eventsData = [
       end: "2025-01-29 05:59:00",
       color: "#f7dbe6",
       urls: {
+        es: [
+          "https://www.pokemon.com/es/noticias-pokemon/explora-la-nueva-expansion-de-jcc-pokemon-pocket-pugna-espaciotemporal",
+        ],
+        it: [
+          "https://www.pokemon.com/it/novita-pokemon/comparse-massicce-di-pokemon-di-tipo-psico-nel-gioco-di-carte-collezionabili-pokemon-pocket",
+        ],
+        de: [
+          "https://www.pokemon.com/de/pokemon-news/ein-massiver-auflauf-von-psycho-pokemon-in-pokemon-sammelkartenspiel-pocket",
+        ],
         en: [
+          "https://www.pokemon.com/us/pokemon-news/psychic-type-pokemon-mass-outbreak-in-pokemon-trading-card-game-pocket",
           "https://ptcgpocket.gg/psychic-pokemon-mass-outbreak-event-mew-ex/",
           "https://www.pokemon-zone.com/events/psychic-type-pokemon-mass-outbreak/",
         ],
         fr: [
+          "https://www.pokemon.com/fr/actus-pokemon/une-apparition-massive-de-pokemon-psy-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
           "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_04",
         ],
         zh: [
