@@ -219,12 +219,12 @@ export const eventsData = [
     },
     {
       name: {
-        en: "Space-Time Smackdown A2",
-        fr: "Choc Spatio-Temporel A2",
-        es: "Pugna Espaciotemporal A2",
-        it: "Scontro Spaziotemporale A2",
-        de: "Kollision von Raum und Zeit A2",
-        pt: "Embate do Tempo e Espaço A2",
+        en: "Space-Time Smackdown (A2)",
+        fr: "Choc Spatio-Temporel ( A2)",
+        es: "Pugna Espaciotemporal (A2)",
+        it: "Scontro Spaziotemporale (A2)",
+        de: "Kollision von Raum und Zeit (A2)",
+        pt: "Embate do Tempo e Espaço (A2)",
       },
       pos: "0% 15%",
       zoom: "250%",
