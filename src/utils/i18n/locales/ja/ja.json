@@ -8,6 +8,7 @@
     "menu": "メニュー",
     "language": "言語",
     "close": "閉じる",
+    "search": "Search",
     "footer": {
       "disclaimer": "{{siteName}}は非公式のファンサイトであり、{{company}}の権利所有者による承認や提携はありません。",
       "copyright": "すべての{{company}}の画像、名前、キャラクター、および関連マークは{{copyrightHolders}}の商標および著作権です。"
@@ -16,6 +17,9 @@
       "title": "外部リンク",
       "none": "利用可能な外部リンクはありません"
     }
+  },
+  "search": {
+    "placeholder": "Search events..."
   },
   "share": {
     "title": "共有",
@@ -43,7 +47,7 @@
     "sections": {
       "what": {
         "title": "このサイトについて",
-        "content": "ポケモンTCGポケットのイベントタイムラインビューアーです。"
+        "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
       },
       "features": {
         "title": "機能",
