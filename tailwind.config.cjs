@@ -71,17 +71,39 @@ module.exports = {
         legendary: "0 0 0 3px rgba(255, 185, 82, 0.3)",
         outline: "0 0 0 2px #5c8aff",
         select: "0 20px 16px rgba(0, 0, 0, 0.5)",
+        search: "0 4px 12px rgba(0, 0, 0, 0.3), 0 -1px 0 rgba(0, 0, 0, 0.2)",
       },
       spacing: {
         14: "3.5rem",
       },
       animation: {
         "fade-in": "fadeIn 0.2s ease-out",
+        highlight: "highlight 1s ease-in-out",
+        blink: "blink 1s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        highlight: {
+          "0%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.7", transform: "scale(1.02)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        blink: {
+          "0%": {
+            boxShadow:
+              "0 0 5px rgba(92, 138, 255, 0.8), 0 0 10px rgba(92, 138, 255, 0.6), 0 0 15px rgba(92, 138, 255, 0.4)",
+          },
+          "50%": {
+            boxShadow:
+              "0 0 10px rgba(92, 138, 255, 0.4), 0 0 20px rgba(92, 138, 255, 0.3), 0 0 30px rgba(92, 138, 255, 0.2)",
+          },
+          "100%": {
+            boxShadow:
+              "0 0 5px rgba(92, 138, 255, 0.8), 0 0 10px rgba(92, 138, 255, 0.6), 0 0 15px rgba(92, 138, 255, 0.4)",
+          },
         },
       },
       backgroundImage: {
@@ -95,5 +117,29 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".scrollbar-custom": {
+          "&::-webkit-scrollbar": {
+            width: "8px",
+            height: "8px",
+          },
+          "&::-webkit-scrollbar-track": {
+            backgroundColor: "#1a1d2d",
+            borderRadius: "4px",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "#363b54",
+            borderRadius: "4px",
+            "&:hover": {
+              backgroundColor: "#424867",
+            },
+          },
+          scrollbarWidth: "thin",
+          scrollbarColor: "#363b54 #1a1d2d",
+        },
+      });
+    },
+  ],
 };

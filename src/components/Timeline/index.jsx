@@ -9,6 +9,7 @@ import DetailModal from './DetailModal';
 import { saveToLocalStorage, getFromLocalStorage, STORAGE_KEYS } from '../../utils/localStorage';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import Header from '../Header';
 
 
 dayjs.extend(duration);
@@ -36,7 +37,7 @@ function Timeline({ events = [] }) {
   );
   const [userTimezone] = useState(dayjs.tz.guess());
   
-  const eventHeight = 38;
+  const eventHeight = 42;
   const eventMargin = 20;
   const padding = 10;
   const marginTop = 80;
@@ -51,6 +52,7 @@ function Timeline({ events = [] }) {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [nextReset, setNextReset] = useState(getNextReset());
   const [timeToReset, setTimeToReset] = useState('');
+  const [selectedEventId, setSelectedEventId] = useState(null);
 
 
   const handleTimezoneChange = (value) => {
@@ -207,8 +209,15 @@ function Timeline({ events = [] }) {
     if (!timeline) return;
 
     const transformScroll = (event) => {
+      // Allow vertical scroll when shift is pressed
+      if (event.shiftKey) {
+        return;
+      }
+
       if (!event.deltaY) return;
 
+      event.preventDefault();
+      
       const delta = Math.abs(event.deltaY);
       const dir = event.deltaY > 0 ? 1 : -1;
       
@@ -217,15 +226,9 @@ function Timeline({ events = [] }) {
       });
     };
 
-    timeline.removeEventListener('wheel', transformScroll);
-    timeline.addEventListener('wheel', transformScroll);
-    const timeoutId = setTimeout(() => {
-      timeline.removeEventListener('wheel', transformScroll);
-      timeline.addEventListener('wheel', transformScroll);
-    }, 100);
+    timeline.addEventListener('wheel', transformScroll, { passive: false });
 
     return () => {
-      clearTimeout(timeoutId);
       timeline.removeEventListener('wheel', transformScroll);
     };
   }, [loading]);
@@ -279,13 +282,79 @@ function Timeline({ events = [] }) {
     dayjs.locale(i18n.language);
   }, [i18n.language]);
 
+  const handleEventSelect = (event) => {
+    // Convert the event times to match the data attributes
+    const eventStart = dayjs.utc(event.start).format();
+    const eventEnd = dayjs.utc(event.end).format();
+    
+    // Set highlight ID immediately regardless of whether element is visible
+    setSelectedEventId(`${eventStart}-${eventEnd}`);
+    
+    const eventElement = document.querySelector(`[data-event-start="${eventStart}"][data-event-end="${eventEnd}"]`);
+    
+    // Calculate if event is in future or past
+    const now = showLocalTime ? dayjs() : dayjs.utc();
+    const eventTime = dayjs.utc(event.start);
+    const isInFuture = eventTime.isAfter(now);
+
+    if (eventElement && timelineRef.current) {
+      const elementRect = eventElement.getBoundingClientRect();
+      const containerRect = timelineRef.current.getBoundingClientRect();
+      
+      let scrollPosition;
+      if (isInFuture) {
+        // For future events, scroll so the event is more towards the left
+        scrollPosition = timelineRef.current.scrollLeft + elementRect.left - containerRect.left - (containerRect.width / 4);
+      } else {
+        // For past events, keep them more towards the right
+        scrollPosition = timelineRef.current.scrollLeft + elementRect.left - containerRect.left + 20;
+      }
+      
+      // Scroll to the event
+      timelineRef.current.scrollTo({
+        left: Math.max(0, scrollPosition),
+        behavior: 'smooth'
+      });
+    } else {
+      // If we can't find the element, calculate its position and scroll there
+      const diffDays = eventTime.diff(firstDay, 'day', true);
+      const estimatedPosition = diffDays * dayWidth;
+      
+      // For future events, position them more towards the left of the viewport
+      const scrollOffset = isInFuture ? 
+        timelineRef.current.offsetWidth / 4 : 
+        timelineRef.current.offsetWidth / 2;
+      
+      timelineRef.current?.scrollTo({
+        left: Math.max(0, estimatedPosition - scrollOffset),
+        behavior: 'smooth'
+      });
+    }
+
+    // Wait for scroll animation to complete before showing DetailModal
+    setTimeout(() => {
+      setSelectedEvent(event);
+    }, 2100); // Match the highlight duration from TimelineEvent.jsx
+
+    // Remove highlight after animation
+    setTimeout(() => {
+      setSelectedEventId(null);
+    }, 2000); // Match the highlight duration from TimelineEvent.jsx
+  };
+
   return (
     <div className="flex-1 flex flex-col pt-16">
+      <Header 
+        events={events.flat()} 
+        onEventSelect={handleEventSelect} 
+        showLocalTime={showLocalTime} 
+      />
+
       <h1 className="sr-only">
         Timeline
       </h1>
 
-      <div className="pt-8 sm:pt-16 lg:pt-8">
+      <div className="pt-4 sm:pt-10 lg:pt-8">
         <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-2 px-4 md:px-8">
           <div className="text-white select-none">
             <input
@@ -317,7 +386,7 @@ function Timeline({ events = [] }) {
           </div>
         </div>
       </div>
-
+<div className="mx-2 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-18 py-2 sm:py-6">
       {loading ? (
         <div className="text-white px-4 md:px-8">{t('timeline.loading')}</div>
       ) : (
@@ -409,6 +478,7 @@ function Timeline({ events = [] }) {
                       onOpenDetail={setSelectedEvent}
                       showLocalTime={showLocalTime}
                       convertTime={convertTime}
+                      isHighlighted={selectedEventId === `${dayjs.utc(event.start).format()}-${dayjs.utc(event.end).format()}`}
                     />
                   ))
                 ) : (
@@ -424,6 +494,7 @@ function Timeline({ events = [] }) {
                     onOpenDetail={setSelectedEvent}
                     showLocalTime={showLocalTime}
                     convertTime={convertTime}
+                    isHighlighted={selectedEventId === `${dayjs.utc(eventGroup.start).format()}-${dayjs.utc(eventGroup.end).format()}`}
                   />
                 )}
               </div>
@@ -461,6 +532,7 @@ function Timeline({ events = [] }) {
           now={today}
         />
       )}
+    </div>
     </div>
   );
 }

@@ -18,11 +18,15 @@ const TimelineEvent = ({
   index, 
   now, 
   onOpenDetail,
-  convertTime
+  convertTime,
+  isHighlighted
 }) => {
   const { language } = useLanguage();
   const { i18n } = useTranslation();
   const eventName = event.name[language] || event.name['en'];
+  const [isClickable, setIsClickable] = useState(true);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+  const textRef = useRef(null);
 
   const eventStart = convertTime(event.start);
   const eventEnd = convertTime(event.end);
@@ -43,8 +47,27 @@ const TimelineEvent = ({
   const shouldShowHourStart = diffStart <= 86400000 || event.duration > 6.5 || !prevNearby;
   const shouldShowHourEnd = diffEnd <= 86400000 || event.duration > 6.5 || !prevNearby;
 
-  const textRef = useRef(null);
-  const [isOverflowing, setIsOverflowing] = useState(false);
+  // Handle highlight state changes
+  useEffect(() => {
+    if (isHighlighted) {
+      setIsClickable(false);
+      // Re-enable clicking after the highlight animation (1s) plus a small buffer
+      const timer = setTimeout(() => {
+        setIsClickable(true);
+      }, 2100);
+      return () => clearTimeout(timer);
+    } else {
+      setIsClickable(true);
+    }
+  }, [isHighlighted]);
+
+  const handleClick = (e) => {
+    if (!isClickable) {
+      e.preventDefault();
+      return;
+    }
+    onOpenDetail(event);
+  };
 
   useEffect(() => {
     const element = textRef.current;
@@ -55,10 +78,13 @@ const TimelineEvent = ({
 
   return (
     <div
-      onClick={() => onOpenDetail(event)}
-      className={`flex items-center z-10 text-white cursor-pointer absolute
+      onClick={handleClick}
+      data-event-start={dayjs.utc(event.start).format()}
+      data-event-end={dayjs.utc(event.end).format()}
+      className={`flex items-center z-10 text-white ${isClickable ? 'cursor-pointer' : 'cursor-default'} absolute transition-all duration-150
         ${prevDiff < 1 ? '' : 'rounded-l-xl'} 
-        ${nextDiff < 1 ? 'border-r-4 border-white' : 'rounded-r-xl'}`}
+        ${nextDiff < 1 ? 'border-r-4 border-white' : 'rounded-r-xl'}
+        ${isHighlighted ? 'ring-2 ring-primary ring-offset-2 ring-offset-background shadow-lg scale-[1.02] z-30 animate-highlight' : ''}`}
       style={{
         width: `${dayWidth * event.duration}px`,
         left: `${dayWidth * event.offset}px`,
@@ -162,6 +188,7 @@ TimelineEvent.propTypes = {
   now: PropTypes.object.isRequired,
   onOpenDetail: PropTypes.func.isRequired,
   convertTime: PropTypes.func.isRequired,
+  isHighlighted: PropTypes.bool,
 };
 
 export default TimelineEvent; 

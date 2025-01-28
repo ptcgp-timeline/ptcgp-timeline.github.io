@@ -219,6 +219,27 @@ export const eventsData = [
     },
     {
       name: {
+        "en": "Trading",
+        "fr": "Échange",
+        "es": "Intercambio",
+        "it": "Scambio",
+        "de": "Handel",
+        "pt": "Troca"
+    },    
+      pos: "0% 15%",
+      zoom: "250%",
+      image: "Trade.webp",
+      start: "2025-01-29 06:00:00",
+      end: "2025-01-30 05:59:00",
+      color: "#38C740",
+      urls: {
+        
+      },
+      showOnHome: true,
+      noEnd: true,
+    },
+    {
+      name: {
         en: "Space-Time Smackdown (A2)",
         fr: "Choc Spatio-Temporel ( A2)",
         es: "Pugna Espaciotemporal (A2)",

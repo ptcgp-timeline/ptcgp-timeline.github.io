@@ -26,6 +26,13 @@ span.event-name {
 }
 
 /* Timeline/index.jsx */
+.timelineContainer {
+  @apply w-full overflow-x-auto relative;
+  @apply bg-opacity-30 bg-item;
+  @apply border border-button rounded-2xl;
+  @apply shadow-inner;
+}
+
 .timelineContainer::-webkit-scrollbar {
   height: 8px;
 }
@@ -61,3 +68,5 @@ span.event-name {
 .modal-watermark {
   @apply bg-modal-watermark backdrop-blur-modal;
 }
+
+
