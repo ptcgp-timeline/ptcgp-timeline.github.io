@@ -8,6 +8,7 @@
     "menu": "Menu",
     "language": "Language",
     "close": "Close",
+    "search": "Search",
     "footer": {
       "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
       "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
@@ -16,6 +17,9 @@
       "title": "External Links",
       "none": "No external links available"
     }
+  },
+  "search": {
+    "placeholder": "Search events..."
   },
   "share": {
     "title": "Share",
@@ -43,7 +47,7 @@
     "sections": {
       "what": {
         "title": "What's this?",
-        "content": "This is a simple timeline viewer for Pokémon TCG Pocket events and updates. It helps you stay informed about ongoing and upcoming events in the game, such as special events, new pack releases, and more."
+        "content": "This is a simple timeline viewer for Pokemon TCG Pocket events and stuff. It helps you keep track of which events are happening in the game, whether it's events, new pack release or other stuff."
       },
       "features": {
         "title": "Cool Features",
