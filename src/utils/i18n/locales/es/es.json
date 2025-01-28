@@ -8,6 +8,7 @@
     "menu": "Menu",
     "language": "Language",
     "close": "Close",
+    "search": "Search",
     "footer": {
       "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
       "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
@@ -16,6 +17,9 @@
       "title": "External Links",
       "none": "No external links available"
     }
+  },
+  "search": {
+    "placeholder": "Search events..."
   },
   "share": {
     "title": "Share",
