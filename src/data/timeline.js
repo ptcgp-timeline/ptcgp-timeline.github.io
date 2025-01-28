@@ -25,7 +25,7 @@ export const gameConfig = {
     it: "Sito Ufficiale Pokémon TCG Pocket",
     pt: "Site Oficial Pokémon TCG Pocket",
   },
-  officialDomains: ["pokemon.com", "pokemonkorea.co.kr"],
+  officialDomains: ["pokemon.com", "pokemonkorea.co.kr", "pokemontcgpocket.com"],
   serverReset: "6AMUTC",
 };
 
@@ -224,7 +224,10 @@ export const eventsData = [
         "es": "Intercambio",
         "it": "Scambio",
         "de": "Handel",
-        "pt": "Troca"
+        "pt": "Troca",
+        "ko": "교환",
+        "ja": "交換",
+        "zh": "交易",
     },    
       pos: "0% 15%",
       zoom: "250%",
@@ -234,6 +237,17 @@ export const eventsData = [
       color: "#38C740",
       urls: {
         
+      },
+      description: {
+        en: "This is temporary, as it is not an event but a feature. hence it will be removed in the future.",
+        fr: "C'est temporaire, car ce n'est pas un évènement mais une fonctionnalité. Il sera donc supprimé dans le futur.",
+        es: "Es temporal, ya que no es un evento sino una función. Por lo tanto, se eliminará en el futuro.",
+        it: "È temporaneo, poiché non è un evento ma una funzione. Pertanto, sarà rimosso in futuro.",
+        de: "Es ist temporär, da es kein Ereignis, sondern eine Funktion. Daher wird es in der Zukunft entfernt.",
+        pt: "É temporário, pois não é um evento, mas uma função. Portanto, será removido no futuro.",
+        ko: "이것은 일시적인 것이며, 이벤트가 아니라 기능입니다. 따라서 미래에 제거될 것입니다.",
+        ja: "これは一時的なものであり、イベントではなく機能です。したがって、将来削除されます。",
+        zh: "這是暫時的，因為它不是一個事件，而是一個功能。因此，它將在未來被刪除。",
       },
       showOnHome: true,
       noEnd: true,
@@ -246,6 +260,8 @@ export const eventsData = [
         it: "Scontro Spaziotemporale (A2)",
         de: "Kollision von Raum und Zeit (A2)",
         pt: "Embate do Tempo e Espaço (A2)",
+        ko: "시공의 격투 (A2)",
+        ja: "時空の激闘 (A2)",
       },
       pos: "0% 15%",
       zoom: "250%",
@@ -268,6 +284,12 @@ export const eventsData = [
         ],
         de: [
           "https://www.pokemon.com/de/pokemon-news/entdecke-kollision-von-raum-und-zeit-die-neueste-erweiterung-fuer-pokemon-sammelkartenspiel-pocket",
+        ],
+        ko: [
+          "https://pokemonkorea.co.kr/pokemon_tcg_pocket/menu492?number=3622&mode=view",
+        ],
+        ja: [
+          "https://www.pokemontcgpocket.com/ja/news/20/",
         ],
       },
       showOnHome: true,

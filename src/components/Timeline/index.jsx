@@ -209,11 +209,6 @@ function Timeline({ events = [] }) {
     if (!timeline) return;
 
     const transformScroll = (event) => {
-      // Allow vertical scroll when shift is pressed
-      if (event.shiftKey) {
-        return;
-      }
-
       if (!event.deltaY) return;
 
       event.preventDefault();
@@ -283,16 +278,13 @@ function Timeline({ events = [] }) {
   }, [i18n.language]);
 
   const handleEventSelect = (event) => {
-    // Convert the event times to match the data attributes
     const eventStart = dayjs.utc(event.start).format();
     const eventEnd = dayjs.utc(event.end).format();
     
-    // Set highlight ID immediately regardless of whether element is visible
     setSelectedEventId(`${eventStart}-${eventEnd}`);
     
     const eventElement = document.querySelector(`[data-event-start="${eventStart}"][data-event-end="${eventEnd}"]`);
     
-    // Calculate if event is in future or past
     const now = showLocalTime ? dayjs() : dayjs.utc();
     const eventTime = dayjs.utc(event.start);
     const isInFuture = eventTime.isAfter(now);
@@ -303,24 +295,18 @@ function Timeline({ events = [] }) {
       
       let scrollPosition;
       if (isInFuture) {
-        // For future events, scroll so the event is more towards the left
         scrollPosition = timelineRef.current.scrollLeft + elementRect.left - containerRect.left - (containerRect.width / 4);
       } else {
-        // For past events, keep them more towards the right
         scrollPosition = timelineRef.current.scrollLeft + elementRect.left - containerRect.left + 20;
       }
-      
-      // Scroll to the event
       timelineRef.current.scrollTo({
         left: Math.max(0, scrollPosition),
         behavior: 'smooth'
       });
     } else {
-      // If we can't find the element, calculate its position and scroll there
       const diffDays = eventTime.diff(firstDay, 'day', true);
       const estimatedPosition = diffDays * dayWidth;
       
-      // For future events, position them more towards the left of the viewport
       const scrollOffset = isInFuture ? 
         timelineRef.current.offsetWidth / 4 : 
         timelineRef.current.offsetWidth / 2;
@@ -330,16 +316,14 @@ function Timeline({ events = [] }) {
         behavior: 'smooth'
       });
     }
-
-    // Wait for scroll animation to complete before showing DetailModal
     setTimeout(() => {
       setSelectedEvent(event);
-    }, 2100); // Match the highlight duration from TimelineEvent.jsx
+    }, 2100); // highlight duration from TimelineEvent.jsx
 
     // Remove highlight after animation
     setTimeout(() => {
       setSelectedEventId(null);
-    }, 2000); // Match the highlight duration from TimelineEvent.jsx
+    }, 2000); // highlight duration from TimelineEvent.jsx
   };
 
   return (
@@ -394,9 +378,20 @@ function Timeline({ events = [] }) {
           ref={timelineRef}
           className="timelineContainer w-full overflow-x-auto px-4 md:px-8 relative"
           style={{
-            overflowY: 'hidden'
+            overflowY: 'hidden',
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            WebkitOverflowScrolling: 'touch',
+            margin: '0 auto',
+            maxWidth: 'calc(100vw - 2rem)',
+            '@media (min-width: 768px)': {
+              maxWidth: 'calc(100vw - 4rem)',
+            }
           }}
         >
+          <div className="absolute left-0 top-0 w-[50vw] h-full pointer-events-none" />
+          <div className="absolute right-0 top-0 w-[50vw] h-full pointer-events-none" />
+          
           <div
             className="timeline relative"
             style={{

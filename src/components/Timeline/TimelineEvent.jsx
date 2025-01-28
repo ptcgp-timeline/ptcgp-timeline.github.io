@@ -51,7 +51,6 @@ const TimelineEvent = ({
   useEffect(() => {
     if (isHighlighted) {
       setIsClickable(false);
-      // Re-enable clicking after the highlight animation (1s) plus a small buffer
       const timer = setTimeout(() => {
         setIsClickable(true);
       }, 2100);
