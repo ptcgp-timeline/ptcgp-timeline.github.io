@@ -65,4 +65,7 @@ export default defineConfig({
     },
   },
   sourcemap: false,
+  json: {
+    stringify: true,
+  },
 });

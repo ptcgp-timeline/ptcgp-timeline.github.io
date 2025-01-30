@@ -1,0 +1,36 @@
+{
+  "name": {
+    "en": "Wonder Pick Event Part 2 (Chansey  + Meowth)",
+    "fr": "Évènement pioche miracle 2 (Leveinard + Miaouss)",
+    "zh": "得卡挑戰活動 後半 (吉利蛋 + \t喵喵)",
+    "ja": "ゲットチャレンジイベント 後半 (ラッキー + ニャース)",
+    "ko": "겟 챌린지 이벤트 후반 (럭키 + 나옹)"
+  },
+  "pos": "15% 55%",
+  "zoom": "600%",
+  "image": "Meowth-event-2.webp",
+  "start": "2024-11-08 06:00:00",
+  "end": "2024-11-15 05:59:59",
+  "color": "#FCF7BC",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-2/",
+      "https://www.serebii.net/tcgpocket/events/wonderpickeventpart2.shtml",
+      "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_02"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_02"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_02"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_02"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_02"
+    ]
+  },
+  "showOnHome": true
+}

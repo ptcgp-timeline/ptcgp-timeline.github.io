@@ -1,3 +1,6 @@
+import wonderPickEventPart1ChanseyMeowth from "./wonder-pick-events/1-chansey-meowth.json";
+import wonderPickEventPart2ChanseyMeowth from "./wonder-pick-events/2-chansey-meowth.json";
+
 // Game Configuration
 export const gameConfig = {
   name: {
@@ -263,7 +266,7 @@ export const eventsData = [
       },
       showOnHome: true,
     },
-  
+
     {
       name: {
         de: "Drop-Event (Cresselia-ex)",
@@ -294,15 +297,15 @@ export const eventsData = [
     // TEMP STUFF to reduce the height of timeline
     {
       name: {
-    de: "Massiver Auflauf von Finsternis-Pokémon (Snibunna-ex)",
-    en: "Darkness-type Pokémon Mass Outbreak Event (Weavile ex)",
-    es: "Aparición masiva de Pokémon de tipo Oscuro (Weavile ex)",
-    fr: "Apparition massive de Pokémon Obscurité (Dimoret-ex)",
-    it: "Comparse massicce di Pokémon Oscurità (Weavile-ex)",
-    ja: "悪ポケモン大量発生イベント (マニューラex)",
-    ko: "악포켓몬 대량발생 이벤트 (포푸니라 ex)",
-    pt: "Evento Aparição em Massa de Pokémon de tipo Escuridão (Weavile ex)",
-    zh: "惡屬性寶可夢大量出現活動 (瑪狃拉ex)", 
+        de: "Massiver Auflauf von Finsternis-Pokémon (Snibunna-ex)",
+        en: "Darkness-type Pokémon Mass Outbreak Event (Weavile ex)",
+        es: "Aparición masiva de Pokémon de tipo Oscuro (Weavile ex)",
+        fr: "Apparition massive de Pokémon Obscurité (Dimoret-ex)",
+        it: "Comparse massicce di Pokémon Oscurità (Weavile-ex)",
+        ja: "悪ポケモン大量発生イベント (マニューラex)",
+        ko: "악포켓몬 대량발생 이벤트 (포푸니라 ex)",
+        pt: "Evento Aparição em Massa de Pokémon de tipo Escuridão (Weavile ex)",
+        zh: "惡屬性寶可夢大量出現活動 (瑪狃拉ex)",
       },
       pos: "50% 30%",
       zoom: "500%",
@@ -343,42 +346,7 @@ export const eventsData = [
     },
   ],
   [
-    {
-      name: {
-        en: "Wonder Pick Event Part 1 (Chansey  + Meowth)",
-        fr: "Évènement pioche miracle 1 (Leveinard + Miaouss)",
-        zh: "得卡挑戰活動 前半 (吉利蛋 + 	喵喵)",
-        ja: "ゲットチャレンジイベント 前半 (ラッキー + ニャース)",
-        ko: "겟 챌린지 이벤트 전반 (럭키 + 나옹)",
-      },
-      pos: "58% 45%",
-      zoom: "600%",
-      image: "Meowth-event-banner.webp",
-      start: "2024-11-01 06:00:00",
-      end: "2024-11-15 05:59:59",
-      color: "#FCF7BC",
-      urls: {
-        en: [
-          "https://ptcgpocket.gg/wonder-pick-event-part-1/",
-          "https://www.serebii.net/tcgpocket/events/wonderpickeventpart1.shtml",
-          "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
-          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_01",
-        ],
-        fr: [
-          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_01",
-        ],
-        zh: [
-          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_01",
-        ],
-        ja: [
-          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_01",
-        ],
-        ko: [
-          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_01",
-        ],
-      },
-      showOnHome: true,
-    },
+    wonderPickEventPart1ChanseyMeowth,
     {
       name: {
         en: "Wonder Pick Event Part 1 (Bulbasaur + Magnemite)",
@@ -471,10 +439,10 @@ export const eventsData = [
           //"https://www.pokemon.com/us/pokemon-news/charmander-and-squirtle-star-in-this-pokemon-tcg-pocket-wonder-pick-event",
           "https://ptcgpocket.gg/wonder-pick-event-part-1-chimchar-togepi/",
           "https://www.pokemon-zone.com/events/chimchar-togepi-wonderpick/",
-         // "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02",
+          // "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02",
         ],
         fr: [
-         // "https://www.pokemon.com/fr/actus-pokemon/salameche-et-carapuce-sont-a-laffiche-dun-evenement-pioche-miracle-dans-le-jcc-pokemon-pocket",
+          // "https://www.pokemon.com/fr/actus-pokemon/salameche-et-carapuce-sont-a-laffiche-dun-evenement-pioche-miracle-dans-le-jcc-pokemon-pocket",
           //"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_02",
         ],
         de: [
@@ -484,7 +452,7 @@ export const eventsData = [
           //"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_02",
         ],
         ja: [
-         // "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_02",
+          // "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_02",
         ],
         ko: [
           //"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_02",
@@ -500,42 +468,8 @@ export const eventsData = [
     },
   ],
   [
-    {
-      name: {
-        en: "Wonder Pick Event Part 2 (Chansey  + Meowth)",
-        fr: "Évènement pioche miracle 2 (Leveinard + Miaouss)",
-        zh: "得卡挑戰活動 後半 (吉利蛋 + 	喵喵)",
-        ja: "ゲットチャレンジイベント 後半 (ラッキー + ニャース)",
-        ko: "겟 챌린지 이벤트 후반 (럭키 + 나옹)",
-      },
-      pos: "15% 55%",
-      zoom: "600%",
-      image: "Meowth-event-2.webp",
-      start: "2024-11-08 06:00:00",
-      end: "2024-11-15 05:59:59",
-      color: "#FCF7BC",
-      urls: {
-        en: [
-          "https://ptcgpocket.gg/wonder-pick-event-part-2/",
-          "https://www.serebii.net/tcgpocket/events/wonderpickeventpart2.shtml",
-          "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
-          "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_02",
-        ],
-        zh: [
-          "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_02",
-        ],
-        ja: [
-          "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_02",
-        ],
-        fr: [
-          "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_02",
-        ],
-        ko: [
-          "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_02",
-        ],
-      },
-      showOnHome: true,
-    },
+    wonderPickEventPart2ChanseyMeowth,
+
     {
       name: {
         en: "Fire Pokémon Mass Outbreak Event (Arcanine ex)",
@@ -750,10 +684,10 @@ export const eventsData = [
           //"https://www.pokemon.com/us/pokemon-news/charmander-and-squirtle-star-in-this-pokemon-tcg-pocket-wonder-pick-event",
           "https://ptcgpocket.gg/wonder-pick-event-part-2-chimchar-togepi/",
           "https://www.pokemon-zone.com/events/chimchar-togepi-wonderpick/",
-         // "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02",
+          // "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02",
         ],
         fr: [
-         // "https://www.pokemon.com/fr/actus-pokemon/salameche-et-carapuce-sont-a-laffiche-dun-evenement-pioche-miracle-dans-le-jcc-pokemon-pocket",
+          // "https://www.pokemon.com/fr/actus-pokemon/salameche-et-carapuce-sont-a-laffiche-dun-evenement-pioche-miracle-dans-le-jcc-pokemon-pocket",
           //"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_02",
         ],
         de: [
@@ -763,7 +697,7 @@ export const eventsData = [
           //"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_02",
         ],
         ja: [
-         // "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_02",
+          // "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_02",
         ],
         ko: [
           //"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_02",
@@ -777,7 +711,6 @@ export const eventsData = [
       },
       showOnHome: true,
     },
-    
   ],
   [
     {
@@ -921,7 +854,8 @@ export const eventsData = [
         ],
       },
       showOnHome: true,
-    },{
+    },
+    {
       name: {
         de: "Emblem-Event (Kollision von Raum und Zeit)",
         en: "Space-Time Smackdown Emblem Event",
@@ -1126,71 +1060,69 @@ export const eventsData = [
       showOnHome: true,
     },
   ],
-  [{
-    name: {
-      de: "Münze (Erika) + Boni A | Münze (Erika) + Boni B",
-      en: "Pokémon coin (Erika) + Bonuses A | Pokémon coin (Erika) + Bonuses B",
-      es: "Moneda Erika + extras A | Moneda Erika + extras B",
-      fr: "Pièce Pokémon - Erika + bonus A | Pièce Pokémon - Erika + bonus B",
-      it: "Erika (moneta) + extra A | Erika (moneta) + extra B",
-      ja: "おまけつきポケモンコイン(エリカ)A | おまけつきポケモンコイン(エリカ)B",
-      ko: "포켓몬 동전(민화) + 증정분 A | 포켓몬 동전(민화) + 증정분 B",
-      pt: "Moeda de Pokémon (Érica) + Bônus A | Moeda de Pokémon (Érica) + Bônus B",
-      zh: "附好禮寶可夢幣（莉佳）A | 附好禮寶可夢幣（莉佳）B",
-    },
-    pos: "0% 20%",
-    zoom: "310%",
-    image: "pokemon_coin_erika_bonuses_a_b.webp",
-    start: "2024-10-30 19:00:00",
-    end: "2025-01-30 05:59:00",
-    color: "#d7dee8",
-    urls: {
-      //en: ["https://example.com"],
-    },
-    showOnHome: true,
-  },
-    {  
+  [
+    {
       name: {
-    en: "Trade Feature Celebration Gift",
-    de: "Geschenk zur Feier der Tauschfunktion",
-    es: "Regalo de celebración por la función de intercambio",
-    fr: "Cadeau de célébration de la fonction Échange",
-    it: "Regalo per la celebrazione della funzione Scambio",
-    ja: "トレード機能記念ギフト",
-    ko: "트레이드 기능 기념 선물",
-    pt: "Presente de Celebração da Função de Troca",
-    zh: "交換功能慶祝禮物",
-  },
-  pos: "15% 30%",
-  zoom: "120%",
-  image: "Trade.webp",
-  start: "2025-01-30 06:00:00",
-  end: "2025-03-27 05:59:00",
-  color: "#3DC742",
-  description: {
-    en: "To mark the debut of the Pokémon TCG Pocket's Trade feature, players will be gifted items to elevate their trading experience: 120 Trade Hourglasses and 500 Trade Tokens.",
-de: "Zum Start des Pokémon TCG Pocket Tausch-Features erhalten Spieler Geschenke, um ihr Tauscherlebnis zu verbessern: 120 Tausch-Sanduhren und 500 Tausch-Marken.",
-es: "Para celebrar el debut de la función de intercambio en Pokémon TCG Pocket, los jugadores recibirán artículos para mejorar su experiencia de intercambio: 120 Relojes de arena de intercambio y 500 Fichas de intercambio.",
-fr: "Pour marquer le lancement de la fonction Échange de Pokémon TCG Pocket, les joueurs recevront des objets pour améliorer leur expérience : 120 Sabliers Échange et 500 Jetons Échange.",
-it: "Per celebrare il debutto della funzione Scambio in Pokémon TCG Pocket, i giocatori riceveranno oggetti per migliorare la loro esperienza: 120 Clessidre scambio e 500 Gettoni scambio.",
-ja: "ポケモンTCGポケットのトレード機能の開始を記念して、プレイヤーにトレード体験を高めるためのアイテムを贈呈します：トレード砂時計120個、トレードメダル500個。",
-ko: "포켓몬 TCG 포켓의 트레이드 기능 출시를 기념하여 플레이어들에게 트레이드 경험을 향상시키기 위한 아이템이 지급됩니다: 트레이드 모래시계 120개 및 트레이드 메달 500개.",
-pt: "Para marcar o lançamento da função de Troca do Pokémon TCG Pocket, os jogadores receberão itens para melhorar sua experiência de troca: 120 Ampulhetas de Troca e 500 Tokens de Troca.",
-zh: "為慶祝 Pokémon TCG Pocket 交換功能的推出，玩家將獲得提升交換體驗的道具：120 個交換沙漏和 500 個交換代幣。"
-},
-  urls: {
-    en: [
-      "https://ptcgpocket.gg/trade-feature-celebration-gift/",
-      //"https://www.pokemon-zone.com/events/pokedex-present/",
-    ],
-  },
-  showOnHome: true,
-  
-},
-],
-[
-  
-],
+        de: "Münze (Erika) + Boni A | Münze (Erika) + Boni B",
+        en: "Pokémon coin (Erika) + Bonuses A | Pokémon coin (Erika) + Bonuses B",
+        es: "Moneda Erika + extras A | Moneda Erika + extras B",
+        fr: "Pièce Pokémon - Erika + bonus A | Pièce Pokémon - Erika + bonus B",
+        it: "Erika (moneta) + extra A | Erika (moneta) + extra B",
+        ja: "おまけつきポケモンコイン(エリカ)A | おまけつきポケモンコイン(エリカ)B",
+        ko: "포켓몬 동전(민화) + 증정분 A | 포켓몬 동전(민화) + 증정분 B",
+        pt: "Moeda de Pokémon (Érica) + Bônus A | Moeda de Pokémon (Érica) + Bônus B",
+        zh: "附好禮寶可夢幣（莉佳）A | 附好禮寶可夢幣（莉佳）B",
+      },
+      pos: "0% 20%",
+      zoom: "310%",
+      image: "pokemon_coin_erika_bonuses_a_b.webp",
+      start: "2024-10-30 19:00:00",
+      end: "2025-01-30 05:59:00",
+      color: "#d7dee8",
+      urls: {
+        //en: ["https://example.com"],
+      },
+      showOnHome: true,
+    },
+    {
+      name: {
+        en: "Trade Feature Celebration Gift",
+        de: "Geschenk zur Feier der Tauschfunktion",
+        es: "Regalo de celebración por la función de intercambio",
+        fr: "Cadeau de célébration de la fonction Échange",
+        it: "Regalo per la celebrazione della funzione Scambio",
+        ja: "トレード機能記念ギフト",
+        ko: "트레이드 기능 기념 선물",
+        pt: "Presente de Celebração da Função de Troca",
+        zh: "交換功能慶祝禮物",
+      },
+      pos: "15% 30%",
+      zoom: "120%",
+      image: "Trade.webp",
+      start: "2025-01-30 06:00:00",
+      end: "2025-03-27 05:59:00",
+      color: "#3DC742",
+      description: {
+        en: "To mark the debut of the Pokémon TCG Pocket's Trade feature, players will be gifted items to elevate their trading experience: 120 Trade Hourglasses and 500 Trade Tokens.",
+        de: "Zum Start des Pokémon TCG Pocket Tausch-Features erhalten Spieler Geschenke, um ihr Tauscherlebnis zu verbessern: 120 Tausch-Sanduhren und 500 Tausch-Marken.",
+        es: "Para celebrar el debut de la función de intercambio en Pokémon TCG Pocket, los jugadores recibirán artículos para mejorar su experiencia de intercambio: 120 Relojes de arena de intercambio y 500 Fichas de intercambio.",
+        fr: "Pour marquer le lancement de la fonction Échange de Pokémon TCG Pocket, les joueurs recevront des objets pour améliorer leur expérience : 120 Sabliers Échange et 500 Jetons Échange.",
+        it: "Per celebrare il debutto della funzione Scambio in Pokémon TCG Pocket, i giocatori riceveranno oggetti per migliorare la loro esperienza: 120 Clessidre scambio e 500 Gettoni scambio.",
+        ja: "ポケモンTCGポケットのトレード機能の開始を記念して、プレイヤーにトレード体験を高めるためのアイテムを贈呈します：トレード砂時計120個、トレードメダル500個。",
+        ko: "포켓몬 TCG 포켓의 트레이드 기능 출시를 기념하여 플레이어들에게 트레이드 경험을 향상시키기 위한 아이템이 지급됩니다: 트레이드 모래시계 120개 및 트레이드 메달 500개.",
+        pt: "Para marcar o lançamento da função de Troca do Pokémon TCG Pocket, os jogadores receberão itens para melhorar sua experiência de troca: 120 Ampulhetas de Troca e 500 Tokens de Troca.",
+        zh: "為慶祝 Pokémon TCG Pocket 交換功能的推出，玩家將獲得提升交換體驗的道具：120 個交換沙漏和 500 個交換代幣。",
+      },
+      urls: {
+        en: [
+          "https://ptcgpocket.gg/trade-feature-celebration-gift/",
+          //"https://www.pokemon-zone.com/events/pokedex-present/",
+        ],
+      },
+      showOnHome: true,
+    },
+  ],
+  [],
   [
     {
       name: {
@@ -1288,7 +1220,7 @@ zh: "為慶祝 Pokémon TCG Pocket 交換功能的推出，玩家將獲得提升
       showOnHome: true,
     },
   ],
-  
+
   [
     {
       name: {
