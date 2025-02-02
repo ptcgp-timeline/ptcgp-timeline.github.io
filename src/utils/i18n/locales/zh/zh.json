@@ -9,6 +9,7 @@
     "language": "語言",
     "close": "關閉",
     "search": "Search",
+    "install": "Install App",
     "footer": {
       "disclaimer": "{{siteName}} 是一个非官方的粉丝网站，与 {{company}} 权利持有者无关，也未获得其支持。",
       "copyright": "所有 {{company}} 的图片、名称、角色及相关标志均为 {{copyrightHolders}} 的商标和版权。"
