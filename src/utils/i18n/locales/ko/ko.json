@@ -9,6 +9,7 @@
     "language": "언어",
     "close": "닫기",
     "search": "Search",
+    "install": "Install App",
     "footer": {
       "disclaimer": "{{siteName}}은(는) 비공식 팬 사이트이며 {{company}} 권리 소유자의 승인이나 제휴가 없습니다.",
       "copyright": "모든 {{company}} 이미지, 이름, 캐릭터 및 관련 마크는 {{copyrightHolders}}의 상표 및 저작권입니다."
