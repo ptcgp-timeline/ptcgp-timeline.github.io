@@ -53,6 +53,21 @@ const EventEditor = () => {
     );
   };
 
+  const handleValidation = () => {
+    const newIssues = [];
+    
+    // Example validation logic
+    if (!event.name.en) {
+      newIssues.push('Missing English name');
+    }
+    
+    // Update validation state
+    setValidation({
+      missingLanguages: newIssues,
+      missingUrls: [], // Add logic for URLs if needed
+    });
+  };
+
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-6">Event Editor</h1>
@@ -111,12 +126,36 @@ const EventEditor = () => {
       {/* Validation Warnings */}
       <LanguageValidator event={event} />
 
+      {/* Display validation issues if any */}
+      {validation.missingLanguages.length > 0 && (
+        <div className="validation-errors">
+          <h3>Missing Languages:</h3>
+          <ul>
+            {validation.missingLanguages.map((issue, index) => (
+              <li key={index}>{issue}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {validation.missingUrls.length > 0 && (
+        <div className="validation-errors">
+          <h3>Missing URLs:</h3>
+          <ul>
+            {validation.missingUrls.map((issue, index) => (
+              <li key={index}>{issue}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {/* Preview */}
       <PreviewSection />
 
       {/* Save Button */}
       <button
         onClick={async () => {
+          handleValidation();
           const response = await fetch('/api/dev/save-event', {
             method: 'POST',
             headers: {

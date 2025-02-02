@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs/promises";
+import { Buffer } from "buffer";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,9 +13,8 @@ const createKebabCase = (str) => {
     str
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-") // Replace any non-alphanumeric characters with hyphens for a kebab case
-      .replace(/^-+|-+$/g, "") || 
-    "untitled"
-  ); 
+      .replace(/^-+|-+$/g, "") || "untitled"
+  );
 };
 
 export default defineConfig({

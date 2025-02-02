@@ -220,7 +220,7 @@ const DevCMS = () => {
     //setShowJsonEditor(false);
   };
 
-  const handleMouseDown = (e) => {
+  const handleMouseDown = () => {
     isDraggingRef.current = true;
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
