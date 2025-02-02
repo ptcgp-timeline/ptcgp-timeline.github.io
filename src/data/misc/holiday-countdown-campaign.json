@@ -1,0 +1,25 @@
+{
+	"name": {
+		"en": "Holiday Countdown Campaign",
+		"ja": "ホリデーカウントダウンキャンペーン",
+		"zh": "节日倒计时活动",
+		"ko": "홀리데이 카운트다운 캠페인",
+		"fr": "Campagne de Compte à Rebours des Fêtes",
+		"de": "Ferien-Countdown-Kampagne",
+		"es": "Campaña de Cuenta Regresiva Festiva",
+		"it": "Campagna Conto alla Rovescia Festivo",
+		"pt": "Campanha de Contagem Regressiva de Feriado"
+	},
+	"pos": "0% 30%",
+	"zoom": "100%",
+	"image": "Pokemon-TCG-Pocket-Holiday-Countdown-Campaign.jpg",
+	"start": "2024-12-17 06:00:00",
+	"end": "2024-12-20 05:59:00",
+	"color": "#67bce6",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/holiday-countdown-campaign/"
+		]
+	},
+	"showOnHome": true
+}

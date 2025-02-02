@@ -1,0 +1,25 @@
+{
+	"name": {
+		"en": "Premium Pass – October 2024",
+		"ja": "プレミアムパス – 2024年10月",
+		"zh": "特級護照 – 2024年10月",
+		"ko": "프리미엄 패스 – 2024년 10월",
+		"fr": "Pass Premium - Octobre 2024",
+		"de": "Premium Pass - Oktober 2024",
+		"es": "Pase Premium - Octubre 2024",
+		"it": "Pass Premium - Ottobre 2024",
+		"pt": "Passe Premium - Outubro 2024"
+	},
+	"pos": "10% 45%",
+	"zoom": "500%",
+	"image": "premium-pass-oct-2024.webp",
+	"start": "2024-10-30 19:00:00",
+	"end": "2024-12-01 05:59:00",
+	"color": "#7C8FBA",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/premium-pass-october-2024/"
+		]
+	},
+	"showOnHome": true
+}

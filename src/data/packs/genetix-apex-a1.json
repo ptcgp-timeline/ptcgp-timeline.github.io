@@ -1,0 +1,38 @@
+{
+    "name": {
+      "en": "Genetic Apex (A1)",
+      "ja": "最強の遺伝子 (A1)",
+      "zh": "最強的基因 (A1)",
+      "ko": "최강의 유전자 (A1)",
+      "fr": "Puissance Génétique (A1)",
+      "de": "Genetischer Höhepunkt (A1)",
+      "es": "Cima Genética (A1)",
+      "it": "Apice Genetico (A1)",
+      "pt": "Ápice Genético (A1)"
+    },
+    "description": {
+      "en": "Genetic Apex contains [Charlizard] - [Mewtwo] - [Pikachu]",
+      "ja": "最強の遺伝子には [リザードン] - [ミュウツー] - [ピカチュウ] が含まれています",
+      "zh": "最強的基因包含 [噴火龍] - [超夢] - [皮卡丘]",
+      "ko": "최강의 유전자에는 [리자몽] - [뮤츠] - [피카츄] 포함",
+      "fr": "Puissance Génétique contient [Dracaufeu] - [Mewtwo] - [Pikachu]"
+    },
+    "urls": {
+      "en": [
+        "https://ptcgpocket.gg/genetic-apex/",
+        "https://www.serebii.net/tcgpocket/geneticapex/",
+        "https://www.pokemon-zone.com/sets/a1/"
+      ],
+      "de": [
+        "https://www.pokemon.com/de/pokemon-news/kaempfe-sammle-und-tausche-in-pokemon-sammelkartenspiel-pocket"
+      ]
+    },
+    "pos": "0% 35%",
+    "zoom": "110%",
+    "image": "genetic_apex_a1.jpg",
+    "start": "2024-10-30 19:00:00",
+    "end": "2025-04-30 05:59:00",
+    "color": "#6d21ed",
+    "showOnHome": true,
+    "noEnd": true
+  }

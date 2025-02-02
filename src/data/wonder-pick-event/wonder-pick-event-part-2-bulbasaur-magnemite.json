@@ -1,0 +1,29 @@
+{
+  "name": {
+    "en": "Wonder Pick Event Part 2 (Bulbasaur + Magnemite)",
+    "de": "Wunderwahl-Event Teil 2 (Bisasam + Magnetilo)",
+    "es": "Evento elección mágica parte 2 (Bulbasaur + Magnemite)",
+    "fr": "Évènement pioche miracle 2 (Bulbizarre + Magnéti)",
+    "it": "Evento pesca misteriosa 2 (Bulbasaur + Magnemite)",
+    "ja": "ゲットチャレンジイベント 後半 (フシギダネ + コイル)",
+    "ko": "겟 챌린지 이벤트 후반 (이상해씨 + 코일)",
+    "pt": "Evento Escolha Misteriosa (Pt. 2) (Bulbasaur + Magnemite)",
+    "zh": "得卡挑戰活動 後半 (妙蛙種子 + 小磁怪)"
+  },
+  "pos": "-45% 50%",
+  "zoom": "200%",
+  "image": "wonder_pick_bulbasaur_2.jpg",
+  "start": "2024-12-13 06:00:00",
+  "end": "2024-12-20 05:59:59",
+  "color": "#9ec736",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-2-bulbasaur-magnemite/",
+      "https://www.pokemon-zone.com/events/bulbasaur-magnemite-wonder-pick/"
+    ],
+    "pt": [
+      "https://ptcgphub.com/pt/bulbasaur-e-magnemite-se-unem-para-um-evento-cheio-de-surpresas/"
+    ]
+  },
+  "showOnHome": true
+}

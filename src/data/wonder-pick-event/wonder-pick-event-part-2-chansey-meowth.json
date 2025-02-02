@@ -1,10 +1,14 @@
 {
   "name": {
-    "en": "Wonder Pick Event Part 2 (Chansey  + Meowth)",
+    "en": "Wonder Pick Event Part 2 (Chansey + Meowth)",
+    "de": "Wunderwahl-Event Teil 2 (Chaneira + Mauzi)",
+    "es": "Evento elección mágica parte 2 (Chansey + Meowth)",
     "fr": "Évènement pioche miracle 2 (Leveinard + Miaouss)",
-    "zh": "得卡挑戰活動 後半 (吉利蛋 + \t喵喵)",
+    "it": "Evento pesca misteriosa 2 (Chansey + Meowth)",
     "ja": "ゲットチャレンジイベント 後半 (ラッキー + ニャース)",
-    "ko": "겟 챌린지 이벤트 후반 (럭키 + 나옹)"
+    "ko": "겟 챌린지 이벤트 후반 (럭키 + 나옹)",
+    "pt": "Evento Escolha Misteriosa (Pt. 2) (Chansey + Meowth)",
+    "zh": "得卡挑戰活動 後半 (吉利蛋 + 喵喵)"
   },
   "pos": "15% 55%",
   "zoom": "600%",

@@ -1,0 +1,40 @@
+{
+  "name": {
+    "en": "Venusaur Drop Event",
+    "fr": "Évènement butin Florizarre",
+    "zh": "妙蛙花掉落活動",
+    "ja": "フシギバナドロップイベント",
+    "ko": "이상해꽃 드롭 이벤트",
+    "de": "Drop-Event (Bisaflor)",
+    "es": "Evento botín Venusaur",
+    "it": "Evento bonus Venusaur",
+    "pt": "Evento de Oportunidade Venusaur"
+  },
+  "pos": "40% 57%",
+  "zoom": "360%",
+  "image": "Venusaur-Drop-Event.webp",
+  "start": "2024-11-29 06:00:00",
+  "end": "2024-12-13 05:59:00",
+  "color": "#E69285",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/venusaur-drop-event/",
+      "https://www.pokemon-zone.com/events/venusaur-drop-event/",
+      "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_0002010_02",
+      "https://www.serebii.net/tcgpocket/events/venusaurdropevent.shtml"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_0002010_02"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_0002010_02"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_0002010_02"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_0002010_02"
+    ]
+  },
+  "showOnHome": true
+}

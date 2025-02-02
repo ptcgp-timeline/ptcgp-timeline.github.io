@@ -9,6 +9,7 @@
     "language": "Language",
     "close": "Close",
     "search": "Search",
+    "install": "Install App",
     "footer": {
       "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
       "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."

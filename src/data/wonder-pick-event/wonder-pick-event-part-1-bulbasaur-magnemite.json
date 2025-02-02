@@ -1,0 +1,27 @@
+{
+  "name": {
+    "en": "Wonder Pick Event Part 1 (Bulbasaur + Magnemite)",
+    "de": "Wunderwahl-Event Teil 1 (Bisasam + Magnetilo)",
+    "es": "Evento elección mágica parte 1 (Bulbasaur + Magnemite)",
+    "fr": "Évènement pioche miracle 1 (Bulbizarre + Magnéti)",
+    "it": "Evento pesca misteriosa 1 (Bulbasaur + Magnemite)",
+    "ja": "ゲットチャレンジイベント 前半 (フシギダネ + コイル)",
+    "ko": "겟 챌린지 이벤트 전반 (이상해씨 + 코일)",
+    "pt": "Evento Escolha Misteriosa (Pt. 1) (Bulbasaur + Magnemite)",
+    "zh": "得卡挑戰活動 前半 (妙蛙種子 + 小磁怪)"
+  },
+  "pos": "-15% 35%",
+  "zoom": "200%",
+  "image": "wonder_pick_bulbasaur_1.jpg",
+  "start": "2024-12-06 06:00:00",
+  "end": "2024-12-20 05:59:59",
+  "color": "#9ec736",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-1-bulbasaur-magnemite/",
+      "https://www.serebii.net/tcgpocket/events/wonderpickeventdecember2024part1.shtml",
+      "https://www.pokemon-zone.com/events/bulbasaur-magnemite-wonder-pick/"
+    ]
+  },
+  "showOnHome": true
+}

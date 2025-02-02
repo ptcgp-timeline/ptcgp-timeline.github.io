@@ -1,0 +1,33 @@
+{
+	"name": {
+		"de": "Wunderwahl-Event Teil 2 (Panflam + Togepi)",
+		"en": "Wonder Pick Event Part 2 (Chimchar + Togepi)",
+		"es": "Evento elección mágica parte 2 (Chimchar + Togepi)",
+		"fr": "Évènement pioche miracle 2 (Ouisticram + Togepi)",
+		"it": "Evento pesca misteriosa 2 (Chimchar + Togepi)",
+		"ja": "ゲットチャレンジイベント 後半 (ヒコザル + トゲピー)",
+		"ko": "겟 챌린지 이벤트 후반 (불꽃숭이 + 토게피)",
+		"pt": "Evento Escolha Misteriosa (Pt. 2) (Chimchar + Togepi)",
+		"zh": "得卡挑戰活動 後半 (小火焰猴 + 波克比)"
+	},
+	"pos": "8% 58%",
+	"zoom": "370%",
+	"image": "wonder_pick_chimchar_2.webp",
+	"start": "2025-02-14 06:00:00",
+	"end": "2025-02-21 05:59:00",
+	"color": "#F3927C",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/wonder-pick-event-part-2-chimchar-togepi/",
+			"https://www.pokemon-zone.com/events/chimchar-togepi-wonderpick/"
+		],
+		"fr": [],
+		"de": [],
+		"zh": [],
+		"ja": [],
+		"ko": [],
+		"es": [],
+		"it": []
+	},
+	"showOnHome": true
+}

@@ -1,0 +1,39 @@
+{
+  "name": {
+    "en": "Wonder Pick Event Part 2 (Charmander + Squirtle)",
+    "de": "Wunderwahl-Event Teil 2 (Glumanda + Schiggy)",
+    "es": "Evento elección mágica parte 2 (Charmander + Squirtle)",
+    "fr": "Évènement pioche miracle 2 (Salamèche + Carapuce)",
+    "it": "Evento pesca misteriosa 2 (Charmander + Squirtle)",
+    "ja": "ゲットチャレンジイベント 後半 (ヒトカゲ + ゼニガメ)",
+    "ko": "겟 챌린지 이벤트 후반 (파이리 + 꼬부기)",
+    "pt": "Evento Escolha Misteriosa (Pt. 2) (Charmander + Squirtle)",
+    "zh": "得卡挑戰活動 後半 (小火龍 + 傑尼龜)"
+  },
+  "pos": "50% 30%",
+  "zoom": "200%",
+  "image": "wonder_pick_event_part_1_2_charmander_squirtle .webp",
+  "start": "2025-01-15 06:00:00",
+  "end": "2025-01-22 05:59:00",
+  "color": "#61c3df",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-2-charmander-squirtle/",
+      "https://www.pokemon-zone.com/events/charmander-squirtle-wonder-pick/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_03"
+    ]
+  },
+  "showOnHome": true
+}

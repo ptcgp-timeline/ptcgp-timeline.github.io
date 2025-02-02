@@ -1,0 +1,40 @@
+{
+	"name": {
+		"en": "Lapras ex Drop Event",
+		"de": "Drop-Event (Lapras-ex)",
+		"es": "Evento botín Lapras ex",
+		"fr": "Évènement butin Lokhlass-ex",
+		"it": "Evento bonus Lapras-ex",
+		"ja": "ラプラスexドロップイベント",
+		"ko": "라프라스 ex 드롭 이벤트",
+		"pt": "Evento de Oportunidade Lapras ex",
+		"zh": "拉普拉斯ex掉落活動"
+	},
+	"pos": "30% 33%",
+	"zoom": "340%",
+	"image": "Lapras-ex-Drop-Event.webp",
+	"start": "2024-11-05 06:00:00",
+	"end": "2024-11-18 05:59:00",
+	"color": "#56DFFC",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/lapras-ex-drop-event/",
+			"https://www.pokemon-zone.com/events/lapras-ex-drop-event/",
+			"https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_0002010_01",
+			"https://www.serebii.net/tcgpocket/events/laprasexdropevent.shtml"
+		],
+		"fr": [
+			"https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_0002010_01"
+		],
+		"zh": [
+			"https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_0002010_01"
+		],
+		"ja": [
+			"https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_0002010_01"
+		],
+		"ko": [
+			"https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_0002010_01"
+		]
+	},
+	"showOnHome": true
+}

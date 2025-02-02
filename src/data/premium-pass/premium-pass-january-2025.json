@@ -1,0 +1,21 @@
+{
+	"name": {
+		"en": "Premium Pass - January 2025",
+		"ja": "プレミアムパス - 2025年1月",
+		"zh": "特級護照 - 2025年1月",
+		"ko": "프리미엄 패스 - 2025년 1월",
+		"fr": "Pass Premium - Janvier 2025",
+		"de": "Premium Pass - Januar 2025",
+		"es": "Pase Premium - Enero 2025",
+		"it": "Pass Premium - Gennaio 2025",
+		"pt": "Passe Premium - Janeiro 2025"
+	},
+	"pos": "12% 58%",
+	"zoom": "300%",
+	"image": "Premium_Pass_January_2025.png",
+	"start": "2025-01-01 06:00:00",
+	"end": "2025-02-01 05:59:00",
+	"color": "#ff4a02",
+	"urls": {},
+	"showOnHome": true
+}

@@ -1,0 +1,26 @@
+{
+	"name": {
+		"en": "Premium Pass - February 2025",
+		"ja": "プレミアムパス - 2025年2月",
+		"zh": "特級護照 - 2025年2月",
+		"ko": "프리미엄 패스 - 2025년 2월",
+		"fr": "Pass Premium - Février 2025",
+		"de": "Premium Pass - Februar 2025",
+		"es": "Pase Premium - Febrero 2025",
+		"it": "Pass Premium - Febbraio 2025",
+		"pt": "Passe Premium - Fevereiro 2025"
+	},
+	"pos": "12% 50%",
+	"zoom": "300%",
+	"image": "Premium_Pass_February_2025.webp",
+	"start": "2025-02-01 06:00:00",
+	"end": "2025-03-03 05:59:00",
+	"color": "#4A93D4",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/premium-pass-february-2025/",
+			"https://www.pokemon-zone.com/events/february-2025-premium-shop/"
+		]
+	},
+	"showOnHome": true
+}

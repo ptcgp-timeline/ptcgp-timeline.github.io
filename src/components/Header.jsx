@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../context/useLanguage';
-import { FaChevronDown, FaChevronUp, FaInfoCircle, FaGithub, FaTimes, FaExclamationCircle, FaDiscord, FaSearch, FaBars, FaShareAlt } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaInfoCircle, FaGithub, FaTimes, FaExclamationCircle, FaDiscord, FaSearch, FaBars, FaShareAlt, FaDownload } from 'react-icons/fa';
 import AboutPopup from './AboutPopup';
 import { saveToLocalStorage, STORAGE_KEYS } from '../utils/localStorage';
 import { gameConfig } from '../data/timeline';
@@ -26,6 +26,8 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
   const [showAbout, setShowAbout] = useState(false);
   const [isShareOpen, setIsShareOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isInstallable, setIsInstallable] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
   const dropdownRef = useRef(null);
   const mobileMenuRef = useRef(null);
 
@@ -41,6 +43,30 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
 
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later
+      setDeferredPrompt(e);
+      setIsInstallable(true);
+    };
+
+    const handleAppInstalled = () => {
+      // Clear the deferredPrompt if app is installed
+      setDeferredPrompt(null);
+      setIsInstallable(false);
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    window.addEventListener('appinstalled', handleAppInstalled);
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      window.removeEventListener('appinstalled', handleAppInstalled);
+    };
   }, []);
 
   // Listen for URL changes and update language
@@ -81,6 +107,17 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
     redirectToLanguage(langCode);
     setIsDropdownOpen(false);
     setIsMobileLanguageOpen(false);
+  };
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) return;
+
+    deferredPrompt.prompt();
+
+    await deferredPrompt.userChoice;
+    
+    setDeferredPrompt(null);
+    setIsInstallable(false);
   };
 
   return (
@@ -129,6 +166,17 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
 
               <nav>
                 <ul className="flex items-center space-x-6 text-gray-200">
+                <li>
+                    <a 
+                      href="https://discord.gg/K2vK9Hxwq7"
+                      className="hover:text-white flex items-center space-x-2 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaDiscord className="text-[#5865F2] hover:text-[#7289DA] text-xl" />
+                      <span className="hidden lg:inline">{t('common.discord')}</span>
+                    </a>
+                  </li>
                   <li>
                     <a 
                       href="https://github.com/ptcgp-timeline/ptcgp-timeline.github.io"
@@ -160,6 +208,7 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
                       <span className="hidden lg:inline">{t('common.about')}</span>
                     </button>
                   </li>
+                  
                 </ul>
               </nav>
 
@@ -185,6 +234,7 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
               >
                 <FaSearch className="text-xl" />
               </button>
+              
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="text-gray-200 hover:text-white transition-colors"
@@ -321,9 +371,18 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaDiscord className="text-2xl" />
+                  <FaDiscord className="text-[#5865F2] hover:text-[#7289DA] text-2xl" />
                   <span className="text-lg">{t('common.discord')}</span>
                 </a>
+                {isInstallable && (
+                  <button
+                    onClick={handleInstallClick}
+                    className="w-full px-4 py-3 flex items-center space-x-3 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+                  >
+                    <FaDownload className="text-2xl" />
+                    <span className="text-lg">{t('common.install')}</span>
+                  </button>
+                )}
               </div>
             </div>
           </div>

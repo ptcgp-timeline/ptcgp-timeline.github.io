@@ -1,0 +1,48 @@
+{
+  "name": {
+    "en": "Fire Pokémon Mass Outbreak Event (Arcanine ex)",
+    "de": "Massiver Auflauf von Feuer-Pokémon (Arkani-ex)",
+    "es": "Aparición masiva de Pokémon de tipo Fuego (Arcanine ex)",
+    "fr": "Apparition massive de Pokémon Feu (Arcanin-ex)",
+    "it": "Comparse massicce di Pokémon Fuoco (Arcanine-ex)",
+    "ja": "炎ポケモン大量発生イベント (ウインディex)",
+    "ko": "불꽃 포켓몬 대량발생 이벤트 (윈디 ex)",
+    "pt": "Evento Aparição em Massa de Pokémon de tipo Fogo (Arcanine ex)",
+    "zh": "火屬性寶可夢大量出現活動 (風速狗ex)"
+  },
+  "pos": "52% 30%",
+  "zoom": "300%",
+  "image": "Fire-event.webp",
+  "start": "2024-11-22 06:00:00",
+  "end": "2024-11-28 05:59:00",
+  "color": "#F8982B",
+  "urls": {
+    "en": [
+      "https://www.pokemon.com/us/pokemon-news/a-fire-type-pokemon-mass-outbreak-blazes-into-pokemon-trading-card-game-pocket",
+      "https://ptcgpocket.gg/fire-pokemon-mass-outbreak-event/",
+      "https://www.pokemon-zone.com/events/fire-type-pokemon-mass-outbreak/",
+      "https://www.serebii.net/tcgpocket/events/fire-typemassoutbreakevent.shtml",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_03"
+    ],
+    "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/une-apparition-massive-de-pokemon-de-type-feu-embrase-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_03"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/comparse-massicce-di-pokemon-fuoco-rendono-latmosfera-del-gioco-di-carte-collezionabili-pokemon-pocket-ancor-piu-rovente"
+    ],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/apariciones-masivas-de-pokemon-de-tipo-fuego-en-el-juego-de-cartas-coleccionables-pokemon-pocket"
+    ]
+  },
+  "showOnHome": true
+}

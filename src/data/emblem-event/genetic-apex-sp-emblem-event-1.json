@@ -1,0 +1,40 @@
+{
+	"name": {
+        "en": "Genetic Apex SP Emblem Event 1",
+        "de": "SP-Emblem-Event 1 (Unschlagbare Gene)",
+        "es": "Evento emblema Genes Formidables SP 1",
+        "fr": "Évènement insigne Puissance Génétique SP 1",
+        "it": "Geni Supremi: evento emblema[C:Nbsp ]1[C:Nbsp ]SP",
+        "ja": "最強の遺伝子 エンブレムイベント1 SP",
+        "ko": "최강의 유전자 엠블럼 이벤트1 SP",
+        "pt": "1º Evento de Emblema Esp. Dominação Genética",
+        "zh": "最強的基因 勳章活動1 SP"
+	},
+	"pos": "0% 20%",
+	"zoom": "100%",
+	"image": "genetic_apex_sp_emblem_event.jpg",
+	"start": "2024-12-09 06:00:00",
+	"end": "2024-12-16 06:00:00",
+	"color": "#6d21ed",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/genetic-apex-sp-emblem-event-1/",
+			"https://www.pokemon-zone.com/events/genetic-apex-sp-emblem-event-1/",
+			"https://www.serebii.net/tcgpocket/events/geneticapexspemblemevent1.shtml",
+			"https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EMBLEM_02"
+		],
+		"fr": [
+			"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EMBLEM_02"
+		],
+		"zh": [
+			"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EMBLEM_02"
+		],
+		"ja": [
+			"https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EMBLEM_02"
+		],
+		"ko": [
+			"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EMBLEM_02"
+		]
+	},
+	"showOnHome": true
+}

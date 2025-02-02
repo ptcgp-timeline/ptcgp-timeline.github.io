@@ -1,0 +1,51 @@
+{
+	"name": {
+		"en": "Blastoise Drop Event",
+		"de": "Drop-Event (Turtok)",
+		"es": "Evento botín Blastoise",
+		"fr": "Évènement butin Tortank",
+		"it": "Evento bonus Blastoise",
+		"ja": "カメックスドロップイベント",
+		"ko": "거북왕 드롭 이벤트",
+		"pt": "Evento de Oportunidade Blastoise",
+		"zh": "水箭龜掉落活動"
+	},
+	"pos": "30% 35%",
+	"zoom": "300%",
+	"image": "Blastoise-ex-Drop-Event.jpg",
+	"start": "2025-01-01 06:00:00",
+	"end": "2025-01-15 05:59:00",
+	"color": "#4173d5",
+	"urls": {
+		"en": [
+			"https://www.pokemon.com/us/pokemon-news/pokemon-trading-card-game-pocket-blastoise-drop-event",
+			"https://ptcgpocket.gg/blastoise-ex-drop-event/",
+			"https://www.pokemon-zone.com/events/blastoise-drop-event/",
+			"https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2408010_01",
+			"https://www.serebii.net/tcgpocket/events/blastoisedropevent.shtml"
+		],
+		"de": [
+			"https://www.pokemon.com/de/pokemon-news/drop-event-mit-turtok-in-pokemon-sammelkartenspiel-pocket"
+		],
+		"fr": [
+			"https://www.pokemon.com/fr/actus-pokemon/evenement-butin-tortank-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
+			"https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2408010_01"
+		],
+		"es": [
+			"https://www.pokemon.com/es/noticias-pokemon/evento-botin-blastoise-del-juego-de-cartas-coleccionables-pokemon-pocket"
+		],
+		"it": [
+			"https://www.pokemon.com/it/novita-pokemon/gioco-di-carte-collezionabili-pokemon-pocket-evento-bonus-blastoise"
+		],
+		"zh": [
+			"https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2408010_01"
+		],
+		"ja": [
+			"https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2408010_01"
+		],
+		"ko": [
+			"https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_2408010_01"
+		]
+	},
+	"showOnHome": true
+}

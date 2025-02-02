@@ -1,0 +1,39 @@
+{
+  "name": {
+    "en": "Space-Time Smackdown Emblem Event",
+    "de": "Emblem-Event (Kollision von Raum und Zeit)",
+    "es": "Evento emblema Pugna Espaciotemporal",
+    "fr": "Évènement insigne Choc Spatio-Temporel",
+    "it": "Scontro Spaziotemporale: evento emblema",
+    "ja": "時空の激闘 エンブレムイベント",
+    "ko": "시공의 격투 엠블럼 이벤트",
+    "pt": "Evento de Emblema Embate do Tempo e Espaço",
+    "zh": "時空激鬥 勳章活動"
+  },
+  "pos": "50% 30%",
+  "zoom": "100%",
+  "image": "Space-Time_Smackdown_emblem_event.png",
+  "start": "2025-02-04 06:00:00",
+  "end": "2025-02-25 05:59:00",
+  "color": "#7E8494",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/space-time-smackdown-emblem-event/",
+      "https://www.pokemon-zone.com/events/space-time-smackdown-emblem-event/",
+      "https://www.serebii.net/tcgpocket/events/mythicalislandemblemevent.shtml"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/battle/pvp-emblem/5"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/battle/pvp-emblem/5"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/battle/pvp-emblem/5"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/battle/pvp-emblem/5"
+    ]
+  },
+  "showOnHome": true
+}

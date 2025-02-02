@@ -1,0 +1,40 @@
+{
+  "name": {
+    "en": "Wonder Pick Event Part 1 (Chansey + Meowth)",
+    "de": "Wunderwahl-Event Teil 1 (Chaneira + Mauzi)",
+    "es": "Evento elección mágica parte 1 (Chansey + Meowth)",
+    "fr": "Évènement pioche miracle 1 (Leveinard + Miaouss)",
+    "it": "Evento pesca misteriosa 1 (Chansey + Meowth)",
+    "ja": "ゲットチャレンジイベント 前半 (ラッキー + ニャース)",
+    "ko": "겟 챌린지 이벤트 전반 (럭키 + 나옹)",
+    "pt": "Evento Escolha Misteriosa (Pt. 1) (Chansey + Meowth)",
+    "zh": "得卡挑戰活動 前半 (吉利蛋 + 喵喵)"
+  },
+  "pos": "58% 45%",
+  "zoom": "600%",
+  "image": "Meowth-event-banner.webp",
+  "start": "2024-11-01 06:00:00",
+  "end": "2024-11-15 05:59:59",
+  "color": "#FCF7BC",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-1/",
+      "https://www.serebii.net/tcgpocket/events/wonderpickeventpart1.shtml",
+      "https://www.pokemon-zone.com/events/meowth-chansey-wonder-pick/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EVENT_01"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EVENT_01"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EVENT_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EVENT_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EVENT_01"
+    ]
+  },
+  "showOnHome": true
+}

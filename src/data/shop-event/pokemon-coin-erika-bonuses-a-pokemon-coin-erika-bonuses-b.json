@@ -1,0 +1,21 @@
+{
+	"name": {
+		"en": "Pokémon coin (Erika) + Bonuses A | Pokémon coin (Erika) + Bonuses B",
+		"de": "Münze (Erika) + Boni A | Münze (Erika) + Boni B",
+        "es": "Moneda Erika + extras A | Moneda Erika + extras B",
+		"fr": "Pièce Pokémon - Erika + bonus A | Pièce Pokémon - Erika + bonus B",
+		"it": "Erika (moneta) + extra A | Erika (moneta) + extra B",
+		"ja": "おまけつきポケモンコイン(エリカ)A | おまけつきポケモンコイン(エリカ)B",
+		"ko": "포켓몬 동전(민화) + 증정분 A | 포켓몬 동전(민화) + 증정분 B",
+		"pt": "Moeda de Pokémon (Érica) + Bônus A | Moeda de Pokémon (Érica) + Bônus B",
+		"zh": "附好禮寶可夢幣（莉佳）A | 附好禮寶可夢幣（莉佳）B"
+	},
+	"pos": "0% 20%",
+	"zoom": "310%",
+	"image": "pokemon_coin_erika_bonuses_a_b.webp",
+	"start": "2024-10-30 19:00:00",
+	"end": "2025-01-30 05:59:00",
+	"color": "#d7dee8",
+	"urls": {},
+	"showOnHome": true
+}

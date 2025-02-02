@@ -1,0 +1,24 @@
+{
+  "name": {
+    "en": "(A3)",
+    "ja": "(A3)",
+    "ko": "(A3)",
+    "zh": "(A3)",
+    "fr": "(A3)",
+    "de": "(A3)",
+    "es": "(A3)",
+    "it": "(A3)",
+    "pt": "(A3)"
+  },
+  "pos": "-9% 45%",
+  "zoom": "140%",
+  "image": "not_sure_element.webp",
+  "start": "2025-04-30 06:00:00",
+  "end": "2025-05-01 05:59:00",
+  "color": "#1f9aa3",
+  "urls": {},
+  "showOnHome": true,
+  "description": {},
+  "noEnd": true,
+  "uncertain": true
+}

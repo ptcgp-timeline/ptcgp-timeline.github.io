@@ -1,0 +1,48 @@
+{
+  "name": {
+    "en": "Mythical Island (A1a)",
+    "zh": "幻遊島 (A1a)",
+    "ja": "幻のいる島 (A1a)",
+    "fr": "L'Île Fabuleuse (A1a)",
+    "ko": "환상이 있는 섬 (A1a)",
+    "de": "Mysteriöse Insel (A1a)",
+    "es": "La Isla Singular (A1a)",
+    "it": "L'Isola Misteriosa (A1a)",
+    "pt": "Ilha Mítica (A1a)"
+  },
+  "description": {
+    "en": "5 ◊ cards (normal cards). 3 ◊ ◊ cards (normal cards). 7 ◊ ◊ ◊ cards (normal cards). 2 ◊ ◊ ◊ ◊ cards (normal cards). 4 ☆ cards (secret cards). 1 ☆☆ card (secret cards). 6 ☆☆☆ cards (secret cards). 8 ♕ cards (secret cards). Total Cards: 36. 17 normal cards and 19 secret cards in total.",
+    "zh": "寶可夢集換式卡牌遊戲Pocket首個迷你擴充包",
+    "ja": "ポケモンカードポケットの最初のミニセット",
+    "fr": "Premier mini-set de Pokémon TCG Pocket",
+    "ko": "포켓몬 카드 포켓의 첫 번째 미니 세트"
+  },
+  "urls": {
+    "en": [
+      "https://www.pokemon.com/us/pokemon-news/pokemon-tcg-pocket-mythical-island",
+      "https://ptcgpocket.gg/mythical-island-release/",
+      "https://www.pokemon-zone.com/events/mythical-island-release/",
+      "https://www.serebii.net/tcgpocket/mythicalisland/"
+    ],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/pokemon-sammelkartenspiel-pocket-mysterioese-insel"
+    ],
+    "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/jcc-pokemon-pocket-lile-fabuleuse"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/gcc-pokemon-pocket-lisola-misteriosa"
+    ],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/jcc-pokemon-pocket-la-isla-singular"
+    ]
+  },
+  "pos": "-15% 30%",
+  "zoom": "200%",
+  "image": "Mythical_Island_A1A.png",
+  "start": "2024-12-17 06:00:00",
+  "end": "2025-04-30 05:59:00",
+  "color": "#8ecb56",
+  "showOnHome": true,
+  "noEnd": true
+}

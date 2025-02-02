@@ -1,0 +1,39 @@
+{
+	"name": {
+        "en": "Mythical Island Emblem Event",
+        "de": "Emblem-Event (Mysteriöse Insel)",
+        "es": "Evento emblema La Isla Singular",
+        "fr": "Évènement insigne L'Île Fabuleuse",
+        "it": "L'Isola Misteriosa: evento emblema",
+        "ja": "幻のいる島 エンブレムイベント",
+        "ko": "환상이 있는 섬 엠블럼 이벤트",
+        "pt": "Evento de Emblema Ilha Mítica",
+        "zh": "幻遊島 勳章活動"
+	},
+	"pos": "50% 30%",
+	"zoom": "100%",
+	"image": "mythical_island_emblem_event.png",
+	"start": "2024-12-20 06:00:00",
+	"end": "2025-01-10 05:59:00",
+	"color": "#0ecc83",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/mythical-island-emblem-event/",
+			"https://www.pokemon-zone.com/events/mythical-island-emblem-event/",
+			"https://www.serebii.net/tcgpocket/events/mythicalislandemblemevent.shtml"
+		],
+		"fr": [
+			"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EMBLEM_01"
+		],
+		"zh": [
+			"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EMBLEM_01"
+		],
+		"ja": [
+			"https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EMBLEM_01"
+		],
+		"ko": [
+			"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EMBLEM_01"
+		]
+	},
+	"showOnHome": true
+}

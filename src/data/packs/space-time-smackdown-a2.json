@@ -1,0 +1,44 @@
+{
+  "name": {
+    "en": "Space-Time Smackdown (A2)",
+    "fr": "Choc Spatio-Temporel ( A2)",
+    "es": "Pugna Espaciotemporal (A2)",
+    "it": "Scontro Spaziotemporale (A2)",
+    "de": "Kollision von Raum und Zeit (A2)",
+    "pt": "Embate do Tempo e Espaço (A2)",
+    "ko": "시공의 격투 (A2)",
+    "ja": "時空の激闘 (A2)",
+    "zh": "時空激鬥 (A2)"
+  },
+  "pos": "0% 15%",
+  "zoom": "250%",
+  "image": "space-time-smackdown-a2.webp",
+  "start": "2025-01-30 06:00:00",
+  "end": "2025-07-30 05:59:00",
+  "color": "#949DAE",
+  "urls": {
+    "en": [
+      "https://www.pokemon.com/us/pokemon-news/explore-pokemon-tcg-pockets-newest-expansion-space-time-smackdown"
+    ],
+    "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/explorez-choc-spatio-temporel-la-toute-nouvelle-extension-du-jcc-pokemon-pocket"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/esplora-scontro-spaziotemporale-la-nuova-espansione-del-gcc-pokemon-pocket"
+    ],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/explora-la-nueva-expansion-de-jcc-pokemon-pocket-pugna-espaciotemporal"
+    ],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/entdecke-kollision-von-raum-und-zeit-die-neueste-erweiterung-fuer-pokemon-sammelkartenspiel-pocket"
+    ],
+    "ko": [
+      "https://pokemonkorea.co.kr/pokemon_tcg_pocket/menu492?number=3622&mode=view"
+    ],
+    "ja": [
+      "https://www.pokemontcgpocket.com/ja/news/20/"
+    ]
+  },
+  "showOnHome": true,
+  "noEnd": true
+}

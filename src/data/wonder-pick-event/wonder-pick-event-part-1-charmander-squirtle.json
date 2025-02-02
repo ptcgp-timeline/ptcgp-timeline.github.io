@@ -1,0 +1,50 @@
+{
+  "name": {
+    "en": "Wonder Pick Event Part 1 (Charmander + Squirtle)",
+    "de": "Wunderwahl-Event Teil 1 (Glumanda + Schiggy)",
+    "es": "Evento elección mágica parte 1 (Charmander + Squirtle)",
+    "fr": "Évènement pioche miracle 1 (Salamèche + Carapuce)",
+    "it": "Evento pesca misteriosa 1 (Charmander + Squirtle)",
+    "ja": "ゲットチャレンジイベント 前半 (ヒトカゲ + ゼニガメ)",
+    "ko": "겟 챌린지 이벤트 전반 (파이리 + 꼬부기)",
+    "pt": "Evento Escolha Misteriosa (Pt. 1) (Charmander + Squirtle)",
+    "zh": "得卡挑戰活動 前半 (小火龍 + 傑尼龜)"
+  },
+  "pos": "50% 30%",
+  "zoom": "200%",
+  "image": "wonder_pick_event_part_1_2_charmander_squirtle .webp",
+  "start": "2025-01-07 06:00:00",
+  "end": "2025-01-21 05:59:00",
+  "color": "#61c3df",
+  "urls": {
+    "en": [
+      "https://www.pokemon.com/us/pokemon-news/charmander-and-squirtle-star-in-this-pokemon-tcg-pocket-wonder-pick-event",
+      "https://ptcgpocket.gg/wonder-pick-event-part-1-charmander-squirtle/",
+      "https://www.pokemon-zone.com/events/charmander-squirtle-wonder-pick/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_02"
+    ],
+    "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/salameche-et-carapuce-sont-a-laffiche-dun-evenement-pioche-miracle-dans-le-jcc-pokemon-pocket",
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_02"
+    ],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/glumanda-und-schiggy-erscheinen-in-diesem-wunderwahl-event-in-pokemon-sammelkartenspiel-pocket"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_02"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_02"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_02"
+    ],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/charmander-y-squirtle-protagonizan-un-evento-eleccion-magica-en-jcc-pokemon-pocket"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/charmander-e-squirtle-sono-i-protagonisti-di-un-nuovo-evento-pesca-misteriosa-nel-gcc-pokemon-pocket"
+    ]
+  },
+  "showOnHome": true
+}

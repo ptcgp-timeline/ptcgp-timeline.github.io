@@ -1,0 +1,29 @@
+{
+	"name": {
+		"en": "A Gift from the developer team, Pokédex - Promo-A-08",
+		"fr": "Un cadeau de l'équipe développeur, Pokédex - Promo-A-08",
+		"zh": "開發者團隊的禮物, 寶可夢圖鑑 - Promo-A-08",
+		"ja": "開発者チームからのプレゼント, ポケモン図鑑 - Promo-A-08",
+		"ko": "개발자 팀의 선물, 포켓몬 도감 - Promo-A-08"
+	},
+	"pos": "15% 30%",
+	"zoom": "120%",
+	"image": "dev_gift.webp",
+	"start": "2025-01-20 06:00:00",
+	"end": "2025-04-30 05:59:00",
+	"color": "#E35A34",
+	"description": {
+		"en": "To celebrate achieving 40 billion cards acquired by Pokémon Trading Card Game Pocket players worldwide, players have been gifted the Pokédex - Promo-A-08 card!",
+		"fr": "Pour célébrer l'acquisition de 40 milliards de cartes par les joueurs de Pokémon Trading Card Game Pocket dans le monde entier, les joueurs ont reçu la carte Pokédex - Promo-A-08 !",
+		"zh": "為慶祝全球寶可夢集換式卡牌遊戲Pocket玩家共獲得40億張卡牌，玩家們獲得了寶可夢圖鑑 - Promo-A-08卡片！",
+		"ja": "ポケモンカードゲームポケットのプレイヤーが全世界で40億枚のカードを獲得したことを祝うために、プレイヤーにはポケモン図鑑 - Promo-A-08カードが贈られました！",
+		"ko": "전 세계 포켓몬 카드 게임 포켓 플레이어들이 400억 장의 카드를 획득한 것을 기념하기 위해, 플레이어들에게 포켓몬 도감 - Promo-A-08 카드가 선물되었습니다！"
+	},
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/promo-pokedex/",
+			"https://www.pokemon-zone.com/events/pokedex-present/"
+		]
+	},
+	"showOnHome": true
+}

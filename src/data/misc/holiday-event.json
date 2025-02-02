@@ -1,0 +1,43 @@
+{
+	"name": {
+		"en": "Holiday Event",
+		"de": "Feiertags-Event",
+		"es": "Evento de Vacaciones",
+		"fr": "Événement des Fêtes",
+		"it": "Evento Festivo",
+		"ja": "ホリデーイベント",
+		"ko": "홀리데이 이벤트",
+		"pt": "Evento de Férias",
+		"zh": "节日活动"
+	},
+	"pos": "90% 10%",
+	"zoom": "600%",
+	"image": "Holiday-event-log-in-missions.webp",
+	"start": "2024-12-25 06:00:00",
+	"end": "2025-01-01 05:59:00",
+	"color": "#e87d3c",
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/holiday-event/",
+			"https://www.pokemon-zone.com/events/holiday-2024-event-missions/",
+			"https://www.serebii.net/tcgpocket/events/holidayeventmissions.shtml",
+			"https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_HOLIDAY_01"
+		],
+		"fr": [
+			"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_HOLIDAY_01"
+		],
+		"zh": [
+			"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_HOLIDAY_01"
+		],
+		"ja": [
+			"https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_HOLIDAY_01"
+		],
+		"ko": [
+			"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_HOLIDAY_01"
+		]
+	},
+	"description": {
+		"en": "Pokémon TCG Pocket is celebrating its first holiday season by offering players free rewards just for logging in! Players can claim Holiday Event rewards for seven consecutive days, totaling 36 Pack Hourglasses and 4 Mythical Island booster packs."
+	},
+	"showOnHome": true
+}

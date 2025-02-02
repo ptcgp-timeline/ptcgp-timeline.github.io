@@ -1,0 +1,39 @@
+{
+  "name": {
+    "en": "Cresselia ex Drop Event",
+    "de": "Drop-Event (Cresselia-ex)",
+    "es": "Evento botín Cresselia ex",
+    "fr": "Évènement butin Cresselia-ex",
+    "it": "Evento bonus Cresselia-ex",
+    "ja": "クレセリアexドロップイベント",
+    "ko": "크레세리아 ex 드롭 이벤트",
+    "pt": "Evento de Oportunidade Cresselia ex",
+    "zh": "克雷色利亞ex掉落活動"
+  },
+  "pos": "40% 35%",
+  "zoom": "350%",
+  "image": "Cresselia_ex_Drop_Event.webp",
+  "start": "2025-02-03 06:00:00",
+  "end": "2025-02-17 05:59:00",
+  "color": "#EE90C1",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/cresselia-ex-drop-event/",
+      "https://www.pokemon-zone.com/events/cresselia-ex-drop-event/",
+      "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2409010_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2409010_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_2409010_01"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2409010_01"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2409010_01"
+    ]
+  },
+  "showOnHome": true
+}

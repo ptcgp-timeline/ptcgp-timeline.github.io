@@ -2,11 +2,68 @@
   "name": "PTCGP Timeline",
   "short_name": "PTCGP Timeline",
   "description": "Track Pokémon Trading Card Game Pocket events, card releases, and special campaigns",
+  "categories": ["games", "entertainment", "utilities"],
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
   "background_color": "#1a1d2d",
-  "theme_color": "#1a1d2d",
+  "theme_color": "#232738",
+  "prefer_related_applications": false,
+  "id": "ptcgp-timeline",
+  "launch_handler": {
+    "client_mode": ["focus-existing", "auto"]
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "handle_links": "preferred",
+  "shortcuts": [
+    {
+      "name": "Search Events",
+      "url": "/?action=search",
+      "description": "Search for PTCGP events and releases",
+      "icons": [{ "src": "/icons/search.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/wide-main.png",
+      "sizes": "1832x900",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Timeline View"
+    },
+    {
+      "src": "/screenshots/wide-details.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Event Details"
+    },
+    {
+      "src": "/screenshots/narrow-main.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Timeline View"
+    },
+    {
+      "src": "/screenshots/narrow-details.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Event Details"
+    },
+    {
+      "src": "/screenshots/narrow-sidepanel.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Side Panel"
+    }
+  ],
   "serviceworker": {
     "src": "service-worker.js",
     "scope": "/"

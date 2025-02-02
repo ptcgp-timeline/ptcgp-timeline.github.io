@@ -1,0 +1,25 @@
+{
+  "name": {
+    "en": "Poké Gold (paid) ×115 + Accessories (Cynthia)",
+    "es": "Pokélingote (de pago) ×115 + accesorios Cintia",
+    "fr": "Poké Lingots (payants) × 115 + Accessoires (Cynthia)",
+    "it": "Pokélingotti (a pagamento) ×115 + accessori (Camilla)",
+    "ja": "周辺グッズ「シロナ」つきポケゴールド(有償)×115",
+    "ko": "포켓골드(유료)×115 + 주변 상품 「난천」",
+    "pt": "Pokéouro (pago) ×115 + Acessórios (Cíntia)",
+    "zh": "寶可金塊（付費）（附贈周邊物品「竹蘭」）×115",
+    "de": "PokéGold (gekauft) × 115 + Zubehör (Cynthia)"
+  },
+  "pos": "40% 15%",
+  "zoom": "400%",
+  "image": "poke_gold_paid_x115_accessories_cynthia.webp",
+  "start": "2025-01-30 06:00:00",
+  "end": "2025-04-30 05:59:00",
+  "color": "#f6ee5a",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/cynthia-bundle/"
+    ]
+  },
+  "showOnHome": true
+}

@@ -1,0 +1,25 @@
+{
+	"name": {
+		"en": "Poké Gold (paid) ×115 + Accessories (Gardevoir)",
+        "de": "PokéGold (gekauft) × 115 + Zubehör (Guardevoir)",
+		"es": "Pokélingote (de pago) ×115 + accesorios Gardevoir",
+		"fr": "Poké Lingots (payants) × 115 + Accessoires (Gardevoir)",
+		"it": "Pokélingotti (a pagamento) ×115 + accessori (Gardevoir)",
+		"ja": "周辺グッズ「サーナイト」つきポケゴールド(有償)×115",
+		"ko": "포켓골드(유료)×115 + 주변 상품 「가디안」",
+		"pt": "Pokéouro (Pago) ×115 + Acessórios (Gardevoir)",
+		"zh": "寶可金塊（付費）（附贈周邊物品「沙奈朵」）×115"
+	},
+	"pos": "40% 15%",
+	"zoom": "400%",
+	"image": "poke_gold_paid_x115_accessories_gardevoir.webp",
+	"start": "2024-10-30 19:00:00",
+	"end": "2025-01-30 05:59:00",
+	"color": "#f6ee5a",
+	"urls": {
+		"en": [
+			"https://ptcgp.raenonx.cc/en/shop/poke-gold/SH_CG_PG_002"
+		]
+	},
+	"showOnHome": true
+}

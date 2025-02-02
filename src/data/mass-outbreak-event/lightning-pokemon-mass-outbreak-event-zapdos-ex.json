@@ -1,0 +1,40 @@
+{
+  "name": {
+    "en": "Lightning-type Pokémon Mass Outbreak Event (Zapdos ex)",
+    "de": "Massiver Auflauf von Elektro-Pokémon (Zapdos-ex)",
+    "es": "Aparición masiva de Pokémon de tipo Rayo (Zapdos ex)",
+    "fr": "Apparition massive de Pokémon Électrique (Électhor-ex)",
+    "it": "Comparse massicce di Pokémon Lampo (Zapdos-ex)",
+    "ja": "雷ポケモン大量発生イベント (サンダーex)",
+    "ko": "번개포켓몬 대량발생 이벤트 (썬더 ex)",
+    "pt": "Evento Aparição em Massa de Pokémon de tipo Raios (Zapdos ex)",
+    "zh": "雷屬性寶可夢大量出現活動 (閃電鳥ex)"
+  },
+  "pos": "85% 17%",
+  "zoom": "300%",
+  "image": "lightning_pokemon_mass_outbreak_event_zapdos_ex.jpg",
+  "start": "2024-12-26 06:00:00",
+  "end": "2025-01-01 05:59:00",
+  "color": "#f8f007",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/lightning-pokemon-mass-outbreak-event-zapdos-ex/",
+      "https://www.pokemon-zone.com/events/lightning-type-pokemon-mass-outbreak/",
+      "https://www.serebii.net/tcgpocket/events/lightning-typemassoutbreakevent.shtml",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2408010_EVENT_01"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_01"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_01"
+    ]
+  },
+  "showOnHome": true
+}

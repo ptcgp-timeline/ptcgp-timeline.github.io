@@ -1,0 +1,49 @@
+{
+	"name": {
+		"en": "Psychic Pokémon Mass Outbreak Event (Mew ex)",
+		"fr": "Apparition massive de Pokémon Psy (Mew ex)",
+		"zh": "超屬性寶可夢大量出現活動 (夢幻ex)",
+		"ja": "超ポケモン大量発生イベント (ミューex)",
+		"ko": "초포켓몬 대량발생 이벤트 (뮤ex)",
+		"de": "Psycho-Pokémon-Massenausbruch-Event (Mew ex)",
+		"es": "Aparición masiva de Pokémon Psíquico (Mew ex)",
+		"it": "Apparizione massiva di Pokémon Psichico (Mew ex)",
+		"pt": "Aparência massiva de Pokémon Psíquico (Mew ex)"
+	},
+	"pos": "20% 30%",
+	"zoom": "100%",
+	"image": "psychic_pokemon_mass_outbreak_event_mew_ex.jpg",
+	"start": "2025-01-23 06:00:00",
+	"end": "2025-01-29 05:59:00",
+	"color": "#f7dbe6",
+	"urls": {
+		"es": [
+			"https://www.pokemon.com/es/noticias-pokemon/explora-la-nueva-expansion-de-jcc-pokemon-pocket-pugna-espaciotemporal"
+		],
+		"it": [
+			"https://www.pokemon.com/it/novita-pokemon/comparse-massicce-di-pokemon-di-tipo-psico-nel-gioco-di-carte-collezionabili-pokemon-pocket"
+		],
+		"de": [
+			"https://www.pokemon.com/de/pokemon-news/ein-massiver-auflauf-von-psycho-pokemon-in-pokemon-sammelkartenspiel-pocket"
+		],
+		"en": [
+			"https://www.pokemon.com/us/pokemon-news/psychic-type-pokemon-mass-outbreak-in-pokemon-trading-card-game-pocket",
+			"https://ptcgpocket.gg/psychic-pokemon-mass-outbreak-event-mew-ex/",
+			"https://www.pokemon-zone.com/events/psychic-type-pokemon-mass-outbreak/"
+		],
+		"fr": [
+			"https://www.pokemon.com/fr/actus-pokemon/une-apparition-massive-de-pokemon-psy-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
+			"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EVENT_04"
+		],
+		"zh": [
+			"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EVENT_04"
+		],
+		"ja": [
+			"https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EVENT_04"
+		],
+		"ko": [
+			"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_04"
+		]
+	},
+	"showOnHome": true
+}

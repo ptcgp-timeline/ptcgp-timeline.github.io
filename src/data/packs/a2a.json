@@ -1,0 +1,31 @@
+{
+  "name": {
+    "en": "(A2a)",
+    "fr": "(A2a)",
+    "es": "(A2a)",
+    "it": "(A2a)",
+    "de": "(A2a)",
+    "pt": "(A2a)",
+    "ko": "(A2a)",
+    "ja": "(A2a)",
+    "zh": "(A2a)"
+  },
+  "pos": "-53% 50%",
+  "zoom": "120%",
+  "image": "not_sure_element.webp",
+  "start": "2025-02-28 06:00:00",
+  "end": "2025-07-30 05:59:00",
+  "color": "#6590e2",
+  "urls": {
+    "en": [],
+    "fr": [],
+    "it": [],
+    "es": [],
+    "de": [],
+    "ko": [],
+    "ja": []
+  },
+  "showOnHome": true,
+  "noEnd": true,
+  "uncertain": true
+}

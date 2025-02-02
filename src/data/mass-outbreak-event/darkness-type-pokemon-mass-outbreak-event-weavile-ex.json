@@ -1,0 +1,42 @@
+{
+  "name": {
+    "de": "Massiver Auflauf von Finsternis-Pokémon (Snibunna-ex)",
+    "en": "Darkness-type Pokémon Mass Outbreak Event (Weavile ex)",
+    "es": "Aparición masiva de Pokémon de tipo Oscuro (Weavile ex)",
+    "fr": "Apparition massive de Pokémon Obscurité (Dimoret-ex)",
+    "it": "Comparse massicce di Pokémon Oscurità (Weavile-ex)",
+    "ja": "悪ポケモン大量発生イベント (マニューラex)",
+    "ko": "악포켓몬 대량발생 이벤트 (포푸니라 ex)",
+    "pt": "Evento Aparição em Massa de Pokémon de tipo Escuridão (Weavile ex)",
+    "zh": "惡屬性寶可夢大量出現活動 (瑪狃拉ex)"
+  },
+  "pos": "50% 30%",
+  "zoom": "500%",
+  "image": "Dark-mass-event.webp",
+  "start": "2025-02-21 06:00:00",
+  "end": "2025-02-27 05:59:00",
+  "color": "#CF203F",
+  "urls": {
+    "es": [],
+    "it": [],
+    "de": [],
+    "en": [
+      "https://ptcgpocket.gg/darkness-type-pokemon-mass-outbreak-event-weavile-ex/",
+      "https://www.pokemon-zone.com/events/darkness-type-pokemon-mass-outbreak/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2409010_EVENT_02"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2409010_EVENT_02"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2409010_EVENT_02"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2409010_EVENT_02"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2409010_EVENT_02"
+    ]
+  },
+  "showOnHome": true
+}

@@ -1,0 +1,36 @@
+{
+	"name": {
+		"en": "Trade Feature Celebration Gift",
+		"de": "Geschenk zur Feier der Tauschfunktion",
+		"es": "Regalo de celebración por la función de intercambio",
+		"fr": "Cadeau de célébration de la fonction Échange",
+		"it": "Regalo per la celebrazione della funzione Scambio",
+		"ja": "トレード機能記念ギフト",
+		"ko": "트레이드 기능 기념 선물",
+		"pt": "Presente de Celebração da Função de Troca",
+		"zh": "交換功能慶祝禮物"
+	},
+	"pos": "15% 30%",
+	"zoom": "120%",
+	"image": "Trade.webp",
+	"start": "2025-01-30 06:00:00",
+	"end": "2025-03-27 05:59:00",
+	"color": "#3DC742",
+	"description": {
+		"en": "To mark the debut of the Pokémon TCG Pocket's Trade feature, players will be gifted items to elevate their trading experience: 120 Trade Hourglasses and 500 Trade Tokens.",
+		"de": "Zum Start des Pokémon TCG Pocket Tausch-Features erhalten Spieler Geschenke, um ihr Tauscherlebnis zu verbessern: 120 Tausch-Sanduhren und 500 Tausch-Marken.",
+		"es": "Para celebrar el debut de la función de intercambio en Pokémon TCG Pocket, los jugadores recibirán artículos para mejorar su experiencia de intercambio: 120 Relojes de arena de intercambio y 500 Fichas de intercambio.",
+		"fr": "Pour marquer le lancement de la fonction Échange de Pokémon TCG Pocket, les joueurs recevront des objets pour améliorer leur expérience : 120 Sabliers Échange et 500 Jetons Échange.",
+		"it": "Per celebrare il debutto della funzione Scambio in Pokémon TCG Pocket, i giocatori riceveranno oggetti per migliorare la loro esperienza: 120 Clessidre scambio e 500 Gettoni scambio.",
+		"ja": "ポケモンTCGポケットのトレード機能の開始を記念して、プレイヤーにトレード体験を高めるためのアイテムを贈呈します：トレード砂時計120個、トレードメダル500個。",
+		"ko": "포켓몬 TCG 포켓의 트레이드 기능 출시를 기념하여 플레이어들에게 트레이드 경험을 향상시키기 위한 아이템이 지급됩니다: 트레이드 모래시계 120개 및 트레이드 메달 500개.",
+		"pt": "Para marcar o lançamento da função de Troca do Pokémon TCG Pocket, os jogadores receberão itens para melhorar sua experiência de troca: 120 Ampulhetas de Troca e 500 Tokens de Troca.",
+		"zh": "為慶祝 Pokémon TCG Pocket 交換功能的推出，玩家將獲得提升交換體驗的道具：120 個交換沙漏和 500 個交換代幣。"
+	},
+	"urls": {
+		"en": [
+			"https://ptcgpocket.gg/trade-feature-celebration-gift/"
+		]
+	},
+	"showOnHome": true
+}
