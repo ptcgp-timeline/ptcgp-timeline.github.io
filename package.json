@@ -20,8 +20,12 @@
   "author": "as280093",
   "license": "MIT",
   "dependencies": {
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
     "@giscus/react": "^3.1.0",
     "@tailwindcss/forms": "^0.5.9",
+    "@uiw/react-codemirror": "^4.23.7",
+    "cropperjs": "^1.6.2",
     "dayjs": "^1.11.13",
     "i18next": "^24.2.1",
     "i18next-browser-languagedetector": "^8.0.2",
@@ -30,7 +34,8 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-i18next": "^15.4.0",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
