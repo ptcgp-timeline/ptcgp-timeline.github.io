@@ -1,0 +1,39 @@
+{
+  "name": {
+    "en": "Pokémon Day Celebration Gift",
+    "de": "Pokémon-Tag-Feiergeschenk",
+    "es": "Regalo de Celebración del Día de Pokémon",
+    "fr": "Cadeau de célébration du Pokémon Day",
+    "it": "Regalo di Celebrazione del Pokémon Day",
+    "ja": "ポケモンデーお祝いギフト",
+    "ko": "포켓몬 데이 축하 선물",
+    "pt": "Presente de Celebração do Dia Pokémon",
+    "zh": "寶可夢日慶祝禮物"
+  },
+  "pos": "100% 74%",
+  "zoom": "100%",
+  "image": "genetic_apex_a1.jpg",
+  "start": "2025-02-27 14:00:00",
+  "end": "2025-04-30 16:00:00",
+  "color": "#b7a8ff",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/special-booster-pack-gift/",
+      "https://www.pokemon-zone.com/events/genetic-apex-presents/"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "During this event, 3 special booster packs from Genetic Apex will be available:<p style=\"text-align:center;\">Mewtwo Pack | Charizard Pack | Pikachu Pack</p>These packs contain the same cards as the regular ones, but with a twist: <br>the 5th card is guaranteed to be ◆◆◆◆ rarity or higher (like ★ or higher).<br>You can claim these packs from your Gift Box until April 30.",
+    "de": "Während dieses Events werden 3 spezielle Booster-Packs von Genetic Apex verfügbar sein:<br>Mewtu-Pack | Glurak-Pack | Pikachu-Pack</p>Diese Packs enthalten dieselben Karten wie die regulären, aber mit einem Twist:<br>Die 5. Karte hat garantiert mindestens ◆◆◆◆ Seltenheit (wie ★ oder höher).<br>Sie können diese Packs bis zum 30. April aus Ihrer Geschenkbox abholen.",
+    "es": "Durante este evento estarán disponibles 3 sobres especiales de Genetic Apex:<br><p style=\"text-align:center;\">Pack de Mewtwo | Pack de Charizard | Pack de Pikachu</p>Estos packs contienen las mismas cartas que los sobres regulares, pero con una diferencia:<br>La 5.ª carta garantiza una rareza de ◆◆◆◆ o superior (como ★ o superior).<br>Puedes reclamar estos sobres en tu Caja de Regalos hasta el 30 de abril.",
+    "fr": "Pendant cet événement, 3 boosters spéciaux de Genetic Apex seront disponibles :<br><p style=\"text-align:center;\">Pack Mewtwo | Pack Dracaufeu | Pack Pikachu</p>Ces packs contiennent les mêmes cartes que les packs réguliers, avec une différence :<br>La 5ème carte est garantie d'avoir une rareté ◆◆◆◆ ou supérieure (comme ★ ou plus).<br>Vous pouvez réclamer ces packs depuis votre boîte cadeau jusqu'au 30 avril.",
+    "it": "Durante questo evento saranno disponibili 3 pacchetti speciali di Genetic Apex:<br><p style=\"text-align:center;\">Pacchetto Mewtwo | Pacchetto Charizard | Pacchetto Pikachu</p>Questi pacchetti contengono le stesse carte dei pacchetti regolari, ma con una differenza:<br>La 5ª carta garantisce una rarità ◆◆◆◆ o superiore (come ★ o più).<br>Puoi riscattare questi pacchetti dalla tua Casella Regalo fino al 30 aprile.",
+    "ja": "このイベント期間中、ジェネティックエイペックスの特別な3つのブースターパックが登場します：<br><p style=\"text-align:center;\">ミュウツーパック | リザードンパック | ピカチュウパック</p><br>通常のパックと同じカードが含まれていますが、ひとつ違いがあります。<br>5枚目のカードは必ず◆◆◆◆レアリティ以上（★以上）が保証されています。<br>4月30日までギフトボックスから受け取ることができます。",
+    "ko": "이번 이벤트 동안 Genetic Apex의 특별 부스터 팩 3종이 제공됩니다:<br><p style=\"text-align:center;\">뮤츠 팩 | 리자몽 팩 | 피카츄 팩</p>이 팩들은 일반 팩과 동일한 카드가 포함되어 있지만,<br>5번째 카드는 반드시 ◆◆◆◆ 등급 이상 (★ 이상)이 보장됩니다.<br>4월 30일까지 선물 상자에서 수령할 수 있습니다.",
+    "pt": "Durante este evento, 3 pacotes especiais de Genetic Apex estarão disponíveis:<br><p style=\"text-align:center;\">Pacote Mewtwo | Pacote Charizard | Pacote Pikachu</p>Estes pacotes contêm as mesmas cartas dos pacotes regulares, com uma diferença:<br>A 5ª carta é garantida com uma raridade de ◆◆◆◆ ou superior (como ★ ou superior).<br>Você pode reivindicar esses pacotes na sua Caixa de Presentes até 30 de abril.",
+    "zh": "活動期間內，將提供來自基因頂點的3款特別卡包：<br><p style=\"text-align:center;\">超夢卡包 | 噴火龍卡包 | 皮卡丘卡包</p>這些卡包與一般卡包的卡片相同，但有一個不同之處：<br>第5張卡片保證為◆◆◆◆稀有度或更高（如 ★ 或更高）。<br>您可以在4月30日之前從禮物盒中領取這些卡包。"
+  },
+  "noEnd": false,
+  "uncertain": false
+}

@@ -40,6 +40,8 @@ import HolidayEvent from "./misc/holiday-event.json";
 import NewYearEvent2025 from "./misc/new-year-event-2025.json";
 import DevGiftPokedexPromoA08 from "./misc/a-gift-from-the-developer-team-pokedex-promo-a-08.json";
 import TradeFeatureCelebrationGift from "./misc/trade-feature-celebration-gift.json";
+import McDonaldsPokMonHappyMealsCollaboration from "./misc/mcdonalds-pok-mon-happy-meals-collaboration.json";
+import PokMonDayCelebration from "./misc/pok-mon-day-celebration-gift.json";
 
 // Shop Events
 import PokémonCoinErikaBonusesAB from "./shop-event/pokemon-coin-erika-bonuses-a-pokemon-coin-erika-bonuses-b.json";
@@ -99,13 +101,14 @@ export const eventsData = [
     BlastoiseDropEvent, // Drop Event
     CresseliaEXDropEvent, // Drop Event
     DarknessTypePokemonMassOutbreakEventWeavileEX, // Mass Outbreak Events // TEMP STUFF to reduce the height of timeline
-    A2a, A3, // Packs// TEMP STUFF to reduce the height of timeline
+    A2a // Packs// TEMP STUFF to reduce the height of timeline
   ],
   [
     wonderPickEventPart1ChanseyMeowth,
     wonderPickEventPart1BulbasaurMagnemite,
     wonderPickEventPart1CharmanderSquirtle,
     wonderPickEventPart1ChimcharTogepi,
+    A3, // Packs// TEMP STUFF to reduce the height of timeline
   ],
   [
     wonderPickEventPart2ChanseyMeowth,
@@ -129,6 +132,11 @@ export const eventsData = [
     HolidayEvent, // MISC EVENT
     NewYearEvent2025, // MISC EVENT
     DevGiftPokedexPromoA08, // MISC EVENT
+  ],
+  [
+    McDonaldsPokMonHappyMealsCollaboration, // MISC EVENT
+  ],[
+    PokMonDayCelebration, // MISC EVENT
   ],
   [
     PokémonCoinErikaBonusesAB, // SHOP EVENT

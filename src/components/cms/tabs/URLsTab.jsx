@@ -8,12 +8,13 @@ const URLsTab = ({ event, setEvent }) => {
   const [selectedLang, setSelectedLang] = useState(null);
 
   const handleUrlChange = (lang, value) => {
-        const urls = value
+    // Split by newlines and clean up empty lines
+    const urls = value
       .split('\n')
       .map(url => url.trim())
       .filter(url => url !== '');
 
-     if (urls.length > 0) {
+    if (urls.length > 0) {
       setEvent(prev => ({
         ...prev,
         urls: { ...prev.urls, [lang]: urls }
@@ -63,11 +64,6 @@ const URLsTab = ({ event, setEvent }) => {
             className="w-full px-3 py-2 rounded-lg bg-background border border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none min-h-[120px] resize-y font-mono text-sm"
             value={(event.urls?.[lang] || []).join('\n')}
             onChange={e => handleUrlChange(lang, e.target.value)}
-            onKeyDown={e => {
-              if (e.key === 'Enter') {
-                e.stopPropagation();
-              }
-            }}
             rows={5}
             wrap="soft"
           />

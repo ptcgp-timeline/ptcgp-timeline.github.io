@@ -18,6 +18,7 @@
   "color": "#EE90C1",
   "urls": {
     "en": [
+      "https://www.pokemon.com/us/pokemon-news/pokemon-trading-card-game-pocket-cresselia-drop-event",
       "https://ptcgpocket.gg/cresselia-ex-drop-event/",
       "https://www.pokemon-zone.com/events/cresselia-ex-drop-event/",
       "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2409010_01"
@@ -32,7 +33,17 @@
       "https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2409010_01"
     ],
     "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/evenement-butin-cresselia-ex-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
       "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2409010_01"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/gioco-di-carte-collezionabili-pokemon-pocket-evento-bonus-cresselia-ex"
+    ],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/evento-botin-cresselia-ex-en-el-juego-de-cartas-coleccionables-pokemon-pocket"
+    ],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/ein-drop-event-mit-cresselia-ex-in-pokemon-sammelkartenspiel-pocket"
     ]
   },
   "showOnHome": true

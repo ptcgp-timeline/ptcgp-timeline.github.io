@@ -7,7 +7,9 @@ import { useState, useEffect } from 'react';
 import Watermark from '../Watermark';
 //import Comments from '../Comments';
 import { gameConfig } from '../../data/timeline';
-
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+import remarkGfm from 'remark-gfm';
 import { useTranslation } from 'react-i18next';
 
 dayjs.extend(duration);
@@ -75,12 +77,12 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
         </h1>
         
         <div className="space-y-2">
-          <p className="text-gray-200 font-body flex flex-col md:flex-row">
-            <span className="flex group relative">
+          <p className="text-gray-200 font-body flex items-center text-xs md:text-base whitespace-nowrap">
+            <span className="flex items-center group relative">
               <span>
                 {eventStart.format('ddd, D MMM YYYY HH:mm')}
                 {showUncertainty && (
-                  <sup className="text-primary text-base ml-0.5 font-bold">*</sup>
+                  <sup className="text-primary text-xs md:text-base ml-0.5 font-bold">*</sup>
                 )}
               </span>
               {showUncertainty && (
@@ -90,18 +92,18 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
               )}
               <span className="mx-2">-</span>
             </span>
-            <span className="group relative">
+            <span className="flex items-center group relative">
               {!event.noEnd ? (
                 <span>
                   {eventEnd.format('ddd, D MMM YYYY HH:mm')}
                   {(showUncertainty || event.noEnd) && (
-                    <sup className="text-primary text-base ml-0.5 font-bold">*</sup>
+                    <sup className="text-primary text-xs md:text-base ml-0.5 font-bold">*</sup>
                   )}
                 </span>
               ) : (
                 <span className="text-gray-300">
                   {t('status.noEndDate')}
-                  <sup className="text-primary text-base ml-0.5 font-bold">*</sup>
+                  <sup className="text-primary text-xs md:text-base ml-0.5 font-bold">*</sup>
                 </span>
               )}
               {(showUncertainty || event.noEnd) && (
@@ -115,9 +117,31 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
 
         {/* Description Section */}
         {eventDescription && (
-          <p className="text-gray-200 mt-4">
-            {eventDescription}
-          </p>
+          <div className="text-gray-200 mt-4 prose prose-invert max-w-none">
+            <ReactMarkdown
+              rehypePlugins={[rehypeRaw]}
+              remarkPlugins={[remarkGfm]}
+              components={{
+                
+                a: ({ ...props }) => (
+                  <a {...props} target="_blank" rel="noopener noreferrer" />
+                ),
+                
+                code: ({ inline, ...props }) => (
+                  <code
+                    {...props}
+                    className={`${
+                      inline
+                        ? 'bg-gray-800 px-1 py-0.5 rounded'
+                        : 'block bg-gray-800 p-4 rounded-lg'
+                    }`}
+                  />
+                ),
+              }}
+            >
+              {eventDescription}
+            </ReactMarkdown>
+          </div>
         )}
 
         {/* Timer Section */}
@@ -168,11 +192,11 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
             onClick={() => setShowUrls(!showUrls)}
             className="w-full flex items-center justify-between px-3.5 py-2.5 bg-button hover:bg-button/80 rounded-xl transition-colors"
           >
-            <span className="text-gray-200 font-medium">
+            <span className="text-gray-200 font-medium text-xs md:text-base">
               {t('common.externalLinks.title')}
             </span>
             <svg 
-              className={`w-4 h-4 text-gray-300 transition-transform ${showUrls ? 'rotate-180' : ''}`}
+              className={`w-3 h-3 md:w-4 md:h-4 text-gray-300 transition-transform ${showUrls ? 'rotate-180' : ''}`}
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24"
@@ -184,7 +208,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
           {showUrls && (
             <div className="mt-2 space-y-2 px-2 max-h-[200px] overflow-y-auto scrollbar-custom">
               {officialUrls.length === 0 && communityUrls.length === 0 ? (
-                <p className="text-gray-300 text-sm italic bg-item px-3.5 py-2.5 rounded-xl">
+                <p className="text-gray-300 text-xs md:text-sm italic bg-item px-3.5 py-2.5 rounded-xl">
                   {t('common.externalLinks.none')}
                 </p>
               ) : (
@@ -201,7 +225,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                         rel="noopener noreferrer"
                       >
                         <div className="flex items-center gap-2">
-                          <div className="w-5 h-5 rounded-md bg-background/50 p-1 flex items-center justify-center">
+                          <div className="w-4 h-4 md:w-5 md:h-5 rounded-md bg-background/50 p-1 flex items-center justify-center">
                             <img 
                               src={favicon}
                               alt=""
@@ -209,12 +233,12 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                               aria-hidden="true"
                             />
                           </div>
-                          <span className="text-white font-bold text-sm">
+                          <span className="text-white font-bold text-xs md:text-sm">
                             {gameConfig.officialWebsiteText[language] || gameConfig.officialWebsiteText['en']}
                           </span>
                         </div>
                         <svg 
-                          className="w-4 h-4 text-gray-300 group-hover:text-white transition-colors" 
+                          className="w-3 h-3 md:w-4 md:h-4 text-gray-300 group-hover:text-white transition-colors" 
                           fill="none" 
                           stroke="currentColor" 
                           viewBox="0 0 24 24"
@@ -245,7 +269,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                             href={urlWithUTM}
                             rel="noopener noreferrer"
                           >
-                            <div className="w-5 h-5 rounded-md bg-background/50 p-1 flex items-center justify-center shrink-0">
+                            <div className="w-4 h-4 md:w-5 md:h-5 rounded-md bg-background/50 p-1 flex items-center justify-center shrink-0">
                               <img 
                                 src={favicon} 
                                 alt=""
@@ -253,11 +277,11 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
                                 aria-hidden="true"
                               />
                             </div>
-                            <span className="text-gray-200 group-hover:text-white transition-colors text-sm font-medium truncate">
+                            <span className="text-gray-200 group-hover:text-white transition-colors text-xs md:text-sm font-medium truncate">
                               {domain}
                             </span>
                             <svg 
-                              className="w-4 h-4 text-primary/80 group-hover:text-primary transition-colors ml-auto shrink-0" 
+                              className="w-3 h-3 md:w-4 md:h-4 text-primary/80 group-hover:text-primary transition-colors ml-auto shrink-0" 
                               fill="none" 
                               stroke="currentColor" 
                               viewBox="0 0 24 24"

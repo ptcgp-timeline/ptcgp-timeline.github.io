@@ -14,11 +14,11 @@
   "zoom": "140%",
   "image": "not_sure_element.webp",
   "start": "2025-04-30 06:00:00",
-  "end": "2025-05-01 05:59:00",
+  "end": "2025-12-31 05:59:00",
   "color": "#1f9aa3",
   "urls": {},
   "showOnHome": true,
   "description": {},
-  "noEnd": true,
+  "noEnd": false,
   "uncertain": true
 }

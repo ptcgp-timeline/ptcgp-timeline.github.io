@@ -1,0 +1,38 @@
+{
+  "name": {
+    "en": "McDonald’s × Pokémon Happy Meals Collaboration",
+    "de": "McDonald’s × Pokémon Happy Meals Kooperation",
+    "es": "Colaboración de McDonald’s × Pokémon Happy Meals",
+    "fr": "Collaboration McDonald’s × Pokémon Happy Meals",
+    "it": "Collaborazione McDonald’s × Pokémon Happy Meals",
+    "ja": "マクドナルド × ポケモン ハッピーミール コラボレーション",
+    "ko": "맥도날드 × 포켓몬 해피밀 협업",
+    "pt": "Colaboração McDonald’s × Pokémon no McLanche Feliz",
+    "zh": "麥當勞 × Pokémon 開心樂園餐合作"
+  },
+  "pos": "45% 65%",
+  "zoom": "300%",
+  "image": "md-ptcgp.webp",
+  "start": "2025-01-21 00:00:00",
+  "end": "2025-03-31 00:00:00",
+  "color": "#E27A13",
+  "urls": {
+    "en": [
+      "https://www.pokemon.com/us/pokemon-news/mcdonalds-pokemon-happy-meals-collaboration",
+      "https://ptcgpocket.gg/mcdonalds-x-pokemon-happy-meals-collaboration/",
+      "https://www.pokemon-zone.com/articles/mcdonalds-pokemon-happy-meals-promotion-2025/"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "Pokémon fans can grab a 4-card Pokémon TCG booster and a fun sticker sheet with every Happy Meal! Plus, if you're in the US, order a Happy Meal through the McDonald's app to get 24 pack hourglasses and 12 wonder hourglasses in Pokémon Trading Card Game Pocket.",
+    "de": "Nur in den USA verfügbar",
+    "es": "Disponible solo en EE. UU.",
+    "fr": "Disponible uniquement aux États-Unis",
+    "it": "Disponibile solo negli Stati Uniti",
+    "ja": "アメリカのみで利用可能",
+    "ko": "미국에서만 이용 가능",
+    "pt": "Disponível apenas nos EUA",
+    "zh": "僅限美國提供"
+  }
+}

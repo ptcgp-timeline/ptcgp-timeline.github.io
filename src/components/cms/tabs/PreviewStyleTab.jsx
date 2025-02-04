@@ -31,8 +31,8 @@ const PreviewStyleTab = ({ event, setEvent, availableImages }) => {
     const deltaX = ((e.clientX - dragStart.x) / dragStart.rect.width) * 100;
     const deltaY = ((e.clientY - dragStart.y) / dragStart.rect.height) * 100;
 
-    // Limit the movement range
-    const maxOffset = 50;
+    // Increase movement range
+    const maxOffset = 500; // Allow full image width/height movement
     const newX = Math.max(-maxOffset, Math.min(maxOffset, dragStart.initialPos.x + deltaX));
     const newY = Math.max(-maxOffset, Math.min(maxOffset, dragStart.initialPos.y + deltaY));
 
@@ -50,8 +50,8 @@ const PreviewStyleTab = ({ event, setEvent, availableImages }) => {
   const handleZoom = (e) => {
     e.preventDefault();
     const currentZoom = parseInt(event.zoom);
-    const delta = e.deltaY > 0 ? -5 : 5;
-    const newZoom = Math.max(50, Math.min(200, currentZoom + delta));
+    const delta = e.deltaY > 0 ? -2 : 2; // Increase zoom step
+    const newZoom = Math.max(10, Math.min(500, currentZoom + delta)); // Wider zoom range
 
     setEvent(prev => ({
       ...prev,
@@ -62,8 +62,8 @@ const PreviewStyleTab = ({ event, setEvent, availableImages }) => {
   const handleManualPositionChange = (axis, value) => {
     const [x, y] = event.pos.split(' ').map(val => parseInt(val));
     const newPos = axis === 'x' 
-      ? `${Math.max(-50, Math.min(50, parseInt(value) || 0))}% ${y}%`
-      : `${x}% ${Math.max(-50, Math.min(50, parseInt(value) || 0))}%`;
+      ? `${Math.max(-500, Math.min(500, parseInt(value) || 0))}% ${y}%`
+      : `${x}% ${Math.max(-500, Math.min(500, parseInt(value) || 0))}%`;
     
     setEvent(prev => ({
       ...prev,
@@ -72,7 +72,7 @@ const PreviewStyleTab = ({ event, setEvent, availableImages }) => {
   };
 
   const handleManualZoomChange = (value) => {
-    const newZoom = Math.max(50, Math.min(200, parseInt(value) || 100));
+    const newZoom = Math.max(10, Math.min(500, parseInt(value) || 100));
     setEvent(prev => ({
       ...prev,
       zoom: `${newZoom}%`
@@ -141,8 +141,8 @@ const PreviewStyleTab = ({ event, setEvent, availableImages }) => {
               className="w-full px-3 py-2 rounded-lg bg-background border border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none"
               value={x}
               onChange={e => handleManualPositionChange('x', e.target.value)}
-              min="-50"
-              max="50"
+              min="-500"
+              max="500"
             />
             <span className="text-sm text-gray-400">%</span>
           </div>
@@ -159,8 +159,8 @@ const PreviewStyleTab = ({ event, setEvent, availableImages }) => {
               className="w-full px-3 py-2 rounded-lg bg-background border border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none"
               value={y}
               onChange={e => handleManualPositionChange('y', e.target.value)}
-              min="-50"
-              max="50"
+              min="-500"
+              max="500"
             />
             <span className="text-sm text-gray-400">%</span>
           </div>
@@ -177,9 +177,9 @@ const PreviewStyleTab = ({ event, setEvent, availableImages }) => {
               className="w-full px-3 py-2 rounded-lg bg-background border border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none"
               value={zoom}
               onChange={e => handleManualZoomChange(e.target.value)}
-              min="50"
-              max="200"
-              step="5"
+              min="10"
+              max="500"
+              step="2"
             />
             <span className="text-sm text-gray-400">%</span>
           </div>
