@@ -10,6 +10,20 @@
     "close": "Close",
     "search": "Search",
     "install": "Install App",
+    "settings": {
+      "title": "Settings",
+      "filters": "Event Filters",
+      "hideFinished": "Hide finished events",
+      "hideOldEvents": "Hide events older than 30 days",
+      "hideExpansions": "Hide released expansions",
+      "reset": "Reset to default",
+      "save": "Save Changes",
+      "description": {
+        "hideFinished": "Hide all completed events",
+        "hideOldEvents": "Hide events that ended more than 30 days ago",
+        "hideExpansions": "Hide card expansions, present and past only (A1, A1a, etc.)"
+      }
+    },
     "footer": {
       "disclaimer": "{{siteName}} is an unofficial fan site and is not endorsed by or affiliated with {{company}} Rights Holders.",
       "copyright": "All {{company}} images, names, characters, and related marks are trademarks and copyright of {{copyrightHolders}}."
