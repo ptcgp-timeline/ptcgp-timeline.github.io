@@ -10,6 +10,20 @@
     "close": "閉じる",
     "search": "Search",
     "install": "Install App",
+    "settings": {
+      "title": "Settings",
+      "filters": "Event Filters",
+      "hideFinished": "Hide finished events",
+      "hideOldEvents": "Hide events older than 30 days",
+      "hideExpansions": "Hide released expansions",
+      "reset": "Reset to default",
+      "save": "Save Changes",
+      "description": {
+        "hideFinished": "Hide all completed events",
+        "hideOldEvents": "Hide events that ended more than 30 days ago",
+        "hideExpansions": "Hide card expansions, present and past only (A1, A1a, etc.)"
+      }
+    },
     "footer": {
       "disclaimer": "{{siteName}}は非公式のファンサイトであり、{{company}}の権利所有者による承認や提携はありません。",
       "copyright": "すべての{{company}}の画像、名前、キャラクター、および関連マークは{{copyrightHolders}}の商標および著作権です。"
