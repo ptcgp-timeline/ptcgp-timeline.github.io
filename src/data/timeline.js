@@ -55,7 +55,6 @@ import PremiumPassJanuary2025 from "./premium-pass/premium-pass-january-2025.jso
 import PremiumPassFebruary2025 from "./premium-pass/premium-pass-february-2025.json";
 
 // Game Configuration
-
 export const gameConfig = {
   name: {
     en: "Pokemon TCG Pocket",
@@ -101,7 +100,7 @@ export const eventsData = [
     BlastoiseDropEvent, // Drop Event
     CresseliaEXDropEvent, // Drop Event
     DarknessTypePokemonMassOutbreakEventWeavileEX, // Mass Outbreak Events // TEMP STUFF to reduce the height of timeline
-    A2a // Packs// TEMP STUFF to reduce the height of timeline
+    A2a, // Packs// TEMP STUFF to reduce the height of timeline
   ],
   [
     wonderPickEventPart1ChanseyMeowth,
@@ -118,6 +117,7 @@ export const eventsData = [
     wonderPickEventPart2CharmanderSquirtle,
     PsychicPokémonMassOutbreakEventMewEX, // Mass Outbreak Events // TEMP STUFF to reduce the height of timeline
     wonderPickEventPart2ChimcharTogepi,
+    PokMonDayCelebration, // MISC EVENT
   ],
   [
     GeneticApexEmblemEvent1,
@@ -135,8 +135,6 @@ export const eventsData = [
   ],
   [
     McDonaldsPokMonHappyMealsCollaboration, // MISC EVENT
-  ],[
-    PokMonDayCelebration, // MISC EVENT
   ],
   [
     PokémonCoinErikaBonusesAB, // SHOP EVENT

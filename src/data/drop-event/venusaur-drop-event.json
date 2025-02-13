@@ -36,5 +36,16 @@
       "https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_0002010_02"
     ]
   },
-  "showOnHome": true
+  "showOnHome": true,
+  "description": {
+    "en": "Drop events are events where you can get promo cards by doing Solo battles.\n\nBy winning solo battles you can obtain Promo Pack A Series Vol. 2!\n\n**Promo Pack A Series Vol. 2 includes**\n- Venusaur\n- Greninja\n- Haunter\n- Onix\n- Jigglypuff",
+    "de": "Drop-Events sind Events, bei denen du Promokarten erhalten kannst, indem du CPU-Kämpfe bestreitest.\n\nWenn du CPU-Kämpfe gewinnst, kannst du Promopacks Serie A, Vol. 2 erhalten!\n\n**Promopack Serie A, Vol. 2 enthält**\n- Bisaflor\n- Quajutsu\n- Alpollo\n- Onix\n- Pummeluff",
+    "es": "Los eventos botín son eventos en los que puedes conseguir cartas de promoción jugando partidas individuales.\n\nSi ganas partidas individuales, ¡puedes obtener sobres de promoción serie A vol. 2!\n\n**Sobre de promoción serie A vol. 2 incluye**\n- Venusaur\n- Greninja\n- Haunter\n- Onix\n- Jigglypuff",
+    "fr": "Pendant les évènements butin, vous pouvez obtenir des cartes promo en participant à des combats solo.\n\nEn remportant des combats solo, vous pourrez obtenir le Booster promo série A, vol. 2!\n\n**Booster promo série A, vol. 2 inclut**\n- Florizarre\n- Amphinobi\n- Spectrum\n- Onix\n- Rondoudou",
+    "it": "Gli eventi bonus sono degli eventi in cui puoi ottenere carte promozionali affrontando delle lotte con CPU.\n\nVincendo lotte con CPU puoi ottenere buste promo serie A, vol. 2!\n\n**Busta promo (serie A, vol. 2) include**\n- Venusaur\n- Greninja\n- Haunter\n- Onix\n- Jigglypuff",
+    "ja": "「ドロップイベント」は「ひとりで」のバトルをプレイして、プロモカードを獲得するイベントです。\n\n「ひとりで」のバトルで勝利して、プロモカードパック Aシリーズ 第2弾を獲得できます!\n\n**プロモカードパック Aシリーズ 第2弾 には**\n- フシギバナ\n- ゲッコウガ\n- ゴースト\n- イワーク\n- プリン",
+    "ko": "「드롭 이벤트」는 「혼자서」 배틀을 플레이하고 프로모 카드를 획득하는 이벤트입니다.\n\n「혼자서」 배틀에서 승리하고 프로모 카드 팩 A시리즈 제 2탄을 획득할 수 있습니다!\n\n**프로모 카드 팩 A시리즈 제2탄 에는**\n- 이상해꽃\n- 개굴닌자\n- 고우스트\n- 롱스톤\n- 푸린",
+    "pt": "Eventos de Oportunidade são aqueles em que você consegue cartas promocionais participando de Batalhas Solo.\n\nAo vencer Batalhas Solo, você poderá receber Pacote Promocional Série A (Volume 2)!\n\n**Pacote Promocional da Série A  (Vol. 2) inclui**\n- Venusaur\n- Greninja\n- Haunter\n- Onix\n- Jigglypuff",
+    "zh": "「掉落活動」是遊玩「單人對戰」,獲得特典卡的活動。\n\n在「單人對戰」獲勝,可獲得特典卡牌包A系列第2 彈!\n\n**特典卡牌包 A系列第2波 包含**\n- 妙蛙花\n- 甲賀忍蛙\n- 鬼斯通\n- 大岩蛇\n- 胖丁"
+  }
 }

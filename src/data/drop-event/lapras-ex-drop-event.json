@@ -1,40 +1,51 @@
 {
-	"name": {
-		"en": "Lapras ex Drop Event",
-		"de": "Drop-Event (Lapras-ex)",
-		"es": "Evento botín Lapras ex",
-		"fr": "Évènement butin Lokhlass-ex",
-		"it": "Evento bonus Lapras-ex",
-		"ja": "ラプラスexドロップイベント",
-		"ko": "라프라스 ex 드롭 이벤트",
-		"pt": "Evento de Oportunidade Lapras ex",
-		"zh": "拉普拉斯ex掉落活動"
-	},
-	"pos": "30% 33%",
-	"zoom": "340%",
-	"image": "Lapras-ex-Drop-Event.webp",
-	"start": "2024-11-05 06:00:00",
-	"end": "2024-11-18 05:59:00",
-	"color": "#56DFFC",
-	"urls": {
-		"en": [
-			"https://ptcgpocket.gg/lapras-ex-drop-event/",
-			"https://www.pokemon-zone.com/events/lapras-ex-drop-event/",
-			"https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_0002010_01",
-			"https://www.serebii.net/tcgpocket/events/laprasexdropevent.shtml"
-		],
-		"fr": [
-			"https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_0002010_01"
-		],
-		"zh": [
-			"https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_0002010_01"
-		],
-		"ja": [
-			"https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_0002010_01"
-		],
-		"ko": [
-			"https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_0002010_01"
-		]
-	},
-	"showOnHome": true
+  "name": {
+    "en": "Lapras ex Drop Event",
+    "de": "Drop-Event (Lapras-ex)",
+    "es": "Evento botín Lapras ex",
+    "fr": "Évènement butin Lokhlass-ex",
+    "it": "Evento bonus Lapras-ex",
+    "ja": "ラプラスexドロップイベント",
+    "ko": "라프라스 ex 드롭 이벤트",
+    "pt": "Evento de Oportunidade Lapras ex",
+    "zh": "拉普拉斯ex掉落活動"
+  },
+  "pos": "30% 33%",
+  "zoom": "340%",
+  "image": "Lapras-ex-Drop-Event.webp",
+  "start": "2024-11-05 06:00:00",
+  "end": "2024-11-18 05:59:00",
+  "color": "#56DFFC",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/lapras-ex-drop-event/",
+      "https://www.pokemon-zone.com/events/lapras-ex-drop-event/",
+      "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_0002010_01",
+      "https://www.serebii.net/tcgpocket/events/laprasexdropevent.shtml"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_0002010_01"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_0002010_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_0002010_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_0002010_01"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "Drop events are events where you can get promo cards by doing Solo battles.\n\nBy winning solo battles you can obtain Promo Pack A Series Vol. 1!\n\n**Promo Pack A Series Vol. 1 includes**\n- Lapras ex\n- Butterfree\n- Pikachu\n- Clefairy\n- Mankey",
+    "de": "Drop-Events sind Events, bei denen du Promokarten erhalten kannst, indem du CPU-Kämpfe bestreitest.\n\nWenn du CPU-Kämpfe gewinnst, kannst du Promopacks Serie A, Vol. 1 erhalten!\n\n**Promopack Serie A, Vol. 1 enthält**\n- Lapras-ex\n- Smettbo\n- Pikachu\n- Piepi\n- Menki",
+    "es": "Los eventos botín son eventos en los que puedes conseguir cartas de promoción jugando partidas individuales.\n\nSi ganas partidas individuales, ¡puedes obtener sobres de promoción serie A vol. 1!\n\n**Sobre de promoción serie A vol. 1 incluye**\n- Lapras ex\n- Butterfree\n- Pikachu\n- Clefairy\n- Mankey",
+    "fr": "Pendant les évènements butin, vous pouvez obtenir des cartes promo en participant à des combats solo.\n\nEn remportant des combats solo, vous pourrez obtenir le Booster promo série A, vol. 1!\n\n**Booster promo série A, vol. 1 inclut**\n- Lokhlass-ex\n- Papilusion\n- Pikachu\n- Mélofée\n- Férosinge",
+    "it": "Gli eventi bonus sono degli eventi in cui puoi ottenere carte promozionali affrontando delle lotte con CPU.\n\nVincendo lotte con CPU puoi ottenere buste promo serie A, vol. 1!\n\n**Busta promo (serie A, vol. 1) include**\n- Lapras-ex\n- Butterfree\n- Pikachu\n- Clefairy\n- Mankey",
+    "ja": "「ドロップイベント」は「ひとりで」のバトルをプレイして、プロモカードを獲得するイベントです。\n\n「ひとりで」のバトルで勝利して、プロモカードパック Aシリーズ 第1弾を獲得できます!\n\n**プロモカードパック Aシリーズ 第1弾 には**\n- ラプラスex\n- バタフリー\n- ピカチュウ\n- ピッピ\n- マンキー",
+    "ko": "「드롭 이벤트」는 「혼자서」 배틀을 플레이하고 프로모 카드를 획득하는 이벤트입니다.\n\n「혼자서」 배틀에서 승리하고 프로모 카드 팩 A시리즈 제 1탄을 획득할 수 있습니다!\n\n**프로모 카드 팩 A시리즈 제1탄 에는**\n- 라프라스 ex\n- 버터플\n- 피카츄\n- 삐삐\n- 망키",
+    "pt": "Eventos de Oportunidade são aqueles em que você consegue cartas promocionais participando de Batalhas Solo.\n\nAo vencer Batalhas Solo, você poderá receber Pacote Promocional Série A (Volume 1)!\n\n**Pacote Promocional da Série A  (Vol. 1) inclui**\n- Lapras ex\n- Butterfree\n- Pikachu\n- Clefairy\n- Mankey",
+    "zh": "「掉落活動」是遊玩「單人對戰」,獲得特典卡的活動。\n\n在「單人對戰」獲勝,可獲得特典卡牌包A系列第1 彈!\n\n**特典卡牌包 A系列第1波 包含**\n- 拉普拉斯ex\n- 巴大蝶\n- 皮卡丘\n- 皮皮\n- 猴怪"
+  }
 }

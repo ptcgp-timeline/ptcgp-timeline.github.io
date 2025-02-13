@@ -10,6 +10,7 @@ import { saveToLocalStorage, getFromLocalStorage, STORAGE_KEYS } from '../../uti
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Header from '../Header';
+import { loadSettings, SETTINGS_KEYS } from '../../utils/settingsManager';
 
 
 dayjs.extend(duration);
@@ -53,6 +54,7 @@ function Timeline({ events = [] }) {
   const [nextReset, setNextReset] = useState(getNextReset());
   const [timeToReset, setTimeToReset] = useState('');
   const [selectedEventId, setSelectedEventId] = useState(null);
+  const [settings] = useState(loadSettings());
 
 
   const handleTimezoneChange = (value) => {
@@ -97,8 +99,36 @@ function Timeline({ events = [] }) {
   const processEvents = useCallback(() => {
     if (!events?.length) return;
 
-    const filteredEvents = events.map(group => 
-      group.filter(event => event.showOnHome !== false)
+    let filteredEvents = events.map(group => 
+      group.filter(event => {
+        if (event.showOnHome === false) return false;
+        
+        const eventEnd = convertTime(event.end);
+        const currentTime = dayjs();
+        
+        // Hide finished events
+        if (settings[SETTINGS_KEYS.HIDE_FINISHED] && 
+            eventEnd && 
+            currentTime.isAfter(eventEnd)) {
+          return false;
+        }
+        
+        // Hide old events (more than 30 days)
+        if (settings[SETTINGS_KEYS.HIDE_OLD_EVENTS] && 
+            eventEnd && 
+            currentTime.isAfter(eventEnd) && 
+            currentTime.diff(eventEnd, 'days') > 30) {
+          return false;
+        }
+        
+        // Hide expansions based on filterExpansion property
+        if (settings[SETTINGS_KEYS.HIDE_EXPANSIONS] && 
+            event.filterExpansion) {
+          return false;
+        }
+        
+        return true;
+      })
     ).filter(group => group.length > 0);
 
     const latestEndDate = filteredEvents.flat().reduce((latest, event) => {
@@ -184,7 +214,7 @@ function Timeline({ events = [] }) {
 
     setProcessedEvents(processed);
     setLoading(false);
-  }, [convertTime, events, padding]);
+  }, [convertTime, events, padding, settings]);
 
   // Initial load
   useEffect(() => {

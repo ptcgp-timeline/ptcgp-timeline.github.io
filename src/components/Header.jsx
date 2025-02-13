@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../context/useLanguage';
-import { FaChevronDown, FaChevronUp, FaInfoCircle, FaGithub, FaTimes, FaExclamationCircle, FaDiscord, FaSearch, FaBars, FaShareAlt, FaDownload } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaInfoCircle, FaGithub, FaTimes, FaExclamationCircle, FaDiscord, FaSearch, FaBars, FaShareAlt, FaDownload, FaCog } from 'react-icons/fa';
 import AboutPopup from './AboutPopup';
+import SettingsPopup from './SettingsPopup';
+import { countActiveFilters } from '../utils/filterUtils';
 import { saveToLocalStorage, STORAGE_KEYS } from '../utils/localStorage';
 import { gameConfig } from '../data/timeline';
 import logoLong from '@/assets/images/logo-long.svg'
@@ -14,6 +16,7 @@ import { SUPPORTED_LANGUAGES } from '../utils/constants';
 import { getLanguageFromUrl } from '../utils/urlUtils';
 import SearchBar from './SearchBar';
 import PropTypes from 'prop-types';
+import { loadSettings } from '../utils/settingsManager';
 
 dayjs.extend(utc);
 
@@ -24,12 +27,17 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileLanguageOpen, setIsMobileLanguageOpen] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
   const [isShareOpen, setIsShareOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isInstallable, setIsInstallable] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const dropdownRef = useRef(null);
   const mobileMenuRef = useRef(null);
+  const [activeFilters, setActiveFilters] = useState(() => {
+    const currentSettings = loadSettings();
+    return countActiveFilters(currentSettings);
+  });
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -47,15 +55,12 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
       e.preventDefault();
-      // Stash the event so it can be triggered later
       setDeferredPrompt(e);
       setIsInstallable(true);
     };
 
     const handleAppInstalled = () => {
-      // Clear the deferredPrompt if app is installed
       setDeferredPrompt(null);
       setIsInstallable(false);
     };
@@ -69,7 +74,6 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
     };
   }, []);
 
-  // Listen for URL changes and update language
   useEffect(() => {
     const handleUrlChange = () => {
       const urlLang = getLanguageFromUrl();
@@ -223,6 +227,24 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
                   {t('common.search')}
                 </span>
               </button>
+
+              {/* Settings Button */}
+              <button
+                onClick={() => setShowSettings(true)}
+                className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-colors relative group"
+                aria-label={t('common.settings.title')}
+              >
+                <FaCog className="text-xl" />
+                {activeFilters > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-primary text-white text-tiny min-w-[1.2rem] h-[1.2rem] flex items-center justify-center rounded-full px-1">
+                    {activeFilters}
+                  </span>
+                )}
+                <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  {t('common.settings.title')}
+                </span>
+              </button>
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -233,6 +255,20 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
                 aria-label={t('common.search')}
               >
                 <FaSearch className="text-xl" />
+              </button>
+
+              {/* Mobile Settings Button */}
+              <button
+                onClick={() => setShowSettings(true)}
+                className="p-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary transition-colors relative"
+                aria-label={t('common.settings.title')}
+              >
+                <FaCog className="text-xl" />
+                {activeFilters > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-primary text-white text-tiny min-w-[1.2rem] h-[1.2rem] flex items-center justify-center rounded-full px-1">
+                    {activeFilters}
+                  </span>
+                )}
               </button>
               
               <button
@@ -391,6 +427,22 @@ const Header = ({ events = [], onEventSelect, showLocalTime }) => {
 
       {/* About Popup */}
       {showAbout && <AboutPopup onClose={() => setShowAbout(false)} />}
+
+      {/* Settings Popup */}
+      {showSettings && (
+        <SettingsPopup
+          onClose={() => setShowSettings(false)}
+          settings={{
+            hideFinished: false,
+            hideOldEvents: false,
+            hideFutureExpansions: false,
+            showSearch: true
+          }}
+          onSettingsChange={(newSettings) => {
+            setActiveFilters(countActiveFilters(newSettings));
+          }}
+        />
+      )}
 
       <SharePopup
         isOpen={isShareOpen}

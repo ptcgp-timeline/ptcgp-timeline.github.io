@@ -1,51 +1,62 @@
 {
-	"name": {
-		"en": "Blastoise Drop Event",
-		"de": "Drop-Event (Turtok)",
-		"es": "Evento botín Blastoise",
-		"fr": "Évènement butin Tortank",
-		"it": "Evento bonus Blastoise",
-		"ja": "カメックスドロップイベント",
-		"ko": "거북왕 드롭 이벤트",
-		"pt": "Evento de Oportunidade Blastoise",
-		"zh": "水箭龜掉落活動"
-	},
-	"pos": "30% 35%",
-	"zoom": "300%",
-	"image": "Blastoise-ex-Drop-Event.jpg",
-	"start": "2025-01-01 06:00:00",
-	"end": "2025-01-15 05:59:00",
-	"color": "#4173d5",
-	"urls": {
-		"en": [
-			"https://www.pokemon.com/us/pokemon-news/pokemon-trading-card-game-pocket-blastoise-drop-event",
-			"https://ptcgpocket.gg/blastoise-ex-drop-event/",
-			"https://www.pokemon-zone.com/events/blastoise-drop-event/",
-			"https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2408010_01",
-			"https://www.serebii.net/tcgpocket/events/blastoisedropevent.shtml"
-		],
-		"de": [
-			"https://www.pokemon.com/de/pokemon-news/drop-event-mit-turtok-in-pokemon-sammelkartenspiel-pocket"
-		],
-		"fr": [
-			"https://www.pokemon.com/fr/actus-pokemon/evenement-butin-tortank-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
-			"https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2408010_01"
-		],
-		"es": [
-			"https://www.pokemon.com/es/noticias-pokemon/evento-botin-blastoise-del-juego-de-cartas-coleccionables-pokemon-pocket"
-		],
-		"it": [
-			"https://www.pokemon.com/it/novita-pokemon/gioco-di-carte-collezionabili-pokemon-pocket-evento-bonus-blastoise"
-		],
-		"zh": [
-			"https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2408010_01"
-		],
-		"ja": [
-			"https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2408010_01"
-		],
-		"ko": [
-			"https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_2408010_01"
-		]
-	},
-	"showOnHome": true
+  "name": {
+    "en": "Blastoise Drop Event",
+    "de": "Drop-Event (Turtok)",
+    "es": "Evento botín Blastoise",
+    "fr": "Évènement butin Tortank",
+    "it": "Evento bonus Blastoise",
+    "ja": "カメックスドロップイベント",
+    "ko": "거북왕 드롭 이벤트",
+    "pt": "Evento de Oportunidade Blastoise",
+    "zh": "水箭龜掉落活動"
+  },
+  "pos": "30% 35%",
+  "zoom": "300%",
+  "image": "Blastoise-ex-Drop-Event.jpg",
+  "start": "2025-01-01 06:00:00",
+  "end": "2025-01-15 05:59:00",
+  "color": "#4173d5",
+  "urls": {
+    "en": [
+      "https://www.pokemon.com/us/pokemon-news/pokemon-trading-card-game-pocket-blastoise-drop-event",
+      "https://ptcgpocket.gg/blastoise-ex-drop-event/",
+      "https://www.pokemon-zone.com/events/blastoise-drop-event/",
+      "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2408010_01",
+      "https://www.serebii.net/tcgpocket/events/blastoisedropevent.shtml"
+    ],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/drop-event-mit-turtok-in-pokemon-sammelkartenspiel-pocket"
+    ],
+    "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/evenement-butin-tortank-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
+      "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2408010_01"
+    ],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/evento-botin-blastoise-del-juego-de-cartas-coleccionables-pokemon-pocket"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/gioco-di-carte-collezionabili-pokemon-pocket-evento-bonus-blastoise"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2408010_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2408010_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_2408010_01"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "Drop events are events where you can get promo cards by doing Solo battles.\n\nBy winning solo battles you can obtain Promo Pack A Series Vol. 3!\n\n**Promo Pack A Series Vol. 3 includes**\n- Blastoise\n- Snivy\n- Volcarona\n- Eevee\n- Cinccino",
+    "de": "Drop-Events sind Events, bei denen du Promokarten erhalten kannst, indem du CPU-Kämpfe bestreitest.\n\nWenn du CPU-Kämpfe gewinnst, kannst du Promopacks Serie A, Vol. 3 erhalten!\n\n**Promopack Serie A, Vol. 3 enthält**\n- Turtok\n- Serpifeu\n- Ramoth\n- Evoli\n- Chillabell",
+    "es": "Los eventos botín son eventos en los que puedes conseguir cartas de promoción jugando partidas individuales.\n\nSi ganas partidas individuales, ¡puedes obtener sobres de promoción serie A vol. 3!\n\n**Sobre de promoción serie A vol. 3 incluye**\n- Blastoise\n- Snivy\n- Volcarona\n- Eevee\n- Cinccino",
+    "fr": "Pendant les évènements butin, vous pouvez obtenir des cartes promo en participant à des combats solo.\n\nEn remportant des combats solo, vous pourrez obtenir le Booster promo série A, vol. 3!\n\n**Booster promo série A, vol. 3 inclut**\n- Tortank\n- Vipélierre\n- Pyrax\n- Évoli\n- Pashmilla",
+    "it": "Gli eventi bonus sono degli eventi in cui puoi ottenere carte promozionali affrontando delle lotte con CPU.\n\nVincendo lotte con CPU puoi ottenere buste promo serie A, vol. 3!\n\n**Busta promo (serie A, vol. 3) include**\n- Blastoise\n- Snivy\n- Volcarona\n- Eevee\n- Cinccino",
+    "ja": "「ドロップイベント」は「ひとりで」のバトルをプレイして、プロモカードを獲得するイベントです。\n\n「ひとりで」のバトルで勝利して、プロモカードパック Aシリーズ 第3弾を獲得できます!\n\n**プロモカードパック Aシリーズ 第3弾 には**\n- カメックス\n- ツタージャ\n- ウルガモス\n- イーブイ\n- チラチーノ",
+    "ko": "「드롭 이벤트」는 「혼자서」 배틀을 플레이하고 프로모 카드를 획득하는 이벤트입니다.\n\n「혼자서」 배틀에서 승리하고 프로모 카드 팩 A시리즈 제 3탄을 획득할 수 있습니다!\n\n**프로모 카드 팩 A시리즈 제3탄 에는**\n- 거북왕\n- 주리비얀\n- 불카모스\n- 이브이\n- 치라치노",
+    "pt": "Eventos de Oportunidade são aqueles em que você consegue cartas promocionais participando de Batalhas Solo.\n\nAo vencer Batalhas Solo, você poderá receber Pacote Promocional Série A (Volume 3)!\n\n**Pacote Promocional da Série A (Vol. 3) inclui**\n- Blastoise\n- Snivy\n- Volcarona\n- Eevee\n- Cinccino",
+    "zh": "「掉落活動」是遊玩「單人對戰」,獲得特典卡的活動。\n\n在「單人對戰」獲勝,可獲得特典卡牌包A系列第3 彈!\n\n**特典卡牌包 A系列第3波 包含**\n- 水箭龜\n- 藤藤蛇\n- 火神蛾\n- 伊布\n- 奇諾栗鼠"
+  }
 }

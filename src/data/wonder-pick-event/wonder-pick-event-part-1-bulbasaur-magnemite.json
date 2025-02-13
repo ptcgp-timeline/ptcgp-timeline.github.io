@@ -23,5 +23,16 @@
       "https://www.pokemon-zone.com/events/bulbasaur-magnemite-wonder-pick/"
     ]
   },
-  "showOnHome": true
+  "showOnHome": true,
+  "description": {
+    "en": "Bulbasaur and Magnemite promo cards are appearing in Wonder Pick.\n\nDuring this event period, there will also be missions where you can obtain event shop tickets by wonder picking and collecting certain cards.\n\n**Obtainable accessories:**\n- Venusaur (backdrop)\n- Venusaur (cover)\n- Snow Crystals (backdrop)",
+    "de": "Promokarten mit Bisasam und Magnetilo erscheinen bei der Wunderwahl!\n\nWährend dieses Events werden außerdem Missionen verfügbar sein, bei denen du durch die Nutzung der Wunderwahl und das Sammeln bestimmter Karten Event-Shop-Tickets erhalten kannst.\n\n**Erhältliches Zubehör:**\n- Bisaflor (Hintergrund)\n- Bisaflor (Cover)\n- Schneekristalle (Hintergrund)",
+    "es": "Llegan las cartas de promoción Bulbasaur y Magnemite a las elecciones mágicas.\n\nDurante el período de este evento, habrá también misiones en las que podrás obtener cupones de evento al realizar elecciones mágicas o al conseguir ciertas cartas.\n\n**Accesorios disponibles:**\n- Fondo Venusaur\n- Portada Venusaur\n- Fondo glacial",
+    "fr": "Les cartes promo Bulbizarre et Magnéti font leur apparition dans la pioche miracle.\n \nDurant cet évènement, vous aurez accès à des missions vous permettant d'obtenir des tickets boutique évènement. Celles-ci consisteront notamment à utiliser la pioche miracle et à collecter des cartes spécifiques.\n\n**Accessoires pouvant être obtenus :**\n- Arrière-Plan - Florizarre\n- Couverture - Florizarre\n- Arrière-Plan - Flocons de neige",
+    "it": "Le carte promozionali Bulbasaur e Magnemite sono disponibili per la pesca misteriosa. \n\nInoltre, nel corso di questo evento ci saranno missioni che ti permetteranno di ottenere Buoni negozio evento effettuando la pesca misteriosa e ottenendo determinate carte.\n\n**Accessori ottenibili:**\n- Venusaur (sfondo)\n- Venusaur (copertina)\n- Cristalli di neve (sfondo)",
+    "ja": "プロモカード「フシギダネ」 「コイル」がゲットチャレンジに登場します。 \n\nまた期間中、 ゲットチャレンジや特定カードを集めるとイベントショップチケットが獲得できるミッションも開催されます。\n\n**入手できる周辺グッズ**\n- フシギ バナ(ボード)\n- フシギバナ(ファイル)\n- スノークリスタル(ボード)",
+    "ko": "프로모 카드 「이상해씨」 「코일」가 겟 챌린지에 등장 합니다. \n\n또한 기간 중, 겟 챌린지나 특정 카드를 모으면 이벤트 숍 티 켓을 획득할 수 있는 미션도 개최됩니다.\n\n**획득할 수 있는 주변 상품**\n- 이상해꽃(보드)\n- 이상해꽃(파일)\n- 스노 크리스털(보드)",
+    "pt": "As cartas promocionais de Bulbasaur e Magnemite estão aparecendo na Escolha Misteriosa.\n \nDurante o período deste evento, também haverá missões que podem conceder Tickets de Evento da Loja quando você realizar uma Escolha Misteriosa e colecionar certas cartas.\n\n**Acessórios que você pode obter:**\n- Venusaur (Fundo)\n- Venusaur (Capa)\n- Cristais de Neve (Fundo)",
+    "zh": "特典卡 「妙蛙種子」、「小磁怪」會在得卡挑戰登場。\n \n此外, 期間內也會推出遊玩得卡挑戰或收集特定卡牌後就能獲得活動商店券的任務。\n\n**可獲得的周邊物品**\n- 妙蛙花（收藏板）\n- 妙蛙花（收藏冊）\n- 雪晶（收藏板）"
+  }
 }

@@ -46,5 +46,16 @@
       "https://www.pokemon.com/it/novita-pokemon/charmander-e-squirtle-sono-i-protagonisti-di-un-nuovo-evento-pesca-misteriosa-nel-gcc-pokemon-pocket"
     ]
   },
-  "showOnHome": true
+  "showOnHome": true,
+  "description": {
+    "en": "Charmander and Squirtle promo cards are appearing in Wonder Pick.\n\nDuring this event period, there will also be missions where you can obtain event shop tickets by wonder picking and collecting certain cards.\n\n**Obtainable accessories:**\n- Blue (backdrop)\n- Blue & Blastoise (cover)\n- Tiny Temple (backdrop)",
+    "de": "Promokarten mit Glumanda und Schiggy erscheinen bei der Wunderwahl!\n\nWährend dieses Events werden außerdem Missionen verfügbar sein, bei denen du durch die Nutzung der Wunderwahl und das Sammeln bestimmter Karten Event-Shop-Tickets erhalten kannst.\n\n**Erhältliches Zubehör:**\n- Blau (Hintergrund)\n- Blau & Turtok (Cover)\n- Mini-Tempel (Hintergrund)",
+    "es": "Llegan las cartas de promoción Charmander y Squirtle a las elecciones mágicas.\n\nDurante el período de este evento, habrá también misiones en las que podrás obtener cupones de evento al realizar elecciones mágicas o al conseguir ciertas cartas.\n\n**Accesorios disponibles:**\n- Fondo Azul\n- Portada Azul y Blastoise\n- Fondo templo",
+    "fr": "Les cartes promo Salamèche et Carapuce font leur apparition dans la pioche miracle.\n \nDurant cet évènement, vous aurez accès à des missions vous permettant d'obtenir des tickets boutique évènement. Celles-ci consisteront notamment à utiliser la pioche miracle et à collecter des cartes spécifiques.\n\n**Accessoires pouvant être obtenus :**\n- Arrière-Plan - Blue\n- Couverture - Blue & Tortank\n- Arrière-Plan - Temple miniature",
+    "it": "Le carte promozionali Charmander e Squirtle sono disponibili per la pesca misteriosa. \n\nInoltre, nel corso di questo evento ci saranno missioni che ti permetteranno di ottenere Buoni negozio evento effettuando la pesca misteriosa e ottenendo determinate carte.\n\n**Accessori ottenibili:**\n- Blu (sfondo)\n- Blu e Blastoise (copertina)\n- Tempietto (sfondo)",
+    "ja": "プロモカード「ヒトカゲ」 「ゼニガメ」がゲットチャレンジに登場します。 \n\nまた期間中、 ゲットチャレンジや特定カードを集めるとイベントショップチケットが獲得できるミッションも開催されます。\n\n**入手できる周辺グッズ**\n- グリーン(ボード)\n- グリーン＆カメックス(ファイル)\n- ミニチュア神殿(ボード)",
+    "ko": "프로모 카드 「파이리」 「꼬부기」가 겟 챌린지에 등장 합니다. \n\n또한 기간 중, 겟 챌린지나 특정 카드를 모으면 이벤트 숍 티 켓을 획득할 수 있는 미션도 개최됩니다.\n\n**획득할 수 있는 주변 상품**\n- 그린(보드)\n- 그린&거북왕(파일)\n- 미니어처 신전(보드)",
+    "pt": "As cartas promocionais de Charmander e Squirtle estão aparecendo na Escolha Misteriosa.\n \nDurante o período deste evento, também haverá missões que podem conceder Tickets de Evento da Loja quando você realizar uma Escolha Misteriosa e colecionar certas cartas.\n\n**Acessórios que você pode obter:**\n- Blue (Fundo)\n- Blue e Blastoise (Capa)\n- Templozinho (Fundo)",
+    "zh": "特典卡 「小火龍」、「傑尼龜」會在得卡挑戰登場。\n \n此外, 期間內也會推出遊玩得卡挑戰或收集特定卡牌後就能獲得活動商店券的任務。\n\n**可獲得的周邊物品**\n- 青綠（收藏板）\n- 青綠＆水箭龜（收藏冊）\n- 袖珍神殿（收藏板）"
+  }
 }

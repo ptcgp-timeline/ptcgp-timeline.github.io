@@ -35,5 +35,16 @@
       "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EVENT_03"
     ]
   },
-  "showOnHome": true
+  "showOnHome": true,
+  "description": {
+    "en": "New accessories and missions have been added to the wonder pick event.\n\n**Added accessories:**\n- Blastoise (card sleeve)\n- Blue & Blastoise (playmat)\n- Blastoise (Pokémon coin)\n- Blastoise (icon)",
+    "de": "Beim Wunderwahl-Event sind nun neue Missionen und neues Zubehör verfügbar.\n\n**Neues Zubehör:**\n- Turtok (Kartenhüllen)\n- Blau & Turtok (Spielunterlage)\n- Turtok (Münze)\n- Turtok (Icon)",
+    "es": "Se han añadido nuevos accesorios y misiones al evento elección mágica. \n\n**Accesorios añadidos:**\n- Fundas Blastoise\n- Tapete Azul y Blastoise\n- Moneda Blastoise\n- Icono Blastoise",
+    "fr": "De nouveaux Accessoires et de nouvelles missions ont été ajoutés à l'évènement pioche miracle.\n\n**Accessoires ajoutés:**\n- Protège-Carte - Tortank\n- Tapis de Jeu - Blue & Tortank\n- Pièce Pokémon - Tortank\n- Icône - Tortank",
+    "it": "Nuovi accessori e nuove missioni sono stati aggiunti all'evento pesca misteriosa.\n\n**Nuovi accessori:**\n- Blastoise (bustine protettive)\n- Blu e Blastoise (tabellone)\n- Blastoise (moneta)\n- Blastoise (icona)",
+    "ja": "ゲットチャレンジイベントに新たな周辺グッズとミッションが追加されました。\n\n**追加された周辺グッズ**\n- カメックス(デッキシールド) \n- グリーン＆カメックス(プレイマット) \n- カメックス(ポケモンコイン)\n- カメックス(アイコン)",
+    "ko": "겟 챌린지 이벤트에 새로운 주변 상품과 미션이 추가되었습 니다.\n\n**추가된 주변 상품**\n- 거북왕(카드 실드)\n- 그린&거북왕(플레이매트)\n- 거북왕(포켓몬 동전)\n- 거북왕(아이콘)",
+    "pt": "Novos acessórios e missões foram adicionados ao Evento Escolha Misteriosa.\n\n**Acessórios adicionados:**\n- Blastoise (Capa para Carta)\n- Blue e Blastoise (Tabuleiro)\n- Blastoise (Moeda de Pokémon)\n- Blastoise (Ícone)",
+    "zh": "得卡挑戰已追加新的周邊物品和任務。\n\n**已追加的周邊物品**\n- 水箭龜（牌組護套）\n- 青綠＆水箭龜（對戰桌墊）\n- 水箭龜（寶可夢幣）\n- 水箭龜（頭像）"
+  }
 }

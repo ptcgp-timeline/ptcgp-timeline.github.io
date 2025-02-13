@@ -75,6 +75,24 @@ const TimelineEvent = ({
     }
   }, [eventName, i18n.language]);
 
+  const getEventStyle = () => {
+    const baseStyle = {
+      width: `${dayWidth * event.duration}px`,
+      left: `${dayWidth * event.offset}px`,
+      backgroundColor: event.color,
+      top: `${marginTop + index * (eventHeight + eventMargin)}px`,
+      height: `${eventHeight}px`,
+      paddingRight: '10px',
+      paddingLeft: prevNearby && !started && (attachedPrev || prevEnded) ? '35px' : '10px',
+      '--image': `url('/images/events/${event.image}')`,
+      '--pos': event.pos || '50% 50%',
+      '--color': event.color,
+      '--zoom': event.zoom || '200%'
+    };
+    
+    return baseStyle;
+  };
+
   return (
     <div
       onClick={handleClick}
@@ -84,19 +102,7 @@ const TimelineEvent = ({
         ${prevDiff < 1 ? '' : 'rounded-l-xl'} 
         ${nextDiff < 1 ? 'border-r-4 border-white' : 'rounded-r-xl'}
         ${isHighlighted ? 'ring-2 ring-primary ring-offset-2 ring-offset-background shadow-lg scale-[1.02] z-30 animate-highlight' : ''}`}
-      style={{
-        width: `${dayWidth * event.duration}px`,
-        left: `${dayWidth * event.offset}px`,
-        backgroundColor: event.color,
-        top: `${marginTop + index * (eventHeight + eventMargin)}px`,
-        height: `${eventHeight}px`,
-        paddingRight: '10px',
-        paddingLeft: prevNearby && !started && (attachedPrev || prevEnded) ? '35px' : '10px',
-        '--image': `url('/images/events/${event.image}')`,
-        '--pos': event.pos || '50% 50%',
-        '--color': event.color,
-        '--zoom': event.zoom || '200%'
-      }}
+      style={getEventStyle()}
     >
       <div className={`event-item ${nextDiff < 1 ? '' : 'rounded-xl'}`} />
       <span 

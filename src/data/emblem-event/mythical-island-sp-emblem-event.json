@@ -1,39 +1,50 @@
 {
-	"name": {
-        "en": "Mythical Island SP Emblem Event",
-        "de": "SP-Emblem-Event (Mysteriöse Insel)",
-        "es": "Evento emblema La Isla Singular SP",
-        "fr": "Évènement insigne L'Île Fabuleuse SP",
-        "it": "L'Isola Misteriosa: evento emblema SP",
-        "ja": "幻のいる島 エンブレムイベントSP",
-        "ko": "환상이 있는 섬 엠블럼 이벤트 SP",
-        "pt": "Evento de Emblema Esp. Ilha Mítica",
-        "zh": "幻遊島 勳章活動SP"
-	},
-	"pos": "50% 30%",
-	"zoom": "100%",
-	"image": "mythical_island_sp_emblem_event.png",
-	"start": "2025-01-20 06:00:00",
-	"end": "2025-01-27 05:59:00",
-	"color": "#0ecc83",
-	"urls": {
-		"en": [
-			"https://ptcgpocket.gg/mythical-island-sp-emblem-event/",
-			"https://www.pokemon-zone.com/events/mythical-island-sp-emblem-event/",
-			"https://ptcgp.raenonx.cc/en/battle/pvp-emblem/4"
-		],
-		"fr": [
-			"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EMBLEM_02"
-		],
-		"zh": [
-			"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EMBLEM_02"
-		],
-		"ja": [
-			"https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EMBLEM_02"
-		],
-		"ko": [
-			"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EMBLEM_02"
-		]
-	},
-	"showOnHome": true
+  "name": {
+    "en": "Mythical Island SP Emblem Event",
+    "de": "SP-Emblem-Event (Mysteriöse Insel)",
+    "es": "Evento emblema La Isla Singular SP",
+    "fr": "Évènement insigne L'Île Fabuleuse SP",
+    "it": "L'Isola Misteriosa: evento emblema SP",
+    "ja": "幻のいる島 エンブレムイベントSP",
+    "ko": "환상이 있는 섬 엠블럼 이벤트 SP",
+    "pt": "Evento de Emblema Esp. Ilha Mítica",
+    "zh": "幻遊島 勳章活動SP"
+  },
+  "pos": "50% 30%",
+  "zoom": "100%",
+  "image": "mythical_island_sp_emblem_event.png",
+  "start": "2025-01-20 06:00:00",
+  "end": "2025-01-27 05:59:00",
+  "color": "#0ecc83",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/mythical-island-sp-emblem-event/",
+      "https://www.pokemon-zone.com/events/mythical-island-sp-emblem-event/",
+      "https://ptcgp.raenonx.cc/en/battle/pvp-emblem/4"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2408010_EMBLEM_02"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2408010_EMBLEM_02"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2408010_EMBLEM_02"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2408010_EMBLEM_02"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "In SP emblem events, if you win consecutive battles against other players you can obtain emblems that can be set on your player profile. \n\nThere will also be missions in which you can obtain shinedust and other items by winning versus battles.\n\n**Obtainable emblems by consecutive wins**\n- 2 consecutive wins: Mythical Island SP Emblem Event Participation Emblem \n- 3 consecutive wins: Mythical Island SP Emblem Event Bronze Emblem \n- 4 consecutive wins: Mythical Island SP Emblem Event Silver Emblem \n- 5 consecutive wins: Mythical Island SP Emblem Event Gold Emblem",
+    "de": "Bei SP-Emblem-Events kannst du Embleme erhalten, indem du mehrere Kämpfe in Folge gegen andere Spieler gewinnst. („SP\" steht hier für „Spezial\".) Diese Embleme kannst du dann auf deinem Profil zur Schau stellen.\n\nEs wird außerdem Missionen geben, bei denen du Funkelstaub und andere Items durch Siege in Spielerkämpfen erhalten kannst.\n\n**Erhältliche Embleme für Siege in Folge**\n- 2 Siege in Folge: Teilnahme-Emblem für SP-Emblem-Event (Mysteriöse Insel) \n- 3 Siege in Folge: Bronze-Emblem für SP-Emblem-Event (Mysteriöse Insel) \n- 4 Siege in Folge: Silber-Emblem für SP-Emblem-Event (Mysteriöse Insel) \n- 5 Siege in Folge: Gold-Emblem für SP-Emblem-Event (Mysteriöse Insel)",
+    "es": "En los eventos emblema SP (o especiales), podrás obtener emblemas al ganar partidas contra otros jugadores consecutivamente, que, luego, podrás añadir a tu perfil.\n\nTambién habrá misiones en las que podrás obtener polvo iris y otros objetos al ganar partidas versus.\n\n**Emblemas que se consiguen con victorias consecutivas**\n- 2 victorias consecutivas: emblema de participación La Isla Singular SP \n- 3 victorias consecutivas: emblema de bronce La Isla Singular SP \n- 4 victorias consecutivas: emblema de plata La Isla Singular SP \n- 5 victorias consecutivas: emblema de oro La Isla Singular SP",
+    "fr": "Les évènements insigne SP (<< spéciaux >>) vous permettent d'obtenir des insignes en remportant des séries de victoires contre d'autres personnes. Vous pouvez ensuite afficher ces insignes sur votre profil.\n\nDes missions vous permettront également d'obtenir de la Poudre Éclat, ainsi que d'autres objets, en remportant des combats versus.\n\n**Insignes pouvant être obtenus en remportant des séries de victoires** \n- 2 victoires consécutives: insigne de participation -évènement insigne L'Île Fabuleuse SP \n- 3 victoires consécutives: insigne de bronze -évènement insigne L'Île Fabuleuse SP \n- 4 victoires consécutives: insigne d'argent - évènement insigne L'Île Fabuleuse SP \n- 5 victoires consécutives: insigne d'or - évènement insigne L'Île Fabuleuse SP",
+    "it": "Durante gli eventi emblema speciali (SP), puoi ottenere degli emblemi da impostare nel tuo profilo aggiudicandoti diverse vittorie consecutive contro altri giocatori.\n\nSaranno inoltre disponibili delle missioni che ti permetteranno di ottenere Sabbialuce e altri oggetti vincendo delle lotte VS.\n\n**Emblemi ottenibili tramite vittorie consecutive**\n- 2 vittorie consecutive - L'Isola Misteriosa: evento emblema SP (partecipazione) \n- 3 vittorie consecutive - L'Isola Misteriosa: evento emblema SP (bronzo) \n- 4 vittorie consecutive - L'Isola Misteriosa: evento emblema SP (argento) \n- 5 vittorie consecutive - L'Isola Misteriosa: evento emblema SP (oro)",
+    "ja": "「エンブレムイベントSP」では、プレイヤーとのバトルで連勝すると、プロフィールに設定できるエンブレムが獲得できます。\n\nまた「だれかと」のバトルで勝利することで「ひかりのすな」などを獲得できるミッションも開催されます。\n\n**連勝数ごとに獲得できるエンブレム**\n- 2連勝:幻のいる島 エンブレムイベントSP 参加賞 \n- 3連勝: 幻のいる島 エンブレムイベントSP 銅賞 \n- 4連勝: 幻のいる島 エンブレムイベントSP 銀賞 \n- 5連勝: 幻のいる島 エンブレムイベントSP 金賞",
+    "ko": "「엠블럼 이벤트 SP」에서는 플레이어와의 배틀에서 연승 하면, 프로필에 설정할 수 있는 엠블럼을 획득할 수 있습니 다.\n\n또한 「누군가와」 배틀에서 승리하면 「빛의 모래」 등을 획득할 수 있는 미션도 개최됩니다.\n\n**연승 횟수에 따라 획득할 수 있는 엠블럼** \n- 2연승 : 환상이 있는 섬 엠블럼 이벤트 SP 참가상 \n- 3연승 : 환상이 있는 섬 엠블럼 이벤트 SP 동상 \n- 4연승 : 환상이 있는 섬 엠블럼 이벤트 SP 은상 \n- 5연승 : 환상이 있는 섬 엠블럼 이벤트 SP 금상",
+    "pt": "Nos Eventos de Emblema Esp., você poderá receber Emblemas que podem ser usados no seu perfil de jogador caso vença batalhas consecutivas contra outros jogadores.\n\nTambém haverá missões nas quais você poderá obter Poeira Cintilante e outros itens ao vencer Batalhas Contra.\n\n**Emblemas que você pode obter com vitórias consecutivas**\n- 2 vitórias consecutivas: Emblema de Participação no Evento de Emblema Esp. Ilha Mítica \n- 3 vitórias consecutivas: Emblema Bronze do Evento de Emblema Esp. Ilha Mítica \n- 4 vitórias consecutivas: Emblema Prata do Evento de Emblema Esp. Ilha Mítica \n- 5 vitórias consecutivas: Emblema Ouro do Evento de Emblema Esp. Ilha Mítica",
+    "zh": "在「勳章活動SP」,若連續贏得與玩家的對戰,就能獲得可設定成個人資訊的勳章。\n\n此外,也會推出可在贏得「與他人對戰」後獲得「閃亮沙子」等的任務。\n\n**可隨連勝數獲得的勳章**\n- 2連勝:幻遊島 勳章活動SP 參加獎 \n- 3連勝:幻遊島 勳章活動SP 銅獎 \n- 4連勝:幻遊島 勳章活動SP 銀獎 \n- 5連勝:幻遊島 勳章活動SP 金獎"
+  }
 }

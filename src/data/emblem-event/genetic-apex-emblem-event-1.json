@@ -1,40 +1,51 @@
 {
-	"name": {
-        "en": "Genetic Apex Emblem Event 1",
-        "de": "Emblem-Event 1 (Unschlagbare Gene)",
-        "es": "Evento emblema Genes Formidables 1",
-        "fr": "Évènement insigne Puissance Génétique 1",
-        "it": "Geni Supremi: evento emblema[C:Nbsp ]1",
-        "ja": "最強の遺伝子 エンブレムイベント1",
-        "ko": "최강의 유전자 엠블럼 이벤트1",
-        "pt": "1º Evento de Emblema Dominação Genética",
-        "zh": "最強的基因 勳章活動1"
-	},
-	"pos": "50% 15%",
-	"zoom": "100%",
-	"image": "genetic_apex_emblem_event.png",
-	"start": "2024-11-07 06:00:00",
-	"end": "2024-11-28 05:59:00",
-	"color": "#6d21ed",
-	"urls": {
-		"en": [
-			"https://ptcgpocket.gg/genetic-apex-emblem-event-1",
-			"https://www.pokemon-zone.com/events/pvp-emblem-event-1/",
-			"https://www.serebii.net/tcgpocket/events/geneticapexemblemevent1.shtml",
-			"https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EMBLEM_01"
-		],
-		"fr": [
-			"https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EMBLEM_01"
-		],
-		"zh": [
-			"https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EMBLEM_01"
-		],
-		"ja": [
-			"https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EMBLEM_01"
-		],
-		"ko": [
-			"https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EMBLEM_01"
-		]
-	},
-	"showOnHome": true
+  "name": {
+    "en": "Genetic Apex Emblem Event 1",
+    "de": "Emblem-Event 1 (Unschlagbare Gene)",
+    "es": "Evento emblema Genes Formidables 1",
+    "fr": "Évènement insigne Puissance Génétique 1",
+    "it": "Geni Supremi: evento emblema[C:Nbsp ]1",
+    "ja": "最強の遺伝子 エンブレムイベント1",
+    "ko": "최강의 유전자 엠블럼 이벤트1",
+    "pt": "1º Evento de Emblema Dominação Genética",
+    "zh": "最強的基因 勳章活動1"
+  },
+  "pos": "50% 15%",
+  "zoom": "100%",
+  "image": "genetic_apex_emblem_event.png",
+  "start": "2024-11-07 06:00:00",
+  "end": "2024-11-28 05:59:00",
+  "color": "#6d21ed",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/genetic-apex-emblem-event-1",
+      "https://www.pokemon-zone.com/events/pvp-emblem-event-1/",
+      "https://www.serebii.net/tcgpocket/events/geneticapexemblemevent1.shtml",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_0002010_EMBLEM_01"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_0002010_EMBLEM_01"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_0002010_EMBLEM_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_0002010_EMBLEM_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_0002010_EMBLEM_01"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "In emblem events, if you win battles against players you can obtain emblems that can be set on your player profile. \n\nThere will also be missions where you can obtain shinedust and other items by winning versus battles.\n\n**Obtainable emblems by total number of wins**\n- 1 win: Genetic Apex Emblem Event Participation Emblem \n- 5 wins: Genetic Apex Emblem Event Bronze Emblem \n- 25 wins: Genetic Apex Emblem Event Silver Emblem \n- 45 wins: Genetic Apex Emblem Event Gold Emblem",
+    "de": "Bei Emblem-Events kannst du Embleme erhalten, indem du Kämpfe gegen andere Spieler gewinnst.\n \nDiese Embleme kannst du auf deinem Profil anzeigen lassen. \n\nEs wird außerdem Missionen geben, bei denen du Funkelstaub und andere Items durch Siege in Spielerkämpfen gewinnen kannst.\n\n**Erhältliche Embleme für die Gesamtanzahl an Siegen**\n- 1 Sieg: Teilnahme-Emblem für Emblem-Event (Unschlagbare Gene) \n- 5 Siege: Bronze-Emblem für Emblem-Event (Unschlagbare Gene) \n- 25 Siege: Silber-Emblem für Emblem-Event (Unschlagbare Gene) \n- 45 Siege: Gold-Emblem für Emblem-Event (Unschlagbare Gene)",
+    "es": "En los eventos emblema, podrás obtener emblemas al ganar partidas contra otros jugadores, que, luego, podrás añadir a tu perfil.\n\nTambién habrá misiones en las que podrás obtener polvo iris u otros objetos al ganar partidas versus.\n\n**Emblemas que se consiguen por número total de victorias**\n- 1 victoria: emblema de participación Genes Formidables \n- 5 victorias: emblema de bronce Genes Formidables \n- 25 victorias: emblema de plata Genes Formidables \n- 45 victorias: emblema de oro Genes Formidables",
+    "fr": "Les évènements insigne vous permettent d'obtenir des insignes en remportant des combats contre d'autres personnes. Vous pouvez ensuite afficher ces insignes sur votre profil.\n\nDes missions vous permettront également d'obtenir de la Poudre Éclat, ainsi que d'autres objets, en remportant des combats versus.\n\n**Insignes pouvant être obtenus par nombre total de victoires** \n- 1 victoire: insigne de participation - évènement insigne Puissance Génétique \n- 5 victoires: insigne de bronze - évènement insigne Puissance Génétique \n- 25 victoires: insigne d'argent - évènement insigne Puissance Génétique \n- 45 victoires: insigne d'or - évènement insigne Puissance Génétique",
+    "it": "Negli eventi emblema, vincendo lotte contro altri giocatori puoi ottenere degli emblemi da impostare nel tuo profilo. \n\nCi saranno anche missioni in cui potrai ottenere Sabbialuce e altri oggetti vincendo delle lotte VS.\n\n**Emblemi ottenibili in base al numero totale di vittorie**\n- Una vittoria: Geni Supremi: evento emblema (partecipazione) \n- 5 vittorie: Geni Supremi: evento emblema (bronzo) \n- 25 vittorie: Geni Supremi: evento emblema (argento) \n- 45 vittorie: Geni Supremi: evento emblema (oro)",
+    "ja": "「エンブレムイベント」では、プレイヤーとのバトルで勝利すると、プロフィールに設定できるエンブレムが獲得できます。 \n\nまた「だれかと」のバトルで勝利することで「ひかりのすな」などを獲得できるミッションも開催されます。\n\n**累計 勝利数ごとに獲得できるエンブレム **\n- 1勝: 最強の遺伝子 エンブレムイベント参加賞\n- 5勝: 最強の遺伝子 エンブレムイベント 銅賞\n- 25勝: 最強の遺伝子 エンブレムイベント 銀賞\n- 45勝: 最強の遺伝子 エンブレムイベント 金賞",
+    "ko": "「엠블럼 이벤트」에서는 플레이어와의 배틀에서 승리하 면, 프로필에 설정할 수 있는 엠블럼을 획득할 수 있습니다. \n\n또한 「누군가와」 배틀에서 승리하면 「빛의 모래」 등을 획득할 수 있는 미션도 개최됩니다.\n\n**합계 승리 수에 따 라 획득할 수 있는 엠블럼 **\n- 1승 : 최강의 유전자 엠블럼 이벤트 참가상 \n- 5승 : 최강의 유전자 엠블럼 이벤트 동상 \n- 25승 : 최강의 유전자 엠블럼 이벤트 은상 \n- 45승 : 최강의 유전자 엠블럼 이벤트 금상",
+    "pt": "Nos Eventos de Emblema, você poderá receber Emblemas que podem ser usados no seu perfil de jogador caso vença batalhas contra outros jogadores. \n\nTambém haverá missões nas quais você poderá obter Poeira Cintilante e outros itens ao vencer Batalhas Contra.\n\n**Emblemas que você pode obter por número total de vitórias **\n- 1 vitória: Emblema de Participação no 1º Evento de Emblema Dominação Genética \n- 5 vitórias: Emblema Bronze do 1º Evento de Emblema Dominação Genética \n- 25 vitórias: Emblema Prata do 1º Evento de Emblema Dominação Genética \n- 45 vitórias: Emblema Ouro do 1º Evento de Emblema Dominação Genética",
+    "zh": "在 「勳章活動」, 若贏得與玩家的對戰, 就能獲得可設 定成個人資訊的勳章。 \n\n此外, 也會推出可在贏得 「與他人對戰」 後獲得 「閃亮沙子」 等的任務。\n\n**可隨累計勝利數獲得的勳章 **\n1勝: 最強的基因 勳章活動 參加獎 \n5勝: 最強的基 因 勳章活動 銅獎 \n25勝: 最強的基因 勳章活動 銀獎 \n45勝: 最強的基因 勳章活動 金獎"
+  }
 }

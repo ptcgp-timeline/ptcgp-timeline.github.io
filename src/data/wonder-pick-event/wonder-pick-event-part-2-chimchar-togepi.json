@@ -1,33 +1,53 @@
 {
-	"name": {
-		"de": "Wunderwahl-Event Teil 2 (Panflam + Togepi)",
-		"en": "Wonder Pick Event Part 2 (Chimchar + Togepi)",
-		"es": "Evento elección mágica parte 2 (Chimchar + Togepi)",
-		"fr": "Évènement pioche miracle 2 (Ouisticram + Togepi)",
-		"it": "Evento pesca misteriosa 2 (Chimchar + Togepi)",
-		"ja": "ゲットチャレンジイベント 後半 (ヒコザル + トゲピー)",
-		"ko": "겟 챌린지 이벤트 후반 (불꽃숭이 + 토게피)",
-		"pt": "Evento Escolha Misteriosa (Pt. 2) (Chimchar + Togepi)",
-		"zh": "得卡挑戰活動 後半 (小火焰猴 + 波克比)"
-	},
-	"pos": "8% 58%",
-	"zoom": "370%",
-	"image": "wonder_pick_chimchar_2.webp",
-	"start": "2025-02-14 06:00:00",
-	"end": "2025-02-21 05:59:00",
-	"color": "#F3927C",
-	"urls": {
-		"en": [
-			"https://ptcgpocket.gg/wonder-pick-event-part-2-chimchar-togepi/",
-			"https://www.pokemon-zone.com/events/chimchar-togepi-wonderpick/"
-		],
-		"fr": [],
-		"de": [],
-		"zh": [],
-		"ja": [],
-		"ko": [],
-		"es": [],
-		"it": []
-	},
-	"showOnHome": true
+  "name": {
+    "de": "Wunderwahl-Event Teil 2 (Panflam + Togepi)",
+    "en": "Wonder Pick Event Part 2 (Chimchar + Togepi)",
+    "es": "Evento elección mágica parte 2 (Chimchar + Togepi)",
+    "fr": "Évènement pioche miracle 2 (Ouisticram + Togepi)",
+    "it": "Evento pesca misteriosa 2 (Chimchar + Togepi)",
+    "ja": "ゲットチャレンジイベント 後半 (ヒコザル + トゲピー)",
+    "ko": "겟 챌린지 이벤트 후반 (불꽃숭이 + 토게피)",
+    "pt": "Evento Escolha Misteriosa (Pt. 2) (Chimchar + Togepi)",
+    "zh": "得卡挑戰活動 後半 (小火焰猴 + 波克比)"
+  },
+  "pos": "8% 58%",
+  "zoom": "370%",
+  "image": "wonder_pick_chimchar_2.webp",
+  "start": "2025-02-14 06:00:00",
+  "end": "2025-02-21 05:59:00",
+  "color": "#F3927C",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-2-chimchar-togepi/",
+      "https://www.pokemon-zone.com/events/chimchar-togepi-wonderpick/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2409010_EVENT_03"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2409010_EVENT_03"
+    ],
+    "de": [],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2409010_EVENT_03"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2409010_EVENT_03"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2409010_EVENT_03"
+    ],
+    "es": [],
+    "it": []
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "New accessories and missions have been added to the wonder pick event.\n\n**Added accessories:**\n- Chimchar (Pokémon coin)\n- Chimchar (card sleeve)\n- Chimchar & Monferno & Infernape (playmat)\n- Poké Ball (icon)",
+    "de": "Beim Wunderwahl-Event sind nun neue Missionen und neues Zubehör verfügbar.\n\n**Neues Zubehör:**\n- Panflam (Münze)\n- Panflam (Kartenhüllen)\n- Panflam & Panpyro & Panferno (Spielunterlage)\n- Pokéball (Icon)",
+    "es": "Se han añadido nuevos accesorios y misiones al evento elección mágica. \n\n**Accesorios añadidos:**\n- Moneda Chimchar\n- Fundas Chimchar\n- Tapete Chimchar, Monferno e Infernape\n- Icono Poké Ball",
+    "fr": "De nouveaux Accessoires et de nouvelles missions ont été ajoutés à l'évènement pioche miracle.\n\n**Accessoires ajoutés:**\n- Pièce Pokémon - Ouisticram\n- Protège-Carte - Ouisticram\n- Tapis de Jeu - Ouisticram, Chimpenfeu & Simiabraz\n- Icône - Poké Ball",
+    "it": "Nuovi accessori e nuove missioni sono stati aggiunti all'evento pesca misteriosa.\n\n**Nuovi accessori:**\n- Chimchar (moneta)\n- Chimchar (bustine protettive)\n- Chimchar, Monferno e Infernape (tabellone)\n- Poké Ball (icona)",
+    "ja": "ゲットチャレンジイベントに新たな周辺グッズとミッションが追加されました。\n\n**追加された周辺グッズ**\n- ヒコザル(ポケモンコイン)\n- ヒコザル(デッキシールド)\n- ヒコザル＆モウカザル＆ゴウカザル(プレイマット)\n- モンスターボール(アイコン)",
+    "ko": "겟 챌린지 이벤트에 새로운 주변 상품과 미션이 추가되었습 니다.\n\n**추가된 주변 상품**\n- 불꽃숭이(포켓몬 동전)\n- 불꽃숭이(카드 실드)\n- 불꽃숭이&파이숭이&초염몽(플레이매트)\n- 몬스터볼(아이콘)",
+    "pt": "Novos acessórios e missões foram adicionados ao Evento Escolha Misteriosa.\n\n**Acessórios adicionados:**\n- Chimchar (Moeda de Pokémon)\n- Chimchar (Capa para Carta)\n- Chimchar, Monferno e Infernape (Tabuleiro)\n- Poké Bola (Ícone)",
+    "zh": "得卡挑戰已追加新的周邊物品和任務。\n\n**已追加的周邊物品**\n- 小火焰猴（寶可夢幣）\n- 小火焰猴（牌組護套）\n- 小火焰猴＆猛火猴＆烈焰猴（對戰桌墊）\n- 精靈球（頭像）"
+  }
 }

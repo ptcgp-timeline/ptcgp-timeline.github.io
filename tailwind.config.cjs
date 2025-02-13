@@ -66,6 +66,9 @@ module.exports = {
         xl: "12px",
         "2xl": "16px",
       },
+      fontSize: {
+        tiny: "0.65rem",
+      },
       boxShadow: {
         rare: "0 0 0 3px rgba(213, 149, 219, 0.3)",
         legendary: "0 0 0 3px rgba(255, 185, 82, 0.3)",
@@ -80,11 +83,17 @@ module.exports = {
         "fade-in": "fadeIn 0.2s ease-out",
         highlight: "highlight 1s ease-in-out",
         blink: "blink 1s ease-in-out infinite",
+        shake: "shake 0.4s ease-in-out",
       },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        shake: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "20%, 60%": { transform: "translateX(-5px)" },
+          "40%, 80%": { transform: "translateX(5px)" },
         },
         highlight: {
           "0%": { opacity: "1", transform: "scale(1)" },
@@ -111,6 +120,8 @@ module.exports = {
           "linear-gradient(90deg, rgba(26, 29, 45, 0) 0%, rgb(35, 39, 56, 100) 10%, rgb(35, 39, 56, 100) 90%, rgba(26, 29, 45, 0) 100%)",
         "modal-watermark":
           "linear-gradient(to top, rgba(35, 39, 56, 0.95), rgba(35, 39, 56, 0) 100%)",
+        "description-fade":
+          "linear-gradient(to top, rgb(26, 29, 45) 0%, rgba(26, 29, 45, 0) 100%)",
       },
       backdropBlur: {
         modal: "6px",

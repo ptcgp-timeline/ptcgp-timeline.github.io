@@ -18,14 +18,18 @@
   "color": "#F3927C",
   "urls": {
     "en": [
+      "https://www.pokemon.com/us/pokemon-news/chimchar-and-togepi-star-in-this-pokemon-tcg-pocket-wonder-pick-event",
       "https://ptcgpocket.gg/wonder-pick-event-part-1-chimchar-togepi/",
       "https://www.pokemon-zone.com/events/chimchar-togepi-wonderpick/",
       "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2409010_EVENT_02"
     ],
     "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/ouisticram-et-togepi-sont-a-lhonneur-dun-evenement-pioche-miracle-dans-le-jcc-pokemon-pocket",
       "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2409010_EVENT_02"
     ],
-    "de": [],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/panflam-und-togepi-erscheinen-in-diesem-wunderwahl-event-in-pokemon-sammelkartenspiel-pocket"
+    ],
     "zh": [
       "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2409010_EVENT_02"
     ],
@@ -35,8 +39,23 @@
     "ko": [
       "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2409010_EVENT_02"
     ],
-    "es": [],
-    "it": []
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/chimchar-y-togepi-protagonizan-un-evento-eleccion-magica-en-jcc-pokemon-pocket"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/chimchar-e-togepi-sono-i-protagonisti-di-un-nuovo-evento-pesca-misteriosa-nel-gcc-pokemon-pocket"
+    ]
   },
-  "showOnHome": true
+  "showOnHome": true,
+  "description": {
+    "en": "Chimchar and Togepi promo cards are appearing in Wonder Pick.\n\nDuring this event period, there will also be missions where you can obtain event shop tickets by wonder picking and collecting certain cards.\n\n**Obtainable accessories:**\n- Chimchar (backdrop)\n- Chimchar & Monferno & Infernape (cover)\n- Cave of Crystals (backdrop)",
+    "de": "Promokarten mit Panflam und Togepi erscheinen bei der Wunderwahl!\n\nWährend dieses Events werden außerdem Missionen verfügbar sein, bei denen du durch die Nutzung der Wunderwahl und das Sammeln bestimmter Karten Event-Shop-Tickets erhalten kannst.\n\n**Erhältliches Zubehör:**\n- Panflam (Hintergrund)\n- Panflam & Panpyro & Panferno (Cover)\n- Höhle mit Kristallen (Hintergrund)",
+    "es": "Llegan las cartas de promoción Chimchar y Togepi a las elecciones mágicas.\n\nDurante el período de este evento, habrá también misiones en las que podrás obtener cupones de evento al realizar elecciones mágicas o al conseguir ciertas cartas.\n\n**Accesorios disponibles:**\n- Fondo Chimchar\n- Portada Chimchar, Monferno e Infernape\n- Fondo cueva de cristales",
+    "fr": "Les cartes promo Ouisticram et Togepi font leur apparition dans la pioche miracle.\n\nDurant cet évènement, vous aurez accès à des missions vous permettant d'obtenir des tickets boutique évènement. Celles-ci consisteront notamment à utiliser la pioche miracle et à collecter des cartes spécifiques.\n\n**Accessoires pouvant être obtenus :**\n- Arrière-Plan - Ouisticram\n- Couverture - Ouisticram, Chimpenfeu & Simiabraz\n- Arrière-Plan - Caverne aux cristaux",
+    "it": "Le carte promozionali Chimchar e Togepi sono disponibili per la pesca misteriosa. \nInoltre, nel corso di questo evento ci saranno missioni che ti permetteranno di ottenere Buoni negozio evento effettuando la pesca misteriosa e ottenendo determinate carte.\n\n**Accessori ottenibili:**\n- Chimchar (sfondo)\n- Chimchar, Monferno e Infernape (copertina)\n- Grotta dei cristalli (sfondo)",
+    "ja": "プロモカード「ヒコザル」 「トゲピー」がゲットチャレンジに登場します。\n\nまた期間中、 ゲットチャレンジや特定カードを集めるとイベントショップチケットが獲得できるミッションも開催されます。\n\n**入手できる周辺グッズ**\n- ヒコザル(ボード)\n- ヒコザル＆モウカザル＆ゴウカザル(ファイル)\n- 鉱石が眠る洞窟(ボード)",
+    "ko": "프로모 카드 「불꽃숭이」 「토게피」가 겟 챌린지에 등장 합니다. \n\n또한 기간 중, 겟 챌린지나 특정 카드를 모으면 이벤트 숍 티 켓을 획득할 수 있는 미션도 개최됩니다.\n\n**획득할 수 있는 주변 상품**\n- 불꽃숭이(보드)\n- 불꽃숭이&파이숭이&초염몽(파일)\n- 광석이 잠든 동굴(보드)",
+    "pt": "As cartas promocionais de Chimchar e Togepi estão aparecendo na Escolha Misteriosa.\nDurante o período deste evento, também haverá missões que podem conceder Tickets de Evento da Loja quando você realizar uma Escolha Misteriosa e colecionar certas cartas.\n\n**Acessórios que você pode obter:**\n- Chimchar (Fundo)\n- Chimchar, Monferno e Infernape (Capa)\n- Caverna de Cristais (Fundo)",
+    "zh": "特典卡 「小火焰猴」、「波克比」會在得卡挑戰登場。\n\n此外, 期間內也會推出遊玩得卡挑戰或收集特定卡牌後就能獲得活動商店券的任務。\n\n**可獲得的周邊物品**\n- 小火焰猴（收藏板）\n- 小火焰猴＆猛火猴＆烈焰猴（收藏冊）\n- 礦藏洞窟（收藏板）"
+  }
 }

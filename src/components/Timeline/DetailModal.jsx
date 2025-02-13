@@ -3,7 +3,7 @@ import duration from 'dayjs/plugin/duration';
 import PropTypes from 'prop-types';
 import { useLanguage } from '../../context/useLanguage';
 import { getDomainAndFavicon } from '../../utils/urlUtils';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Watermark from '../Watermark';
 //import Comments from '../Comments';
 import { gameConfig } from '../../data/timeline';
@@ -11,6 +11,7 @@ import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { useTranslation } from 'react-i18next';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 dayjs.extend(duration);
 
@@ -19,8 +20,13 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
   const { t, i18n } = useTranslation();
   const [eventStart, setEventStart] = useState(convertTime(event.start));
   const [eventEnd, setEventEnd] = useState(convertTime(event.end));
-  //const [showComments, setShowComments] = useState(false);
   const [showUrls, setShowUrls] = useState(true);
+  const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+  const [isDescriptionOverflowing, setIsDescriptionOverflowing] = useState(false);
+  const descriptionRef = useRef(null);
+
+  const eventName = event.name[language] || event.name['en'];
+  const eventDescription = event.description?.[language] || event.description?.['en'];
 
   useEffect(() => {
     setEventStart(convertTime(event.start));
@@ -31,12 +37,17 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
     dayjs.locale(i18n.language);
   }, [i18n.language]);
 
-  const eventName = event.name[language] || event.name['en'];
+  useEffect(() => {
+    if (descriptionRef.current) {
+      const isOverflowing = descriptionRef.current.scrollHeight > 180;
+      setIsDescriptionOverflowing(isOverflowing);
+      setIsDescriptionExpanded(!isOverflowing);
+    }
+  }, [eventDescription]);
+
   if (!event.name[language] && !event.name['en']) {
     return null;
   }
-
-  const eventDescription = event.description?.[language] || event.description?.['en'];
   
   const urls = event.urls?.[language] || [];
   const officialUrls = urls.filter(url => 
@@ -117,30 +128,64 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
 
         {/* Description Section */}
         {eventDescription && (
-          <div className="text-gray-200 mt-4 prose prose-invert max-w-none">
-            <ReactMarkdown
-              rehypePlugins={[rehypeRaw]}
-              remarkPlugins={[remarkGfm]}
-              components={{
-                
-                a: ({ ...props }) => (
-                  <a {...props} target="_blank" rel="noopener noreferrer" />
-                ),
-                
-                code: ({ inline, ...props }) => (
-                  <code
-                    {...props}
-                    className={`${
-                      inline
-                        ? 'bg-gray-800 px-1 py-0.5 rounded'
-                        : 'block bg-gray-800 p-4 rounded-lg'
-                    }`}
-                  />
-                ),
-              }}
+          <div className="text-gray-200 mt-4 bg-background border border-gray-700 rounded-lg">
+            <div 
+              ref={descriptionRef}
+              className={`relative ${!isDescriptionExpanded ? 'max-h-[200px]' : ''} overflow-hidden transition-all duration-300`}
             >
-              {eventDescription}
-            </ReactMarkdown>
+              <div className="p-3">
+                <ReactMarkdown
+                  rehypePlugins={[rehypeRaw]}
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    a: ({ ...props }) => (
+                      <a {...props} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" />
+                    ),
+                    
+                    code: ({ inline, ...props }) => (
+                      <code
+                        {...props}
+                        className={`${
+                          inline
+                            ? 'bg-gray-800 px-1 py-0.5 rounded'
+                            : 'block bg-gray-800 p-4 rounded-lg'
+                        }`}
+                      />
+                    ),
+                    p: ({ ...props }) => (
+                      <p {...props} className="mb-4 text-gray-200" />
+                    ),
+                    ul: ({ ...props }) => (
+                      <ul {...props} className="my-2 space-y-1" />
+                    ),
+                    li: ({ ...props }) => (
+                      <li {...props} className="ml-4 text-gray-200 relative before:content-['•'] before:absolute before:left-[-1rem] before:text-primary" />
+                    ),
+                  }}
+                >
+                  {eventDescription}
+                </ReactMarkdown>
+              </div>
+              {!isDescriptionExpanded && isDescriptionOverflowing && (
+                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
+              )}
+            </div>
+            {isDescriptionOverflowing && (
+              <button
+                onClick={() => setIsDescriptionExpanded(!isDescriptionExpanded)}
+                className="w-full flex items-center justify-center gap-2 p-2 text-sm text-gray-400 hover:text-white transition-colors border-t border-gray-700"
+              >
+                {isDescriptionExpanded ? (
+                  <>
+                    Show Less <FaChevronUp />
+                  </>
+                ) : (
+                  <>
+                    Read More <FaChevronDown />
+                  </>
+                )}
+              </button>
+            )}
           </div>
         )}
 

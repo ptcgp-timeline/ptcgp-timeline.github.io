@@ -44,5 +44,6 @@
   "end": "2025-04-30 05:59:00",
   "color": "#8ecb56",
   "showOnHome": true,
-  "noEnd": true
+  "noEnd": true,
+  "filterExpansion": true
 }
