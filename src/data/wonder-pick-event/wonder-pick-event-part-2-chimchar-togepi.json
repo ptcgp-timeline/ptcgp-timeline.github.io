@@ -18,14 +18,18 @@
   "color": "#F3927C",
   "urls": {
     "en": [
+      "https://www.pokemon.com/us/pokemon-news/earn-more-chimchar-accessories-in-pokemon-tcg-pocket",
       "https://ptcgpocket.gg/wonder-pick-event-part-2-chimchar-togepi/",
       "https://www.pokemon-zone.com/events/chimchar-togepi-wonderpick/",
       "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2409010_EVENT_03"
     ],
     "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/remportez-encore-plus-daccessoires-ouisticram-dans-le-jcc-pokemon-pocket",
       "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2409010_EVENT_03"
     ],
-    "de": [],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/erhalte-mehr-panflam-zubehoer-in-pokemon-sammelkartenspiel-pocket"
+    ],
     "zh": [
       "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2409010_EVENT_03"
     ],
@@ -35,8 +39,12 @@
     "ko": [
       "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2409010_EVENT_03"
     ],
-    "es": [],
-    "it": []
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/consigue-mas-accesorios-de-chimchar-en-jcc-pokemon-pocket"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/ottieni-ancora-piu-accessori-a-tema-chimchar-nel-gcc-pokemon-pocket"
+    ]
   },
   "showOnHome": true,
   "description": {
