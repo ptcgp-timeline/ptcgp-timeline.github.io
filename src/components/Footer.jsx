@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../context/useLanguage';
 import { gameConfig } from '../data/timeline';
-import { FaDiscord, FaGithub } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -17,6 +17,11 @@ const Footer = () => {
       icon: <FaDiscord className="w-5 h-5" />,
       href: "https://discord.gg/K2vK9Hxwq7",
       label: "Discord"
+    },
+    {
+      icon: <FaXTwitter className="w-5 h-5" />,
+      href: "https://x.com/PtcgpTimeline",
+      label: "X"
     }
   ];
 
