@@ -1,25 +1,36 @@
 {
-	"name": {
-		"en": "Premium Pass – October 2024",
-		"ja": "プレミアムパス – 2024年10月",
-		"zh": "特級護照 – 2024年10月",
-		"ko": "프리미엄 패스 – 2024년 10월",
-		"fr": "Pass Premium - Octobre 2024",
-		"de": "Premium Pass - Oktober 2024",
-		"es": "Pase Premium - Octubre 2024",
-		"it": "Pass Premium - Ottobre 2024",
-		"pt": "Passe Premium - Outubro 2024"
-	},
-	"pos": "10% 45%",
-	"zoom": "500%",
-	"image": "premium-pass-oct-2024.webp",
-	"start": "2024-10-30 19:00:00",
-	"end": "2024-12-01 05:59:00",
-	"color": "#7C8FBA",
-	"urls": {
-		"en": [
-			"https://ptcgpocket.gg/premium-pass-october-2024/"
-		]
-	},
-	"showOnHome": true
+  "name": {
+    "en": "Premium Pass – October 2024",
+    "ja": "プレミアムパス – 2024年10月",
+    "zh": "特級護照 – 2024年10月",
+    "ko": "프리미엄 패스 – 2024년 10월",
+    "fr": "Pass Premium - Octobre 2024",
+    "de": "Premium Pass - Oktober 2024",
+    "es": "Pase Premium - Octubre 2024",
+    "it": "Pass Premium - Ottobre 2024",
+    "pt": "Passe Premium - Outubro 2024"
+  },
+  "pos": "10% 45%",
+  "zoom": "500%",
+  "image": "premium-pass-oct-2024.webp",
+  "start": "2024-10-30 19:00:00",
+  "end": "2024-12-01 05:59:00",
+  "color": "#7C8FBA",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/premium-pass-october-2024/"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "New content has been added to the Premium Pass.\n\n**New promo card added to premium missions:**\n- Pikachu\n\n**New items added to the Premium Shop:**\n- Mewtwo (playmat)\n- Mewtwo (card sleeve)\n- Mewtwo (Pokémon coin)\n- Mewtwo (cover)\n- Mewtwo (backdrop)\n",
+    "de": "Neue Inhalte wurden dem Premium-Pass hinzugefügt\n  \n**Eine neue Promokarte wurde zu Premium-Missionen hinzugefügt:**\n- Pikachu \n\n**Neue Items sind im Premium-Shop verfügbar!:**\n- Mewtu (Spielunterlage)\n- Mewtu (Kartenhüllen)\n- Mewtu (Münze)\n- Mewtu (Cover)\n- Mewtu (Hintergrund)",
+    "es": "Se ha añadido nuevo contenido al Pase Premium\n\n**Nueva carta de promoción disponible en las misiones prémium:**\n- Pikachu\n\n**Nuevos artículos disponibles en la tienda prémium:**\n- Tapete Mewtwo\n- Fundas Mewtwo\n- Moneda Mewtwo\n- Portada Mewtwo\n- Fondo Mewtwo",
+    "fr": "Du nouveau contenu a été ajouté au Pass Premium\n\n**Nouvelle carte promo ajoutée aux missions premium:**\n- Pikachu\n\n**Nouveaux objets ajoutés à la boutique premium:**\n- Tapis de Jeu - Mewtwo\n- Protège-Carte - Mewtwo\n- Pièce Pokémon - Mewtwo\n- Couverture - Mewtwo\n- Arrière-Plan - Mewtwo",
+    "it": "Nuovi contenuti sono stati aggiunti al Pass Premium\n\n**Nuova carta promozionale aggiunta alle missioni premium:**\n- Pikachu\n\n**Nuovi oggetti aggiunti alla sezione \"Premium\" del negozio:**\n- Mewtwo (tabellone)\n- Mewtwo (bustine protettive)\n- Mewtwo (moneta)\n- Mewtwo (copertina)\n- Mewtwo (sfondo)",
+    "ja": "プレミアムパスに新しいコンテンツが追加されました\n\n**プレミアムミッションに新しいプロモカードが登場:**\n- ピカチュウ\n\n**プレミアムショップに新しいアイテムが登場:**\n- ミュウツー(プレイマット)\n- ミュウツー(デッキシールド)\n- ミュウツー(ポケモンコイン)\n- ミュウツー(ファイル)\n- ミュウツー(ボード)",
+    "ko": "프리미엄 패스에 새로운 콘텐츠가 추가되었습니다\n\n**프리미엄 미션에 새로운 프로모 카드 등장:**\n- 피카츄\n\n**프리미엄 숍에 새로운 플레이 아이템 등장:**\n- 뮤츠(플레이매트)\n- 뮤츠(카드 실드)\n- 뮤츠(포켓몬 동전)\n- 뮤츠(파일)\n- 뮤츠(보드)",
+    "pt": "Novo conteúdo foi adicionado ao Passe Premium\n\n**Nova carta promocional adicionada às Missões Premium:**\n- Pikachu\n\n**Novos itens adicionados à Loja Premium:**\n- Mewtwo (Tabuleiro)\n- Mewtwo (Capa para Carta)\n- Mewtwo (Moeda de Pokémon)\n- Mewtwo (Capa)\n- Mewtwo (Fundo)",
+    "zh": "高级通行证已添加新内容\n\n**新特典卡在特級任務中登場:**\n- 皮卡丘\n \n**新道具在特級商店中登場:**\n- 超夢（對戰桌墊）\n- 超夢（牌組護套）\n- 超夢（寶可夢幣）\n- 超夢（收藏冊）\n- 超夢（收藏板）"
+  }
 }

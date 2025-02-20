@@ -1,21 +1,32 @@
 {
-	"name": {
-		"en": "Premium Pass - January 2025",
-		"ja": "プレミアムパス - 2025年1月",
-		"zh": "特級護照 - 2025年1月",
-		"ko": "프리미엄 패스 - 2025년 1월",
-		"fr": "Pass Premium - Janvier 2025",
-		"de": "Premium Pass - Januar 2025",
-		"es": "Pase Premium - Enero 2025",
-		"it": "Pass Premium - Gennaio 2025",
-		"pt": "Passe Premium - Janeiro 2025"
-	},
-	"pos": "12% 58%",
-	"zoom": "300%",
-	"image": "Premium_Pass_January_2025.png",
-	"start": "2025-01-01 06:00:00",
-	"end": "2025-02-01 05:59:00",
-	"color": "#ff4a02",
-	"urls": {},
-	"showOnHome": true
+  "name": {
+    "en": "Premium Pass - January 2025",
+    "ja": "プレミアムパス - 2025年1月",
+    "zh": "特級護照 - 2025年1月",
+    "ko": "프리미엄 패스 - 2025년 1월",
+    "fr": "Pass Premium - Janvier 2025",
+    "de": "Premium Pass - Januar 2025",
+    "es": "Pase Premium - Enero 2025",
+    "it": "Pass Premium - Gennaio 2025",
+    "pt": "Passe Premium - Janeiro 2025"
+  },
+  "pos": "12% 58%",
+  "zoom": "300%",
+  "image": "Premium_Pass_January_2025.png",
+  "start": "2025-01-01 06:00:00",
+  "end": "2025-02-01 05:59:00",
+  "color": "#ff4a02",
+  "urls": {},
+  "showOnHome": true,
+  "description": {
+    "en": "New content has been added to the Premium Pass.\n\n**New promo card added to premium missions:**\n- Moltres ex\n\n**New items added to the Premium Shop:**\n- Charizard (playmat)\n- Charizard (card sleeve)\n- Charizard (Pokémon coin)\n- Charizard (cover)\n- Charizard (backdrop)\n",
+    "de": "Neue Inhalte wurden dem Premium-Pass hinzugefügt\n  \n**Eine neue Promokarte wurde zu Premium-Missionen hinzugefügt:**\n- Lavados-ex \n\n**Neue Items sind im Premium-Shop verfügbar!:**\n- Glurak (Spielunterlage)\n- Glurak (Kartenhüllen)\n- Glurak (Münze)\n- Glurak (Cover)\n- Glurak (Hintergrund)",
+    "es": "Se ha añadido nuevo contenido al Pase Premium\n\n**Nueva carta de promoción disponible en las misiones prémium:**\n- Moltres ex\n\n**Nuevos artículos disponibles en la tienda prémium:**\n- Tapete Charizard\n- Fundas Charizard\n- Moneda Charizard\n- Portada Charizard\n- Fondo Charizard",
+    "fr": "Du nouveau contenu a été ajouté au Pass Premium\n\n**Nouvelle carte promo ajoutée aux missions premium:**\n- Sulfura-ex\n\n**Nouveaux objets ajoutés à la boutique premium:**\n- Tapis de Jeu - Dracaufeu\n- Protège-Carte - Dracaufeu\n- Pièce Pokémon - Dracaufeu\n- Couverture - Dracaufeu\n- Arrière-Plan - Dracaufeu",
+    "it": "Nuovi contenuti sono stati aggiunti al Pass Premium\n\n**Nuova carta promozionale aggiunta alle missioni premium:**\n- Moltres-ex\n\n**Nuovi oggetti aggiunti alla sezione \"Premium\" del negozio:**\n- Charizard (tabellone)\n- Charizard (bustine protettive)\n- Charizard (moneta)\n- Charizard (copertina)\n- Charizard (sfondo)",
+    "ja": "プレミアムパスに新しいコンテンツが追加されました\n\n**プレミアムミッションに新しいプロモカードが登場:**\n- ファイヤーex\n\n**プレミアムショップに新しいアイテムが登場:**\n- リザードン(プレイマット)\n- リザードン(デッキシールド)\n- リザードン(ポケモンコイン)\n- リザードン(ファイル)\n- リザードン(ボード)",
+    "ko": "프리미엄 패스에 새로운 콘텐츠가 추가되었습니다\n\n**프리미엄 미션에 새로운 프로모 카드 등장:**\n- 파이어 ex\n\n**프리미엄 숍에 새로운 플레이 아이템 등장:**\n- 리자몽(플레이매트)\n- 리자몽(카드 실드)\n- 리자몽(포켓몬 동전)\n- 리자몽(파일)\n- 리자몽(보드)",
+    "pt": "Novo conteúdo foi adicionado ao Passe Premium\n\n**Nova carta promocional adicionada às Missões Premium:**\n- Moltres ex\n\n**Novos itens adicionados à Loja Premium:**\n- Charizard (Tabuleiro)\n- Charizard (Capa para Carta)\n- Charizard (Moeda de Pokémon)\n- Charizard (Capa)\n- Charizard (Fundo)",
+    "zh": "高级通行证已添加新内容\n\n**新特典卡在特級任務中登場:**\n- 火焰鳥ex\n \n**新道具在特級商店中登場:**\n- 噴火龍（對戰桌墊）\n- 噴火龍（牌組護套）\n- 噴火龍（寶可夢幣）\n- 噴火龍（收藏冊）\n- 噴火龍（收藏板）"
+  }
 }

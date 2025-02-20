@@ -1,26 +1,37 @@
 {
-	"name": {
-		"en": "Premium Pass - February 2025",
-		"ja": "プレミアムパス - 2025年2月",
-		"zh": "特級護照 - 2025年2月",
-		"ko": "프리미엄 패스 - 2025년 2월",
-		"fr": "Pass Premium - Février 2025",
-		"de": "Premium Pass - Februar 2025",
-		"es": "Pase Premium - Febrero 2025",
-		"it": "Pass Premium - Febbraio 2025",
-		"pt": "Passe Premium - Fevereiro 2025"
-	},
-	"pos": "12% 50%",
-	"zoom": "300%",
-	"image": "Premium_Pass_February_2025.webp",
-	"start": "2025-02-01 06:00:00",
-	"end": "2025-03-03 05:59:00",
-	"color": "#4A93D4",
-	"urls": {
-		"en": [
-			"https://ptcgpocket.gg/premium-pass-february-2025/",
-			"https://www.pokemon-zone.com/events/february-2025-premium-shop/"
-		]
-	},
-	"showOnHome": true
+  "name": {
+    "en": "Premium Pass - February 2025",
+    "ja": "プレミアムパス - 2025年2月",
+    "zh": "特級護照 - 2025年2月",
+    "ko": "프리미엄 패스 - 2025년 2월",
+    "fr": "Pass Premium - Février 2025",
+    "de": "Premium Pass - Februar 2025",
+    "es": "Pase Premium - Febrero 2025",
+    "it": "Pass Premium - Febbraio 2025",
+    "pt": "Passe Premium - Fevereiro 2025"
+  },
+  "pos": "12% 50%",
+  "zoom": "300%",
+  "image": "Premium_Pass_February_2025.webp",
+  "start": "2025-02-01 06:00:00",
+  "end": "2025-03-03 05:59:00",
+  "color": "#4A93D4",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/premium-pass-february-2025/",
+      "https://www.pokemon-zone.com/events/february-2025-premium-shop/"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "New content has been added to the Premium Pass.\n\n**New promo card added to premium missions:**\n- Piplup\n\n**New items added to the Premium Shop:**\n- Darkrai (playmat)\n- Darkrai (card sleeve)\n- Darkrai (Pokémon coin)\n- Darkrai (cover)\n- Darkrai (backdrop)\n",
+    "de": "Neue Inhalte wurden dem Premium-Pass hinzugefügt\n  \n**Eine neue Promokarte wurde zu Premium-Missionen hinzugefügt:**\n- Plinfa \n\n**Neue Items sind im Premium-Shop verfügbar!:**\n- Darkrai (Spielunterlage)\n- Darkrai (Kartenhüllen)\n- Darkrai (Münze)\n- Darkrai (Cover)\n- Darkrai (Hintergrund)",
+    "es": "Se ha añadido nuevo contenido al Pase Premium\n\n**Nueva carta de promoción disponible en las misiones prémium:**\n- Piplup\n\n**Nuevos artículos disponibles en la tienda prémium:**\n- Tapete Darkrai\n- Fundas Darkrai\n- Moneda Darkrai\n- Portada Darkrai\n- Fondo Darkrai",
+    "fr": "Du nouveau contenu a été ajouté au Pass Premium\n\n**Nouvelle carte promo ajoutée aux missions premium:**\n- Tiplouf\n\n**Nouveaux objets ajoutés à la boutique premium:**\n- Tapis de Jeu - Darkrai\n- Protège-Carte - Darkrai\n- Pièce Pokémon - Darkrai\n- Couverture - Darkrai\n- Arrière-Plan - Darkrai",
+    "it": "Nuovi contenuti sono stati aggiunti al Pass Premium\n\n**Nuova carta promozionale aggiunta alle missioni premium:**\n- Piplup\n\n**Nuovi oggetti aggiunti alla sezione \"Premium\" del negozio:**\n- Darkrai (tabellone)\n- Darkrai (bustine protettive)\n- Darkrai (moneta)\n- Darkrai (copertina)\n- Darkrai (sfondo)",
+    "ja": "プレミアムパスに新しいコンテンツが追加されました\n\n**プレミアムミッションに新しいプロモカードが登場:**\n- ポッチャマ\n\n**プレミアムショップに新しいアイテムが登場:**\n- ダークライ(プレイマット)\n- ダークライ(デッキシールド)\n- ダークライ(ポケモンコイン)\n- ダークライ(ファイル)\n- ダークライ(ボード)",
+    "ko": "프리미엄 패스에 새로운 콘텐츠가 추가되었습니다\n\n**프리미엄 미션에 새로운 프로모 카드 등장:**\n- 팽도리\n\n**프리미엄 숍에 새로운 플레이 아이템 등장:**\n- 다크라이(플레이매트)\n- 다크라이(카드 실드)\n- 다크라이(포켓몬 동전)\n- 다크라이(파일)\n- 다크라이(보드)",
+    "pt": "Novo conteúdo foi adicionado ao Passe Premium\n\n**Nova carta promocional adicionada às Missões Premium:**\n- Piplup\n\n**Novos itens adicionados à Loja Premium:**\n- Darkrai (Tabuleiro)\n- Darkrai (Capa para Carta)\n- Darkrai (Moeda de Pokémon)\n- Darkrai (Capa)\n- Darkrai (Fundo)",
+    "zh": "高级通行证已添加新内容\n\n**新特典卡在特級任務中登場:**\n- 波加曼\n \n**新道具在特級商店中登場:**\n- 達克萊伊（對戰桌墊）\n- 達克萊伊（牌組護套）\n- 達克萊伊（寶可夢幣）\n- 達克萊伊（收藏冊）\n- 達克萊伊（收藏板）"
+  }
 }

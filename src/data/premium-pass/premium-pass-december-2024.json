@@ -1,21 +1,32 @@
 {
-	"name": {
-		"en": "Premium Pass - December 2024",
-		"ja": "プレミアムパス - 2024年12月",
-		"zh": "特級護照 - 2024年12月",
-		"ko": "프리미엄 패스 - 2024년 12월",
-		"fr": "Pass Premium - Décembre 2024",
-		"de": "Premium Pass - Dezember 2024",
-		"es": "Pase Premium - Diciembre 2024",
-		"it": "Pass Premium - Dicembre 2024",
-		"pt": "Passe Premium - Dezembro 2024"
-	},
-	"pos": "0% 40%",
-	"zoom": "100%",
-	"image": "Premium_Pass_December_2024.jpeg",
-	"start": "2024-12-01 06:00:00",
-	"end": "2025-01-01 05:59:00",
-	"color": "#b2adbd",
-	"urls": {},
-	"showOnHome": true
+  "name": {
+    "en": "Premium Pass - December 2024",
+    "ja": "プレミアムパス - 2024年12月",
+    "zh": "特級護照 - 2024年12月",
+    "ko": "프리미엄 패스 - 2024년 12월",
+    "fr": "Pass Premium - Décembre 2024",
+    "de": "Premium Pass - Dezember 2024",
+    "es": "Pase Premium - Diciembre 2024",
+    "it": "Pass Premium - Dicembre 2024",
+    "pt": "Passe Premium - Dezembro 2024"
+  },
+  "pos": "0% 40%",
+  "zoom": "100%",
+  "image": "Premium_Pass_December_2024.jpeg",
+  "start": "2024-12-01 06:00:00",
+  "end": "2025-01-01 05:59:00",
+  "color": "#b2adbd",
+  "urls": {},
+  "showOnHome": true,
+  "description": {
+    "en": "New content has been added to the Premium Pass.\n\n**New promo card added to premium missions:**\n- Mewtwo\n\n**New items added to the Premium Shop:**\n- Pikachu (playmat)\n- Pikachu (card sleeve)\n- Pikachu (Pokémon coin)\n- Pikachu (cover)\n- Pikachu (backdrop)\n",
+    "de": "Neue Inhalte wurden dem Premium-Pass hinzugefügt\n  \n**Eine neue Promokarte wurde zu Premium-Missionen hinzugefügt:**\n- Mewtu \n\n**Neue Items sind im Premium-Shop verfügbar!:**\n- Pikachu (Spielunterlage)\n- Pikachu (Kartenhüllen)\n- Pikachu (Münze)\n- Pikachu (Cover)\n- Pikachu (Hintergrund)",
+    "es": "Se ha añadido nuevo contenido al Pase Premium\n\n**Nueva carta de promoción disponible en las misiones prémium:**\n- Mewtwo\n\n**Nuevos artículos disponibles en la tienda prémium:**\n- Tapete Pikachu\n- Fundas Pikachu\n- Moneda Pikachu\n- Portada Pikachu\n- Fondo Pikachu",
+    "fr": "Du nouveau contenu a été ajouté au Pass Premium\n\n**Nouvelle carte promo ajoutée aux missions premium:**\n- Mewtwo\n\n**Nouveaux objets ajoutés à la boutique premium:**\n- Tapis de Jeu - Pikachu\n- Protège-Carte - Pikachu\n- Pièce Pokémon - Pikachu\n- Couverture - Pikachu\n- Arrière-Plan - Pikachu",
+    "it": "Nuovi contenuti sono stati aggiunti al Pass Premium\n\n**Nuova carta promozionale aggiunta alle missioni premium:**\n- Mewtwo\n\n**Nuovi oggetti aggiunti alla sezione \"Premium\" del negozio:**\n- Pikachu (tabellone)\n- Pikachu (bustine protettive)\n- Pikachu (moneta)\n- Pikachu (copertina)\n- Pikachu (sfondo)",
+    "ja": "プレミアムパスに新しいコンテンツが追加されました\n\n**プレミアムミッションに新しいプロモカードが登場:**\n- ミュウツー\n\n**プレミアムショップに新しいアイテムが登場:**\n- ピカチュウ(プレイマット)\n- ピカチュウ(デッキシールド)\n- ピカチュウ(ポケモンコイン)\n- ピカチュウ(ファイル)\n- ピカチュウ(ボード)",
+    "ko": "프리미엄 패스에 새로운 콘텐츠가 추가되었습니다\n\n**프리미엄 미션에 새로운 프로모 카드 등장:**\n- 뮤츠\n\n**프리미엄 숍에 새로운 플레이 아이템 등장:**\n- 피카츄(플레이매트)\n- 피카츄(카드 실드)\n- 피카츄(포켓몬 동전)\n- 피카츄(파일)\n- 피카츄(보드)",
+    "pt": "Novo conteúdo foi adicionado ao Passe Premium\n\n**Nova carta promocional adicionada às Missões Premium:**\n- Mewtwo\n\n**Novos itens adicionados à Loja Premium:**\n- Pikachu (Tabuleiro)\n- Pikachu (Capa para Carta)\n- Pikachu (Moeda de Pokémon)\n- Pikachu (Capa)\n- Pikachu (Fundo)",
+    "zh": "高级通行证已添加新内容\n\n**新特典卡在特級任務中登場:**\n- 超夢\n \n**新道具在特級商店中登場:**\n- 皮卡丘（對戰桌墊）\n- 皮卡丘（牌組護套）\n- 皮卡丘（寶可夢幣）\n- 皮卡丘（收藏冊）\n- 皮卡丘（收藏板）"
+  }
 }
