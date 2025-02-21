@@ -56,7 +56,7 @@
     "postcss-nesting": "^12.0.2",
     "tailwindcss": "^3.4.1",
     "terser": "^5.37.0",
-    "vite": "^5.1.4"
+    "vite": "^5.4.14"
   },
   "keywords": [
     "timeline",
