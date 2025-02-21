@@ -17,15 +17,23 @@
   "end": "2025-02-27 05:59:00",
   "color": "#CF203F",
   "urls": {
-    "es": [],
-    "it": [],
-    "de": [],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/aparicion-masiva-de-pokemon-de-tipo-oscuro-en-el-juego-de-cartas-coleccionables-pokemon-pocket"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/comparse-massicce-di-pokemon-di-tipo-oscurita-nel-gioco-di-carte-collezionabili-pokemon-pocket"
+    ],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/ein-massiver-auflauf-von-finsternis-pokemon-in-pokemon-sammelkartenspiel-pocket"
+    ],
     "en": [
+      "https://www.pokemon.com/us/pokemon-news/darkness-type-pokemon-mass-outbreak-in-pokemon-trading-card-game-pocket",
       "https://ptcgpocket.gg/darkness-type-pokemon-mass-outbreak-event-weavile-ex/",
       "https://www.pokemon-zone.com/events/darkness-type-pokemon-mass-outbreak/",
       "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2409010_EVENT_02"
     ],
     "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/une-apparition-massive-de-pokemon-obscurite-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
       "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2409010_EVENT_02"
     ],
     "zh": [
