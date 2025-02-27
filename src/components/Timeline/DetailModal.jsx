@@ -3,7 +3,7 @@ import duration from 'dayjs/plugin/duration';
 import PropTypes from 'prop-types';
 import { useLanguage } from '../../context/useLanguage';
 import { getDomainAndFavicon } from '../../utils/urlUtils';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, memo } from 'react';
 import Watermark from '../Watermark';
 //import Comments from '../Comments';
 import { gameConfig } from '../../data/timeline';
@@ -14,6 +14,47 @@ import { useTranslation } from 'react-i18next';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 dayjs.extend(duration);
+
+const DescriptionContent = memo(({ description }) => {
+  return (
+    <ReactMarkdown
+      rehypePlugins={[rehypeRaw]}
+      remarkPlugins={[remarkGfm]}
+      components={{
+        a: ({ ...props }) => (
+          <a {...props} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" />
+        ),
+        code: ({ inline, ...props }) => (
+          <code
+            {...props}
+            className={`${
+              inline
+                ? 'bg-gray-800 px-1 py-0.5 rounded'
+                : 'block bg-gray-800 p-4 rounded-lg'
+            }`}
+          />
+        ),
+        p: ({ ...props }) => (
+          <p {...props} className="mb-4 text-gray-200" />
+        ),
+        ul: ({ ...props }) => (
+          <ul {...props} className="my-2 space-y-1" />
+        ),
+        li: ({ ...props }) => (
+          <li {...props} className="ml-4 text-gray-200 relative before:content-['•'] before:absolute before:left-[-1rem] before:text-primary" />
+        ),
+      }}
+    >
+      {description}
+    </ReactMarkdown>
+  );
+});
+
+DescriptionContent.propTypes = {
+  description: PropTypes.string
+};
+
+DescriptionContent.displayName = 'DescriptionContent';
 
 const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
   const { language } = useLanguage();
@@ -134,37 +175,7 @@ const DetailModal = ({ event, onClose, showLocalTime, convertTime, now }) => {
               className={`relative ${!isDescriptionExpanded ? 'max-h-[200px]' : ''} overflow-hidden transition-all duration-300`}
             >
               <div className="p-3">
-                <ReactMarkdown
-                  rehypePlugins={[rehypeRaw]}
-                  remarkPlugins={[remarkGfm]}
-                  components={{
-                    a: ({ ...props }) => (
-                      <a {...props} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline" />
-                    ),
-                    
-                    code: ({ inline, ...props }) => (
-                      <code
-                        {...props}
-                        className={`${
-                          inline
-                            ? 'bg-gray-800 px-1 py-0.5 rounded'
-                            : 'block bg-gray-800 p-4 rounded-lg'
-                        }`}
-                      />
-                    ),
-                    p: ({ ...props }) => (
-                      <p {...props} className="mb-4 text-gray-200" />
-                    ),
-                    ul: ({ ...props }) => (
-                      <ul {...props} className="my-2 space-y-1" />
-                    ),
-                    li: ({ ...props }) => (
-                      <li {...props} className="ml-4 text-gray-200 relative before:content-['•'] before:absolute before:left-[-1rem] before:text-primary" />
-                    ),
-                  }}
-                >
-                  {eventDescription}
-                </ReactMarkdown>
+                <DescriptionContent description={eventDescription} />
               </div>
               {!isDescriptionExpanded && isDescriptionOverflowing && (
                 <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
