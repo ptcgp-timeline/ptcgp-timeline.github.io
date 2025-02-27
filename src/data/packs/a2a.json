@@ -1,17 +1,17 @@
 {
   "name": {
     "en": "Triumphant Light (A2a)",
-    "fr": "(A2a)",
-    "es": "(A2a)",
-    "it": "(A2a)",
-    "de": "(A2a)",
-    "pt": "(A2a)",
-    "ko": "(A2a)",
-    "ja": "(A2a)",
+    "fr": "Lumière Triomphale (A2a)",
+    "es": "Luz Triunfal (A2a)",
+    "it": "Luce Trionfale (A2a)",
+    "de": "Licht des Triumphs (A2a)",
+    "pt": "Luz Triunfante (A2a)",
+    "ko": "초극의 빛 (A2a)",
+    "ja": "超克の光 (A2a)",
     "zh": "(A2a)"
   },
-  "pos": "-53% 50%",
-  "zoom": "120%",
+  "pos": "35% 15%",
+  "zoom": "300%",
   "image": "A2a.webp",
   "start": "2025-02-28 06:00:00",
   "end": "2025-07-30 05:59:00",
@@ -27,6 +27,15 @@
   },
   "showOnHome": true,
   "noEnd": true,
-  "uncertain": true,
-  "description": {}
+  "uncertain": false,
+  "description": {
+    "en": "[🎬 YouTube Trailer](https://www.youtube.com/watch?v=urmBeWH0bxw)",
+    "es": "[🎬 Tráiler de YouTube](https://www.youtube.com/watch?v=pmUDR4v0QgY)",
+    "fr": "[🎬 Bande-annonce YouTube](https://www.youtube.com/watch?v=K58nXnRbV6o)",
+    "de": "[🎬 YouTube-Trailer](https://www.youtube.com/watch?v=T4X-xYlFlew)",
+    "it": "[🎬 Trailer di YouTube](https://www.youtube.com/watch?v=dCYa-ibkLiI)",
+    "pt": "[🎬 Trailer do YouTube](https://www.youtube.com/watch?v=lOg01hapHw0)",
+    "ja": "[🎬 YouTube トレーラー](https://www.youtube.com/watch?v=diO9v8q2R0o)",
+    "ko": "[🎬 유튜브 트레일러](https://www.youtube.com/watch?v=8az6fT-dfko)"
+  }
 }
