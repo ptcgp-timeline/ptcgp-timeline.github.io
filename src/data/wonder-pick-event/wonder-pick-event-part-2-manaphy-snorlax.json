@@ -1,0 +1,20 @@
+{
+  "name": {
+    "en": "Wonder Pick Event Part 2 (Manaphy + Snorlax)"
+  },
+  "pos": "8% 50%",
+  "zoom": "370%",
+  "image": "Manaphy_event-2.webp",
+  "start": "2025-03-17 06:00:00",
+  "end": "2025-03-24 05:59:00",
+  "color": "#07B6ED",
+  "urls": {
+    "en": ["https://ptcgpocket.gg/wonder-pick-event-part-2-manaphy-snorlax/",
+      "https://www.pokemon-zone.com/events/manaphy-and-snorlax-wonder-pick/"
+    ]
+    
+  },
+  "showOnHome": true,
+  "description": {
+    }
+}

@@ -30,10 +30,11 @@
     },
     "pos": "0% 35%",
     "zoom": "110%",
-    "image": "genetic_apex_a1.jpg",
+    "image": "genetic_apex_a1.webp",
     "start": "2024-10-30 19:00:00",
     "end": "2025-04-30 05:59:00",
     "color": "#6d21ed",
     "showOnHome": true,
-    "noEnd": true
+    "noEnd": true,
+    "filterExpansion": true
   }

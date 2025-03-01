@@ -1,0 +1,37 @@
+{
+  "name": {
+    "en": "Premium Pass - March 2025",
+    "ja": "プレミアムパス - 2025年3月",
+    "zh": "特級護照 - 2025年3月",
+    "ko": "프리미엄 패스 - 2025년 3월",
+    "fr": "Pass Premium - Mars 2025",
+    "de": "Premium Pass - März 2025",
+    "es": "Pase Premium - Marzo 2025",
+    "it": "Pass Premium - Marzo 2025",
+    "pt": "Passe Premium - Março 2025"
+  },
+  "pos": "20% 30%",
+  "zoom": "350%",
+  "image": "Premium_Pass_March_2025.webp",
+  "start": "2025-03-01 06:00:00",
+  "end": "2025-04-01 05:59:00",
+  "color": "#9b9595",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/premium-pass-March-2025/",
+      "https://www.pokemon-zone.com/events/march-2025-premium-shop/"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+    "en": "New content has been added to the Premium Pass.\n\n**New promo card added to premium missions:**\n- Darkrai ex\n\n**New items added to the Premium Shop:**\n- Arceus (playmat)\n- Arceus (card sleeve)\n- Arceus (Pokémon coin)\n- Arceus (cover)\n- Arceus (backdrop)\n",
+    "de": "Neue Inhalte wurden dem Premium-Pass hinzugefügt\n  \n**Eine neue Promokarte wurde zu Premium-Missionen hinzugefügt:**\n- Darkrai-ex \n\n**Neue Items sind im Premium-Shop verfügbar!:**\n- Arceus (Spielunterlage)\n- Arceus (Kartenhüllen)\n- Arceus (Münze)\n- Arceus (Cover)\n- Arceus (Hintergrund)",
+    "es": "Se ha añadido nuevo contenido al Pase Premium\n\n**Nueva carta de promoción disponible en las misiones prémium:**\n- Darkrai ex\n\n**Nuevos artículos disponibles en la tienda prémium:**\n- Tapete Arceus\n- Fundas Arceus\n- Moneda Arceus\n- Portada Arceus\n- Fondo Arceus",
+    "fr": "Du nouveau contenu a été ajouté au Pass Premium\n\n**Nouvelle carte promo ajoutée aux missions premium:**\n- Darkrai-ex\n\n**Nouveaux objets ajoutés à la boutique premium:**\n- Tapis de Jeu - Arceus\n- Protège-Carte - Arceus\n- Pièce Pokémon - Arceus\n- Couverture - Arceus\n- Arrière-Plan - Arceus",
+    "it": "Nuovi contenuti sono stati aggiunti al Pass Premium\n\n**Nuova carta promozionale aggiunta alle missioni premium:**\n- Darkrai-ex\n\n**Nuovi oggetti aggiunti alla sezione \"Premium\" del negozio:**\n- Arceus (tabellone)\n- Arceus (bustine protettive)\n- Arceus (moneta)\n- Arceus (copertina)\n- Arceus (sfondo)",
+    "ja": "プレミアムパスに新しいコンテンツが追加されました\n\n**プレミアムミッションに新しいプロモカードが登場:**\n- ダークライex\n\n**プレミアムショップに新しいアイテムが登場:**\n- アルセウス(プレイマット)\n- アルセウス(デッキシールド)\n- アルセウス(ポケモンコイン)\n- アルセウス(ファイル)\n- アルセウス(ボード)",
+    "ko": "프리미엄 패스에 새로운 콘텐츠가 추가되었습니다\n\n**프리미엄 미션에 새로운 프로모 카드 등장:**\n- 다크라이 ex\n\n**프리미엄 숍에 새로운 플레이 아이템 등장:**\n- 아르세우스(플레이매트)\n- 아르세우스(카드 실드)\n- 아르세우스(포켓몬 동전)\n- 아르세우스(파일)\n- 아르세우스(보드)",
+    "pt": "Novo conteúdo foi adicionado ao Passe Premium\n\n**Nova carta promocional adicionada às Missões Premium:**\n- Darkrai ex\n\n**Novos itens adicionados à Loja Premium:**\n- Arceus (Tabuleiro)\n- Arceus (Capa para Carta)\n- Arceus (Moeda de Pokémon)\n- Arceus (Capa)\n- Arceus (Fundo)",
+    "zh": "高级通行证已添加新内容\n\n**新特典卡在特級任務中登場:**\n- 達克萊伊ex\n \n**新道具在特級商店中登場:**\n- 阿爾宙斯（對戰桌墊）\n- 阿爾宙斯（牌組護套）\n- 阿爾宙斯（寶可夢幣）\n- 阿爾宙斯（收藏冊）\n- 阿爾宙斯（收藏板）"
+  }
+}

@@ -10,9 +10,9 @@
     "pt": "Evento de Emblema Esp. Ilha Mítica",
     "zh": "幻遊島 勳章活動SP"
   },
-  "pos": "50% 30%",
-  "zoom": "100%",
-  "image": "mythical_island_sp_emblem_event.png",
+  "pos": "90% 22%",
+  "zoom": "220%",
+  "image": "mythical_island_sp_emblem_event.webp",
   "start": "2025-01-20 06:00:00",
   "end": "2025-01-27 05:59:00",
   "color": "#0ecc83",

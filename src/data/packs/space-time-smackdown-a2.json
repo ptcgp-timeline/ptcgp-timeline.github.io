@@ -40,5 +40,6 @@
     ]
   },
   "showOnHome": true,
-  "noEnd": true
+  "noEnd": true,
+  "filterExpansion": true
 }

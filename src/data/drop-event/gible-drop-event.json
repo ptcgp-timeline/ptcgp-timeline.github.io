@@ -1,0 +1,20 @@
+{
+  "name": {
+    "en": "Gible Drop Event"
+  },
+  "pos": "35% 42%",
+  "zoom": "320%",
+  "image": "Gible-Drop-Event.webp",
+  "start": "2025-03-03 06:00:00",
+  "end": "2025-03-17 05:59:00",
+  "color": "#819DA4",
+  "urls": {
+    "en": [
+      "https://ptcgpocket.gg/gible-drop-event/",
+      "https://www.pokemon-zone.com/events/gible-drop-event/"
+    ]
+  },
+  "showOnHome": true,
+  "description": {
+     }
+}
