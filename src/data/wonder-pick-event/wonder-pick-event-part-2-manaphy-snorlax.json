@@ -1,6 +1,14 @@
 {
   "name": {
-    "en": "Wonder Pick Event Part 2 (Manaphy + Snorlax)"
+    "en": "Wonder Pick Event Part 2 (Manaphy + Snorlax)",
+    "de": "Wunderwahl-Event Teil 2 (Manaphy + Relaxo)",
+    "es": "Evento elección mágica parte 2 (Manaphy + Snorlax)",
+    "fr": "Évènement pioche miracle 2 (Manaphy + Ronflex)",
+    "it": "Evento pesca misteriosa 2 (Manaphy + Snorlax)",
+    "ja": "ゲットチャレンジイベント 後半 (マナフィ + カビゴン)",
+    "ko": "겟 챌린지 이벤트 후반 (마나피 + 잠만보)",
+    "pt": "Evento Escolha Misteriosa (Pt. 2) (Manaphy + Snorlax)",
+    "zh": "得卡挑戰活動 後半 (瑪納霏 + 卡比獸)"
   },
   "pos": "8% 50%",
   "zoom": "370%",
@@ -9,12 +17,34 @@
   "end": "2025-03-24 05:59:00",
   "color": "#07B6ED",
   "urls": {
-    "en": ["https://ptcgpocket.gg/wonder-pick-event-part-2-manaphy-snorlax/",
-      "https://www.pokemon-zone.com/events/manaphy-and-snorlax-wonder-pick/"
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-2-manaphy-snorlax/",
+      "https://www.pokemon-zone.com/events/manaphy-and-snorlax-wonder-pick/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2502010_EVENT_03"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2502010_EVENT_03"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2502010_EVENT_03"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2502010_EVENT_03"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2502010_EVENT_03"
     ]
-    
   },
   "showOnHome": true,
   "description": {
-    }
+    "en": "New accessories and missions have been added to the wonder pick event.\n\n**Added accessories:**\n- Manaphy (Pokémon coin)\n- Manaphy (card sleeve)\n- Manaphy & Piplup (playmat)\n- Volkner (icon)",
+    "de": "Beim Wunderwahl-Event sind nun neue Missionen und neues Zubehör verfügbar.\n\n**Neues Zubehör:**\n- Manaphy (Münze)\n- Manaphy (Kartenhüllen)\n- Manaphy & Plinfa (Spielunterlage)\n- Volkner (Icon)",
+    "es": "Se han añadido nuevos accesorios y misiones al evento elección mágica. \n\n**Accesorios añadidos:**\n- Moneda Manaphy\n- Fundas Manaphy\n- Tapete Manaphy y Piplup\n- Icono Lectro",
+    "fr": "De nouveaux Accessoires et de nouvelles missions ont été ajoutés à l'évènement pioche miracle.\n\n**Accessoires ajoutés:**\n- Pièce Pokémon - Manaphy\n- Protège-Carte - Manaphy\n- Tapis de Jeu - Manaphy & Tiplouf\n- Icône - Tanguy",
+    "it": "Nuovi accessori e nuove missioni sono stati aggiunti all'evento pesca misteriosa.\n\n**Nuovi accessori:**\n- Manaphy (moneta)\n- Manaphy (bustine protettive)\n- Manaphy e Piplup (tabellone)\n- Corrado (icona)",
+    "ja": "ゲットチャレンジイベントに新たな周辺グッズとミッションが追加されました。\n\n**追加された周辺グッズ**\n- マナフィ(ポケモンコイン)\n- マナフィ(デッキシールド)\n- マナフィ＆ポッチャマ(プレイマット)\n- デンジ(アイコン)",
+    "ko": "겟 챌린지 이벤트에 새로운 주변 상품과 미션이 추가되었습 니다.\n\n**추가된 주변 상품**\n- 마나피(포켓몬 동전)\n- 마나피(카드 실드)\n- 마나피&팽도리(플레이매트)\n- 전진(아이콘)",
+    "pt": "Novos acessórios e missões foram adicionados ao Evento Escolha Misteriosa.\n\n**Acessórios adicionados:**\n- Manaphy (Moeda de Pokémon)\n- Manaphy (Capa para Carta)\n- Manaphy e Piplup (Tabuleiro)\n- Volkner (Ícone)",
+    "zh": "得卡挑戰已追加新的周邊物品和任務。\n\n**已追加的周邊物品**\n- 瑪納霏（寶可夢幣）\n- 瑪納霏（牌組護套）\n- 瑪納霏＆波加曼（對戰桌墊）\n- 電次（頭像）"
+  }
 }

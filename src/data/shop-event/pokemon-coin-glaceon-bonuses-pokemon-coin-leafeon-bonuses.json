@@ -1,0 +1,21 @@
+{
+	"name": {
+		"en": "Pokémon coin (Glaceon) + Bonuses | Pokémon coin (Leafeon) + Bonuses",
+		"de": "Münze (Glaziola) + Boni | Münze (Folipurba) + Boni",
+		"es": "Moneda Glaceon + extras | Moneda Leafeon + extras",
+		"fr": "Pièce Pokémon - Givrali + bonus | Pièce Pokémon - Phyllali + bonus",
+		"it": "Glaceon (moneta) + extra | Leafeon (moneta) + extra",
+		"ja": "おまけつきポケモンコイン(グレイシア) | おまけつきポケモンコイン(リーフィア)",
+		"ko": "포켓몬 동전(글레이시아) + 증정분 | 포켓몬 동전(리피아) + 증정분",
+		"pt": "Glaceon (Moeda) + Bônus | Leafeon (Moeda) + Bônus",
+		"zh": "附好禮寶可夢幣（冰伊布） | 附好禮寶可夢幣（葉伊布）"
+	},
+	"pos": "43% 20%",
+	"zoom": "550%",
+	"image": "pokemon-coin-glaceon-bonuses-pokemon-coin-leafeon-bonuses.webp",
+	"start": "2025-02-28 06:00:00",
+	"end": "2025-03-27 05:59:00",
+	"color": "#C787CC",
+	"urls": {},
+	"showOnHome": true
+}

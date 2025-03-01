@@ -1,6 +1,14 @@
 {
   "name": {
-    "en": "Wonder Pick Event Part 1 (Manaphy + Snorlax)"
+    "en": "Wonder Pick Event Part 1 (Manaphy + Snorlax)",
+    "de": "Wunderwahl-Event Teil 1 (Manaphy + Relaxo)",
+    "es": "Evento elección mágica parte 1 (Manaphy + Snorlax)",
+    "fr": "Évènement pioche miracle 1 (Manaphy + Ronflex)",
+    "it": "Evento pesca misteriosa 1 (Manaphy + Snorlax)",
+    "ja": "ゲットチャレンジイベント 前半 (マナフィ + カビゴン)",
+    "ko": "겟 챌린지 이벤트 전반 (마나피 + 잠만보)",
+    "pt": "Evento Escolha Misteriosa (Pt. 1) (Manaphy + Snorlax)",
+    "zh": "得卡挑戰活動 前半 (瑪納霏 + 卡比獸)"
   },
   "pos": "20% 45%",
   "zoom": "460%",
@@ -9,12 +17,34 @@
   "end": "2025-03-24 05:59:00",
   "color": "#07B6ED",
   "urls": {
-    "en": ["https://ptcgpocket.gg/wonder-pick-event-part-1-manaphy-snorlax/",
-      "https://www.pokemon-zone.com/events/manaphy-and-snorlax-wonder-pick/"
+    "en": [
+      "https://ptcgpocket.gg/wonder-pick-event-part-1-manaphy-snorlax/",
+      "https://www.pokemon-zone.com/events/manaphy-and-snorlax-wonder-pick/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2502010_EVENT_02"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2502010_EVENT_02"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/mission/group/MI_GR_2502010_EVENT_02"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2502010_EVENT_02"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2502010_EVENT_02"
     ]
-    
   },
   "showOnHome": true,
   "description": {
-    }
+    "en": "Manaphy and Snorlax promo cards are appearing in Wonder Pick.\n\nDuring this event period, there will also be missions where you can obtain event shop tickets by wonder picking and collecting certain cards.\n\n**Obtainable accessories:**\n- Manaphy & Piplup (backdrop)\n- Manaphy & Piplup (cover)\n- Futuristic Device (backdrop)",
+    "de": "Promokarten mit Manaphy und Relaxo erscheinen bei der Wunderwahl!\n\nWährend dieses Events werden außerdem Missionen verfügbar sein, bei denen du durch die Nutzung der Wunderwahl und das Sammeln bestimmter Karten Event-Shop-Tickets erhalten kannst.\n\n**Erhältliches Zubehör:**\n- Manaphy & Plinfa (Hintergrund)\n- Manaphy & Plinfa (Cover)\n- Futuristisches Gerät (Hintergrund)",
+    "es": "Llegan las cartas de promoción Manaphy y Snorlax a las elecciones mágicas.\n\nDurante el período de este evento, habrá también misiones en las que podrás obtener cupones de evento al realizar elecciones mágicas o al conseguir ciertas cartas.\n\n**Accesorios disponibles:**\n- Fondo Manaphy y Piplup\n- Portada Manaphy y Piplup\n- Fondo dispositivo futurista",
+    "fr": "Les cartes promo Manaphy et Ronflex font leur apparition dans la pioche miracle.\n \nDurant cet évènement, vous aurez accès à des missions vous permettant d'obtenir des tickets boutique évènement. Celles-ci consisteront notamment à utiliser la pioche miracle et à collecter des cartes spécifiques.\n\n**Accessoires pouvant être obtenus :**\n- Arrière-Plan - Manaphy & Tiplouf\n- Couverture - Manaphy & Tiplouf\n- Arrière-Plan - Machine futuriste",
+    "it": "Le carte promozionali Manaphy e Snorlax sono disponibili per la pesca misteriosa. \n\nInoltre, nel corso di questo evento ci saranno missioni che ti permetteranno di ottenere Buoni negozio evento effettuando la pesca misteriosa e ottenendo determinate carte.\n\n**Accessori ottenibili:**\n- Manaphy e Piplup (sfondo)\n- Manaphy e Piplup (copertina)\n- Macchinario futuristico (sfondo)",
+    "ja": "プロモカード「マナフィ」 「カビゴン」がゲットチャレンジに登場します。 \n\nまた期間中、 ゲットチャレンジや特定カードを集めるとイベントショップチケットが獲得できるミッションも開催されます。\n\n**入手できる周辺グッズ**\n- マナフィ＆ポッチャマ(ボード)\n- マナフィ＆ポッチャマ(ファイル)\n- サイバーな装置(ボード)",
+    "ko": "프로모 카드 「마나피」 「잠만보」가 겟 챌린지에 등장 합니다. \n\n또한 기간 중, 겟 챌린지나 특정 카드를 모으면 이벤트 숍 티 켓을 획득할 수 있는 미션도 개최됩니다.\n\n**획득할 수 있는 주변 상품**\n- 마나피&팽도리(보드)\n- 마나피&팽도리(파일)\n- 사이버틱 장치(보드)",
+    "pt": "As cartas promocionais de Manaphy e Snorlax estão aparecendo na Escolha Misteriosa.\n \nDurante o período deste evento, também haverá missões que podem conceder Tickets de Evento da Loja quando você realizar uma Escolha Misteriosa e colecionar certas cartas.\n\n**Acessórios que você pode obter:**\n- Manaphy e Piplup (Fundo)\n- Manaphy e Piplup (Capa)\n- Dispositivo Futurístico (Fundo)",
+    "zh": "特典卡 「瑪納霏」、「卡比獸」會在得卡挑戰登場。\n \n此外, 期間內也會推出遊玩得卡挑戰或收集特定卡牌後就能獲得活動商店券的任務。\n\n**可獲得的周邊物品**\n- 瑪納霏＆波加曼（收藏板）\n- 瑪納霏＆波加曼（收藏冊）\n- 電控裝置（收藏板）"
+  }
 }

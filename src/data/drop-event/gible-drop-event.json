@@ -1,6 +1,14 @@
 {
   "name": {
-    "en": "Gible Drop Event"
+    "en": "Gible Drop Event",
+    "de": "Drop-Event (Kaumalat)",
+    "es": "Evento botín Gible",
+    "fr": "Évènement butin Griknot",
+    "it": "Evento bonus Gible",
+    "ja": "フカマルドロップイベント",
+    "ko": "딥상어동 드롭 이벤트",
+    "pt": "Evento de Oportunidade Gible ",
+    "zh": "圓陸鯊掉落活動"
   },
   "pos": "35% 42%",
   "zoom": "320%",
@@ -11,10 +19,32 @@
   "urls": {
     "en": [
       "https://ptcgpocket.gg/gible-drop-event/",
-      "https://www.pokemon-zone.com/events/gible-drop-event/"
+      "https://www.pokemon-zone.com/events/gible-drop-event/",
+      "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2502010_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2502010_01"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2502010_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/battle/solo-event/BT_GR_2502010_01"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2502010_01"
     ]
   },
   "showOnHome": true,
   "description": {
-     }
+    "en": "Drop events are events where you can get promo cards by doing Solo battles.\n\nBy winning solo battles you can obtain Promo Pack A Series Vol. 5!\n\n**Promo Pack A Series Vol. 5 includes**\n- Gible\n- Cherrim\n- Raichu\n- Nosepass\n- Staraptor",
+    "de": "Drop-Events sind Events, bei denen du Promokarten erhalten kannst, indem du CPU-Kämpfe bestreitest.\n\nWenn du CPU-Kämpfe gewinnst, kannst du Promopacks Serie A, Vol. 4 erhalten!\n\n**Promopack Serie A, Vol. 5 enthält**\n- Kaumalat\n- Kinoso\n- Raichu\n- Nasgnet\n- Staraptor",
+    "es": "Los eventos botín son eventos en los que puedes conseguir cartas de promoción jugando partidas individuales.\n\nSi ganas partidas individuales, ¡puedes obtener sobres de promoción serie A vol. 4!\n\n**Sobre de promoción serie A vol. 5 incluye**\n- Gible\n- Cherrim\n- Raichu\n- Nosepass\n- Staraptor",
+    "fr": "Pendant les évènements butin, vous pouvez obtenir des cartes promo en participant à des combats solo.\n\nEn remportant des combats solo, vous pourrez obtenir le Booster promo série A, vol. 5!\n\n**Booster promo série A, vol. 5 inclut**\n- Griknot\n- Ceriflor\n- Raichu\n- Tarinor\n- Étouraptor",
+    "it": "Gli eventi bonus sono degli eventi in cui puoi ottenere carte promozionali affrontando delle lotte con CPU.\n\nVincendo lotte con CPU puoi ottenere buste promo serie A, vol. 4!\n\n**Busta promo (serie A, vol. 5) include**\n- Gible\n- Cherrim\n- Raichu\n- Nosepass\n- Staraptor",
+    "ja": "「ドロップイベント」は「ひとりで」のバトルをプレイして、プロモカードを獲得するイベントです。\n\n「ひとりで」のバトルで勝利して、プロモカードパック Aシリーズ 第5弾を獲得できます!\n\n**プロモカードパック Aシリーズ 第5弾 には**\n- フカマル\n- チェリム\n- ライチュウ\n- ノズパス\n- ムクホーク",
+    "ko": "「드롭 이벤트」는 「혼자서」 배틀을 플레이하고 프로모 카드를 획득하는 이벤트입니다.\n\n「혼자서」 배틀에서 승리하고 프로모 카드 팩 A시리즈 제 4탄을 획득할 수 있습니다!\n\n**프로모 카드 팩 A시리즈 제5탄 에는**\n- 딥상어동\n- 체리꼬\n- 라이츄\n- 코코파스\n- 찌르호크",
+    "pt": "Eventos de Oportunidade são aqueles em que você consegue cartas promocionais participando de Batalhas Solo.\n\nAo vencer Batalhas Solo, você poderá receber Pacote Promocional Série A (Volume 4)!\n\n**Pacote Promocional da Série A  (Vol. 5) inclui**\n- Gible\n- Cherrim\n- Raichu\n- Nosepass\n- Staraptor",
+    "zh": "「掉落活動」是遊玩「單人對戰」,獲得特典卡的活動。\n\n在「單人對戰」獲勝,可獲得特典卡牌包A系列第4 彈!\n\n**特典卡牌包 A系列第5波 包含**\n- 圓陸鯊\n- 櫻花兒\n- 雷丘\n- 朝北鼻\n- 姆克鷹"
+  }
 }

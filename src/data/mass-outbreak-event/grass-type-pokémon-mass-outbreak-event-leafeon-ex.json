@@ -1,6 +1,14 @@
 {
   "name": {
-    "en": "Grass-type Pokémon Mass Outbreak Event (Leafeon ex)"
+    "de": "Massiver Auflauf von Pflanzen-Pokémon (Folipurba-ex)",
+    "en": "Grass-type Pokémon Mass Outbreak Event (Leafeon ex)",
+    "es": "Aparición masiva de Pokémon de tipo Planta (Leafeon ex)",
+    "fr": "Apparition massive de Pokémon Plante (Phyllali-ex)",
+    "it": "Comparse massicce di Pokémon Erba (Leafeon-ex)",
+    "ja": "草ポケモン大量発生イベント (リーフィアex)",
+    "ko": "풀포켓몬 대량발생 이벤트 (리피아 ex)",
+    "pt": "Evento Aparição em Massa de Pokémon de tipo Planta (Leafeon ex)",
+    "zh": "草屬性寶可夢大量出現活動 (葉伊布ex)"
   },
   "pos": "62% 54%",
   "zoom": "600%",
@@ -9,10 +17,34 @@
   "end": "2025-03-30 05:59:00",
   "color": "#66CB7C",
   "urls": {
-    "en":["https://www.pokemon-zone.com/events/grass-type-pokemon-mass-outbreak-event/",
-  "https://ptcgpocket.gg/grass-type-pokemon-mass-outbreak-event-leafeon-ex/"]
+    "en": [
+      "https://www.pokemon-zone.com/events/grass-type-pokemon-mass-outbreak-event/",
+      "https://ptcgpocket.gg/grass-type-pokemon-mass-outbreak-event-leafeon-ex/",
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2502010_EVENT_01"
+    ],
+    "ja": [
+      "https://ptcgp.raenonx.cc/ja/mission/group/MI_GR_2502010_EVENT_01"
+    ],
+    "zh": [
+      "https://ptcgp.raenonx.cc/zh/mission/group/MI_GR_2502010_EVENT_01"
+    ],
+    "ko": [
+      "https://ptcgp.raenonx.cc/ko/mission/group/MI_GR_2502010_EVENT_01"
+    ],
+    "fr": [
+      "https://ptcgp.raenonx.cc/en/mission/group/MI_GR_2502010_EVENT_01"
+    ]
   },
   "showOnHome": true,
   "description": {
-     }
+    "en": "During the Grass-type Pokémon Mass Outbreak Event, Grass-type Pokémon cards will appear in rare picks and bonus picks.\n\nThere will also be additional flair available via exchanges during the event.\n\n**Cards that will appear in rare picks:**\n- Leafeon ex\n- Carnivine\n- Serperior\n- Mothim\n- Vespiquen\n- Heracross\n- Servine\n\n**Cards that will appear in bonus picks:**\n- Scyther\n- Snivy\n- Servine\n- Heracross\n- Burmy\n- Mothim\n- Combee\n- Vespiquen\n- Cherubi\n- Eevee\n\n**Flair that will be added to Obtain Flair during the event**\n- Leafeon ex Petals Flair: White (Battle)",
+    "de": "Bei dem Event „Massiver Auflauf von Pflanzen-Pokémon\" erscheinen Karten von Pflanzen-Pokémon bei der Wunderwahl+ sowie bei der Bonuswahl und es wird ein zusätzliches Flair eintauschbar sein. \n\nWährend dieses Events werden außerdem Missionen verfügbar sein, bei denen du durch die Nutzung der Wunderwahl und das Sammeln bestimmter Karten Shop-Tickets erhalten kannst.\n\n**Karten, die im Rahmen der Wunderwahl+ erscheinen:**\n- Folipurba-ex\n- Venuflibis\n- Serpiroyal\n- Moterpel\n- Honweisel\n- Skaraborn\n- Efoserp\n\n**Karten, die im Rahmen der Bonuswahl erscheinen:**\n- Sichlor\n- Serpifeu\n- Efoserp\n- Skaraborn\n- Burmy\n- Moterpel\n- Wadribie\n- Honweisel\n- Kikugi\n- Evoli\n\n**Flair, das während des Events unter „Flair erhalten\" verfügbar ist**\n- Folipurba-ex Blütenblätter: Weiß (Kampf)",
+    "es": "Durante la Aparición masiva de Pokémon de tipo Planta, aparecerán cartas de Pokémon de tipo Planta en elecciones especiales y elecciones extra.\n\nTambién habrá un efecto visual adicional disponible a través de canjes durante el evento.\n\n**Cartas que aparecerán en elecciones especiales:**\n- Leafeon ex\n- Carnivine\n- Serperior\n- Mothim\n- Vespiquen\n- Heracross\n- Servine\n\n**Cartas que aparecerán en elecciones extra:**\n- Scyther\n- Snivy\n- Servine\n- Heracross\n- Burmy\n- Mothim\n- Combee\n- Vespiquen\n- Cherubi\n- Eevee\n\n**Efectos visuales que se añadirán a \"Obtener efecto visual\" durante el evento**\n- Leafeon ex Efecto en partida pétalos blancos",
+    "fr": "Lors de l'évènement d'Apparition massive de Pokémon Plante, des cartes Pokémon de type Plante apparaîtront dans les pioches rares et les pioches bonus. De plus, pendant la durée de l'évènement, un nouvel effet déco sera disponible à l'échange.\n\nVous pourrez également participer à des missions, dans lesquelles vous pourrez obtenir des tickets boutique en utilisant la pioche miracle et en obtenant des cartes spécifiques.\n\n**Karten, die im Rahmen der Wunderwahl+ erscheinen:**\n- Phyllali-ex\n- Vortente\n- Majaspic\n- Papilord\n- Apireine\n- Scarhino\n- Lianaja\n\n**Karten, die im Rahmen der Bonuswahl erscheinen:**\n- Insécateur\n- Vipélierre\n- Lianaja\n- Scarhino\n- Cheniti\n- Papilord\n- Apitrini\n- Apireine\n- Ceribou\n- Évoli\n\n**Effet déco disponible pendant la durée de l'évènement**\n- Phyllali-ex Effet déco (combat) - Pétales blancs",
+    "it": "Durante le Comparse massicce di Pokémon Erba, nella pesca rara e nella pesca extra appariranno carte Pokémon Erba.\n\nInoltre, nel corso dell'evento sarà disponibile un effetto aggiuntivo ottenibile tramite scambio.\n\n**Carte che appariranno nella pesca rara:**\n- Leafeon-ex\n- Carnivine\n- Serperior\n- Mothim\n- Vespiquen\n- Heracross\n- Servine\n\n**Carte che appariranno nella pesca extra:**\n- Scyther\n- Snivy\n- Servine\n- Heracross\n- Burmy\n- Mothim\n- Combee\n- Vespiquen\n- Cherubi\n- Eevee\n\n**Effetto che verrà aggiunto alla funzione \"Ottieni effetto\" durante l'evento:**\n- Leafeon-ex Petali bianchi (lotta)",
+    "ja": "「草ポケモン大量発生イベント」は、草ポケモンのカードがレアチャレンジやフリーチャレンジに出現します。\n\nまたイベント期間中、交換できるエフェクトが追加されています。\n\n**レアチャレンジで出現するカード:**\n- リーフィアex\n- マスキッパ\n- ジャローダ\n- ガーメイル\n- ビークイン\n- ヘラクロス\n- ジャノビー\n\n**フリーチャレンジで出現するカード:**\n- ストライク\n- ツタージャ\n- ジャノビー\n- ヘラクロス\n- ミノムッチ\n- ガーメイル\n- ミツハニー\n- ビークイン\n- チェリンボ\n- イーブイ\n\n**期間中、「エフェクト入手」に追加されるエフェクト:**\n- リーフィアex キレイな花びら 白 エフェクト(バトル)",
+    "ko": "「풀포켓몬 대량발생 이벤트」는 풀포켓몬의 카드가 레어 챌린지나 프리 챌린지에 출현합니다.\n\n또한 이벤트 기간 중, 교환 가능한 이펙트가 추가됩니다.\n\n**레어 챌린지에서 출현하는 카드:**\n- 리피아 ex\n- 무스틈니\n- 샤로다\n- 나메일\n- 비퀸\n- 헤라크로스\n- 샤비\n\n**프리 챌린지에서 출현하는 카드:**\n- 스라크\n- 주리비얀\n- 샤비\n- 헤라크로스\n- 도롱충이\n- 나메일\n- 세꿀버리\n- 비퀸\n- 체리버\n- 이브이\n\n**기간 중 「이펙트 획득」에 추가되는 이펙트:**\n- 리피아 ex 아름다운 꽃잎 흰색 이펙트(배틀)",
+    "pt": "Durante o Evento Aparição em Massa de Pokémon de tipo Planta, cartas de Pokémon de tipo Planta aparecerão em Escolhas Raras e Escolhas Bônus.\n\nTambém haverá Adornos adicionais disponíveis por meio de troca durante o evento.\n\n**Cartas que aparecerão em Escolhas Raras:**\n- Leafeon ex\n- Carnivine\n- Serperior\n- Mothim\n- Vespiquen\n- Heracross\n- Servine\n\n**Cartas que aparecerão em Escolhas Bônus:**\n- Scyther\n- Snivy\n- Servine\n- Heracross\n- Burmy\n- Mothim\n- Combee\n- Vespiquen\n- Cherubi\n- Eevee\n\n**Adorno que será adicionado a Obter Adorno durante o evento:**\n- Leafeon ex Adorno de Pétalas: branco (Batalha)",
+    "zh": "在「草屬性寶可夢大量出現活動」,草屬性寶可夢的卡牌會在稀有挑戰及免費挑戰中出現。\n\n此外,在活動期間追加了能兌換的特效。\n\n**會在稀有挑戰出現的卡牌:**\n- 葉伊布ex\n- 尖牙籠\n- 君主蛇\n- 紳士蛾\n- 蜂女王\n- 赫拉克羅斯\n- 青藤蛇\n\n**會在免費挑戰出現的卡牌:**\n- 飛天螳螂\n- 藤藤蛇\n- 青藤蛇\n- 赫拉克羅斯\n- 結草兒\n- 紳士蛾\n- 三蜜蜂\n- 蜂女王\n- 櫻花寶\n- 伊布\n\n**在活動期間會被追加到「獲得特效」的特效:**\n- 葉伊布ex 對戰特效：花瓣（白）"
+  }
 }

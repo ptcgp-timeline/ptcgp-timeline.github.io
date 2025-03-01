@@ -52,6 +52,7 @@ import PokMonDayCelebration from "./misc/pok-mon-day-celebration-gift.json";
 import PokémonCoinErikaBonusesAB from "./shop-event/pokemon-coin-erika-bonuses-a-pokemon-coin-erika-bonuses-b.json";
 import PokeGold115AccessoriesGardevoir from "./shop-event/poke-gold-paid-115-accessories-gardevoir.json";
 import PokeGold115AccessoriesCynthia from "./shop-event/poke-gold-paid-115-accessories-cynthia.json";
+import PokémonCoinGlaceonLeafeonBonuses from "./shop-event/pokemon-coin-glaceon-bonuses-pokemon-coin-leafeon-bonuses.json";
 
 // Premium Pass Events
 import PremiumPassOctober2024 from "./premium-pass/premium-pass-october-2024.json";
@@ -110,8 +111,8 @@ export const eventsData = [
     GibleDropEvent, // Drop Event
     GrassPokémonMassOutbreakEventLeafeonEX,
     // Packs// TEMP STUFF to reduce the height of timeline
-     //TEMP STUFF ONCE A3 is close move it
-     A3, // Packs// TEMP STUFF to reduce the height of timeline
+    //TEMP STUFF ONCE A3 is close move it
+    A3, // Packs// TEMP STUFF to reduce the height of timeline
   ],
   [
     wonderPickEventPart1ChanseyMeowth,
@@ -119,7 +120,6 @@ export const eventsData = [
     wonderPickEventPart1CharmanderSquirtle,
     wonderPickEventPart1ChimcharTogepi,
     wonderPickEventPart1ManaphySnorlax,
-    
   ],
   [
     wonderPickEventPart2ChanseyMeowth,
@@ -129,8 +129,7 @@ export const eventsData = [
     wonderPickEventPart2CharmanderSquirtle,
     PsychicPokémonMassOutbreakEventMewEX, // Mass Outbreak Events // TEMP STUFF to reduce the height of timeline
     wonderPickEventPart2ChimcharTogepi,
-    wonderPickEventPart2ManaphySnorlax
-    
+    wonderPickEventPart2ManaphySnorlax,
   ],
   [
     GeneticApexEmblemEvent1,
@@ -164,5 +163,8 @@ export const eventsData = [
   [
     PokeGold115AccessoriesGardevoir, // SHOP EVENT
     PokeGold115AccessoriesCynthia, // SHOP EVENT
+  ],
+  [
+    PokémonCoinGlaceonLeafeonBonuses, // SHOP EVENT
   ],
 ];
