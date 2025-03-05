@@ -18,6 +18,7 @@
   "color": "#819DA4",
   "urls": {
     "en": [
+      "https://www.pokemon.com/us/pokemon-news/pokemon-trading-card-game-pocket-gible-drop-event",
       "https://ptcgpocket.gg/gible-drop-event/",
       "https://www.pokemon-zone.com/events/gible-drop-event/",
       "https://ptcgp.raenonx.cc/en/battle/solo-event/BT_GR_2502010_01"
@@ -26,6 +27,7 @@
       "https://ptcgp.raenonx.cc/ja/battle/solo-event/BT_GR_2502010_01"
     ],
     "fr": [
+      "https://www.pokemon.com/fr/actus-pokemon/evenement-butin-griknot-dans-le-jeu-de-cartes-a-collectionner-pokemon-pocket",
       "https://ptcgp.raenonx.cc/fr/battle/solo-event/BT_GR_2502010_01"
     ],
     "ko": [
@@ -33,6 +35,15 @@
     ],
     "zh": [
       "https://ptcgp.raenonx.cc/zh/battle/solo-event/BT_GR_2502010_01"
+    ],
+    "de": [
+      "https://www.pokemon.com/de/pokemon-news/ein-drop-event-mit-kaumalat-in-pokemon-sammelkartenspiel-pocket"
+    ],
+    "es": [
+      "https://www.pokemon.com/es/noticias-pokemon/evento-botin-gible-en-el-juego-de-cartas-coleccionables-pokemon-pocket"
+    ],
+    "it": [
+      "https://www.pokemon.com/it/novita-pokemon/gioco-di-carte-collezionabili-pokemon-pocket-evento-bonus-gible"
     ]
   },
   "showOnHome": true,
