@@ -1,0 +1,44 @@
+{
+  "name": {
+    "en": "Shining Revelry (A2b)",
+    "fr": "Réjouissances Rayonnantes (A2b)",
+    "es": "Festival Brillante (A2b)",
+    "it": "Tripudio Splendente (A2b)",
+    "de": "Glänzendes Festival (A2b)",
+    "pt": "Festival Brilhante (A2b)",
+    "ko": "샤이닝 하이 (A2b)",
+    "ja": "シャイニングハイ (A2b)",
+    "zh": "嗨放異彩 (A2b)"
+  },
+  "pos": "45% 8%",
+  "zoom": "300%",
+  "image": "A2b.webp",
+  "start": "2025-03-27 06:00:00",
+  "end": "2025-12-31 05:59:00",
+  "color": "#CAD0DC",
+  "urls": {
+    "en": [
+      "https://www.pokemon.com/us/pokemon-news/shiny-pokemon-arrive-in-pokemon-tcg-pockets-latest-expansion-shining-revelry"
+    ],
+    "fr": ["https://www.pokemon.com/fr/actus-pokemon/des-pokemon-chromatiques-debarquent-dans-la-nouvelle-extension-du-jcc-pokemon-pocket-rejouissances-rayonnantes"],
+    "it": ["https://www.pokemon.com/it/novita-pokemon/arrivano-i-pokemon-cromatici-nella-nuova-espansione-del-gcc-pokemon-pocket-tripudio-splendente"],
+    "es": ["https://www.pokemon.com/es/noticias-pokemon/los-pokemon-variocolor-llegan-a-jcc-pokemon-pocket-en-la-nueva-expansion-festival-brillante"],
+    "de": ["https://www.pokemon.com/de/pokemon-news/in-der-neuesten-erweiterung-glaenzendes-festival-fuer-pokemon-sammelkartenspiel-pocket-wird-es-schillernde-pokemon-geben"],
+    "ko": [],
+    "ja": []
+  },
+  "showOnHome": true,
+  "noEnd": true,
+  "uncertain": false,
+  "description": {
+    "en": "[🎬 YouTube Trailer](https://youtu.be/yTuOB_yzRCc)",
+    "es": "[🎬 Tráiler de YouTube](https://youtu.be/S7-izgQMhnk)",
+    "fr": "[🎬 Bande-annonce YouTube](https://youtu.be/yjvhrnUCM64)",
+    "de": "[🎬 YouTube-Trailer](https://youtu.be/oGXtlbAN3ZQ)",
+    "it": "[🎬 Trailer di YouTube](https://youtu.be/0F-2KQs7lUI)",
+    "pt": "[🎬 Trailer do YouTube](https://www.youtube.com/watch?v=509pY3MSInw)",
+    "ja": "[🎬 YouTube トレーラー](hhttps://www.youtube.com/watch?v=5mwF2xvkmnM)",
+    "ko": "[🎬 유튜브 트레일러](https://www.youtube.com/watch?v=7y193cHsiOk)",
+    "zh": "[🎬 YouTube 預告片](https://www.youtube.com/watch?v=Tp1xnmThFPA)"
+  }
+}

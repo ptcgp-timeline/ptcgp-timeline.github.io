@@ -1,0 +1,30 @@
+{
+	"name": {
+		"en": "Ranked Match"
+	},
+	"pos": "70% 15%",
+	"zoom": "300%",
+	"image": "ranked-match-a2b.webp",
+	"start": "2025-03-27 06:00:00",
+	"end": "2025-04-26 05:59:00",
+	"color": "#B995CD",
+	"urls": {
+		"en": [
+		],
+		"fr": [
+		
+		],
+		"zh": [
+			
+		],
+		"ja": [
+		
+		],
+		"ko": [
+			
+		]
+	},
+	"description": {
+		},
+	"showOnHome": true
+}

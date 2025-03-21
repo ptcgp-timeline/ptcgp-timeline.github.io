@@ -4,6 +4,10 @@ import MythicalIsland from "./packs/mythical-island-a1a.json";
 import SpaceTimeSmackdown from "./packs/space-time-smackdown-a2.json";
 import A2a from "./packs/a2a.json";
 import A3 from "./packs/a3.json";
+import A2b from "./packs/a2b.json";
+
+// Misc Events
+import RankedMatch from "./misc/ranked-match.json";
 
 // Wonder Pick Events
 import wonderPickEventPart1ChanseyMeowth from "./wonder-pick-event/wonder-pick-event-part-1-chansey-meowth.json";
@@ -101,6 +105,7 @@ export const eventsData = [
   [MythicalIsland],
   [SpaceTimeSmackdown],
   [A2a],
+  [A2b],
   //[],
   [
     LaprasEXDropEvent, // Drop Event
@@ -138,6 +143,7 @@ export const eventsData = [
     MythicalIslandSPEmblemEvent,
     SpaceTimeSmackdownEmblemEvent,
     TriumphantLightSPEmblemEvent,
+    RankedMatch,
   ],
   [
     HolidayCountdownCampaign, // MISC EVENT
